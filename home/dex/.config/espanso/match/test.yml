@@ -1,0 +1,5 @@
+matches:
+  - trigger: "].test]"
+    replace: ""
+    shell:
+      cmd: "touch /tmp/espanso_test_success && /usr/bin/notify-send 'Espanso' 'Shell commands work!'"

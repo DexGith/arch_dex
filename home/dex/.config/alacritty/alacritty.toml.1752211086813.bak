@@ -1,0 +1,4 @@
+import = [ "/usr/lib/node_modules/alacritty-themes/themes/Breeze.toml" ]
+
+[general]
+import = [ "~/.config/alacritty/themes/Alabaster.dark.toml" ]

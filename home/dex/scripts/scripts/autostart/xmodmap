@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sleep, 10 
+
+xmodmap "$HOME/.xmodmaprc" &
+
+# Start the xbindkeys hotkey daemon
+# The '&' sends this command to the background
+xbindkeys &

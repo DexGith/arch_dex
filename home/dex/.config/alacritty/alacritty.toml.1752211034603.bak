@@ -1,0 +1,6 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/github_dark.toml"
+]
+
+[general]
+import = [ "~/.config/alacritty/themes/Alabaster.dark.toml" ]

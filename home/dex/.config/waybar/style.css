@@ -1,0 +1,90 @@
+/* ~/.config/waybar/style.css */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 45, 0.9);
+    color: #cdd6f4; /* Text color */
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #cdd6f4;
+    border-bottom: 2px solid transparent;
+}
+
+/* #workspaces button.active { */
+/*     color: #89b4fa; /1* Active workspace color *1/ */
+/*     border-bottom: 2px solid #89b4fa; */
+/* } */
+
+#workspaces button.active { /* <--- THIS IS THE MAGIC */
+    color: #89b4fa; /* Active workspace color */
+    border-bottom: 2px solid #89b4fa; /* Adds a blue underline */
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8; /* Urgent workspace color */
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: #cdd6f4;
+}
+
+#clock {
+    color: #fab387; /* Orange */
+}
+
+#battery {
+    color: #a6e3a1; /* Green */
+}
+
+#battery.charging, #battery.plugged {
+    color: #94e2d5; /* Teal */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8; /* Red */
+    color: #1e1e2e;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+    color: #89b4fa; /* Blue */
+}
+
+#network.disconnected {
+    color: #f38ba8; /* Red */
+}
+
+#pulseaudio {
+    color: #cba6f7; /* Mauve */
+}
+
+#pulseaudio.muted {
+    color: #6c7086; /* Muted color */
+}
+
+#tray {
+    background-color: #282838;
+    border-radius: 10px;
+    margin-right: 8px;
+}

@@ -1,0 +1,210 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+
+  # ----- Experemental ----
+    
+
+  - trigger: "]gc#]"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: |
+            # Get the title
+            if command -v zenity >/dev/null; then
+              title=$(zenity --entry --title="Header Title" --text="Enter header title:")
+            else
+              read -p "Header title: " title
+            fi
+            
+            # Calculate cursor position (2 lines down from header start)
+            header_line="# ---- $title ----"
+            empty_line=""
+            end_line="# ---- $title END----"
+            
+            # Output with cursor position marker
+            printf "%s\n\n%s$|$\n\n%s" "$header_line" "$empty_line" "$end_line"
+   
+  # ----- Experemental END----
+
+  # ---- Remember commands ----
+
+  - trigger: ';;command~screens off' 
+    replace: 'xset dpms force off # make sure to run it in a terminal other wise it will not run'
+     
+  # ---- Remember commands END----
+
+   
+  # ---- terminal ----
+   
+
+  - trigger: ' ]h]' # leader concept works 
+    replace: 'man '
+
+  - trigger: ']h]'
+    replace: 'tldr '
+ 
+  - trigger: '!]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: ']h '
+
+  - trigger: '?]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: '["]h"]_[" ]h"]_["!]h]'
+
+  # ---- terminal END----
+
+
+
+  # ----- Paths --------
+  - trigger: ']c.d]'
+    replace: '/home/dex/Desktop/'
+
+  - trigger: ']cd]'
+    replace: '/home/dex/'
+
+  - trigger: ']c.do]'
+    replace: '/home/dex/Downloads/'
+
+  - trigger: ']c.du]'
+    replace: '/home/dex/Documents/'
+
+  - trigger: ']c.dp]'
+    replace: '/home/dex/Pictures/'
+
+  - trigger: ']c.s]'
+    replace: '/home/dex/scripts/'
+  # ----- Paths END--------
+
+  # ----- Date & Time ------
+  - trigger: "].d]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  - trigger: "].f]"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - bash 
+            - /home/dex/scripts/ddesk/nothing/fleet.note.sh
+
+  - trigger: "].24]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: "].t]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: "].tt]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%H:%M | %r"
+
+  - trigger: "].12]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%r"
+
+  - trigger: "].df]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: '%a, %d | %d/%m/%Y | %H:%M'
+
+  - trigger: "].date]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y\n\n%a, %d, %B\n\n%H:%M\n\n"
+
+  - trigger: "].lm]"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%U %a, %d at %H:%M"
+
+  # ----- Date & Time END------
+
+
+  # ---- help ----
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+  - triggers: 
+      - ";;espanso;"
+      - ";;espanso trigger"
+    replace: |
+      - triggers:
+          - ";;$|$"
+        replace: ""
+        force_mode: 
+        label: 
+        search_terms: 
+        paragraph: 
+        word: 
+        left_word: 
+        right_word: 
+        propagate_case: 
+        uppercase_style: 
+        image_path: 
+        vars: 
+        form: 
+     
+  - triggers: 
+      - ";;espanso;"
+      - ";;espanso regex"
+    replace: |
+      - regex: ";;$|$"
+        replace: ""
+        force_mode: 
+        label: 
+        search_terms: 
+        paragraph: 
+        word: 
+        left_word: 
+        right_word: 
+        propagate_case: 
+        uppercase_style: 
+        image_path: 
+        vars: 
+        form: 
+
+  # ---- help End---

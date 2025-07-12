@@ -1,0 +1,6 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/paper-theme.toml"
+]
+
+[general]
+import = [ "~/.config/alacritty/themes/Alabaster.dark.toml" ]

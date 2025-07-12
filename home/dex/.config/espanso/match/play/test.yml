@@ -1,0 +1,103 @@
+# ~/.config/espanso/match/clipboard.yml
+
+matches:
+
+  - trigger: "]c]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "xdotool key BackSpace BackSpace BackSpace BackSpace ; copyq menu"
+
+  # Paste the MOST RECENT item (row 0)
+  - trigger: "]c1]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 0"
+
+  # Paste the 2ND most recent item (row 1)
+  - trigger: "]c2]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 1"
+
+  # Paste the 3RD most recent item (row 2)
+  - trigger: "]c3]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 2"
+
+  # You can continue this pattern for as many items as you need
+  - trigger: "]c4]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 3"
+
+  - trigger: "]c5]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 4"
+
+  - trigger: "]c6]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 5"
+
+  - trigger: "]c7]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 6"
+
+  - trigger: "]c8]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 7"
+
+  - trigger: "]c9]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 8"
+
+  - trigger: "]c10]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 9"
+
+  - trigger: "]c11]"
+    replace: "{{output}}"
+    vars:
+      - name: "output"
+        type: "shell"
+        params:
+          cmd: "copyq read 10"
