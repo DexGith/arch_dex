@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: uqwny-qrmgg
+created: 2025-07-16T00:21:10+01:00
