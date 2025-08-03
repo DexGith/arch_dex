@@ -1,8 +1,8 @@
+word = "hello" 
 
+empty_x = []
 
-
-print("Hello Wolrd")
-
-
-
+for x in word:
+    empty_x += x
+    print(empty_x)
 

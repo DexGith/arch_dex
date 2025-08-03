@@ -283,3 +283,7 @@ else
     rofi -e "No matching windows on this monitor/desktop."
 fi
 DEBUG "Script finished."
+
+sleep 0.01
+
+xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0

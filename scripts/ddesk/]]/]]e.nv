@@ -1,3 +1,4 @@
 #!/bin/bash
 
-alacritty -e nvim ~/.config/nvim/init.vim
+# Use bash -c to reliably execute the command string
+alacritty -e zsh -c "cd ~/.config/nvim && nvim ."
