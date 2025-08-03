@@ -1,5 +1,6 @@
 # ~/.zshrc file for zsh interactive shells.
 
+
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -31,6 +32,13 @@ bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+
+bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s '\eh' "tmux-sessionizer -s 0\n"
+bindkey -s '\et' "tmux-sessionizer -s 1\n"
+bindkey -s '\en' "tmux-sessionizer -s 2\n"
+bindkey -s '\es' "tmux-sessionizer -s 3\n"
+
 
 # enable completion features
 autoload -Uz compinit
@@ -250,7 +258,7 @@ if [ -x /usr/bin/dircolors ]; then
     #alias dir='dir --color=auto' # Usually covered by ls
     #alias vdir='vdir --color=auto' # Usually covered by ls -l
 	export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
-	export PATH="$PATH:/home/dex/.local/bin"
+	export PATH="$HOME/.local/bin:$PATH"
 	export PATH="$PATH:/home/dex/.cargo/bin/"
 	export EDITOR=nvim # this is so that visudo works i guess, you can specify any EDITOR or before visudo type EDITOR=.... to like you know change the env var and what not... you got the idea
 	export MANPAGER='nvim +Man!'
@@ -266,14 +274,23 @@ if [ -x /usr/bin/dircolors ]; then
 
 	# ---- export for python versions pyenv end----
 
+	# ---- Time  ----
+
+    # 2. Create the alias you want, which simply calls the function above.
+    alias ]timer='_my_timer_func'
+
+    # alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+
+
+# ---- Time  END----
 
 
 
 
 
-
+    alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-    alias nv='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+    alias vim='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias hx='helix'
     alias ]exe='chmod +x'
     alias ]cpuinfo='cpupower frequency-info'
@@ -523,6 +540,10 @@ pw() {
 # }
 
 # ---------- simple fzf preview setup template END------------- 
+
+
+
+# --- functions ---------
 
 
 fp.scuffed.video.preview() {
@@ -792,4 +813,83 @@ fpp() {
 }
 
 # fastfetch
+
+# --------------------------------------------------------------------
+#  Alacritty Dynamic Window Title
+#  This code tells Zsh to update the terminal title automatically.
+# --------------------------------------------------------------------
+
+# This function runs just BEFORE a command is executed.
+# It sets the title to the command being run.
+alacritty_preexec() {
+  # \e]0; is the "start setting title" command.
+  # $1 is the first argument, which is the command itself.
+  # \a is the "finish setting title" command.
+  print -Pn "\e]0;$1\a"
+}
+
+# This function runs just BEFORE the prompt is displayed (i.e., after a command finishes).
+# It resets the title to the current directory.
+alacritty_precmd() {
+  # %~ is Zsh's special character for the current path (e.g., ~/Code/project).
+  print -Pn "\e]0;%~\a"
+}
+
+# Add our functions to Zsh's hook arrays.
+# This tells Zsh to actually run them at the right times.
+if [[ "$TERM" == "alacritty" ]]; then
+  add-zsh-hook preexec alacritty_preexec
+  add-zsh-hook precmd alacritty_precmd
+fi
+
+
+# 1. Define the readable function with a safe, valid name.
+#    The leading underscore is a common convention for "helper" functions.
+_my_timer_func() {
+  # Print the start time and date
+  date "+%T %a, %d-%m"
+  echo "" # Add a newline
+
+  # Get the starting time in seconds since 1970-01-01
+  local start=$(date +%s)
+
+  # Loop forever until you press Ctrl+C
+  while true; do
+    # Get the current time and calculate total elapsed seconds
+    local current=$(date +%s)
+    local elapsed=$((current - start))
+
+    # Calculate hours, minutes, and seconds from total elapsed seconds
+    local hours=$((elapsed / 3600))
+    local mins=$(((elapsed / 60) % 60))
+    local secs=$((elapsed % 60))
+
+    # Print the formatted time, using \r to return to the start of the line
+    printf "\r%02d:%02d:%02d" $hours $mins $secs
+
+    # Wait for one second
+    sleep 1
+  done
+}
+
+# Function to get detailed info for a specific IP address
+# Usage: ipinfo 8.8.8.8
+ipinfo() {
+    # Check if an IP address was provided as an argument
+    if [ -z "$1" ]; then
+        # If no IP is given, show info for our own IP
+        curl ipinfo.io
+    else
+        # If an IP is given, look it up
+        curl ipinfo.io/"$1"
+    fi
+}
+
+# ---- Functions END -----
+
+
+
+# xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
+
+
 

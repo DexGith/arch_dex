@@ -1,0 +1,31 @@
+[INFO  Mon 21 Jul 2025 01:36:10 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=lua-language-server) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Mon 21 Jul 2025 01:36:10 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=rust-analyzer) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Mon 21 Jul 2025 01:36:10 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=gopls) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Mon 21 Jul 2025 01:36:10 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=pyright) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Mon 21 Jul 2025 01:36:50 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=pyright)
+[INFO  Mon 21 Jul 2025 01:38:17 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=lua-language-server)
+[WARN  Mon 21 Jul 2025 01:40:39 PM +01] ...ker/start/mason.nvim/lua/mason-registry/sources/init.lua:148: Ignoring duplicate registry entry "github:mason-org/mason-registry" (duplicate of "github:mason-org/mason-registry")
+[INFO  Mon 21 Jul 2025 01:40:40 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=rust-analyzer)
+[INFO  Mon 21 Jul 2025 01:41:02 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=gopls)
+[INFO  Tue 22 Jul 2025 11:45:37 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=bash-language-server) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Tue 22 Jul 2025 11:46:26 PM +01] ...rt/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=bash-language-server)

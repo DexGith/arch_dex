@@ -151,7 +151,7 @@
   <margins>
     <top>0</top>
     <bottom>0</bottom>
-    <left>1</left>
+    <left>0</left>
     <right>1</right>
   </margins>
   <dock>
@@ -327,18 +327,17 @@
       <!-- Or your desired key combination -->
       <action name="Iconify"/>
     </keybind>
-    <keybind key="C-Escape">
+    <!-- <keybind key="C-Escape"> -->
       <!-- Or your desired key combination -->
-      <action name="ToggleShade"/>
-    </keybind>
+    <!--   <action name="ToggleShade"/> -->
+    <!-- </keybind> -->
     <keybind key="W-Up">
       <!-- Or your desired key combination -->
       <action name="Maximize"/>
     </keybind>
-    <keybind key="W-Down">
-      <!-- Or your desired key combination -->
-      <action name="UnmaximizeFull"/>
-    </keybind>
+    <!-- <keybind key="W-Down"> -->
+    <!--   <action name="UnmaximizeFull"/> -->
+    <!-- </keybind> -->
     <keybind key="C-W-A-Down">
       <!-- Or your desired key combination -->
       <action name="Unshade"/>
@@ -399,29 +398,29 @@
     <!--     </finalactions> -->
     <!--   </action> -->
     <!-- </keybind> -->
-    <keybind key="W-Tab">
-      <action name="Execute">
-        <command>/home/dex/scripts/ddesk/nothing/rofi_alt_per_tab_scuffed</command>
-      </action>
-    </keybind>
-    <keybind key="A-Tab">
-      <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-Tab"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>/home/dex/scripts/ddesk/nothing/rofi_alt_per_tab_scuffed</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="A-Tab"> -->
+    <!--   <action name="NextWindow"> -->
+    <!--     <finalactions> -->
+    <!--       <action name="Focus"/> -->
+    <!--       <action name="Raise"/> -->
+    <!--       <action name="Unshade"/> -->
+    <!--     </finalactions> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="A-S-Tab"> -->
+    <!--   <action name="PreviousWindow"> -->
+    <!--     <finalactions> -->
+    <!--       <action name="Focus"/> -->
+    <!--       <action name="Raise"/> -->
+    <!--       <action name="Unshade"/> -->
+    <!--     </finalactions> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- <keybind key='C-A-Tab'> -->
     <!--     <action name='NextWindow'> -->
     <!--         <panels>yes</panels> -->
@@ -459,24 +458,24 @@
         <command>/home/dex/scripts/ddesk/nothing/restore_windows_to_normal</command>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-c">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-grave">
-      <action name="Execute">
-        <command>alacritty</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-grave"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>alacritty</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-KP_Add">
       <action name="AddDesktop">
         <where>last</where>
       </action>
     </keybind>
-    <!-- <keybind key="W-e"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>dolphin</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>dolphin</command>
+      </action>
+    </keybind>
     <keybind key="W-KP_Subtract">
       <action name="RemoveDesktop"/>
     </keybind>
@@ -975,6 +974,7 @@
       <!--     </then> -->
       <!--   </action> -->
       <!-- </mousebind> -->
+      <mousebind button="Left" action="DoubleClick"/>
     </context>
     <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
       <mousebind button="Left" action="Press">

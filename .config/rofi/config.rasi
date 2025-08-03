@@ -1,10 +1,13 @@
+
+@import "/usr/share/rofi/themes/Arc-Dark.rasi"
+
 configuration {
 
 
-modi:	"drun,run,window";
-show-icons:	true;
-font:	"sans 12";
+drun-cache: true;
 
+modi:	"drun,run,window";
+font:	"sans 12";
 
 /**
 here are other matching options (algorithms)
@@ -15,7 +18,6 @@ here are other matching options (algorithms)
 
 
 */
-
 
 matching: "fuzzy";
 
@@ -72,7 +74,6 @@ case-sensitive: false;
 /*	dpi: -1;*/
 /*	threads: 0;*/
 /*	scroll-method: 0;*/
-/*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	max-history-size: 25;*/
 /*	combi-hide-mode-prefix: false;*/
@@ -202,4 +203,3 @@ case-sensitive: false;
 
 //@theme "/home/dex/.local/share/rofi/themes/rounded-orange-dark.rasi"
 
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

@@ -1,8 +1,18 @@
 ! Remap Caps_Lock (keycode 66) to F24
-keycode 66 = F24
+! keycode 66 = F24
 
 ! Clear the Lock modifier, so Caps Lock key itself doesn't toggle it
-clear Lock
+! clear Lock
 
 ! Add F24 to an unused modifier (Mod3 is often unused)
-add Mod3 = F24
+! add Mod3 = F24
+
+
+
+keycode 9 = Escape
+
+clear lock
+
+add Mod3 = Escape
+
+

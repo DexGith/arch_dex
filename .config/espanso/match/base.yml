@@ -1,5 +1,5 @@
 # espanso match file
-
+#
 # For a complete introduction, visit the official docs at: https://espanso.org/docs/
 
 # You can use this file to define the base matches (aka snippets)
@@ -162,7 +162,23 @@ matches:
 
   # ----- Date & Time END------
 
+  - trigger: ";;t]"
+    replace: "/me Gives a Thumbs Up (y)"
 
+  - trigger: ";;y]"
+    replace: "b(^_^)d"
+
+  - trigger: ";;c]"
+    replace: "/me ^Gives a Thanks Cookie 🍪! Ty for the help"
+
+  - trigger: ";;;cookie"
+    replace: "🍪"
+
+  - trigger: ";;;cat"
+    replace: "🐱"
+    
+  - trigger: ";;;heart"
+    replace: "❤️"
   # ---- help ----
 # espanso match file
 

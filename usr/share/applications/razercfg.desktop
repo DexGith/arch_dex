@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Categories=Application;System;
+Name=Razer Configuration
+Exec=/usr/bin/qrazercfg
+Icon=/usr/share/icons/hicolor/scalable/apps/razercfg.svg
+Comment=Graphical Razer device configuration tool

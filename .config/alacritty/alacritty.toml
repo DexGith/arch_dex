@@ -1,3 +1,13 @@
 
 [general]
-import = [ "~/.config/alacritty/themes/Dracula.toml" ]
+# import = [ "~/.config/alacritty/themes/Dracula.toml" ]
+
+[window]
+opacity = 0.87
+dynamic_title= true
+
+[keyboard]
+bindings = [
+  # Allow Ctrl+V to paste text
+  { key = "V", mods = "Control", action = "Paste" }
+]

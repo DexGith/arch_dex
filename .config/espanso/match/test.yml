@@ -3,3 +3,10 @@ matches:
     replace: ""
     shell:
       cmd: "touch /tmp/espanso_test_success && /usr/bin/notify-send 'Espanso' 'Shell commands work!'"
+ 
+      # this is for Obsidian Markdown youtube links or stuff like that 
+  - trigger: ";;yt]"
+    replace: "![]({{my_link}})"
+    vars:
+      - name: "my_link"
+        type: "clipboard"

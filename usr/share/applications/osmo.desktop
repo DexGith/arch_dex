@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Osmo
+Name[tr]=Osmo
+Comment=Personal Organizer
+Comment[fr]=Agenda Personnel
+Comment[pl]=Organizer osobisty
+Comment[tr]=Kişisel Düzenleyici
+Comment[de]=Persönlicher Zeitplaner
+GenericName=Osmo
+Exec=osmo
+Icon=osmo
+Categories=GTK;Office;Calendar;ContactManagement;
+Terminal=false
+Keywords=calendar;office;pim;contacts;management;schedule;notes;organizer;
