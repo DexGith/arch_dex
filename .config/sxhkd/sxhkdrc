@@ -1,0 +1,51 @@
+# ~/.config/sxhkd/sxhkdrc
+
+
+# Press Super + Escape to reload the sxhkd configuration
+shift + Escape
+pkill -USR1 -x sxhkd
+
+# super + alt + shift + c ; r
+# pkill -USR1 -x sxhkd
+
+# This is a chord chain. It starts when 'super + shift + F1' is pressed.
+# sxhkd will then wait for the next key in the curly braces.
+super + alt + shift + c ; b
+         rofi -show window   # If the next key is 'r', run rofi
+
+super + alt + shift + c ; h
+        ~/scripts/ddesk/sxhkd/suspendUncluterToPauseTheMouseHiding.sh
+
+# ------- CopyQ clips dream --------
+
+super + alt + shift + c ; q
+    copyq select 0
+
+super + alt + shift + c ; w
+    copyq select 1
+
+super + alt + shift + c ; e 
+    copyq select 2
+
+super + alt + shift + c ; r 
+    copyq select 3
+
+super + alt + shift + c ; t
+    copyq select 4
+
+super + alt + shift + c ; y 
+    copyq select 5
+
+super + alt + shift + c ; u
+    copyq select 6
+
+super + alt + shift + c ; i 
+    copyq select 7
+
+super + alt + shift + c ; o
+    copyq select 8
+
+super + alt + shift + c ; p
+    copyq select 9
+
+# ------- CopyQ clips dream END --------

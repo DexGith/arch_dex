@@ -9,5 +9,21 @@ dynamic_title= true
 [keyboard]
 bindings = [
   # Allow Ctrl+V to paste text
-  { key = "V", mods = "Control", action = "Paste" }
+  { key = "V", mods = "Control", action = "Paste" },
+     # Bind Alt+PageUp to scroll the terminal buffer up one page.
+   { key = "PageUp",   mods = "Control", action = "ScrollPageUp"   },
+
+   # Bind Alt+PageDown to scroll the terminal buffer down one page.
+   { key = "PageDown", mods = "Control", action = "ScrollPageDown" },
+
+   # You can add other custom bindings here, separated by commas.
+   # For example, to bind Alt+Home to scroll to the very top:
+   { key = "Home",     mods = "Control", action = "ScrollToTop"    },
+      # Bind Alt+End to scroll to the very bottom of the history.
+   { key = "End",      mods = "Alt", action = "ScrollToBottom" },
+      # Bind Ctrl+PageUp to scroll up by a single line.
+   { key = "PageUp",   mods = "Alt", action = "ScrollLineUp"   },
+
+   # Bind Ctrl+PageDown to scroll down by a single line.
+   { key = "PageDown", mods = "Alt", action = "ScrollLineDown" },
 ]

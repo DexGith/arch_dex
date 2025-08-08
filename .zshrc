@@ -1,5 +1,5 @@
 # ~/.zshrc file for zsh interactive shells.
-
+KEYTIMEOUT=1
 
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
@@ -20,10 +20,18 @@ stty -ixon # to stop the ctrl + s freezing the terminal (ctrl+q unfreezes termin
 
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
+bindkey -v                                        # emacs key bindings
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line # Or use '\ev' if you prefer
 bindkey ' ' magic-space                           # do history expansion on space
 bindkey -r '^S'					  # Unbinding Ctrl+s (forward-i-search) this way stty -ixon works fine
 bindkey '^U' backward-kill-line                   # ctrl + U
 bindkey '^[[3;5~' kill-word                       # ctrl + Supr
+# if you want to apply this to vim and everythig you can do
+# the -a option for example bindkey -a tells zsh to apply this binding 
+# to the viins keymap (Vi INSERT mode). just saying
+bindkey '^K' kill-line                            # This binds Ctrl+K to the kill-line action, specifically for Vi's INSERT mode
 bindkey '^[[3~' delete-char                       # delete
 bindkey '^[[1;5C' forward-word                    # ctrl + ->
 bindkey '^[[1;5D' backward-word                   # ctrl + <-
@@ -31,13 +39,20 @@ bindkey '^[[5~' beginning-of-buffer-or-history    # page up
 bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
+bindkey '^A' beginning-of-line                  # home
+bindkey '^E' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+# Add Emacs-style yank/paste to Vi's INSERT mode
+bindkey '^Y' yank
+bindkey '\ey' yank-pop
+# bindkey '^Y' redo                                 # Bind Ctrl+Y to redo
+bindkey '^J' self-insert                        # Bind Alt+Enter, but it t does'work so ctrl+J is my next bet to insert a newline in the command line
 
-bindkey -s ^f "tmux-sessionizer\n"
-bindkey -s '\eh' "tmux-sessionizer -s 0\n"
-bindkey -s '\et' "tmux-sessionizer -s 1\n"
-bindkey -s '\en' "tmux-sessionizer -s 2\n"
-bindkey -s '\es' "tmux-sessionizer -s 3\n"
+bindkey -s ^f "tmux-sessionizer\r"
+bindkey -s '\eh' "tmux-sessionizer -s 0\r"
+bindkey -s '\et' "tmux-sessionizer -s 1\r"
+bindkey -s '\en' "tmux-sessionizer -s 2\r"
+bindkey -s '\es' "tmux-sessionizer -s 3\r"
 
 
 # enable completion features
@@ -257,12 +272,13 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     #alias dir='dir --color=auto' # Usually covered by ls
     #alias vdir='vdir --color=auto' # Usually covered by ls -l
+    export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 	export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
 	export PATH="$HOME/.local/bin:$PATH"
 	export PATH="$PATH:/home/dex/.cargo/bin/"
 	export EDITOR=nvim # this is so that visudo works i guess, you can specify any EDITOR or before visudo type EDITOR=.... to like you know change the env var and what not... you got the idea
 	export MANPAGER='nvim +Man!'
-	export PATH="$PATH:/home/dex/scripts/ddesk/:/home/dex/scripts/ddesk/[:/home/dex/scripts/ddesk/]:/home/dex/scripts/ddesk/]]:/home/dex/scripts/ddesk/nothing"
+	export PATH="$PATH:/home/dex/scripts/ddesk/:/home/dex/scripts/ddesk/[:/home/dex/scripts/ddesk/]:/home/dex/scripts/ddesk/]]:/home/dex/scripts/ddesk/nothing:/home/dex/scripts/ddesk/obsidian"
         export QT_QPA_PLATFORMTHEME=qt6ct
 	# ---- export for python versions pyenv ----
 
@@ -289,6 +305,7 @@ if [ -x /usr/bin/dircolors ]; then
 
 
     alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias o='less' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias vim='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias hx='helix'
@@ -376,9 +393,16 @@ fi
 # You can add any of your personal aliases or functions below this line
 source <(fzf --zsh)
 
+# 1. Free up Ctrl+R completely by unbinding it from both modes.
+bindkey -r -M viins '^R' # Unbind from INSERT mode
+bindkey -r -M vicmd '^R' # Unbind from NORMAL mode (This was the missing piece!)
 
+# 2. Bind Alt+R to the FZF history widget in BOTH modes.
+bindkey -M viins '\er' fzf-history-widget # Bind for INSERT mode
+bindkey -M vicmd '\er' fzf-history-widget # Bind for NORMAL mode
 
-
+# 3. Bind Ctrl+R to the native `redo` command, but ONLY in normal mode.
+bindkey -M vicmd '^R' redo
 # ---- functions i made with ai asstantce ---- 
 
 #------------------------------------------------------------------
@@ -884,6 +908,44 @@ ipinfo() {
         curl ipinfo.io/"$1"
     fi
 }
+
+
+# Function to copy the Nth item from CopyQ (using 1-based counting)
+# Usage: cpc 2  (to copy the 2nd item)
+cpc() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: cpc <position>"
+    return 1
+  fi
+  # Subtract 1 from the input to get the correct zero-based index
+  copyq select $(($1 - 1))
+}
+
+
+
+
+
+
+# --- Custom Widget to Clear the Kill Ring ---
+
+# 1. Define a function that will be run by the line editor.
+#    This function runs in the correct scope to modify the real killring.
+_clear_kill_ring() {
+  # This is the core logic that empties the actual killring array.
+  killring=()
+
+  # This provides visual feedback so you know it worked.
+  # zle -M "Kill ring cleared."
+}
+
+# 2. Register the shell function as a ZLE widget.
+#    This makes the function available to `bindkey`.
+zle -N clear-kill-ring _clear_kill_ring
+
+# 3. Bind the new widget to a key.
+#    Alt+K is a good choice (mnemonic for "Kill the Kill-ring").
+#    We bind it for both Insert and Normal mode for convenience.
+bindkey '\ek' clear-kill-ring      # For Vi INSERT mode
 
 # ---- Functions END -----
 

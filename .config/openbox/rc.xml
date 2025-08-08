@@ -313,27 +313,31 @@
         <monitor>next</monitor>
       </action>
     </keybind>
-    <keybind key="W-Escape">
-      <!-- Example key: Win + Menu key -->
-      <action name="MoveResizeTo">
-        <monitor>next</monitor>
-      </action>
-    </keybind>
-    <keybind key="C-A-Escape">
-      <!-- Or your desired key combination -->
-      <action name="Iconify"/>
-    </keybind>
-    <keybind key="W-Menu">
-      <!-- Or your desired key combination -->
-      <action name="Iconify"/>
-    </keybind>
+    <!-- <keybind key="W-Escape"> -->
+    <!-- Example key: Win + Menu key -->
+    <!-- <action name="MoveResizeTo"> -->
+    <!--   <monitor>next</monitor> -->
+    <!-- </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="C-A-Escape"> -->
+    <!-- Or your desired key combination -->
+    <!-- <action name="Iconify"/> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="W-Menu"> -->
+    <!-- Or your desired key combination -->
+    <!--   <action name="Iconify"/> -->
+    <!-- </keybind> -->
     <!-- <keybind key="C-Escape"> -->
-      <!-- Or your desired key combination -->
+    <!-- Or your desired key combination -->
     <!--   <action name="ToggleShade"/> -->
     <!-- </keybind> -->
     <keybind key="W-Up">
       <!-- Or your desired key combination -->
       <action name="Maximize"/>
+    </keybind>
+    <keybind key="W-Down">
+      <!-- Or your desired key combination -->
+      <action name="Unmaximize"/>
     </keybind>
     <!-- <keybind key="W-Down"> -->
     <!--   <action name="UnmaximizeFull"/> -->
@@ -369,10 +373,10 @@
         <direction>horizontal</direction>
       </action>
     </keybind>
-    <keybind key="A-Escape">
-      <!-- Example key: Win + Menu key -->
-      <action name="ToggleMaximize"/>
-    </keybind>
+    <!-- <keybind key="A-Escape"> -->
+    <!-- Example key: Win + Menu key -->
+    <!--   <action name="ToggleMaximize"/> -->
+    <!-- </keybind> -->
     <keybind key="S-A-Escape">
       <action name="ToggleFullscreen"/>
     </keybind>
@@ -481,6 +485,7 @@
     </keybind>
     <keybind key="W-f">
       <action name="ToggleAlwaysOnTop"/>
+      <!-- <action name="ToggleOmnipresent"/> -->
       <action name="ToggleDecorations"/>
     </keybind>
     <!-- <keybind key='C-S-KP_Subtract'> -->

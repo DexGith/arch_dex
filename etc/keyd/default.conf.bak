@@ -1,0 +1,88 @@
+# /etc/keyd/default.conf
+
+# Use the specific, unchangeable hardware IDs. If you just put names most of the time
+# it will not work, at least that's what happened to me.
+[ids]
+248a:00da
+0001:0001
+
+# The [main] layer is for keys in their normal state.
+[main]
+# Make Caps Lock our dedicated modifier switch.
+# When held, activate the [nav] layer.
+# When tapped, send the escape key.
+# so the order here is important. the name nac is whatever.
+# I believe you can put esc instead of writing escape and it would still work
+capslock = overload(nav, escape)
+
+# This is your navigation layer, active ONLY when Caps Lock is HELD.
+[nav]
+
+# Your existing awesome bindings
+# yes thanks ai, these are my nvim like keybinds
+h = left
+j = down
+k = up
+l = right
+u = pageup
+i = pagedown
+0 = home
+4 = end
+
+# --- New Suggestions ---
+
+# Word-wise navigation
+w = C-right
+e = C-right
+b = C-left
+z = C-z
+y = C-y
+v = C-v
+c = C-c
+
+# Deletion
+x = delete
+backspace = C-backspace
+
+# --- This is example of working code --- 
+# p = command(env DISPLAY=:0 XAUTHORITY=/home/dex/.Xauthority sudo -u dex alacritty)
+  
+# s = command(env DISPLAY=:0 XAUTHORITY=/home/dex/.Xauthority sudo -u dex /home/dex/my_cool_script.sh)
+  
+# x = command(env DISPLAY=:0 XAUTHORITY=/home/dex/.Xauthority sudo -u dex xdotool type 'hello world')
+
+
+# --- Enabling capslock ---
+q = capslock
+
+# --- Macro --------
+# blah
+d = command(env DISPLAY=:0 XAUTHORITY=/home/dex/.Xauthority sudo -u dex /home/dex/scripts/ddesk/keyd/keyd_select_line_delete.sh)
+
+o = command(env DISPLAY=:0 XAUTHORITY=/home/dex/.Xauthority sudo -u dex /home/dex/scripts/ddesk/keyd/keyd_next_line.sh)
+
+
+# --- testing with meta key WORKS --- 
+# I like the idea here but you know I like capslock for these types of stuff not you know
+#
+
+# this adds new layer to the capslock after you hit space after holding capslock this is insaenly huge
+space = swap(vim_mode)
+
+# vim_mode modifier layer; also inherits from 'Ctrl' modifier layer
+
+[vim_mode:C]
+
+# I still don't know what to put here for the 3rd layer
+
+
+
+
+#
+#
+# [meta]
+# h = left
+# j = down
+# k = up
+# l = right
+# --- testing with meta key WORKS END --- 

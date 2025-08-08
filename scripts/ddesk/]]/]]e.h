@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-alacritty -e nvim ~/.xbindkeysrc
+alacritty -e nvim ~/.xbindkeysrc &

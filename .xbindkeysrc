@@ -25,6 +25,22 @@
 #   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
 #   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
 #
+#
+
+
+# ---- The far away problamaic problamaic key ----
+
+# it's problematic because you can't pair it with other keys... and it's not in 
+# keyd
+
+# I only have this key. I tried to pair it it didn't work. I guess we actually make it
+# and explorer because it was just a useless button
+"dolphin"
+XF86Explorer
+
+# ---- The far away problamaic problamaic keyEND ----
+
+
 
 # The release modifier is not a standard X modifier, but you can
 # use it if you want to catch release events instead of press events
@@ -75,32 +91,53 @@
 # "/home/dex/scripts/ddesk/nothing/nvim_capslock_send_at_for_macro"
 # Mod3 + m
 
-# ---- testing win+hjkl for arrows ----
-#
-# "xdotool keyup Super_L; xdotool key Down"
-#     Mod4 + j
-#
-
-# "xdotool key Down"
-# Mod4 + j
-#
-# "xdotool key Up"
-# Mod4 + k
-#
-# "xdotool key Left"
-# Mod4 + h
-#
 
 # ---- rofi ----
 
-"rofi -show window"
+"rofi -show drun"
+alt + F1	
+
+"scripts/ddesk/nothing/rofi_win_w_current_desktop_windows.sh"
+Mod4 + w
+
+"$HOME/scripts/ddesk/nothing/rofi_smart_window_switcher_works_with_Mod4_grave.sh"
 Mod4 + q
 
 "zsh -i -c 'rofi -show run'"
 Mod4 + r
 
+
 # ---- rofi END----
 
+# ----Scroll_Lock screwing around  ----
+
+# Just testing new Scrol_Lock Mod4
+# Mod5 works wow Mod5 is scroll_lock and it works... and F24 I made it Mod4 which is escape
+# and capslock now is on daemon so it's not affected lol really good setup...
+# and the reloads are easy to do as well not that bad.
+"$HOME/scripts/ddesk/nothing/rofi_smart_window_switcher_works_with_Mod4_grave.sh"
+Mod5 + q
+
+"/home/dex/scripts/ddesk/nothing/rofi_alt_per_tab_scuffed.bak"
+Mod5 + w
+
+"xdotool mousemove 900 600"
+Mod5 + 1
+
+"xdotool mousemove 2600 400"
+Mod5 + 2
+
+# ----Scroll_Lock screwing around END ----
+
+# ---- zen browser related ----
+
+"/home/dex/scripts/ddesk/nothing/open_highlighedText_inNewTab_inZenBrowser.sh"
+Mod4 + g
+
+
+
+
+# ---- zen browser related END----
 
 #
 # "xdotool key Right"
@@ -125,13 +162,20 @@ Mod4 + r
 # "/home/dex/Desktop/ddesk/nothing/capslock_movewindow_away_method2"
 # "/home/dex/scripts/ddesk/nothing/capslock_movewindow_away"
 # Shift + Mod3 + a
-"/home/dex/scripts/ddesk/nothing/capslock_movewindow_to_mouse_pos"
-Mod3 + a
 # "/home/dex/Desktop/ddesk/nothing/capslock_terminal_move_big"
 #   Control + Mod3 + a
 
 
-# ----- Send windows to Desktops -----
+# ---- Scroll_Lock which is now Mod5 ----
+
+"/home/dex/scripts/ddesk/nothing/capslock_movewindow_to_mouse_pos"
+Mod5 + a
+
+# ---- Scroll_Lock which is now Mod5 END----
+
+
+
+# ----- Send windows to Desktops With NUMPADS numbers (rarely use) -----
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 0 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 Mod4 + KP_1
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 1 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
@@ -152,14 +196,20 @@ Mod4 + KP_8
 Mod4 + KP_9
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 9 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 Mod4 + KP_0
-# ----- Send windows to Desktops ----
+# ----- Send windows to Desktops With NUMPADS numbers (rarely use) END -----
 
 
-
+# ---- Toggle Omnipresent on and off with decimal or also called delete ---- 
 "/home/dex/scripts/ddesk/nothing/sticky_window_toggle"
 Mod4 + KP_Decimal
+
 "/home/dex/scripts/ddesk/nothing/sticky_window_toggle"
 Mod4 + KP_Delete
+
+# ---- Toggle Omnipresent on and off with decimal or also called delete END ---- 
+
+
+
 # Maximize active window
 # "wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz"
 # Mod4 + Up
@@ -181,8 +231,6 @@ Mod4 + KP_Delete
 "zsh -i -c 'dolphin'"
 Mod4 + e
 
-"scripts/ddesk/nothing/rofi_win_w_current_desktop_windows.sh"
-Mod4 + w
 
 # "/home/dex/scripts/ddesk/]/]mouse_focus_toggle"
 # 	Mod4 + Alt + f
@@ -210,8 +258,7 @@ Alt + control + shift + Print
 
 
 
-# This is Tiling_Kida Cylcining
-
+# ---- Tiling_Kida Cylcining ----
 
 "/home/dex/scripts/ddesk/nothing/tiling_window_manager_simulator.sh reverse"
 Mod4 + d
@@ -225,14 +272,48 @@ Alt + grave
 "~/scripts/ddesk/nothing/cycle_windows_same_class_alt_grave.sh reverse"
 alt+shift+grave
 
+# ---- Tiling_Kida Cylcining END ----
+
+
+# ---- Terminal Summuning --- 
+"scripts/ddesk/tmux/newTerm.sh"
+control+ alt + Tab
+
+"scripts/ddesk/tmux/newTerm.sh"
+Mod4 + semicolon
+
+# "sleep 0.4 ; xdotool key down down down down"
+# Mod4 + j
+
+# "sleep 1 ; xdotool key --clearmodifiers left"
+# Mod4 + h
+
+"scripts/ddesk/tmux/newTerm.sh"
+Mod4 + a
+
+"sleep 0.1 ; xdotool key Enter"
+Mod4 + m
+
 "alacritty"
 control+ alt + grave
 
-# run terminal and move to it
-"scripts/ddesk/nothing/alacrity_grave_move_mouse_center_to_center.sh"
+# run alacritty terminal and move to it
+"scripts/ddesk/nothing/alacrity_F2_tmuxSeachMove_withTmuxSesionizer.sh"
 control + grave
 
-# ---- 2nd monitor----
+"kitty"
+control + F1
+
+"scripts/ddesk/nothing/alacrity_grave_move_mouse_center_to_center.sh"
+control + F2
+
+"alacritty"
+control + F3
+
+# ---- Terminal Summuning END --- 
+
+
+# ---- 2nd monitor windows activating----
 
 
 # && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0 # <-- if you want to move mouse to middle of the window put these after activating the window
@@ -280,25 +361,48 @@ Mod4 + shift + t
 
 "wmctrl -x -a Clocks"
 Mod4 + shift + l 
-# ---- 2nd monitor END----
+
+# ---- 2nd monitor windows activating----
 
 
 
 # ---- Miscs ----
 
-"pkill autoshot.sh"
-Mod4 + shift+ alt +control + 9
+# Very useful I use it a lot, this is kinda ergonomic 
+"xfce4-appfinder"
+alt + F2	
 
+# Meh
+"jgmenu_run"
+alt + Mod4 + F1	
+
+# my personal made script that takes screenshots of the main monitor and I think
+# it only works on my monitor and it needs some lightweight tool. this helps me
+# review what I did across the day
+# I preffer ]]s.autoshot.
 "/home/dex/scripts/ddesk/nothing/autoshot.sh"
 Mod4 + control+ alt + 9
 
-"alacritty -e brightness-controller"
+# I prefer ]]k.autoshot. but it's an option
+"pkill autoshot.sh &"
+Mod4 + shift+ alt +control + 9
+
+# turns on brightness application to adjust the brightness and colors of the screens
+# I preffer ]]s.brightness-controller
+"alacritty -e brightness-controller &"
 control + shift + alt + Mod4 + 6
 
+# I preffer ]]k.brightness-controller
+"pkill brightness-cont &"
+control + alt + Mod4 + 6
+
+# Turns on sound mixer, there is also ]mixer to trigger it as well.
 "pavucontrol"
 control + shift + alt + Mod4 + 7
 
-"kitty xset dpms force off"
+# Turns off the screens of both monntors, works on old monitors 
+# I prefer the turn_screen_off.sh to trigger it.
+"alacritty -e  xset dpms force off"
 Mod4 + shift + alt + control + 0
 
 # ---- Miscs END----
@@ -342,27 +446,27 @@ alt + Mod4 + KP_0
 
 
 #move to previous desktops 
-"scripts/ddesk/nothing/move_to_last_desktop.sh"
+"$HOME/scripts/ddesk/nothing/move_to_last_desktop.sh"
 Mod4 + grave
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 0 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 0 " 
 Mod4 + 1
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 1 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 1 " 
 Mod4 + 2
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 2 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 2 " 
 Mod4 + 3
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 3 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 3 " 
 Mod4 + 4
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 4 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 4 " 
 Mod4 + 5
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 5 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 5 " 
 Mod4 + 6
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 6 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 6 " 
 Mod4 + 7
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 7 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 7 " 
 Mod4 + 8
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 8 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 8 " 
 Mod4 + 9
-"scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 9 " 
+"$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 9 " 
 Mod4 + 0
 
 # ---- Openbox Config switching -------
@@ -379,24 +483,11 @@ Mod4 + 0
 
 
 
-# --- app launching and what not -------- 
-
-
-"xfce4-appfinder"
-alt + F2	
 
 
 
-"rofi -show drun"
-alt + F1	
 
-
-"jgmenu_run"
-alt + Mod4 + F1	
-
-
-
-# --- Simple Skippy-XD Bindings ---
+# ------ ALT TAB, Simple Skippy-XD Bindings ---
 
 # Alt + Tab to switch to the next window
 # "skippy-xd --switch"
@@ -435,9 +526,11 @@ Mod4 + Tab
 "skippy-xd --expose --pivot Super_L --prev --config ~/.config/skippy-xd/skippy-xd3.rc"
 Mod4 + Shift + Tab
 
+# END------- ALT TAB, Simple Skippy-XD Bindings END ---
 
 
-# ----- Send windows to Desktops -----
+# ----- Send windows to Desktops, specefic locations on desktops ----
+
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 0 " 
 Mod4+ control + 1
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 1 " 
@@ -457,14 +550,10 @@ Mod4+ control + 8
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 8 " 
 Mod4+ control + 9
 "xdotool set_desktop_for_window $(xdotool getactivewindow) 9 " 
-Mod4+ control + 10
-# ----- Send windows to Desktops ----
+Mod4+ control + 0
+
+# END----- Send windows to Desktops, specefic locations on desktops END ----
 
 
-#--- app launching and what not END-------- 
 
-# "/home/dex/Desktop/ddesk/nothing/rofi_alt_per_tab_scuffed"
-# Mod4 + Tab
-# "/home/dex/Desktop/ddesk/nothing/capslock_tmux_ctrl_d" # it's not that snappy it's way way lagger i'll jsut use typical ctrl+b man autohotkey is way faster though idk 
-# Release + Mod3 + s # it's not as snappy i don't like it 
 ################################## End of xbindkeys configuration #
