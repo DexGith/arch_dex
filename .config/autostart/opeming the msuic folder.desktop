@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=alacritty -e dolphin /home/dex/Music/my-fav-atm/ &
+Name=opeming the msuic folder
+Type=Application
+Version=1.0
+X-LXQt-Need-Tray=true
+X-LXQt-X11-Only=true

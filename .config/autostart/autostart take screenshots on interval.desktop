@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/dex/scripts/ddesk/nothing/autoshot.sh
+Name=autostart take screenshots on interval
+Type=Application
+Version=1.0
+X-LXQt-X11-Only=true

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=gimp
+Name=gimp is sick
+Type=Application
+Version=1.0
+X-LXQt-Autostart-disabled=true
+X-LXQt-X11-Only=true
