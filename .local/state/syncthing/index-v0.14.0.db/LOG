@@ -422,3 +422,67 @@
 03:55:45.324827 table@remove removed @97
 03:55:45.325088 table@remove removed @98
 03:55:45.325259 table@remove removed @99
+=============== Aug 6, 2025 (+01) ===============
+14:08:42.393095 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:08:42.394776 version@stat F·[0 7] S·12MiB[0B 12MiB] Sc·[0.00 0.12]
+14:08:42.394812 db@open opening
+14:08:42.395481 journal@recovery F·1
+14:08:42.395740 journal@recovery recovering @100
+14:08:42.556468 memdb@flush created L0@109 N·56790 S·1MiB "\x00\x00\x00..dbx,v928895":"\x0e\x00\x00..png,v903116"
+14:08:42.557462 version@stat F·[1 7] S·13MiB[1MiB 12MiB] Sc·[0.25 0.12]
+14:08:42.627435 db@janitor F·11 G·1
+14:08:42.627461 db@janitor removing table-79
+14:08:42.627514 db@open done T·232.693742ms
+14:08:43.128184 table@compaction L0·1 -> L1·6 S·13MiB Q·957002
+14:08:43.168237 table@build created L1@112 N·18044 S·2MiB "\x00\x00\x00..dbx,v928895":"\x00\x00\x00..png,v811837"
+14:08:43.249165 table@build created L1@113 N·39967 S·2MiB "\x00\x00\x00..png,v847396":"\x01\x00\x00..png,v832640"
+14:08:43.319975 table@build created L1@114 N·56926 S·2MiB "\x01\x00\x00..png,v817613":"\x02\x00\x00..png,v623650"
+14:08:43.380726 table@build created L1@115 N·39414 S·2MiB "\x02\x00\x00..png,v872617":"\x02\x00\x00..png,v633099"
+14:08:43.438294 table@build created L1@116 N·47739 S·2MiB "\x02\x00\x00..png,v875533":"\rX^..\xc4\xd1\xdc,v521331"
+14:08:43.502986 table@build created L1@117 N·9975 S·2MiB "\rX_..\xc2h\xb3,v587838":"\x0e\x00\x00..png,v759879"
+14:08:43.522268 table@build created L1@118 N·7641 S·383KiB "\x0e\x00\x00..png,v775534":"\x0e\x00\x00..png,v892651"
+14:08:43.522339 version@stat F·[0 8] S·12MiB[0B 12MiB] Sc·[0.00 0.13]
+14:08:43.529841 table@compaction committed F~ S-1MiB Ke·0 D·46062 T·401.615063ms
+14:08:43.530306 table@remove removed @102
+14:08:43.530670 table@remove removed @103
+14:08:43.531015 table@remove removed @104
+14:08:43.531352 table@remove removed @105
+14:08:43.531697 table@remove removed @106
+14:08:43.532036 table@remove removed @107
+14:10:51.338231 db@close closing
+14:10:51.338617 db@close done T·383.071µs
+=============== Aug 6, 2025 (+01) ===============
+14:12:31.899039 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:12:31.901599 version@stat F·[0 8] S·12MiB[0B 12MiB] Sc·[0.00 0.13]
+14:12:31.901634 db@open opening
+14:12:31.902696 journal@recovery F·1
+14:12:31.902924 journal@recovery recovering @110
+14:12:31.913792 memdb@flush created L0@119 N·4 S·210B "\x04gi..can,v957006":"\x04uq..can,v957004"
+14:12:31.913985 version@stat F·[1 8] S·12MiB[210B 12MiB] Sc·[0.25 0.13]
+14:12:31.962748 db@janitor F·12 G·1
+14:12:31.962766 db@janitor removing table-109
+14:12:31.962807 db@open done T·61.165804ms
+14:21:53.528641 db@close closing
+14:21:53.529430 db@close done T·781.67µs
+=============== Aug 6, 2025 (+01) ===============
+14:22:51.287674 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:22:51.295791 version@stat F·[1 8] S·12MiB[210B 12MiB] Sc·[0.25 0.13]
+14:22:51.295875 db@open opening
+14:22:51.296637 journal@recovery F·1
+14:22:51.298404 journal@recovery recovering @120
+14:22:51.304266 memdb@flush created L0@122 N·4 S·210B "\x04gi..can,v957011":"\x04uq..can,v957009"
+14:22:51.304597 version@stat F·[2 8] S·12MiB[420B 12MiB] Sc·[0.50 0.13]
+14:22:51.325184 db@janitor F·12 G·0
+14:22:51.325210 db@open done T·29.324378ms
+14:23:28.875700 db@close closing
+14:23:28.876563 db@close done T·856.695µs
+=============== Aug 6, 2025 (+01) ===============
+14:24:31.170449 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:24:31.172480 version@stat F·[2 8] S·12MiB[420B 12MiB] Sc·[0.50 0.13]
+14:24:31.172520 db@open opening
+14:24:31.173305 journal@recovery F·1
+14:24:31.178016 journal@recovery recovering @123
+14:24:31.185508 memdb@flush created L0@125 N·4 S·216B "\x04gi..can,v957016":"\x04uq..can,v957014"
+14:24:31.185690 version@stat F·[3 8] S·12MiB[636B 12MiB] Sc·[0.75 0.13]
+14:24:31.231721 db@janitor F·13 G·0
+14:24:31.231742 db@open done T·59.215121ms
