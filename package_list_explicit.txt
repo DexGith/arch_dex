@@ -120,6 +120,7 @@ kazam
 kdegraphics-thumbnailers
 kdenlive
 keepassxc
+keychain
 kitty
 komorebi
 konsole
