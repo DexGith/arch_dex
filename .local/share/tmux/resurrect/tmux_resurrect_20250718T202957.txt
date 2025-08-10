@@ -1,0 +1,22 @@
+pane	0	0	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	0	1	1	:*	0	archlinux1	:/home/dex/Fleet	1	nvim	:nvim 2025-07-13_00-53-53.fleet
+pane	123	0	1	:*	0	archlinux1	:/home/dex	1	nvim	:nvim soemthing.py
+pane	4	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	0	0	:-	0	archlinux1	:/home/dex	1	nvim	:nvim something
+pane	MyNvim	1	1	:*	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	date&time	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	sleep	:sleep 300
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+window	0	0	:zsh	0	:-	aefe,124x31,0,0,1	:
+window	0	1	:nvim	1	:*	aeff,124x31,0,0,2	:
+window	123	0	:nvim	1	:*	b066,88x32,0,0,9	:
+window	4	0	:zsh	1	:*	c660,213x56,0,0,3	:
+window	MyNvim	0	:nvim	0	:-	57af,124x31,0,0,10	:
+window	MyNvim	1	:zsh	1	:*	6250,136x36,0,0,11	:
+window	date&time	0	:zsh	1	:*	259f,55x12,0,0{32x12,0,0,4,22x12,33,0,5}	:
+window	testing W3	0	:Run-button	1	:*	c663,213x56,0,0,6	off
+window	testing W3	1	:REPL	0	:-	b064,88x32,0,0,7	off
+window	testing W3	2	:Live Log Monitor	0	:	c665,213x56,0,0,8	off
+state	date&time	

@@ -1,0 +1,12 @@
+pane	0	0	0	:	0	archlinux1	:/home/dex	1	htop	:htop
+pane	0	1	0	:	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim /home/dex/.config/nvim/init.vim
+pane	0	2	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	0	3	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	0	4	1	:*	0	archlinux1	:/home/dex	0	sleep	:sleep 300
+pane	0	4	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 300
+window	0	0	:htop	0	:	c2be,133x36,0,0,1	:
+window	0	1	:nvim	0	:	c2bf,133x36,0,0,2	:
+window	0	2	:zsh	0	:-	c440,136x36,0,0,3	:
+window	0	3	:zsh	0	:	c441,136x36,0,0,4	:
+window	0	4	:date	1	:*	fb87,174x47,0,0{111x47,0,0,5,62x47,112,0,8}	off
+state	0	

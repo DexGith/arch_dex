@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Ripcord
-Exec=ripcord
-Terminal=false
-Icon=Ripcord_Icon
-Comment=Chat client
-Categories=Network;InstantMessaging;

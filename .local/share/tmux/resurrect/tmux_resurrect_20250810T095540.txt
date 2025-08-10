@@ -1,0 +1,50 @@
+pane	Music	0	1	:*	0	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:
+pane	MyNvim	0	1	:*	0	archlinux1	:/home/dex	1	nvim	:nvim MyNvim
+pane	MyNvim	1	0	:-	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	71	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	Timer	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	btop	0	1	:*	0	archlinux1	:/home/dex	1	btop	:btop
+pane	date&time	0	1	:*	0	archlinux1	:/home/dex	0	sleep	:sleep 60
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	date&time	1	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	0	:-	0	Yazi: ~/Desktop	:/home/dex/Desktop	1	zsh	:
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:sxhkd
+pane	mpv	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian	0	1	:*	0	archlinux1	:/home/dex/Power	1	zsh	:
+pane	obsidian	1	0	:	0	Yazi: ~/Power	:/home/dex/Power	1	zsh	:
+pane	obsidian	71	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	0	1	:*	0	archlinux1	:/home/dex/.config/nvim	1	zsh	:
+pane	primenvim	1	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	71	0	:-	0	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	projects	0	1	:*	0	archlinux1	:/home/dex/projects	1	zsh	:
+pane	root	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+window	Music	0	:zsh	1	:*	b05e,88x32,0,0,1	:
+window	MyNvim	0	:nvim	1	:*	c01f,97x36,0,0,2	:
+window	MyNvim	1	:zsh	0	:-	b060,88x32,0,0,3	:
+window	MyNvim	71	:zsh	0	:	b061,88x32,0,0,4	:
+window	Timer	0	:sleep	1	:*	bfa2,50x18,0,0,5	:
+window	btop	0	:btop	1	:*	c543,138x36,0,0,6	:
+window	date&time	0	:date&time	1	:*	be08,78x20,0,0{37x20,0,0,7,40x20,38,0,8}	off
+window	date&time	1	:Timer	0	:	b066,88x32,0,0,9	off
+window	date&time	2	:zsh	0	:-	585f,88x32,0,0,10	:
+window	irssi	0	:irssi	1	:*	5860,88x32,0,0,11	:
+window	irssi	1	:zsh	0	:-	5861,88x32,0,0,12	:
+window	jobs	0	:zsh	1	:*	5862,88x32,0,0,13	:
+window	mpv	0	:zsh	1	:*	5863,88x32,0,0,14	:
+window	obsidian	0	:zsh	1	:*	5864,88x32,0,0,15	:
+window	obsidian	1	:zsh	0	:	5865,88x32,0,0,16	:
+window	obsidian	71	:zsh	0	:-	5866,88x32,0,0,17	:
+window	primenvim	0	:zsh	1	:*	5867,88x32,0,0,18	:
+window	primenvim	1	:zsh	0	:	5868,88x32,0,0,19	:
+window	primenvim	71	:nvim	0	:-	d85f,88x32,0,0,20	:
+window	projects	0	:zsh	1	:*	d864,88x32,0,0,25	:
+window	root	0	:zsh	1	:*	d860,88x32,0,0,21	:
+window	testing W3	0	:zsh	1	:*	d861,88x32,0,0,22	:
+window	testing W3	1	:REPL	0	:-	d862,88x32,0,0,23	off
+window	testing W3	2	:Live Log Monitor	0	:	d863,88x32,0,0,24	off
+state	date&time	

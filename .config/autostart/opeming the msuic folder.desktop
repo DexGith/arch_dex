@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=alacritty -e dolphin /home/dex/Music/my-fav-atm/ &
+Exec=alacritty -e Thunar /home/dex/Music/my-fav-atm/
 Name=opeming the msuic folder
 Type=Application
 Version=1.0

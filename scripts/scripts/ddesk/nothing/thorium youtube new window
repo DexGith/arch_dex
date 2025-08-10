@@ -1,3 +1,0 @@
-#!/bin/bash
-
-thorium-browser --new-window https://www.youtube.com/ 

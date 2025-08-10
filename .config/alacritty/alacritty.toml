@@ -1,6 +1,6 @@
 
 [general]
-# import = [ "~/.config/alacritty/themes/Dracula.toml" ]
+import = [ "~/.config/alacritty/themes/Dracula.toml" ]
 
 [window]
 opacity = 0.87
@@ -27,3 +27,16 @@ bindings = [
    # Bind Ctrl+PageDown to scroll down by a single line.
    { key = "PageDown", mods = "Alt", action = "ScrollLineDown" },
 ]
+
+
+      
+# This goes into your alacritty.toml file
+
+[colors.selection]
+# Text color for the selection
+# text = '0x000000'       # Black text when selected
+
+# Background color for the selection
+# background = '0xFFCB6B'  # A nice yellow for the highlight
+
+

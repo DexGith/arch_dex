@@ -1,0 +1,50 @@
+pane	Music	0	1	:*	0	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:mpv --shuffle --loop-playlist --profile=youtube-audio https://youtube.com/playlist?list=PL-73D3w9EKPIAjyrLfqwxVKC5iJ4vtqC0&si=kKi7Gwl3R9cS99O9
+thunar .
+pane	MyNvim	0	1	:*M	0	archlinux1	:/home/dex	1	nvim	:nvim MyNvim
+pane	MyNvim	1	0	:-	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	71	0	:	0	archlinux1	:/home/dex	1	nvim	:
+pane	Timer	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	btop	0	1	:*	0	archlinux1	:/home/dex	1	btop	:btop
+pane	date&time	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 60
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	sleep	:sleep 300
+pane	date&time	1	0	:	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	date&time	2	0	:-	0	Yazi: ~/Desktop	:/home/dex/Desktop	1	yazi	:yazi .
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:sxhkd
+/usr/bin/python /bin/screenkey
+pane	mpv	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian	0	1	:*	0	archlinux1	:/home/dex/Power	1	zsh	:
+pane	obsidian	1	0	:	0	Yazi: ~/Power	:/home/dex/Power	1	zsh	:
+pane	obsidian	71	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	0	1	:*	0	archlinux1	:/home/dex/.config/nvim	1	zsh	:
+pane	primenvim	1	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	71	0	:-	0	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	root	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:su
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+window	Music	0	:zsh	1	:*	b05e,88x32,0,0,1	:
+window	MyNvim	0	:nvim	1	:*M	b05f,88x32,0,0,2	:
+window	MyNvim	1	:zsh	0	:-	b060,88x32,0,0,3	:
+window	MyNvim	71	:nvim	0	:	d863,88x32,0,0,43	:
+window	Timer	0	:zsh	1	:*	ae22,36x13,0,0,5	:
+window	btop	0	:btop	1	:*	e054,136x35,0,0,44	:
+window	date&time	0	:date&time	1	:*	d324,75x15,0,0{39x15,0,0,6,35x15,40,0,7}	off
+window	date&time	1	:Timer	0	:	ae25,78x22,0,0,8	off
+window	date&time	2	:yazi	0	:-	b8a6,79x15,0,0,9	:
+window	irssi	0	:irssi	1	:*	585f,88x32,0,0,10	:
+window	irssi	1	:zsh	0	:-	58f0,129x50,0,0,11	:
+window	jobs	0	:zsh	1	:*	d865,88x32,0,0,45	:
+window	mpv	0	:zsh	1	:*	d867,88x32,0,0,47	:
+window	obsidian	0	:zsh	1	:*	6051,136x35,0,0,12	:
+window	obsidian	1	:zsh	0	:	58f2,129x50,0,0,13	:
+window	obsidian	71	:zsh	0	:-	58f3,129x50,0,0,14	:
+window	primenvim	0	:zsh	1	:*	6294,137x36,0,0,15	:
+window	primenvim	1	:zsh	0	:	5865,88x32,0,0,16	:
+window	primenvim	71	:nvim	0	:-	6296,137x36,0,0,17	:
+window	root	0	:zsh	1	:*	d861,88x32,0,0,41	:
+window	testing W3	0	:zsh	1	:*	5867,88x32,0,0,18	:
+window	testing W3	1	:REPL	0	:-	6358,174x46,0,0,19	off
+window	testing W3	2	:Live Log Monitor	0	:	e34f,174x46,0,0,20	off
+state	date&time	

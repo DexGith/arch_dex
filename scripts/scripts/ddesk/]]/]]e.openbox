@@ -1,3 +1,0 @@
-#!/bin/bash
-
-kitty nvim ~/.config/openbox/rc.xml 

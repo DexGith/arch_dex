@@ -1,0 +1,55 @@
+pane	MyNvim	0	0	:	0	archlinux1	:/home/dex	1	zsh	:nvim someting
+pane	MyNvim	1	0	:	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	2	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	MyNvim	3	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	MyNvim	4	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	MyNvim	5	0	:-	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	MyNvim	6	1	:*	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	MyNvim	69	0	:	0	archlinux1	:/home/dex	1	nvim	:
+pane	Timer	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	date&time	0	0	:	0	archlinux1	:/home/dex	0	sleep	:sleep 60
+pane	date&time	0	0	:	1	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	date&time	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	1	:*	0	Yazi: ~/Desktop/stuff/2r~How to become a Bug Bounty Hunter ¦ Road Map ¦ Zero To HackerOne/Linuxbooks	:/home/dex/Desktop/stuff/2r~How\ to become a Bug Bounty Hunter ¦ Road Map ¦ Zero To HackerOne/Linuxbooks	1	yazi	:yazi
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+pane	primenvim	0	0	:	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim .
+pane	primenvim	1	0	:	0	archlinux1	:/home/dex/.config/nvim	1	zsh	:
+pane	primenvim	2	0	:	0	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	primenvim	3	0	:	0	archlinux1	:/home/dex/.config/nvim	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	primenvim	4	0	:	0	archlinux1	:/home/dex/.config/nvim	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	primenvim	5	0	:	0	archlinux1	:/home/dex/.config/nvim	0	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	primenvim	5	0	:	1	archlinux1	:/home/dex/.config/nvim	1	nvim	:
+pane	primenvim	6	1	:*	0	archlinux1	:/home/dex/.config/nvim	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	primenvim	69	0	:-	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	ttt	0	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	ttt	69	1	:*	0	archlinux1	:/home/dex	1	nvim	:
+window	MyNvim	0	:zsh	0	:	c442,136x36,0,0,5	:
+window	MyNvim	1	:zsh	0	:	b063,88x32,0,0,6	:
+window	MyNvim	2	:bash	0	:	6254,136x36,0,0,72	:
+window	MyNvim	3	:bash	0	:	6255,136x36,0,0,73	:
+window	MyNvim	4	:bash	0	:	6256,136x36,0,0,74	:
+window	MyNvim	5	:bash	0	:-	6257,136x36,0,0,75	:
+window	MyNvim	6	:bash	1	:*	6258,136x36,0,0,76	:
+window	MyNvim	69	:nvim	0	:	6253,136x36,0,0,71	:
+window	Timer	0	:zsh	1	:*	d905,54x14,0,0,26	:
+window	date&time	0	:date&time	0	:	49bb,97x19,0,0{65x19,0,0,7,31x19,66,0,8}	off
+window	date&time	1	:Timer	0	:-	c826,97x19,0,0,9	off
+window	date&time	2	:yazi	1	:*	643f,97x19,0,0,10	:
+window	irssi	0	:irssi	1	:*	5860,88x32,0,0,11	:
+window	primenvim	0	:nvim	0	:	5f51,174x44,0,0,12	:
+window	primenvim	1	:zsh	0	:	6362,213x56,0,0,13	:
+window	primenvim	2	:nvim	0	:	e6b4,147x38,0,0,25	:
+window	primenvim	3	:bash	0	:	66b3,147x38,0,0,52	:
+window	primenvim	4	:bash	0	:	66b4,147x38,0,0,53	:
+window	primenvim	5	:nvim	0	:	4b66,147x38,0,0{73x38,0,0,54,73x38,74,0,55}	:
+window	primenvim	6	:bash	1	:*	66b9,147x38,0,0,58	:
+window	primenvim	69	:nvim	0	:-	66b8,147x38,0,0,57	:
+window	testing W3	0	:zsh	1	:*	dc30,160x43,0,0,21	:
+window	testing W3	1	:REPL	0	:-	5864,88x32,0,0,15	off
+window	testing W3	2	:Live Log Monitor	0	:	5865,88x32,0,0,16	off
+window	ttt	0	:zsh	0	:-	d861,88x32,0,0,22	:
+window	ttt	69	:nvim	1	:*	d862,88x32,0,0,23	:
+state	Timer	date&time

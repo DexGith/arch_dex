@@ -5,5 +5,8 @@
 # 2. Hold shift and go to the home of the line (selecting it).
 # 3. Press delete twice (to handle different editor behaviors).
 
-xdotool key End Enter
+
+
+xdotool key End shift+Enter
+
 

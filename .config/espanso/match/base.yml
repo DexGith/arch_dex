@@ -14,7 +14,7 @@ matches:
   # ----- Experemental ----
     
 
-  - trigger: "]gc#]"
+  - trigger: ";;gc#"
     replace: "{{output}}"
     vars:
       - name: output
@@ -47,17 +47,23 @@ matches:
 
    
   # ---- terminal ----
-   
-
-  - trigger: ' ]h]' # leader concept works 
-    replace: 'man '
-
-  - trigger: ']h]'
-    replace: 'tldr '
  
-  - trigger: '!]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
-    replace: ']h '
+  - trigger: ' ;;h' # leader concept works 
+    replace: '~/'
+  - trigger: '!;;h' # leader concept works 
+    replace: 'tldr'
+  - trigger: ' ;;cp' # leader concept works 
+    replace: ' | ]cp '
 
+    # just for ideas purpuses
+  - trigger: '!]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: ' !]h]'
+  - trigger: ' !]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: ']h '
+  - trigger: ' ]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: ']h '
+  - trigger: ';]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
+    replace: ']h '
   - trigger: '?]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
     replace: '["]h"]_[" ]h"]_["!]h]'
 

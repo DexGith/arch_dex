@@ -45,6 +45,20 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 
+-- ---- these are mind ---
+
+
+-- In Insert Mode, map <C-k> to delete to the end of the line
+vim.keymap.set('i', '<C-k>', '<C-o>d$', {
+  noremap = true,
+  silent = true,
+  desc = "Delete from cursor to end of line"
+})
+
+-- END---- these are mind END-----
+
+
+
 -- vim.keymap.set(
 --     "n",
 --     "<leader>ee",

@@ -48,7 +48,6 @@ devtoys-bin-debug
 dex
 dict-gcide
 dictd
-discord_arch_electron
 dmidecode
 dnsmasq
 docker
@@ -128,6 +127,7 @@ krita
 ktimer
 lazygit
 leafpad
+legcord-bin
 libkeybinder3
 libpulse
 libreoffice-fresh

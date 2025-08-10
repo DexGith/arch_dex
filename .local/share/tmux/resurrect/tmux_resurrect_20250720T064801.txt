@@ -1,0 +1,30 @@
+pane	0	0	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	0	1	1	:*	0	archlinux1	:/home/dex/Fleet	1	zsh	:
+pane	123	0	1	:*	0	archlinux1	:/home/dex	1	nvim	:nvim soemthing.py
+pane	4	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	0	0	:-	0	archlinux1	:/home/dex	1	nvim	:nvim something
+pane	MyNvim	1	1	:*	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	date&time	0	1	:*	0	archlinux1	:/home/dex	0	sleep	:sleep 60
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	date&time	1	0	:-	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	date&time	2	0	:	0	Yazi: ~/Desktop	:/home/dex/Desktop	1	yazi	:yazi
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	timers	0	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+window	0	0	:zsh	0	:-	aefe,124x31,0,0,1	:
+window	0	1	:zsh	1	:*	c65f,213x56,0,0,2	:
+window	123	0	:nvim	1	:*	b066,88x32,0,0,9	:
+window	4	0	:zsh	1	:*	c660,213x56,0,0,3	:
+window	MyNvim	0	:nvim	0	:-	57af,124x31,0,0,10	:
+window	MyNvim	1	:zsh	1	:*	6250,136x36,0,0,11	:
+window	date&time	0	:date&time	1	:*	ddfd,104x24,0,0{65x24,0,0,4,38x24,66,0,5}	off
+window	date&time	1	:Timer	0	:-	5c71,104x24,0,0,12	off
+window	date&time	2	:yazi	0	:	5c72,104x24,0,0,13	:
+window	irssi	0	:irssi	1	:*	61e5,86x56,0,0,16	:
+window	testing W3	0	:Run-button	1	:*	c663,213x56,0,0,6	off
+window	testing W3	1	:REPL	0	:-	b064,88x32,0,0,7	off
+window	testing W3	2	:Live Log Monitor	0	:	c665,213x56,0,0,8	off
+window	timers	0	:zsh	1	:*	6064,69x17,0,0,15	:
+state	irssi	

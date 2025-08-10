@@ -14,7 +14,7 @@ xdotool keyup shift
 sleep 0.01
 
 
-xdotool key Home Enter Up
+xdotool key Home shift+Enter Up
 
 # sleep 0.01
 

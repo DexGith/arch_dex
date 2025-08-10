@@ -1,0 +1,32 @@
+pane	MyNvim	0	1	:*	0	archlinux1	:/home/dex	1	nvim	:nvim someting
+nvim someting
+pane	MyNvim	1	0	:-	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	Timer	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:
+pane	date&time	0	0	:	0	archlinux1	:/home/dex	0	sleep	:sleep 60
+pane	date&time	0	0	:	1	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	date&time	1	1	:*	0	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	0	:-	0	Yazi: ~/Desktop/stuff/2r~How to become a Bug Bounty Hunter ¦ Road Map ¦ Zero To HackerOne/Linuxbooks	:/home/dex/Desktop/stuff/2r~How\ to become a Bug Bounty Hunter ¦ Road Map ¦ Zero To HackerOne/Linuxbooks	1	yazi	:yazi
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+irssi
+pane	irssi	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	0	0	:-	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim .
+pane	primenvim	1	0	:	0	archlinux1	:/home/dex/.config/nvim	1	zsh	:
+pane	primenvim	2	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	testing W3	0	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+window	MyNvim	0	:nvim	1	:*	b622,97x24,0,0,5	:
+window	MyNvim	1	:zsh	0	:-	b063,88x32,0,0,6	:
+window	Timer	0	:zsh	1	:*	d325,60x21,0,0,26	:
+window	date&time	0	:date&time	0	:	f252,88x32,0,0{60x32,0,0,7,27x32,61,0,8}	off
+window	date&time	1	:Timer	1	:*	c826,97x19,0,0,9	off
+window	date&time	2	:yazi	0	:-	585f,88x32,0,0,10	:
+window	irssi	0	:irssi	1	:*	5860,88x32,0,0,11	:
+window	irssi	1	:zsh	0	:-	ac63,88x32,0,0,104	:
+window	primenvim	0	:nvim	0	:-	5f51,174x44,0,0,12	:
+window	primenvim	1	:zsh	0	:	6362,213x56,0,0,13	:
+window	primenvim	2	:nvim	1	:*	e6b4,147x38,0,0,25	:
+window	testing W3	0	:zsh	1	:*	dc30,160x43,0,0,21	:
+window	testing W3	1	:REPL	0	:-	5864,88x32,0,0,15	off
+window	testing W3	2	:Live Log Monitor	0	:	5865,88x32,0,0,16	off
+state	Timer	date&time

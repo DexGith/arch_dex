@@ -1,4 +1,0 @@
-#!/bin/bash
-
-
-/opt/thorium-browser/thorium-browser --profile-directory=Default --app-id=mojogeknlbnppmajemmkcfkilgaapppk

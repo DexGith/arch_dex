@@ -110971,10 +110971,10 @@ matches:
     replace: "deity"
     propagate_case: true
     word: true
-  - trigger: "doens"
-    replace: "does"
-    propagate_case: true
-    word: true
+  # - trigger: "doens"
+  #   replace: "does"
+  #   propagate_case: true
+  #   word: true
   - trigger: "doign"
     replace: "doing"
     propagate_case: true

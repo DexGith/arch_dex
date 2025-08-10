@@ -1,60 +1,60 @@
-ahk_x11-bin 1.0.5-1
-alacritty-themes 6.0.2-1
-arc-gtk-theme 20221218-2
-archlinux-java-run 11-1
-audiorelay 0.27.5-6
-autokey-common 0.96.0-8
-autokey-qt 0.96.0-8
-bitcomet 2.15.0-1
-brightness-controller-git 2.4.r12.gdab46e3-1
-carbonyl-bin 0.0.3-2
-code-marketplace 1.102.1-1
-cursor-bin 1.3.9-1
-devtoys-bin 2.0.8.0-2
-devtoys-bin-debug 2.0.8.0-2
-dict-gcide 0.54-3
-discord_arch_electron 1:0.0.103-1
-electron37-bin 37.2.5-1
-espanso-x11 2.2.4-1
-goldendict-ng 25.6.0-1
-goldendict-ng-debug 25.6.0-1
-gromit-mpx 1.7.0-4
-imhex-bin 1.37.4-1
-input-remapper-bin 2.1.1-1
-jdownloader2 latest-21
-kazam 1.4.5-9
-komorebi 2.2.1-1
-libajantv2 1:17.1.0-2
-libeb 4.4.3-12
-libopenrazer 0.4.0-1
-minecraft-launcher 1:2.1.3-3
-nautilus-open-any-terminal 0.6.1-1
-neofetch 7.1.0-2
-obsidian-cli-bin 0.1.8-1
-osu 20250702-2
-osu-lazer-bin 2025.710.0-2
-osu-mime 0.1-3
-paru 2.1.0-1
-paru-debug 2.0.4-1
-phonon-qt5 4.12.0-8
-phonon-qt5-gstreamer 4.10.0-5
-phonon-qt6-mpv 0.1.0-3
-polychromatic 0.9.5-1
-powershell 7.5.2-1
-protonup-qt 2.13.0-1
-python-ewmh 0.1.6-7
-python-inputs 0.5-4
-python-steam 1.6.1-1
-python-vdf 4.0-2
-razercfg-git 0.43.r0.g1fe4956-1
-razergenie 1.3.0-1
-stardict-oed 2.4.2-2
-sublime-text-4 4.4200-1
-thorium-browser-bin 130.0.6723.174-1
-timg 1.6.2-1
-triliumnext-bin 0.97.2-1
-ulauncher 5.15.7-1
-unionfs-fuse 3.6-1
-ventoy-bin 1.1.05-1
-warehouse-git 2.1.0.r0.gb998870-1
-zen-browser-bin 1.14.9b-2
+ahk_x11-bin
+alacritty-themes
+arc-gtk-theme
+archlinux-java-run
+audiorelay
+autokey-common
+autokey-qt
+bitcomet
+brightness-controller-git
+carbonyl-bin
+code-marketplace
+cursor-bin
+devtoys-bin
+devtoys-bin-debug
+dict-gcide
+electron37-bin
+espanso-x11
+goldendict-ng
+goldendict-ng-debug
+gromit-mpx
+imhex-bin
+input-remapper-bin
+jdownloader2
+kazam
+komorebi
+legcord-bin
+libajantv2
+libeb
+libopenrazer
+minecraft-launcher
+nautilus-open-any-terminal
+neofetch
+obsidian-cli-bin
+osu
+osu-lazer-bin
+osu-mime
+paru
+paru-debug
+phonon-qt5
+phonon-qt5-gstreamer
+phonon-qt6-mpv
+polychromatic
+powershell
+protonup-qt
+python-ewmh
+python-inputs
+python-steam
+python-vdf
+razercfg-git
+razergenie
+stardict-oed
+sublime-text-4
+thorium-browser-bin
+timg
+triliumnext-bin
+ulauncher
+unionfs-fuse
+ventoy-bin
+warehouse-git
+zen-browser-bin

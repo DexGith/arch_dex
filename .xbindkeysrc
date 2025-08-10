@@ -109,6 +109,17 @@ Mod4 + r
 
 # ---- rofi END----
 
+
+# ----- hotkey to text ----- 
+#
+
+"sleep 0.1 && xdotool type ""~/"""
+Mod4 + h
+
+
+# ----- hotkey to text ----- 
+
+
 # ----Scroll_Lock screwing around  ----
 
 # Just testing new Scrol_Lock Mod4
@@ -418,7 +429,7 @@ Print
 
 
 
-# Switch to desktop 1
+# -------- Switch to desktop 1 Numpads --------
 "xdotool set_desktop 0 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 alt + Mod4 + KP_1
 "xdotool set_desktop 1 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
@@ -440,34 +451,54 @@ alt + Mod4 + KP_9
 "xdotool set_desktop 9 ; sleep 0.1 ; sleep 0.1 ; xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 alt + Mod4 + KP_0
 
-# Switch to desktops
+
+# END-------- Switch to desktop 1 Numpads END--------
 
 
+# -------- Switch to desktop 1  --------
 
-
-#move to previous desktops 
+# move to previous desktops 
 "$HOME/scripts/ddesk/nothing/move_to_last_desktop.sh"
 Mod4 + grave
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 0 " 
 Mod4 + 1
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 1 " 
 Mod4 + 2
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 2 " 
 Mod4 + 3
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 3 " 
 Mod4 + 4
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 4 " 
 Mod4 + 5
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 5 " 
 Mod4 + 6
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 6 " 
 Mod4 + 7
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 7 " 
 Mod4 + 8
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 8 " 
 Mod4 + 9
+
 "$HOME/scripts/ddesk/nothing/smart_window_switcher_works_with_Mod4_grave.sh 9 " 
 Mod4 + 0
+
+"xdotool mousemove 900 600" 
+Mod4 + minus
+
+"xdotool mousemove 2600 400" 
+Mod4 + equal
+
+# END-------- Switch to desktop 1  END--------
+
 
 # ---- Openbox Config switching -------
 
@@ -492,6 +523,7 @@ Mod4 + 0
 # Alt + Tab to switch to the next window
 # "skippy-xd --switch"
 #"skippy-xd --switch --next"
+
 "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd.rc" 
 m:0x18 + c:23
 

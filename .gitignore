@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Backup files
+*.bak
+*~
+
+# Log files
+*.log
+nohup.out
+
+# KeePassXC lock files (IMPORTANT for security)
+*.kdbx.lock
+
+# IDE / Editor specific files
+.vscode/
+.idea/

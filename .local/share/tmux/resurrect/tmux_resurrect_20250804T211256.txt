@@ -1,0 +1,78 @@
+pane	MyNvim	0	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	1	0	:	0	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	71	1	:*	0	archlinux1	:/home/dex	1	nvim	:
+pane	Timer	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	date&time	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 60
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	sleep	:sleep 300
+pane	date&time	1	0	:	0	archlinux1	:/home/dex	1	sleep	:
+pane	date&time	2	0	:-	0	Yazi: ~/Desktop	:/home/dex/Desktop	1	yazi	:yazi Desktop
+pane	irssi	0	1	:*	0	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian	0	1	:*	0	archlinux1	:/home/dex/Power	1	zsh	:
+pane	obsidian	1	0	:-	0	Yazi: ~/Power	:/home/dex/Power	1	yazi	:yazi .
+pane	obsidian	71	0	:	0	archlinux1	:/home/dex	1	nvim	:
+pane	primenvim	0	0	:	0	archlinux1	:/home/dex/.config/nvim	1	zsh	:
+pane	primenvim	1	0	:-	0	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	71	1	:*	0	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:
+pane	testing W3	0	0	:	0	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	0	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	4	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	5	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	6	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	7	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	8	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	9	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	10	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	11	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	12	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	13	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	14	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	15	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	16	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	17	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	18	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	19	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	20	0	:	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	21	0	:-	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+pane	testing W3	22	1	:*	0	archlinux1	:/home/dex	1	bash	:bash /home/dex/.local/bin/tmux-sessionizer
+window	MyNvim	0	:zsh	0	:-	cdff,103x39,0,0,2	:
+window	MyNvim	1	:zsh	0	:	c000,107x35,0,0,3	:
+window	MyNvim	71	:nvim	1	:*	57b8,124x31,0,0,19	:
+window	Timer	0	:zsh	1	:*	ade1,45x13,0,0,4	:
+window	date&time	0	:date&time	1	:*	d4e2,76x21,0,0{47x21,0,0,5,28x21,48,0,6}	off
+window	date&time	1	:Timer	0	:	a924,76x21,0,0,7	off
+window	date&time	2	:yazi	0	:-	d4c8,76x21,0,0,48	:
+window	irssi	0	:irssi	1	:*	c446,136x36,0,0,9	:
+window	irssi	1	:zsh	0	:-	604f,136x35,0,0,10	:
+window	obsidian	0	:zsh	1	:*	e24f,136x36,0,0,20	:
+window	obsidian	1	:yazi	0	:-	e259,136x36,0,0,49	:
+window	obsidian	71	:nvim	0	:	e250,136x36,0,0,21	:
+window	primenvim	0	:zsh	0	:	5c30,160x43,0,0,11	:
+window	primenvim	1	:zsh	0	:-	5c31,160x43,0,0,12	:
+window	primenvim	71	:nvim	1	:*	58b7,120x32,0,0,18	:
+window	testing W3	0	:zsh	0	:	5f53,174x44,0,0,14	:
+window	testing W3	1	:REPL	0	:	6034,107x35,0,0,15	off
+window	testing W3	2	:Live Log Monitor	0	:	6035,107x35,0,0,16	off
+window	testing W3	3	:bash	0	:	df51,174x44,0,0,22	:
+window	testing W3	4	:bash	0	:	df52,174x44,0,0,23	:
+window	testing W3	5	:bash	0	:	df53,174x44,0,0,24	:
+window	testing W3	6	:bash	0	:	df54,174x44,0,0,25	:
+window	testing W3	7	:bash	0	:	df55,174x44,0,0,26	:
+window	testing W3	8	:bash	0	:	df56,174x44,0,0,27	:
+window	testing W3	9	:bash	0	:	df57,174x44,0,0,28	:
+window	testing W3	10	:bash	0	:	df58,174x44,0,0,29	:
+window	testing W3	11	:bash	0	:	5f50,174x44,0,0,30	:
+window	testing W3	12	:bash	0	:	5f51,174x44,0,0,31	:
+window	testing W3	13	:bash	0	:	5f52,174x44,0,0,32	:
+window	testing W3	14	:bash	0	:	5f53,174x44,0,0,33	:
+window	testing W3	15	:bash	0	:	5f54,174x44,0,0,34	:
+window	testing W3	16	:bash	0	:	5f55,174x44,0,0,35	:
+window	testing W3	17	:bash	0	:	5f56,174x44,0,0,36	:
+window	testing W3	18	:bash	0	:	5f57,174x44,0,0,37	:
+window	testing W3	19	:bash	0	:	5f58,174x44,0,0,38	:
+window	testing W3	20	:bash	0	:	5f59,174x44,0,0,39	:
+window	testing W3	21	:bash	0	:-	df50,174x44,0,0,40	:
+window	testing W3	22	:bash	1	:*	df51,174x44,0,0,41	:
+state	date&time	
