@@ -1,0 +1,10 @@
+[
+    {
+        "keys": ["ctrl+alt+r"],
+        "command": "toggle_setting",
+        "args": {
+            "setting": "relative_line_numbers"
+        }
+    },
+    { "keys": ["alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} }
+]

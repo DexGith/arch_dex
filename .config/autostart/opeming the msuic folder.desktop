@@ -1,7 +1,8 @@
 [Desktop Entry]
-Exec=alacritty -e Thunar /home/dex/Music/my-fav-atm/
-Name=opeming the msuic folder
+Exec=alacritty -e nohup Thunar /home/dex/Music/my-fav-atm/ &
+Name=opeming the msuic folder (stupid doesn't work)
 Type=Application
 Version=1.0
+X-LXQt-Autostart-disabled=true
 X-LXQt-Need-Tray=true
 X-LXQt-X11-Only=true

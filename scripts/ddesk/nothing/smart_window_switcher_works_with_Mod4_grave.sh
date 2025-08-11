@@ -1,26 +1,36 @@
-#!/bin/sh
+#!/bin/bash
 
-# The destination desktop number is the first argument passed to the script.
-DESTINATION_DESKTOP="$1"
+# This script intelligently switches desktops and prepares the 'last_desktop'
+# cache file for a toggle-back script.
 
-# --- SCRIPT LOGIC ---
-# 1. Check if an argument was provided. If not, exit with an error.
-if [ -z "$DESTINATION_DESKTOP" ]; then
-    echo "Error: No destination desktop specified." >&2
+# ---CONFIGURATION---
+# This file must be the SAME as the one used in your 'move_to_last_desktop.sh'
+LAST_DESKTOP_FILE="$HOME/.cache/last_desktop"
+# ---END CONFIGURATION---
+
+
+# 1. Check if a desktop number was provided as an argument.
+if [ -z "$1" ]; then
+    echo "Error: No desktop number provided." >&2
+    echo "Usage: $0 <desktop_number>" >&2
     exit 1
 fi
 
-# 2. Define the file where we store the last desktop number.
-LAST_DESKTOP_FILE="$HOME/.cache/last_desktop"
+TARGET_DESKTOP="$1"
 
-# 3. Get the desktop number we are currently on.
+# 2. Get the desktop number we are on right now.
 CURRENT_DESKTOP=$(xdotool get_desktop)
 
-# 4. **THE SMART PART:** Only save the current desktop if we are
-#    actually moving to a *different* desktop.
-if [ "$CURRENT_DESKTOP" -ne "$DESTINATION_DESKTOP" ]; then
+# 3. THE CORE LOGIC:
+#    Only act if the target desktop is DIFFERENT from our current one.
+if [ "$CURRENT_DESKTOP" -ne "$TARGET_DESKTOP" ]; then
+    # Since we are about to move, save our CURRENT desktop number.
+    # This is what allows the 'grave' key to toggle back to where we came from.
     echo "$CURRENT_DESKTOP" > "$LAST_DESKTOP_FILE"
+
+    # Now, perform the switch to the target desktop.
+    xdotool set_desktop "$TARGET_DESKTOP"
 fi
 
-# 5. Finally, perform the switch to the destination.
-xdotool set_desktop "$DESTINATION_DESKTOP"
+# If we were already on the target desktop, the script simply does nothing and exits.
+# This prevents the LAST_DESKTOP_FILE from being incorrectly overwritten.

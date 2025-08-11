@@ -1,0 +1,176 @@
+man this jumplist is going to make me go crazy
+it's so trash
+good for like 5 times or 6 but trash for more previous jumps when buffer or window changes which changes the jumplists of those windows at least for me... it's stupidly hard to make use of constantly. but I do still use it to an extent 
+V(im)S Code — 11:28 AM
+I only use it AFTER I make jumps and I want to go back. using it as a history is difficult as you experience
+doggodied — 11:38 AM
+@main.erl idk probably that guy above
+Image
+dexone
+[SUDO]
+ — 11:41 AM
+is there like a way to open the jump list and like hjkl and go there and hit enter? for long jumps in history. I can live with the short jumps. 
+
+and jumping between files I'll just netrw and telescope and theprime's harpoon and tmux
+
+but how short are we talking... depends. I feel like I should really clear jumplists from time to time with a hotkey or something... make it so that each new file or each new window it clears the jump list... this way I'm like jumping only on current window and no more... yeah 
+
+I think that's it... screw the long ass jumping history I want to just clear my jump list every time I'm in a new window ? no that's bad maybe idk 
+Shiitake
+[TECH]
+ — 11:44 AM
+Honestly
+I just use bookmarks to go where I want
+dexone
+[SUDO]
+ — 11:44 AM
+is that a plugin ?
+Shiitake
+[TECH]
+ — 11:44 AM
+Yeah
+bookmarks.nvim, I believe
+dexone
+[SUDO]
+ — 11:45 AM
+the idea of a bookmark doesn't hit in my brain
+Shiitake
+[TECH]
+ — 11:45 AM
+I just mark the line I want to jump to manually and it goes to a list that I can search with telescope, since there is an addon for it
+dexone
+[SUDO]
+ — 11:45 AM
+I just want jumplist to not suck
+dexone
+[SUDO]
+ — 11:46 AM
+oh it's a harpoon but longer with a search
+Shiitake
+[TECH]
+ — 11:46 AM
+Basically
+dexone
+[SUDO]
+ — 11:46 AM
+why not just search
+tha'ts when you search
+Shiitake
+[TECH]
+ — 11:47 AM
+I use my pc on a 10yo HDD
+God forbid I try grepping anything, it takes long as fuck
+dexone
+[SUDO]
+ — 11:47 AM
+no what I meant is like
+go to the file
+and /<search>
+Shiitake
+[TECH]
+ — 11:47 AM
+Oh
+dexone
+[SUDO]
+ — 11:47 AM
+or mark
+marks stay
+Shiitake
+[TECH]
+ — 11:48 AM
+Cause  imagine doing it for multiple files
+dexone
+[SUDO]
+ — 11:48 AM
+that's why I want to use a jump list
+tbh I just ctrl+u
+and ctrl+d
+or
+search
+yeah book mark only good if you have 1k + lines
+dexone
+[SUDO]
+ — 11:49 AM
+and also when you have multiple files I agree... can you put comments on those bookmarks ?
+no why not comment your cod
+e
+and search
+that' my bookmark
+# ---- [alright this code is about windows ----- 
+
+.
+.
+.
+
+
+# End --- [alright this code is about windows] END----
+ 
+Shiitake
+[TECH]
+ — 11:50 AM
+Cause the workflow of “open file->/->search” is worse than “open list->go to the book mark” 
+dexone
+[SUDO]
+ — 11:51 AM
+but the issue is that
+if you delete booksmarks
+or you have too many booksmarks
+now you start sorting bookmarks
+that's bad
+I get it that you can search the bookmarks so you don't sort 
+but if I search the booksmarks might as well search the file
+you will say like but that's just 1 file..
+well if I'm going to search multiple files in a project might as well do that
+Shiitake
+[TECH]
+ — 11:52 AM
+I usually have 1 per file, so as to not have this problem
+Usually like “server.py need fix here” or smth on those lines
+doggodied — 11:53 AM
+What would you use to search this? A regex + a keyword?
+dexone
+[SUDO]
+ — 11:53 AM
+ok I'll use a bookmark and i'll book mark the 
+
+
+# --- [sections] ---
+
+# END--- [sections] END---
+dexone
+[SUDO]
+ — 11:53 AM
+ty for the idea I'll use that and add it to the system
+Shiitake
+[TECH]
+ — 11:53 AM
+It’s basically a “quick go back to work”
+Shiitake
+[TECH]
+ — 11:54 AM
+Only if you want tho, it’s all up to what you need and works best for ya
+dexone
+[SUDO]
+ — 11:54 AM
+that's the issue because I don't know what to search for when the files get too big... only when like I access that file a lot and work on it for longer is where I start ot remember like vagule parts of it... and that's exactly what the bookmark will solve. and in addition to going there too
+
+this way he is correct I don't have to remember each section in my brain I can just book mark it and give it a nice comment and just book mark the header. 
+
+also for important marks he is right. as long as you give a good comment to the bookmarked location bookmarking is good 
+dexone
+[SUDO]
+ — 11:55 AM
+the heck you bookmark code locations with no comments really ?
+dexone
+[SUDO]
+ — 11:56 AM
+oh so it's like `0 but smarter ?
+Shiitake
+[TECH]
+ — 11:56 AM
+Yeah
+dexone
+[SUDO]
+ — 11:56 AM
+nah thanks
+I don't think so but if you think so and that's it's job in your coding env so be it

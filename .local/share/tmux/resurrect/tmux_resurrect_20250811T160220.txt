@@ -1,0 +1,78 @@
+pane	Music	0	1	:*	1	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:
+pane	MyNvim	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	1	0	:-	1	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	71	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	Terminal	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	Timer	0	1	:*	1	archlinux1	:/home/dex	0	zsh	:sleep 1
+pane	Timer	0	1	:*	2	archlinux1	:/home/dex	1	htop	:
+pane	btop	1	1	:*	1	archlinux1	:/home/dex	1	btop	:btop
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	sleep	:sleep 60
+pane	date&time	0	1	:*	2	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	date&time	1	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	0	:-	1	Yazi: ~/Desktop	:/home/dex/Desktop	1	zsh	:
+pane	git	0	0	:-	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	git	1	0	:	1	archlinux1	:/home/dex/git	1	zsh	:
+pane	git	2	1	:*	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	irssi	0	1	:*	1	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:sxhkd
+pane	mpv	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian	0	1	:*	1	archlinux1	:/home/dex/Power	1	zsh	:fzf --height 80% --layout=reverse --border --preview-window right:50%:wrap --bind ?:toggle-preview --preview sh -c "       # --- START OF DEBUG MODIFICATIONS ---       DEBUG_LOG=\"/tmp/fzf_debug.log\"       echo \"--- New Preview Run ---\" >> \"\$DEBUG_LOG\"       echo \"File: \$1\" >> \"\$DEBUG_LOG\"       echo \"TERM variable is: [\$TERM]\" >> \"\$DEBUG_LOG\"       # --- END OF DEBUG MODIFICATIONS ---        printf \"\033[2J\"              file_path=\"\$1\"       width=\$(( \$(tput cols 2>/dev/null || echo 80) / 2 ))       height=\$(( \$(tput lines 2>/dev/null || echo 25) * 7 / 10 ))        is_graphics_term=false       if [[ \"\$TERM\" == \"xterm-kitty\" || \"\$TERM\" == \"xterm-ghostty\" ]]; then         is_graphics_term=true       fi        # --- MORE DEBUGGING ---       echo \"is_graphics_term evaluated to: [\$is_graphics_term]\" >> \"\$DEBUG_LOG\"        if [ \"\$is_graphics_term\" = true ]; then         echo \"ATTEMPTING to run clear command.\" >> \"\$DEBUG_LOG\"         printf \"\033_Ga=d\033\\\\\"       else         echo \"SKIPPING clear command.\" >> \"\$DEBUG_LOG\"       fi        # The rest of the script is the same       if [ -d \"\$file_path\" ]; then         exa --tree --color=always \"\$file_path\" | head -200       else         mime_type=\$(file --brief --mime-type \"\$file_path\")         case \"\$mime_type\" in           image/*)             # This part is unchanged...             img_width=\$(( width - 2 ))             img_height=\$(( height - 4 ))             [ \$img_height -lt 10 ] && img_height=10             [ \$img_width -lt 20 ] && img_width=20             echo \"File: \$file_path\"; file \"\$file_path\"; echo \"---\"             if [ \"\$is_graphics_term\" = true ] && command -v kitty &>/dev/null; then               kitty +kitten icat --transfer-mode=memory --stdin=no \                 --place=\${img_width}x\${img_height}@0x3 \"\$file_path\" 2>/dev/null             elif timg -pk --center -g \${img_width}x\${img_height} \"\$file_path\" 2>/dev/null; then               :             else               echo \"Preview unavailable.\"; file \"\$file_path\"; identify \"\$file_path\" 2>/dev/null || true             fi             ;;           *) # Simplified the rest for clarity, it does not affect the image part             bat --color=always --style=numbers --line-range=:200 \"\$file_path\" || file \"\$file_path\"             ;;         esac       fi     " sh {}
+-zsh
+pane	obsidian	1	0	:	1	Yazi: ~/Power	:/home/dex/Power	1	zsh	:
+pane	obsidian	71	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	1	0	:-	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	primenvim	71	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	projects	0	1	:*	1	archlinux1	:/home/dex/projects	1	zsh	:
+pane	root	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	0	0	:	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	4	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	5	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	6	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	7	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	8	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	9	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	tmux	1	1	:*	1	archlinux1	:/	1	zsh	:
+pane	todo	1	1	:*	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+pane	todo	71	0	:-	1	archlinux1	:/home/dex/Desktop	1	nvim	:
+window	Music	0	:zsh	1	:*	b061,88x32,0,0,4	:
+window	MyNvim	0	:zsh	1	:*	b062,88x32,0,0,5	:
+window	MyNvim	1	:zsh	0	:-	b063,88x32,0,0,6	:
+window	MyNvim	71	:zsh	0	:	b064,88x32,0,0,7	:
+window	Terminal	0	:zsh	1	:*	b065,88x32,0,0,8	:
+window	Timer	0	:htop	1	:*	db2b,44x17,0,0{22x17,0,0,9,21x17,23,0,54}	:
+window	btop	1	:btop	1	:*	6050,136x35,0,0,11	:
+window	date&time	0	:date&time	1	:*	7144,68x16,0,0{34x16,0,0,17,33x16,35,0,18}	off
+window	date&time	1	:Timer	0	:	5868,88x32,0,0,19	off
+window	date&time	2	:zsh	0	:-	df6f,104x35,0,0,20	:
+window	git	0	:zsh	0	:-	d860,88x32,0,0,21	:
+window	git	1	:zsh	0	:	d861,88x32,0,0,22	:
+window	git	2	:zsh	1	:*	d862,88x32,0,0,23	:
+window	irssi	0	:irssi	1	:*	d863,88x32,0,0,24	:
+window	irssi	1	:zsh	0	:-	d864,88x32,0,0,25	:
+window	jobs	0	:zsh	1	:*	d865,88x32,0,0,26	:
+window	mpv	0	:zsh	1	:*	d866,88x32,0,0,27	:
+window	obsidian	0	:zsh	1	:*	d607,96x31,0,0,28	:
+window	obsidian	1	:zsh	0	:	d868,88x32,0,0,29	:
+window	obsidian	71	:zsh	0	:-	5860,88x32,0,0,30	:
+window	primenvim	1	:zsh	0	:-	5861,88x32,0,0,31	:
+window	primenvim	71	:zsh	1	:*	5862,88x32,0,0,32	:
+window	projects	0	:zsh	1	:*	5863,88x32,0,0,33	:
+window	root	0	:zsh	1	:*	5864,88x32,0,0,34	:
+window	testing W3	0	:zsh	0	:	5865,88x32,0,0,35	:
+window	testing W3	1	:REPL	0	:	5866,88x32,0,0,36	off
+window	testing W3	2	:Live Log Monitor	0	:	5867,88x32,0,0,37	off
+window	testing W3	3	:zsh	0	:	5868,88x32,0,0,38	:
+window	testing W3	4	:zsh	0	:	5869,88x32,0,0,39	:
+window	testing W3	5	:zsh	0	:	d860,88x32,0,0,40	:
+window	testing W3	6	:zsh	0	:	d861,88x32,0,0,41	:
+window	testing W3	7	:zsh	0	:	d862,88x32,0,0,42	:
+window	testing W3	8	:zsh	0	:-	d863,88x32,0,0,43	:
+window	testing W3	9	:zsh	1	:*	d864,88x32,0,0,44	:
+window	tmux	1	:zsh	1	:*	e055,136x35,0,0,45	:
+window	todo	1	:zsh	1	:*	5d11,112x34,0,0,50	:
+window	todo	71	:nvim	0	:-	5d12,112x34,0,0,51	:
+state	Timer	

@@ -16,10 +16,12 @@ vim.api.nvim_create_autocmd('BufWritePost', {
   command = 'q!',
 })
 
-
-
 vim.o.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr-o:hor20"
 
-
-
 vim.keymap.set("n", "gl", vim.diagnostic.open_float)
+
+-- Map 'jjk' to exit Insert mode
+-- vim.keymap.set('i', 'jjk', '<Esc>', { noremap = true, silent = true })
+-- Set the timeout for mapped key sequences
+-- this is bulshit it makes other like fking stuff bad
+-- vim.o.timeoutlen = 175

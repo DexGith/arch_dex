@@ -121,6 +121,7 @@ kdegraphics-thumbnailers
 kdenlive
 keepassxc
 keychain
+kio-admin
 kitty
 komorebi
 konsole

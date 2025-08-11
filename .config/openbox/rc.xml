@@ -457,11 +457,11 @@
     <!--         <direction>down</direction> -->
     <!--     </action> -->
     <!-- </keybind> -->
-    <keybind key="C-W-S-r">
-      <action name="Execute">
-        <command>/home/dex/scripts/ddesk/nothing/restore_windows_to_normal</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-W-S-r"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>/home/dex/scripts/ddesk/nothing/restore_windows_to_normal</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-c">
       <action name="Close"/>
     </keybind>

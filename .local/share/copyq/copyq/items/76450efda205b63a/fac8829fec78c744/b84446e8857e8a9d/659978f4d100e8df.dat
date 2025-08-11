@@ -1,0 +1,16 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><span _ngcontent-ng-c858488690="" class="router-outlet-wrapper ng-tns-c858488690-0"><pre _ngcontent-ng-c150873313=""><code _ngcontent-ng-c150873313=""><span class="hljs-comment"># --- Scrolling ---</span>
+<span class="hljs-comment"># Remap E/S to scroll up/down</span>
+s = wheel(down)
+e = wheel(up)
+
+<span class="hljs-comment"># Remap F/D to scroll right/left</span>
+f = wheel(right)
+d = wheel(left)
+
+
+<span class="hljs-comment"># --- Mouse Movement ---</span>
+<span class="hljs-comment"># Remap HJKL to move the mouse cursor</span>
+h = mouse(-<span class="hljs-number">10</span>, <span class="hljs-number">0</span>)   <span class="hljs-comment"># Move left</span>
+j = mouse(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)    <span class="hljs-comment"># Move down</span>
+k = mouse(<span class="hljs-number">0</span>, -<span class="hljs-number">10</span>)   <span class="hljs-comment"># Move up</span>
+l = mouse(<span class="hljs-number">10</span>, <span class="hljs-number">0</span>)    <span class="hljs-comment"># Move right</span></code></pre></span>

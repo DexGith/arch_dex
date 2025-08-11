@@ -1,0 +1,75 @@
+└─[I] $ (^^);;y;
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ ;;y;
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso restart
+Unable to start espanso as a service as it's not been registered.
+You can either register it first with `espanso service register` or
+you can run it in unmanaged mode with `espanso service start --unmanaged`
+
+NOTE: unmanaged mode means espanso does not rely on the system service manager
+      to run, but as a result, you are in charge of starting/stopping espanso
+      when needed.
+unable to start service: not registered as a service
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso start
+Unable to start espanso as a service as it's not been registered.
+You can either register it first with `espanso service register` or
+you can run it in unmanaged mode with `espanso service start --unmanaged`
+
+NOTE: unmanaged mode means espanso does not rely on the system service manager
+      to run, but as a result, you are in charge of starting/stopping espanso
+      when needed.
+unable to start service: not registered as a service
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso service register
+service file already exists, this operation will overwrite it
+creating service file in "/home/dex/.config/systemd/user/espanso.service"
+enabling systemd service
+Failed to connect to user scope bus via local transport: $DBUS_SESSION_BUS_ADDRESS and $XDG_RUNTIME_DIR not defined (consider using --machine=<user>@.host --user to connect to bus of other user)
+unable to register service: systemctl enable failed
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ sudo espanso service register
+[sudo] password for dex:
+creating service file in "/root/.config/systemd/user/espanso.service"
+enabling systemd service
+Failed to connect to user scope bus via local transport: $DBUS_SESSION_BUS_ADDRESS and $XDG_RUNTIME_DIR not defined (consider using --machine=<user>@.host --user to connect to bus of other user)
+unable to register service: systemctl enable failed
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso start
+Unable to start espanso as a service as it's not been registered.
+You can either register it first with `espanso service register` or
+you can run it in unmanaged mode with `espanso service start --unmanaged`
+
+NOTE: unmanaged mode means espanso does not rely on the system service manager
+      to run, but as a result, you are in charge of starting/stopping espanso
+      when needed.
+unable to start service: not registered as a service
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso service start --unmanaged
+espanso started correctly!
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso start
+espanso is already running!
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $ espanso restart
+Unable to start espanso as a service as it's not been registered.
+You can either register it first with `espanso service register` or
+you can run it in unmanaged mode with `espanso service start --unmanaged`
+
+NOTE: unmanaged mode means espanso does not rely on the system service manager
+      to run, but as a result, you are in charge of starting/stopping espanso
+      when needed.
+unable to start service: not registered as a service
+
+┌──(dex㉿archlinux1)-[~]
+└─[I] $

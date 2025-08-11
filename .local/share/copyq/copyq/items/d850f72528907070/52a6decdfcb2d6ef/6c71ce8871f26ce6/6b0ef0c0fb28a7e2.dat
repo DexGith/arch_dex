@@ -1,0 +1,72 @@
+The Permanent Fix (The Real Problem)
+
+The real issue is how you're logging into Arch and starting your desktop. You are most likely not using a standard Display Manager (like GDM, SDDM, or LightDM) and are instead logging into a text console (a "tty") and then running startx.
+
+Is that correct? If so, this is a classic issue with a standard solution.
+The Fix if you use startx
+
+When you run startx directly, it doesn't automatically start the necessary D-Bus session that systemd needs to manage user services. You have to tell it to.
+
+    Open your ~/.xinitrc file for editing. This file controls what happens when you run startx.
+    code Bash
+
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+
+      
+nano ~/.xinitrc
+
+    
+
+(Or use any other editor like vim, micro, etc.)
+
+Find the last line of the file. It will probably look something like this:
+code Code
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+
+      
+exec i3
+
+    
+
+or exec dwm, exec openbox-session, exec startxfce4, etc. This is the line that starts your window manager or desktop environment.
+
+Modify that line to launch your session through dbus-launch. Change it from this:
+code Code
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+
+      
+exec your-window-manager
+
+    
+
+to this:
+code Code
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+
+      
+exec dbus-launch --exit-with-session your-window-manager
+
+    
+
+For example, if you use i3, the new line would be:
+code Code
+
+    IGNORE_WHEN_COPYING_START
+    IGNORE_WHEN_COPYING_END
+
+          
+    exec dbus-launch --exit-with-session i3
+
+        
+
+    Save the file and exit the editor.
+
+    Log out completely from your graphical session back to the text console.
+
+    Log in again and run startx.
+
+Now, your new graphical session will be running inside a proper D-Bus session.

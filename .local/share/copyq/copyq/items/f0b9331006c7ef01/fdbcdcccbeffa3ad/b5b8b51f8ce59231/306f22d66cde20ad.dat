@@ -1,0 +1,68 @@
+man this jumplist is going to make me go crazy
+it's so trash
+good for like 5 times or 6 but trash for more previous jumps when buffer or window changes which changes the jumplists of those windows at least for me... it's stupidly hard to make use of constantly. but I do still use it to an extent 
+V(im)S Code — 11:28 AM
+I only use it AFTER I make jumps and I want to go back. using it as a history is difficult as you experience
+doggodied — 11:38 AM
+@main.erl idk probably that guy above
+Image
+dexone
+[SUDO]
+ — 11:41 AM
+is there like a way to open the jump list and like hjkl and go there and hit enter? for long jumps in history. I can live with the short jumps. 
+
+and jumping between files I'll just netrw and telescope and theprime's harpoon and tmux
+
+but how short are we talking... depends. I feel like I should really clear jumplists from time to time with a hotkey or something... make it so that each new file or each new window it clears the jump list... this way I'm like jumping only on current window and no more... yeah 
+
+I think that's it... screw the long ass jumping history I want to just clear my jump list every time I'm in a new window ? no that's bad maybe idk 
+Shiitake
+[TECH]
+ — 11:44 AM
+Honestly
+I just use bookmarks to go where I want
+dexone
+[SUDO]
+ — 11:44 AM
+is that a plugin ?
+Shiitake
+[TECH]
+ — 11:44 AM
+Yeah
+bookmarks.nvim, I believe
+dexone
+[SUDO]
+ — 11:45 AM
+the idea of a bookmark doesn't hit in my brain
+Shiitake
+[TECH]
+ — 11:45 AM
+I just mark the line I want to jump to manually and it goes to a list that I can search with telescope, since there is an addon for it
+dexone
+[SUDO]
+ — 11:45 AM
+I just want jumplist to not suck
+dexone
+[SUDO]
+ — 11:46 AM
+oh it's a harpoon but longer with a search
+Shiitake
+[TECH]
+ — 11:46 AM
+Basically
+dexone
+[SUDO]
+ — 11:46 AM
+why not just search
+tha'ts when you search
+Shiitake
+[TECH]
+ — 11:47 AM
+I use my pc on a 10yo HDD
+God forbid I try grepping anything, it takes long as fuck
+dexone
+[SUDO]
+ — 11:47 AM
+no what I meant is like
+go to the file
+and /

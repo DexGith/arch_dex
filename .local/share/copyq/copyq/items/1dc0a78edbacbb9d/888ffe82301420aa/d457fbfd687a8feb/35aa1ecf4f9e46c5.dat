@@ -1,0 +1,17 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><span _ngcontent-ng-c858488690="" class="router-outlet-wrapper ng-tns-c858488690-0"><pre _ngcontent-ng-c150873313=""><code _ngcontent-ng-c150873313=""><span class="hljs-comment"># --- Scrolling with xdotool ---</span>
+<span class="hljs-comment"># xdotool click 4 = scroll up</span>
+<span class="hljs-comment"># xdotool click 5 = scroll down</span>
+<span class="hljs-comment"># xdotool click 6 = scroll right</span>
+<span class="hljs-comment"># xdotool click 7 = scroll left</span>
+s = <span class="hljs-built_in">command</span>(xdotool click 5)
+e = <span class="hljs-built_in">command</span>(xdotool click 4)
+f = <span class="hljs-built_in">command</span>(xdotool click 6)
+d = <span class="hljs-built_in">command</span>(xdotool click 7)
+
+
+<span class="hljs-comment"># --- Mouse Movement with xdotool ---</span>
+<span class="hljs-comment"># move_relative &lt;x&gt; &lt;y&gt;</span>
+h = <span class="hljs-built_in">command</span>(xdotool mousemove_relative -- -20 0)
+j = <span class="hljs-built_in">command</span>(xdotool mousemove_relative -- 0 20)
+k = <span class="hljs-built_in">command</span>(xdotool mousemove_relative -- 0 -20)
+l = <span class="hljs-built_in">command</span>(xdotool mousemove_relative -- 20 0)</code></pre></span>

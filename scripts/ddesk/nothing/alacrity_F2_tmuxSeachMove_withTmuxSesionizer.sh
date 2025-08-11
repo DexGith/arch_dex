@@ -1,7 +1,18 @@
 #!/bin/sh
 
+
+
+#
+# Let your shell source its rc files here. They might overwrite DBUS_SESSION_BUS_ADDRESS.
+#
+
+# ... the rest of your script logic ...
+
+# Now, before you launch Alacritty (or any GUI app), restore the correct address.
+
+
 # 1. Launch alacritty in the background.
-alacritty &
+alacritty --working-directory /home/dex/ &
 
 # 2. Immediately get the Process ID (PID) of the alacritty process we just launched.
 #    '$!' is a special shell variable that holds the PID of the last backgrounded command.

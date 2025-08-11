@@ -40,7 +40,8 @@ XF86Explorer
 
 # ---- The far away problamaic problamaic keyEND ----
 
-
+"killall xbindkeys && sleep 0.1 && xbindkeys &"
+Mod4 + shift + control + r
 
 # The release modifier is not a standard X modifier, but you can
 # use it if you want to catch release events instead of press events
@@ -110,14 +111,6 @@ Mod4 + r
 # ---- rofi END----
 
 
-# ----- hotkey to text ----- 
-#
-
-"sleep 0.1 && xdotool type ""~/"""
-Mod4 + h
-
-
-# ----- hotkey to text ----- 
 
 
 # ----Scroll_Lock screwing around  ----
@@ -148,7 +141,74 @@ Mod4 + g
 
 
 
+
+
+
+
+
+
+
+
+
+
 # ---- zen browser related END----
+
+
+# --- [ Mouse ] -----
+
+
+
+#1 ----- Scroll wheels movements-------
+
+"sleep 5; xdotool key F16"
+Mod4 + alt + s
+
+"xdotool click 5"
+Katakana
+
+"xdotool click 4"
+XF86TouchpadToggle
+
+"xdotool click 7"
+Hiragana
+
+"xdotool click 6"
+Hiragana_Katakana
+
+#1 END----- Scroll wheels movements END-------
+
+
+
+
+# yen
+# capslock + h
+"xdotool mousemove_relative -- -20 0"
+m:0x0 + c:132
+
+
+# muhenkan
+# capslock + j
+"xdotool mousemove_relative -- 0 20"
+Muhenkan
+
+# m:0x0 + c:102
+
+# kpjpcomma
+# capslock + k
+"xdotool mousemove_relative -- 0 -20"
+m:0x0 + c:103
+
+# ro
+# capslock + l
+"xdotool mousemove_relative -- 20 0"
+m:0x0 + c:97
+
+
+
+
+# END--- [ Mouse ] END-----
+
+
 
 #
 # "xdotool key Right"
@@ -337,37 +397,46 @@ Mod4 + shift + b
 "wmctrl -x -a KeePassXC"
 Mod4 + shift + k 
 
-"wmctrl -x -a Thunar && wmctrl -x -a VLC"
+"wmctrl -x _n_"
 Mod4 + shift + m 
 
-"wmctrl -a irssi"
-Mod4 + shift + i 
+"wmctrl -a _tm_"
+Mod4 + shift + u
 
-"wmctrl -a root"
-Mod4 + shift + r 
+# "wmctrl -x -a Thunar && wmctrl -x -a VLC"
+# Mod4 + shift + m 
 
-"wmctrl -x -a Sublime && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
+# "wmctrl -a irssi"
+# Mod4 + shift + i 
+
+# "wmctrl -a root"
+# Mod4 + shift + r 
+
+"wmctrl -x -a Sublime"
 Mod4 + shift + s 
 
-"wmctrl -a 'Redmi Note' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
+"$HOME/scripts/ddesk/nothing/mod4_p_forPhone_for_mod4_grave_soItWorks.sh"
 Mod4 + shift + p 
 
 "wmctrl -a 'QEMU/KVM' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 Mod4 + shift + q 
 
+"wmctrl -a 'QEMU/KVM'"
+Mod4 + shift + m 
+
 "wmctrl -a 'Virtual Machine Manager' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 Mod4 + shift + v 
 
-"wmctrl -a ob_"
+"wmctrl -a _ob_"
 Mod4 + shift + o 
 
-"wmctrl -a Timer && wmctrl -a 'date&time' && wmctrl -x -a Clocks"
+"wmctrl -a _t_ && wmctrl -a '_dt_' && wmctrl -x -a Clocks"
 Mod4 + shift + a 
 
-"wmctrl -a 'date&time'"
+"wmctrl -a '_dt_'"
 Mod4 + shift + d 
 
-"wmctrl -a Timer"
+"wmctrl -a _t_"
 Mod4 + shift + t 
 
 "wmctrl -x -a Clocks"

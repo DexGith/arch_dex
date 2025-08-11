@@ -34,6 +34,7 @@ SYSTEM_DIRS_TO_SYNC=(
 # Add single dotfiles from your home directory (~) here.
 HOME_FILES_TO_SYNC=(
     ".zshrc"
+    ".zshenv"
     ".gitconfig"
     ".tmux.conf"
     ".bashrc"
