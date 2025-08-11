@@ -1,5 +1,6 @@
 # ~/.zshrc file for zsh interactive shells.
-xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
+KEYTIMEOUT=1
+
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -19,10 +20,18 @@ stty -ixon # to stop the ctrl + s freezing the terminal (ctrl+q unfreezes termin
 
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
+bindkey -v                                        # emacs key bindings
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line # Or use '\ev' if you prefer
 bindkey ' ' magic-space                           # do history expansion on space
 bindkey -r '^S'					  # Unbinding Ctrl+s (forward-i-search) this way stty -ixon works fine
 bindkey '^U' backward-kill-line                   # ctrl + U
 bindkey '^[[3;5~' kill-word                       # ctrl + Supr
+# if you want to apply this to vim and everythig you can do
+# the -a option for example bindkey -a tells zsh to apply this binding 
+# to the viins keymap (Vi INSERT mode). just saying
+bindkey '^K' kill-line                            # This binds Ctrl+K to the kill-line action, specifically for Vi's INSERT mode
 bindkey '^[[3~' delete-char                       # delete
 bindkey '^[[1;5C' forward-word                    # ctrl + ->
 bindkey '^[[1;5D' backward-word                   # ctrl + <-
@@ -30,18 +39,230 @@ bindkey '^[[5~' beginning-of-buffer-or-history    # page up
 bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
+bindkey '^A' beginning-of-line                  # home
+bindkey '^E' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+# Add Emacs-style yank/paste to Vi's INSERT mode
+bindkey '^Y' yank
+bindkey '\ey' yank-pop
+# bindkey '^Y' redo                                 # Bind Ctrl+Y to redo
+bindkey '^J' self-insert                        # Bind Alt+Enter, but it t does'work so ctrl+J is my next bet to insert a newline in the command line
 
-bindkey -s ^f "tmux-sessionizer\n"
-bindkey -s '\eh' "tmux-sessionizer -s 0\n"
-bindkey -s '\et' "tmux-sessionizer -s 1\n"
-bindkey -s '\en' "tmux-sessionizer -s 2\n"
-bindkey -s '\es' "tmux-sessionizer -s 3\n"
+bindkey -s ^f "tmux-sessionizer\r"
+bindkey -s '\eh' "tmux-sessionizer -s 0\r"
+bindkey -s '\et' "tmux-sessionizer -s 1\r"
+bindkey -s '\en' "tmux-sessionizer -s 2\r"
+bindkey -s '\es' "tmux-sessionizer -s 3\r"
+
+
+
+# ---- VI keybinds for zsh ----
+
+
+#2 ---- [viins-insert keybinds] ----
+
+bindkey -M viins '^?' backward-delete-char
+
+
+
+#2 END---- [viins-insert keybinds] ----
+
+
+
+# -------------------------------------------------------------------
+# ZSH VI-MODE CURSOR AND PROMPT INDICATOR (Final Architecture)
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+# ZSH VI-MODE: The Final and Correct Architecture
+# -------------------------------------------------------------------
+
+# END----# -------------------------------------------------------------------
+# ZSH VI-MODE: The Final and Correct Architecture
+# -------------------------------------------------------------------
+
+# We must explicitly load the hook function system first.
+autoload -U add-zsh-hook
+
+# --- PART 1: The Foundation (Handles I/N modes) ---
+_update_prompt_and_cursor_interactively() {
+    case $KEYMAP in
+      vicmd)
+        if (( REGION_ACTIVE )); then
+          PROMPT_INDICATOR="%F{magenta}[V] "
+        else
+          PROMPT_INDICATOR="%F{yellow}[N] "
+        fi
+        echo -ne '\e[2 q'
+        ;;
+      viins|main)
+        PROMPT_INDICATOR="%F{cyan}[I] "
+        echo -ne '\e[6 q'
+        ;;
+    esac
+    zle .reset-prompt
+}
+zle -N zle-keymap-select _update_prompt_and_cursor_interactively
+
+# --- PART 2: The "New Line" Logic ---
+_set_prompt_for_new_line() {
+    PROMPT_INDICATOR="%F{cyan}[I] "
+    echo -ne '\e[6 q'
+}
+zle -N zle-line-init _set_prompt_for_new_line
+add-zsh-hook precmd _set_prompt_for_new_line
+
+# --- PART 3: Targeted "Scalpel" Widgets and Bindings ---
+
+# WIDGET 1: Hijacks 'v' in Normal mode for instant [V] indicator.
+_enter_visual_mode_and_update_prompt() {
+  zle .visual-mode
+  _update_prompt_and_cursor_interactively
+}
+zle -N _enter_visual_mode_and_update_prompt
+bindkey -M vicmd 'v' _enter_visual_mode_and_update_prompt
+
+# WIDGET 2 (NEW): Hijacks 'Esc' in Visual mode to exit and update.
+_exit_visual_mode_and_update_prompt() {
+  zle .deactivate-region
+  _update_prompt_and_cursor_interactively
+}
+zle -N _exit_visual_mode_and_update_prompt
+# Note: '^[' is the correct representation for the Escape key.
+bindkey -M visual '^[' _exit_visual_mode_and_update_prompt
+
+# WIDGET 3 (NEW): Hijacks 'y' in Visual mode to yank, exit, and update.
+_yank_and_exit_visual_mode() {
+  zle .vi-yank
+  _update_prompt_and_cursor_interactively
+}
+zle -N _yank_and_exit_visual_mode
+bindkey -M visual 'y' _yank_and_exit_visual_mode
+
+# WIDGET 4 (NEW): Hijacks 'd' in Visual mode to delete, exit, and update.
+_delete_and_exit_visual_mode() {
+  zle .kill-region
+  _update_prompt_and_cursor_interactively
+}
+zle -N _delete_and_exit_visual_mode
+bindkey -M visual 'd' _delete_and_exit_visual_mode
+
+
+_paste_and_exit_visual_mode() {
+  zle .put-replace-selection # The perfect widget from your test
+  _update_prompt_and_cursor_interactively
+}
+zle -N _paste_and_exit_visual_mode
+bindkey -M visual 'p' _paste_and_exit_visual_mode
+
+# Your original keybinding for 'jjk' escape.
+_vim_jjk_escape() {
+  if [[ ${LBUFFER[-2,-1]} == 'jj' ]]; then
+    LBUFFER=${LBUFFER%jj}
+    zle vi-cmd-mode
+  else
+    zle self-insert
+  fi
+}
+zle -N _vim_jjk_escape
+bindkey -M viins 'k' _vim_jjk_escape
+
+# END---- VI keybinds for zsh END---- VI keybinds for zsh END----
+
+
+
+
+
+
+
+
+
 
 
 # enable completion features
 autoload -Uz compinit
 compinit -U -d ~/.cache/zcompdump # -U for security, -d to specify dump file
+
+      
+# Style for ZLE states like visual mode, search, etc.
+# This is the modern and correct way to style selections.
+# .zshrc
+# zstyle ':zle:*' region_highlight 'bg=#FFCB6B'
+# Style for ZLE states like visual mode, search, etc.
+# This is the modern and correct way to style selections.
+# --- ZLE HIGHLIGHT LABORATORY ---
+# Use this block to experiment with styles.
+
+## THE GOOD ONE
+# zle_highlight=(
+#   'default:none'
+#   # 'visual:bg=#44475a'
+#   'region:bg=#44475a,underline'
+#   # 'isearch:bg=cyan,fg=black,bold'
+#   # 'special:bg=red,fg=white'
+#   # 'special:standout'
+# )
+
+zle_highlight=(
+    'default:none'
+  'visual:bg=white,fg=black'
+  # 'region:bg=#44475a'
+  # 'region:bg=#44475a,fg=#f8f8f2'
+  # 'region:bg=#44475a,underline'
+  'region:bold,underline'
+  # 'region:bold'
+  'special:bg=red,fg=white'
+  'isearch:bg=green,fg=black,bold'
+)
+
+# --- Test Theme 1: "High Contrast Inverted" ---
+# zle_highlight=(
+#   'default:none'
+  # 'visual:bg=white,fg=black'
+#   'region:bg=white,fg=black'
+#   'isearch:bg=green,fg=black,bold'
+#   'special:bg=red,fg=white'
+# )
+
+# --- Test Theme 2: "Cyberpunk Neon" ---
+# zle_highlight=(
+#   'default:none'
+#   'visual:bg=#282a36,fg=magenta,bold'
+#   'region:bg=#282a36,fg=magenta,bold'
+#   'isearch:bg=cyan,fg=black'
+#   'special:bg=red,fg=white,underline'
+# )
+
+# --- Test Theme 3: "Subtle & Modern" ---
+# zle_highlight=(
+#   'default:none'
+#   'visual:bg=#44475a'
+#   'region:bg=#44475a,underline'
+#   'isearch:bg=yellow,fg=black'
+#   'special:standout'
+# )
+# --- Test Theme 4: "Terminal Green" ---
+# zle_highlight=(
+#   'default:none'
+#   'visual:bg=green,fg=black'
+#   'region:bg=green,fg=black'
+#   'isearch:bg=white,fg=green,bold'
+#   'special:bg=red,fg=white'
+# )
+# --- Test Theme 5: "Just Underline" ---
+# zle_highlight=(
+#   # 'default:none'
+#   # 'visual:bold,underline'
+#   'region:bold,underline'
+#   # 'isearch:standout'
+#   # 'special:bg=red,fg=white'
+# )
+# --- Theme: "Dracula Selection" ---
+# This matches the effect in your new screenshot by setting a specific
+# background color for the selection.
+
+
+
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete
@@ -55,6 +276,10 @@ zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+
+
+
 
 # History configurations
 HISTFILE=~/.zsh_history
@@ -109,8 +334,8 @@ configure_prompt() {
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-            PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
-            # Right-side prompt with exit codes and background processes
+            PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B${PROMPT_INDICATOR}%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+                # Right-side prompt with exit codes and background processes
             #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
         oneline)
@@ -154,6 +379,10 @@ if [ "$color_prompt" = yes ]; then
 
     configure_prompt
 
+
+
+
+
     # enable syntax-highlighting
     # ARCH LINUX: Path for zsh-syntax-highlighting is typically different.
     # Ensure you installed it via: sudo pacman -S zsh-syntax-highlighting
@@ -191,7 +420,7 @@ if [ "$color_prompt" = yes ]; then
         ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]=fg=magenta,bold
         ZSH_HIGHLIGHT_STYLES[assign]=none
         ZSH_HIGHLIGHT_STYLES[redirection]=fg=blue,bold
-        ZSH_HIGHLIGHT_STYLES[comment]=fg=black,bold
+        ZSH_HIGHLIGHT_STYLES[comment]=fg=white,bold
         ZSH_HIGHLIGHT_STYLES[named-fd]=none
         ZSH_HIGHLIGHT_STYLES[numeric-fd]=none
         ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
@@ -237,7 +466,23 @@ xterm*|rxvt*|Eterm|aterm|kterm|gnome*|alacritty|kitty) # Added kitty
     ;;
 esac
 
-precmd() {
+
+
+# precmd() {
+#     # Print the previously configured title
+#     print -Pnr -- "$TERM_TITLE"
+#
+#     # Print a new line before the prompt, but only if it is not the first line
+#     if [ "$NEWLINE_BEFORE_PROMPT" = yes ]; then
+#         if [ -z "$_NEW_LINE_BEFORE_PROMPT" ]; then
+#             _NEW_LINE_BEFORE_PROMPT=1
+#         else
+#             print ""
+#         fi
+#     fi
+# }
+
+_zsh_precmd_actions() {
     # Print the previously configured title
     print -Pnr -- "$TERM_TITLE"
 
@@ -250,28 +495,14 @@ precmd() {
         fi
     fi
 }
+add-zsh-hook precmd _zsh_precmd_actions
+
 
 # enable color support of ls, less and man, and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     #alias dir='dir --color=auto' # Usually covered by ls
     #alias vdir='vdir --color=auto' # Usually covered by ls -l
-	export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
-	export PATH="$HOME/.local/bin:$PATH"
-	export PATH="$PATH:/home/dex/.cargo/bin/"
-	export EDITOR=nvim # this is so that visudo works i guess, you can specify any EDITOR or before visudo type EDITOR=.... to like you know change the env var and what not... you got the idea
-	export MANPAGER='nvim +Man!'
-	export PATH="$PATH:/home/dex/scripts/ddesk/:/home/dex/scripts/ddesk/[:/home/dex/scripts/ddesk/]:/home/dex/scripts/ddesk/]]:/home/dex/scripts/ddesk/nothing"
-        export QT_QPA_PLATFORMTHEME=qt6ct
-	# ---- export for python versions pyenv ----
-
-	export PATH="$PYENV_ROOT/bin:$PATH"
-	export PYENV_ROOT="$HOME/.pyenv"
-	eval "$(pyenv init --path)"
-	eval "$(pyenv init -)"
-
-
-	# ---- export for python versions pyenv end----
 
 	# ---- Time  ----
 
@@ -281,12 +512,18 @@ if [ -x /usr/bin/dircolors ]; then
     # alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
 
 
-# ---- Time  END----
+    # ---- Time  END----
 
 
 
 
 
+    
+    alias msgbox='zenity' # The space at the end tells the shell to perfom alias expansion on the word following sudo
+    alias sudo='sudo ' # The space at the end tells the shell to perfom alias expansion on the word following sudo
+    alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias o='less' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias c='cd' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias vim='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias hx='helix'
@@ -374,9 +611,19 @@ fi
 # You can add any of your personal aliases or functions below this line
 source <(fzf --zsh)
 
+# 1. Free up Ctrl+R completely by unbinding it from both modes.
+bindkey -r -M viins '^R' # Unbind from INSERT mode
+bindkey -r -M vicmd '^R' # Unbind from NORMAL mode (This was the missing piece!)
 
+# 2. Bind Alt+R to the FZF history widget in BOTH modes.
+bindkey -M viins '\er' fzf-history-widget # Bind for INSERT mode
+bindkey -M vicmd '\er' fzf-history-widget # Bind for NORMAL mode
 
+# bind alt+e in normal mode to edit in editor
+bindkey -M vicmd '\ee' edit-command-line
 
+# 3. Bind Ctrl+R to the native `redo` command, but ONLY in normal mode.
+bindkey -M vicmd '^R' redo
 # ---- functions i made with ai asstantce ---- 
 
 #------------------------------------------------------------------
@@ -519,7 +766,7 @@ pw() {
 #               \"\$file_path\"
 #             echo \"\nFile: \$file_path\"
 #             file \"\$file_path\"
-#             ;;
+#               kk ;;
 #           application/pdf)
 #             pdftotext \"\$file_path\" - | head -200
 #             ;;
@@ -541,7 +788,7 @@ pw() {
 
 
 
-# --- functions ---------
+# --- myfuncs - my functions - functions ---------
 
 
 fp.scuffed.video.preview() {
@@ -883,11 +1130,48 @@ ipinfo() {
     fi
 }
 
-# ---- Functions END -----
+
+# Function to copy the Nth item from CopyQ (using 1-based counting)
+# Usage: cpc 2  (to copy the 2nd item)
+cpc() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: cpc <position>"
+    return 1
+  fi
+  # Subtract 1 from the input to get the correct zero-based index
+  copyq select $(($1 - 1))
+}
+
+
+
+
+
+
+# --- Custom Widget to Clear the Kill Ring ---
+
+# 1. Define a function that will be run by the line editor.
+#    This function runs in the correct scope to modify the real killring.
+_clear_kill_ring() {
+  # This is the core logic that empties the actual killring array.
+  killring=()
+
+  # This provides visual feedback so you know it worked.
+  # zle -M "Kill ring cleared."
+}
+
+# 2. Register the shell function as a ZLE widget.
+#    This makes the function available to `bindkey`.
+zle -N clear-kill-ring _clear_kill_ring
+
+# 3. Bind the new widget to a key.
+#    Alt+K is a good choice (mnemonic for "Kill the Kill-ring").
+#    We bind it for both Insert and Normal mode for convenience.
+bindkey '\ek' clear-kill-ring      # For Vi INSERT mode
 
 
 
 # xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
 
 
-
+eval $(keychain --eval --quiet id_ed25519)
+eval $(keychain --eval --quiet ssh)
