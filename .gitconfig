@@ -1,5 +1,2 @@
-[user]
-	name = DexGith
-	email = ttdextester@gmail.com
-[credential]
-	helper = cache
+[safe]
+	directory = /home/dex/git/arch_dex
