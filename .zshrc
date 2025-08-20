@@ -1,6 +1,107 @@
 # ~/.zshrc file for zsh interactive shells.
 KEYTIMEOUT=1
 
+ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
+
+# Source the plugin now that it's installed via AUR
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+
+
+# --- FZF Integration with zsh-vi-mode ---
+# This function will be run automatically by the plugin after it loads.
+function zvm_after_init() {
+  # Load fzf keybindings and completions
+  source <(fzf --zsh)
+
+
+   # --- Re-bind Custom Keys for Vi Insert and Normal Modes ---
+
+  # --- Application Launchers (Both Modes) ---
+  bindkey -s -M viins '^f' "tmux-sessionizer\r"
+  bindkey -s -M vicmd '^f' "tmux-sessionizer\r"
+  bindkey -s -M viins '\eh' "tmux-sessionizer -s 0\r"
+  bindkey -s -M vicmd '\eh' "tmux-sessionizer -s 0\r"
+  bindkey -s -M viins '\et' "tmux-sessionizer -s 1\r"
+  bindkey -s -M vicmd '\et' "tmux-sessionizer -s 1\r"
+  bindkey -s -M viins '\en' "tmux-sessionizer -s 2\r"
+  bindkey -s -M vicmd '\en' "tmux-sessionizer -s 2\r"
+  bindkey -s -M viins '\es' "tmux-sessionizer -s 3\r"
+  bindkey -s -M vicmd '\es' "tmux-sessionizer -s 3\r"
+
+  # --- General Editing & Navigation (Mostly for Insert Mode) ---
+  # Some are also bound in Normal mode for a consistent experience,
+  # overriding some default Vi keybindings.
+
+  # Unbind Ctrl+S to prevent terminal freeze
+  bindkey -r -M viins '^S'
+  bindkey -r -M vicmd '^S'
+
+  # Line editing
+  bindkey -M viins '^U' backward-kill-line
+  bindkey -M viins '^K' kill-line
+  bindkey -M vicmd '^K' kill-line 
+
+  # Word/Char editing
+  bindkey -M viins '^[[3;5~' kill-word      # Ctrl+Delete
+  bindkey -M vicmd '^[[3;5~' kill-word      # Ctrl+Delete
+  bindkey -M viins '^[[3~'   delete-char    # Delete
+  bindkey -M viins '^[[1;5C' forward-word   # Ctrl+Right
+  bindkey -M vicmd '^[[1;5C' forward-word
+  bindkey -M viins '^[[1;5D' backward-word  # Ctrl+Left
+  bindkey -M vicmd '^[[1;5D' backward-word
+
+  # Line Navigation (Emacs style)
+  bindkey -M viins '^A' beginning-of-line # Ctrl+A
+  bindkey -M vicmd '^A' beginning-of-line
+  bindkey -M viins '^E' end-of-line     # Ctrl+E
+  bindkey -M vicmd '^E' end-of-line
+  bindkey -M viins '^[[H' beginning-of-line # Home
+  bindkey -M vicmd '^[[H' beginning-of-line
+  bindkey -M viins '^[[F' end-of-line       # End
+  bindkey -M vicmd '^[[F' end-of-line
+
+  # # History/Buffer Navigation
+  # bindkey -M viins '^[[5~' beginning-of-buffer-or-history # Page Up
+  # bindkey -M vicmd '^[[5~' beginning-of-buffer-or-history
+  # bindkey -M viins '^[[6~' end-of-buffer-or-history       # Page Down
+  # bindkey -M vicmd '^[[6~' end-of-buffer-or-history
+
+  # Yank/Paste/Undo
+  bindkey -M viins '^[[Z' undo # Shift+Tab
+  bindkey -M vicmd '^[[Z' undo
+  bindkey -M viins '^Y' yank
+  bindkey -M viins '\ey' yank-pop
+
+  # --- Special Bindings & Custom Widgets ---
+  
+  # Insert a newline in the prompt
+  # NOTE: Not bound in vicmd mode, as 'j' is used for navigation.
+  bindkey -M viins '^J' self-insert
+  bindkey -M vicmd '^J' self-insert
+
+  # History expansion on space
+  # NOTE: Not bound in vicmd mode, as 'space' is used for navigation.
+  bindkey -M viins ' ' magic-space
+
+  # Toggle prompt style
+  bindkey -M viins '^P' toggle_oneline_prompt
+  bindkey -M vicmd '^P' toggle_oneline_prompt
+
+  # Edit command line in $EDITOR
+  bindkey -M viins '\ee' edit-command-line
+  bindkey -M vicmd '\ee' edit-command-line
+
+  # Clear the kill ring (paste history)
+  bindkey -M viins '\ek' clear-kill-ring
+  bindkey -M vicmd '\ek' clear-kill-ring
+}
+
+
+
+
+
+
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -20,7 +121,7 @@ stty -ixon # to stop the ctrl + s freezing the terminal (ctrl+q unfreezes termin
 
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
-bindkey -v                                        # emacs key bindings
+# bindkey -v                                        # emacs key bindings
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '\ee' edit-command-line # Or use '\ev' if you prefer
@@ -56,118 +157,122 @@ bindkey -s '\es' "tmux-sessionizer -s 3\r"
 
 
 
-# ---- VI keybinds for zsh ----
+# --[VI]-- [ VI keybinds for zsh ] --W32 Tue, 12 at 15:48--
 
 
+
+# NOT_NEEDED this is not needed because we are trying to set up the
+# zsh-vi-mode plugin W32 Tue, 12 at 15:47
 #2 ---- [viins-insert keybinds] ----
 
-bindkey -M viins '^?' backward-delete-char
-
-
+# bindkey -M viins '^?' backward-delete-char
+# bindkey -M viins '^W' backward-kill-word
 
 #2 END---- [viins-insert keybinds] ----
 
 
 
-# -------------------------------------------------------------------
-# ZSH VI-MODE CURSOR AND PROMPT INDICATOR (Final Architecture)
-# -------------------------------------------------------------------
-
-# -------------------------------------------------------------------
-# ZSH VI-MODE: The Final and Correct Architecture
-# -------------------------------------------------------------------
-
-# END----# -------------------------------------------------------------------
-# ZSH VI-MODE: The Final and Correct Architecture
-# -------------------------------------------------------------------
-
-# We must explicitly load the hook function system first.
-autoload -U add-zsh-hook
-
-# --- PART 1: The Foundation (Handles I/N modes) ---
-_update_prompt_and_cursor_interactively() {
-    case $KEYMAP in
-      vicmd)
-        if (( REGION_ACTIVE )); then
-          PROMPT_INDICATOR="%F{magenta}[V] "
-        else
-          PROMPT_INDICATOR="%F{yellow}[N] "
-        fi
-        echo -ne '\e[2 q'
-        ;;
-      viins|main)
-        PROMPT_INDICATOR="%F{cyan}[I] "
-        echo -ne '\e[6 q'
-        ;;
-    esac
-    zle .reset-prompt
-}
-zle -N zle-keymap-select _update_prompt_and_cursor_interactively
-
-# --- PART 2: The "New Line" Logic ---
-_set_prompt_for_new_line() {
-    PROMPT_INDICATOR="%F{cyan}[I] "
-    echo -ne '\e[6 q'
-}
-zle -N zle-line-init _set_prompt_for_new_line
-add-zsh-hook precmd _set_prompt_for_new_line
-
-# --- PART 3: Targeted "Scalpel" Widgets and Bindings ---
-
-# WIDGET 1: Hijacks 'v' in Normal mode for instant [V] indicator.
-_enter_visual_mode_and_update_prompt() {
-  zle .visual-mode
-  _update_prompt_and_cursor_interactively
-}
-zle -N _enter_visual_mode_and_update_prompt
-bindkey -M vicmd 'v' _enter_visual_mode_and_update_prompt
-
-# WIDGET 2 (NEW): Hijacks 'Esc' in Visual mode to exit and update.
-_exit_visual_mode_and_update_prompt() {
-  zle .deactivate-region
-  _update_prompt_and_cursor_interactively
-}
-zle -N _exit_visual_mode_and_update_prompt
-# Note: '^[' is the correct representation for the Escape key.
-bindkey -M visual '^[' _exit_visual_mode_and_update_prompt
-
-# WIDGET 3 (NEW): Hijacks 'y' in Visual mode to yank, exit, and update.
-_yank_and_exit_visual_mode() {
-  zle .vi-yank
-  _update_prompt_and_cursor_interactively
-}
-zle -N _yank_and_exit_visual_mode
-bindkey -M visual 'y' _yank_and_exit_visual_mode
-
-# WIDGET 4 (NEW): Hijacks 'd' in Visual mode to delete, exit, and update.
-_delete_and_exit_visual_mode() {
-  zle .kill-region
-  _update_prompt_and_cursor_interactively
-}
-zle -N _delete_and_exit_visual_mode
-bindkey -M visual 'd' _delete_and_exit_visual_mode
-
-
-_paste_and_exit_visual_mode() {
-  zle .put-replace-selection # The perfect widget from your test
-  _update_prompt_and_cursor_interactively
-}
-zle -N _paste_and_exit_visual_mode
-bindkey -M visual 'p' _paste_and_exit_visual_mode
-
-# Your original keybinding for 'jjk' escape.
-_vim_jjk_escape() {
-  if [[ ${LBUFFER[-2,-1]} == 'jj' ]]; then
-    LBUFFER=${LBUFFER%jj}
-    zle vi-cmd-mode
-  else
-    zle self-insert
-  fi
-}
-zle -N _vim_jjk_escape
-bindkey -M viins 'k' _vim_jjk_escape
-
-# END---- VI keybinds for zsh END---- VI keybinds for zsh END----
+# # -------------------------------------------------------------------
+# # ZSH VI-MODE: The Final and Correct Architecture
+# # -------------------------------------------------------------------
+#
+# # We must explicitly load the hook function system first.
+# autoload -U add-zsh-hook
+#
+# # --- PART 1: The Foundation (Handles I/N modes) ---
+# _update_prompt_and_cursor_interactively() {
+#     case $KEYMAP in
+#       vicmd)
+#         if (( REGION_ACTIVE )); then
+#           PROMPT_INDICATOR="%F{magenta}[V] "
+#         else
+#           PROMPT_INDICATOR="%F{yellow}[N] "
+#         fi
+#         echo -ne '\e[2 q'
+#         ;;
+#       viins|main)
+#         PROMPT_INDICATOR="%F{cyan}[I] "
+#         echo -ne '\e[6 q'
+#         ;;
+#     esac
+#     zle .reset-prompt
+# }
+# zle -N zle-keymap-select _update_prompt_and_cursor_interactively
+#
+# # --- PART 2: The "New Line" Logic ---
+# _set_prompt_for_new_line() {
+#     PROMPT_INDICATOR="%F{cyan}[I] "
+#     echo -ne '\e[6 q'
+# }
+# zle -N zle-line-init _set_prompt_for_new_line
+# add-zsh-hook precmd _set_prompt_for_new_line
+#
+# # --- PART 3: Targeted "Scalpel" Widgets and Bindings ---
+#
+# # WIDGET 1: Hijacks 'v' in Normal mode for instant [V] indicator.
+# _enter_visual_mode_and_update_prompt() {
+#   zle .visual-mode
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _enter_visual_mode_and_update_prompt
+# bindkey -M vicmd 'v' _enter_visual_mode_and_update_prompt
+#
+#
+# _enter_visual_line_mode_and_update_prompt() {
+#   zle .visual-line-mode
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _enter_visual_line_mode_and_update_prompt 
+# bindkey -M vicmd 'V' _enter_visual_line_mode_and_update_prompt 
+#
+#
+# # WIDGET 2 (NEW): Hijacks 'Esc' in Visual mode to exit and update.
+# _exit_visual_mode_and_update_prompt() {
+#   zle .deactivate-region
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _exit_visual_mode_and_update_prompt
+# # Note: '^[' is the correct representation for the Escape key.
+# bindkey -M visual '^[' _exit_visual_mode_and_update_prompt
+#
+# # WIDGET 3 (NEW): Hijacks 'y' in Visual mode to yank, exit, and update.
+# _yank_and_exit_visual_mode() {
+#   zle .vi-yank
+#   echo -n "$CUTBUFFER" | xclip -i -selection clipboard
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _yank_and_exit_visual_mode
+# bindkey -M visual 'y' _yank_and_exit_visual_mode
+#
+# # WIDGET 4 (NEW): Hijacks 'd' in Visual mode to delete, exit, and update.
+# _delete_and_exit_visual_mode() {
+#   zle .kill-region
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _delete_and_exit_visual_mode
+# bindkey -M visual 'd' _delete_and_exit_visual_mode
+#
+#
+# _paste_and_exit_visual_mode() {
+#   zle .put-replace-selection # The perfect widget from your test
+#   _update_prompt_and_cursor_interactively
+# }
+# zle -N _paste_and_exit_visual_mode
+# bindkey -M visual 'p' _paste_and_exit_visual_mode
+#
+# # Your original keybinding for 'jjk' escape.
+# _vim_jjk_escape() {
+#   if [[ ${LBUFFER[-2,-1]} == 'jj' ]]; then
+#     LBUFFER=${LBUFFER%jj}
+#     zle vi-cmd-mode
+#   else
+#     zle self-insert
+#   fi
+# }
+# zle -N _vim_jjk_escape
+# bindkey -M viins 'k' _vim_jjk_escape
+#
+# END--[VI]-- [ VI keybinds for zsh ] END----
 
 
 
@@ -203,17 +308,17 @@ compinit -U -d ~/.cache/zcompdump # -U for security, -d to specify dump file
 #   # 'special:standout'
 # )
 
-zle_highlight=(
-    'default:none'
-  'visual:bg=white,fg=black'
-  # 'region:bg=#44475a'
-  # 'region:bg=#44475a,fg=#f8f8f2'
-  # 'region:bg=#44475a,underline'
-  'region:bold,underline'
-  # 'region:bold'
-  'special:bg=red,fg=white'
-  'isearch:bg=green,fg=black,bold'
-)
+# zle_highlight=(
+#     'default:none'
+#   'visual:bg=white,fg=black'
+#   # 'region:bg=#44475a'
+#   # 'region:bg=#44475a,fg=#f8f8f2'
+#   # 'region:bg=#44475a,underline'
+#   'region:bold,underline'
+#   # 'region:bold'
+#   'special:bg=red,fg=white'
+#   'isearch:bg=green,fg=black,bold'
+# )
 
 # --- Test Theme 1: "High Contrast Inverted" ---
 # zle_highlight=(
@@ -508,6 +613,7 @@ if [ -x /usr/bin/dircolors ]; then
 
     # 2. Create the alias you want, which simply calls the function above.
     alias ]timer='_my_timer_func'
+    alias T='thunar .'
 
     # alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
 
@@ -519,9 +625,22 @@ if [ -x /usr/bin/dircolors ]; then
 
 
     
+    alias py='python' # The space at the end tells the shell to perfom alias expansion on the word following sudo
     alias msgbox='zenity' # The space at the end tells the shell to perfom alias expansion on the word following sudo
     alias sudo='sudo ' # The space at the end tells the shell to perfom alias expansion on the word following sudo
     alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obo='ob o t -v' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsearch='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsh='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obshc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obse='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsearchc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obset='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+    alias obsd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias o='less' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias c='cd' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
     alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
@@ -609,7 +728,7 @@ elif [ -f /usr/share/pkgfile/command-not-found.zsh ]; then # Alternative path fo
 fi
 
 # You can add any of your personal aliases or functions below this line
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
 # 1. Free up Ctrl+R completely by unbinding it from both modes.
 bindkey -r -M viins '^R' # Unbind from INSERT mode
@@ -630,432 +749,29 @@ bindkey -M vicmd '^R' redo
 #  SMART "FZF OPEN" AND "FZF PREVIEW" FUNCTIONS
 #------------------------------------------------------------------
 
-# Smart "fzf open" function
-# - If the selected file is text-based, opens it in Neovim (in a new Kitty window).
-# - Otherwise, opens it with the default GUI application (like Dolphin, Gwenview, etc).
-fo() {
-  # 1. Use 'local' to keep variables from polluting your shell.
-  local file
-  local mime_type
 
-  # 2. Find a file using fzf.
-  file=$(fd --hidden --type file . | fzf --height 60% --reverse)
+# fo
+# look for file and open it 
+source $HOME/.config/zsh/functions/fo.zsh
 
-  # 3. Check if a file was actually selected (the user didn't press Esc).
-  if [[ -n "$file" ]]; then
-    # 4. THE MAGIC: Use the `file` command to get the MIME type.
-    #    --brief hides the filename, --mime-type gives output like "text/plain".
-    mime_type=$(file --brief --mime-type "$file")
+# pw
+# some old sushi preview thing on the file, meh still useful
+source $HOME/.config/zsh/functions/pw.zsh
 
-    # 5. THE DECISION: Check if the MIME type starts with "text/".
-    if [[ "$mime_type" == text/* ]]; then
-      echo "Opening text file in Neovim: $file"
-      # This matches the command from your .desktop file.
-      kitty -e nvim "$file"
-    else
-      echo "Opening with default app: $file"
-      # Use xdg-open for non-text files (images, PDFs, videos...).
-      # '&> /dev/null' hides any output from the GUI app in your terminal.
-      xdg-open "$file" &> /dev/null
-    fi
-  fi
-}
+# ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
 
 
-pw() {
-  # Check for tools
-  if ! command -v sushi &> /dev/null || ! command -v xdotool &> /dev/null || ! command -v wmctrl &> /dev/null; then
-    echo "Error: Missing required tools." >&2; return 1;
-  fi
+# fp.scuffed.video.preview.zsh
+# some unfinished fzf file preview for vids
+source $HOME/.config/zsh/functions/fp.scuffed.video.preview.zsh
 
-  local sushi_class="Org.gnome.NautilusPreviewer"
+# fp
+# fzf file preview
+source $HOME/.config/zsh/functions/fp.zsh
 
-  # Find an item
-  local item
-  item=$(fd --hidden . | fzf --height 60% --reverse)
-
-  if [[ -n "$item" ]]; then
-    # --- MONITOR-AWARE LOGIC ---
-    eval "$(xdotool getmouselocation --shell)"
-    local current_mouse_x=$X
-    local original_mouse_y=$Y
-
-    local target_center_x
-    local target_center_y
-
-    # Use your tested, hardcoded coordinates
-    if [[ "$current_mouse_x" -lt 1920 ]]; then
-      target_center_x=828
-      target_center_y=551
-    else
-      target_center_x=2567
-      target_center_y=370
-    fi
-
-    # Launch sushi
-    sushi "$item" &
-
-    # Poll for the window ID to know when it's ready
-    local sushi_window_id=""
-    local -i maxtries=50; local -i count=0
-    while [[ -z "$sushi_window_id" && "$count" -lt "$maxtries" ]]; do
-      sushi_window_id=$(xdotool search --class "$sushi_class" | tail -1)
-      sleep 0.1
-      ((count++))
-    done
-
-    # If the window appeared...
-    if [[ -n "$sushi_window_id" ]]; then
-      # STEP 1: FOCUS THE WINDOW
-      # Move mouse, click to focus, and move back instantly.
-      sleep 0.1
-      xdotool mousemove "$target_center_x" "$target_center_y" click 1 mousemove "$current_mouse_x" "$original_mouse_y"
-
-      # STEP 2: ADD "ALWAYS ON TOP"
-      # This is the part from your inspiration. We target the window that
-      # is now ":ACTIVE:" because of our click.
-      sleep 0.1
-      wmctrl -r :ACTIVE: -b add,above
-
-    else
-      echo "Error: Timed out waiting for the sushi window." >&2
-    fi
-  fi
-}
-
-# ---------- simple fzf preview setup template------------- 
-# fp() {
-#   local missing_tools=()
-#   command -v exa &>/dev/null || missing_tools+=('exa')
-#   command -v bat &>/dev/null || missing_tools+=('bat')
-#   command -v chafa &>/dev/null || missing_tools+=('chafa')
-#   command -v pdftotext &>/dev/null || missing_tools+=('poppler')
-#   command -v mediainfo &>/dev/null || missing_tools+=('mediainfo')
-#   if ((${#missing_tools[@]} > 0)); then
-#     echo "Missing tools: ${missing_tools[*]}" >&2
-#     return 1
-#   fi
-
-#   fd --hidden . | fzf --height 80% --layout=reverse --border \
-#     --preview-window 'right:50%:wrap' \
-#     --preview 'sh -c "
-#       file_path=\"\$1\"
-#       # Calculate preview window dimensions (approximate)
-#       width=\$(( \$(tput cols 2>/dev/null || echo 80) / 2 ))
-#       height=\$(( \$(tput lines 2>/dev/null || echo 25) * 7 / 10 ))
-
-#       if [ -d \"\$file_path\" ]; then
-#         exa --tree --color=always \"\$file_path\" | head -200
-#       else
-#         mime_type=\$(file --brief --mime-type \"\$file_path\")
-#         case \"\$mime_type\" in
-#           image/*)
-#             # Adjust dimensions for better fit
-#             width=\$(( width - 2 ))  # Account for borders
-#             height=\$(( height - 2 ))
-#             # Set minimum dimensions
-#             [ \$width -lt 20 ] && width=20
-#             [ \$height -lt 10 ] && height=10
-#             chafa \
-#               -f symbols \
-#               --fg-only \
-#               --optimize=4 \
-#               --scale-method=fit \
-#               -s \${width}x\${height} \
-#               --animate off \
-#               \"\$file_path\"
-#             echo \"\nFile: \$file_path\"
-#             file \"\$file_path\"
-#               kk ;;
-#           application/pdf)
-#             pdftotext \"\$file_path\" - | head -200
-#             ;;
-#           video/*|audio/*)
-#             mediainfo \"\$file_path\"
-#             ;;
-#           text/*)
-#             bat --color=always --style=numbers --line-range=:200 \"\$file_path\"
-#             ;;
-#           *)
-#             file \"\$file_path\"
-#             ;;
-#         esac
-#       fi
-#     " sh {}'
-# }
-
-# ---------- simple fzf preview setup template END------------- 
-
-
-
-# --- myfuncs - my functions - functions ---------
-
-
-fp.scuffed.video.preview() {
-  local missing_tools=()
-  command -v exa &>/dev/null || missing_tools+=('exa')
-  command -v bat &>/dev/null || missing_tools+=('bat')
-  command -v timg &>/dev/null || missing_tools+=('timg')
-  command -v pdftotext &>/dev/null || missing_tools+=('poppler')
-  command -v mediainfo &>/dev/null || missing_tools+=('mediainfo')
-  if ((${#missing_tools[@]} > 0)); then
-    echo "Missing tools: ${missing_tools[*]}" >&2
-    return 1
-  fi
-
-  fd --hidden . | fzf --height 80% --layout=reverse --border \
-    --preview-window 'right:50%:wrap' \
-    --preview 'sh -c "
-      file_path=\"\$1\"
-      width=\$(( \$(tput cols 2>/dev/null || echo 80) / 2 - 2 ))
-      height=\$(( \$(tput lines 2>/dev/null || echo 25) / 2 ))
-
-      if [ -d \"\$file_path\" ]; then
-        exa --tree --color=always \"\$file_path\" | head -200
-      else
-        mime_type=\$(file --brief --mime-type \"\$file_path\")
-        case \"\$mime_type\" in
-          image/*)
-            echo \"📷 \$(basename \"\$file_path\")\"
-            echo \"\"
-            if [ \"\$TERM\" = \"xterm-kitty\" ]; then
-              timg -pk --compress=0 -g \${width}x\${height} --center \"\$file_path\" 2>/dev/null
-            else
-              timg -ps -g \${width}x\${height} --center \"\$file_path\" 2>/dev/null
-            fi
-            ;;
-          video/*)
-            echo \"🎬 \$(basename \"\$file_path\")\"
-            echo \"\"
-            echo \"\"
-            echo \"\"
-            
-            if command -v ffmpeg &>/dev/null; then
-              temp_dir=\"/tmp/fpp_frames_\$\$\"
-              mkdir -p \"\$temp_dir\"
-              
-              # Extract frames quickly
-              for i in 1 2 3 4 5; do
-                time_point=\$((i * 2))
-                frame_file=\"\$temp_dir/frame_\${i}.jpg\"
-                ffmpeg -ss \$time_point -i \"\$file_path\" -vframes 1 -q:v 2 -s 800x600 -preset ultrafast -y \"\$frame_file\" 2>/dev/null &
-              done
-              wait
-              
-              # Position cursor for stationary animation
-              echo \"\"
-              
-              # Loop slideshow
-              while true; do
-                for i in 1 2 3 4 5; do
-                  frame_file=\"\$temp_dir/frame_\${i}.jpg\"
-                  if [ -f \"\$frame_file\" ]; then
-                    
-                    # Move cursor back to image position
-                    printf \"\\033[10A\"
-                    
-                    if [ \"\$TERM\" = \"xterm-kitty\" ]; then
-                      timg -pk --compress=0 -g \${width}x\${height} --center \"\$frame_file\" 2>/dev/null
-                    else
-                      timg -ps -g \${width}x\${height} --center \"\$frame_file\" 2>/dev/null
-                    fi
-                    
-                    sleep 0.6
-                  fi
-                done
-              done &
-              
-              # Clean up after 30 seconds
-              sleep 30
-              kill \$! 2>/dev/null
-              rm -rf \"\$temp_dir\" 2>/dev/null
-            else
-              echo \"Video preview unavailable\"
-            fi
-            ;;
-          application/pdf)
-            echo \"📄 \$(basename \"\$file_path\")\"
-            echo \"---\"
-            pdftotext \"\$file_path\" - 2>/dev/null | head -30 || echo \"PDF preview failed\"
-            ;;
-          audio/*)
-            echo \"🎵 \$(basename \"\$file_path\")\"
-            echo \"---\"
-            mediainfo --Inform=\"General;Duration: %Duration/String%\\nBitrate: %BitRate/String%\\nFormat: %Format%\" \"\$file_path\" 2>/dev/null || \
-            echo \"Audio info unavailable\"
-            ;;
-          text/*)
-            bat --color=always --style=numbers --line-range=:30 \"\$file_path\" 2>/dev/null || \
-            cat \"\$file_path\" | head -30
-            ;;
-          *)
-            file \"\$file_path\"
-            ;;
-        esac
-      fi
-    " sh {}'
-}
-
-fp() {
-  # This part is unchanged
-  local missing_tools=()
-  command -v exa &>/dev/null || missing_tools+=('exa')
-  command -v bat &>/dev/null || missing_tools+=('bat')
-  command -v timg &>/dev/null || missing_tools+=('timg')
-  command -v pdftotext &>/dev/null || missing_tools+=('poppler')
-  command -v mediainfo &>/dev/null || missing_tools+=('mediainfo')
-  if ((${#missing_tools[@]} > 0)); then
-    echo "Missing tools: ${missing_tools[*]}" >&2
-    return 1
-  fi
-
-  # This is the fzf command with the modified preview script
-  fd --hidden . | fzf --height 80% --layout=reverse --border \
-    --preview-window 'right:50%:wrap' \
-    --bind '?:toggle-preview' \
-    --preview 'sh -c "
-      # --- START OF DEBUG MODIFICATIONS ---
-      DEBUG_LOG=\"/tmp/fzf_debug.log\"
-      echo \"--- New Preview Run ---\" >> \"\$DEBUG_LOG\"
-      echo \"File: \$1\" >> \"\$DEBUG_LOG\"
-      echo \"TERM variable is: [\$TERM]\" >> \"\$DEBUG_LOG\"
-      # --- END OF DEBUG MODIFICATIONS ---
-
-      printf \"\033[2J\"
-      
-      file_path=\"\$1\"
-      width=\$(( \$(tput cols 2>/dev/null || echo 80) / 2 ))
-      height=\$(( \$(tput lines 2>/dev/null || echo 25) * 7 / 10 ))
-
-      is_graphics_term=false
-      if [[ \"\$TERM\" == \"xterm-kitty\" || \"\$TERM\" == \"xterm-ghostty\" ]]; then
-        is_graphics_term=true
-      fi
-
-      # --- MORE DEBUGGING ---
-      echo \"is_graphics_term evaluated to: [\$is_graphics_term]\" >> \"\$DEBUG_LOG\"
-
-      if [ \"\$is_graphics_term\" = true ]; then
-        echo \"ATTEMPTING to run clear command.\" >> \"\$DEBUG_LOG\"
-        printf \"\033_Ga=d\033\\\\\"
-      else
-        echo \"SKIPPING clear command.\" >> \"\$DEBUG_LOG\"
-      fi
-
-      # The rest of the script is the same
-      if [ -d \"\$file_path\" ]; then
-        exa --tree --color=always \"\$file_path\" | head -200
-      else
-        mime_type=\$(file --brief --mime-type \"\$file_path\")
-        case \"\$mime_type\" in
-          image/*)
-            # This part is unchanged...
-            img_width=\$(( width - 2 ))
-            img_height=\$(( height - 4 ))
-            [ \$img_height -lt 10 ] && img_height=10
-            [ \$img_width -lt 20 ] && img_width=20
-            echo \"File: \$file_path\"; file \"\$file_path\"; echo \"---\"
-            if [ \"\$is_graphics_term\" = true ] && command -v kitty &>/dev/null; then
-              kitty +kitten icat --transfer-mode=memory --stdin=no \
-                --place=\${img_width}x\${img_height}@0x3 \"\$file_path\" 2>/dev/null
-            elif timg -pk --center -g \${img_width}x\${img_height} \"\$file_path\" 2>/dev/null; then
-              :
-            else
-              echo \"Preview unavailable.\"; file \"\$file_path\"; identify \"\$file_path\" 2>/dev/null || true
-            fi
-            ;;
-          *) # Simplified the rest for clarity, it does not affect the image part
-            bat --color=always --style=numbers --line-range=:200 \"\$file_path\" || file \"\$file_path\"
-            ;;
-        esac
-      fi
-    " sh {}'
-}
-
-fpp() {
-  # Tool check remains the same
-  local missing_tools=()
-  command -v exa &>/dev/null || missing_tools+=('exa')
-  command -v bat &>/dev/null || missing_tools+=('bat')
-  command -v timg &>/dev/null || missing_tools+=('timg')
-  command -v pdftotext &>/dev/null || missing_tools+=('poppler')
-  command -v mediainfo &>/dev/null || missing_tools+=('mediainfo')
-  if ((${#missing_tools[@]} > 0)); then
-    echo "Missing tools: ${missing_tools[*]}" >&2
-    return 1
-  fi
-
-  fd --hidden . | fzf --height 80% --layout=reverse --border \
-    --preview-window 'right:50%:wrap' \
-    --bind '?:toggle-preview' \
-    --preview 'sh -c "
-      file_path=\"\$1\"
-      width=\$(( \$(tput cols 2>/dev/null || echo 80) / 2 ))
-      height=\$(( \$(tput lines 2>/dev/null || echo 25) * 7 / 10 ))
-      img_width=\$(( width - 2 ))
-      img_height=\$(( height - 4 ))
-      [ \$img_height -lt 10 ] && img_height=10
-      [ \$img_width -lt 20 ] && img_width=20
-
-      # Terminal capability detection
-      if [[ \"$TERM\" == \"xterm-kitty\"* ]] && command -v kitty &>/dev/null; then
-        # Kitty terminal with graphics support
-        printf \"\033[2J\033_Ga=d\033\\\\\"
-        if [ -d \"\$file_path\" ]; then
-          exa --tree --color=always \"\$file_path\" | head -200
-        else
-          mime_type=\$(file --brief --mime-type \"\$file_path\")
-          case \"\$mime_type\" in
-            image/*)
-              echo \"File: \$file_path\"; file \"\$file_path\"; echo \"---\"
-              kitty +kitten icat --transfer-mode=memory --stdin=no \
-                --place=\${img_width}x\${img_height}@0x3 \"\$file_path\" 2>/dev/null
-              ;;
-            *) bat --color=always --style=numbers --line-range=:200 \"\$file_path\" || file \"\$file_path\" ;;
-          esac
-        fi
-      elif [[ \"$TERM\" == \"xterm-ghostty\"* ]] || [[ \"$TERM\" == \"alacritty\"* ]]; then
-        # Ghostty or Alacritty - use timg with different flags
-        printf \"\033[2J\"
-        if [ -d \"\$file_path\" ]; then
-          exa --tree --color=always \"\$file_path\" | head -200
-        else
-          mime_type=\$(file --brief --mime-type \"\$file_path\")
-          case \"\$mime_type\" in
-            image/*)
-              echo \"File: \$file_path\"; file \"\$file_path\"; echo \"---\"
-              if [[ \"$TERM\" == \"alacritty\"* ]]; then
-                # Special flags for Alacritty
-                timg -p --center -g \${img_width}x\${img_height} \"\$file_path\" 2>/dev/null || \
-                  echo \"Preview unavailable.\"; file \"\$file_path\"
-              else
-                # Ghostty
-                timg -pk --center -g \${img_width}x\${img_height} \"\$file_path\" 2>/dev/null || \
-                  echo \"Preview unavailable.\"; file \"\$file_path\"
-              fi
-              ;;
-            *) bat --color=always --style=numbers --line-range=:200 \"\$file_path\" || file \"\$file_path\" ;;
-          esac
-        fi
-      else
-        # Fallback for other terminals
-        printf \"\033[2J\"
-        if [ -d \"\$file_path\" ]; then
-          exa --tree --color=always \"\$file_path\" | head -200
-        else
-          mime_type=\$(file --brief --mime-type \"\$file_path\")
-          case \"\$mime_type\" in
-            image/*)
-              echo \"File: \$file_path\"; file \"\$file_path\"; echo \"---\"
-              timg -p --center -g \${img_width}x\${img_height} \"\$file_path\" 2>/dev/null || \
-                echo \"Preview unavailable.\"; file \"\$file_path\"
-              ;;
-            *) bat --color=always --style=numbers --line-range=:200 \"\$file_path\" || file \"\$file_path\" ;;
-          esac
-        fi
-      fi
-    " sh {}'
-}
+#fp
+#fzf file preview
+source $HOME/.config/zsh/functions/fpp.zsh
 
 # fastfetch
 
@@ -1097,6 +813,7 @@ _my_timer_func() {
 
   # Get the starting time in seconds since 1970-01-01
   local start=$(date +%s)
+  local last_mins=-1 # Initialize with a value that won't match the first minute
 
   # Loop forever until you press Ctrl+C
   while true; do
@@ -1104,19 +821,22 @@ _my_timer_func() {
     local current=$(date +%s)
     local elapsed=$((current - start))
 
-    # Calculate hours, minutes, and seconds from total elapsed seconds
+    # Calculate hours and minutes from total elapsed seconds
     local hours=$((elapsed / 3600))
     local mins=$(((elapsed / 60) % 60))
-    local secs=$((elapsed % 60))
 
-    # Print the formatted time, using \r to return to the start of the line
-    printf "\r%02d:%02d:%02d" $hours $mins $secs
+    # Check if the minute has changed since the last time it was printed
+    if [ "$mins" -ne "$last_mins" ]; then
+      # Print the formatted time, using \r to return to the start of the line
+      printf "\r%02d:%02d" $hours $mins
+      # Update the last printed minute
+      last_mins=$mins
+    fi
 
     # Wait for one second
     sleep 1
   done
 }
-
 # Function to get detailed info for a specific IP address
 # Usage: ipinfo 8.8.8.8
 ipinfo() {
@@ -1141,12 +861,6 @@ cpc() {
   # Subtract 1 from the input to get the correct zero-based index
   copyq select $(($1 - 1))
 }
-
-
-
-
-
-
 # --- Custom Widget to Clear the Kill Ring ---
 
 # 1. Define a function that will be run by the line editor.
@@ -1168,10 +882,64 @@ zle -N clear-kill-ring _clear_kill_ring
 #    We bind it for both Insert and Normal mode for convenience.
 bindkey '\ek' clear-kill-ring      # For Vi INSERT mode
 
-
-
 # xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
 
 
 eval $(keychain --eval --quiet id_ed25519)
 eval $(keychain --eval --quiet ssh)
+
+
+
+
+cdcp() {
+  if [ -z "$1" ]; then
+    echo "Usage: cdcp <filename>"
+    return 1
+  fi
+
+  ABS_FILE_PATH="$(pwd)/$1"
+
+  REL_FILE_PATH="${ABS_FILE_PATH/#$HOME/~}"
+
+  echo "Full Path:\n\n$(pwd)\n"
+
+  echo "Relative to user home if file within /home/user (!Not smart!:\n\n$REL_FILE_PATH\n"
+
+  echo -n "$ABS_FILE_PATH" | xclip -selection clipboard
+}
+
+
+
+
+# A better ls | grep, handles no arguments and adds color
+lag() {
+  if [ -z "$1" ]; then
+    # If no argument is given, just do a normal ls -la
+    ls -la
+  else
+    # If there is an argument, pipe ls to grep
+    # --color=auto highlights the match
+    ls -la | grep -i --color=auto "$1"
+  fi
+}
+
+
+# A better ls | grep, handles no arguments and adds color
+lg() {
+  if [ -z "$1" ]; then
+    # If no argument is given, just do a normal ls -la
+    ls -l
+  else
+    # If there is an argument, pipe ls to grep
+    # --color=auto highlights the match
+    ls -la | grep -i --color=auto "$1"
+  fi
+}
+
+obcd() {
+    local result=$(obsidian-cli print-default --path-only)
+    [ -n "$result" ] && cd -- "$result"
+}
+
+# ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
+

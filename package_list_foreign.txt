@@ -42,6 +42,7 @@ phonon-qt6-mpv
 polychromatic
 powershell
 protonup-qt
+pup-bin
 python-ewmh
 python-inputs
 python-steam
@@ -57,4 +58,6 @@ ulauncher
 unionfs-fuse
 ventoy-bin
 warehouse-git
+warpd
 zen-browser-bin
+zsh-vi-mode

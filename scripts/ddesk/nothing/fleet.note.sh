@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the target directory for your fleeting notes
-FLEET_DIR="/home/dex/Fleet"
+FLEET_DIR="/home/dex/fleet"
 
 # Check if the Fleet directory exists, create it if it doesn't
 if [ ! -d "$FLEET_DIR" ]; then
@@ -10,7 +10,7 @@ if [ ! -d "$FLEET_DIR" ]; then
 fi
 
 # Get the current date and time in YYYY-MM-DD_HH-MM-SS format
-FILENAME=$(date +%Y-%m-%d_%H-%M-%S).fleet
+FILENAME=$(date +%Y-%m-%d_%H-%M-%S).fleet.md
 FULL_PATH="$FLEET_DIR/$FILENAME"
 
 # Launch Alacritty and open the new file in nvim

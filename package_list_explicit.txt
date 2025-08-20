@@ -108,11 +108,13 @@ hexchat
 htop
 hyprland
 hyprpaper
+iftop
 imhex-bin
 inotify-tools
 input-remapper-bin
 intel-ucode
 inxi
+iperf3
 irssi
 jdownloader2
 jgmenu
@@ -195,6 +197,7 @@ networkmanager
 nmon
 nnn
 noto-fonts-cjk
+noto-fonts-emoji
 ntfs-3g
 obconf-qt
 obs-studio
@@ -234,6 +237,7 @@ polychromatic
 powerline-fonts
 powershell
 protonup-qt
+pup-bin
 pyenv
 python-cairo
 python-dbus
@@ -246,6 +250,7 @@ python-pyinotify
 python-pyxdg
 python-virtualenv
 python-websocket-client
+python-xcffib
 python-xlib
 qemu-base
 qemu-desktop
@@ -318,6 +323,7 @@ vlc
 vlc-plugin-ffmpeg
 vulkan-tools
 warehouse-git
+warpd
 waybar
 webkit2gtk
 wev
@@ -335,6 +341,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-lxqt
+xdo
 xdotool
 xf86-video-ati
 xf86-video-vesa
@@ -418,9 +425,11 @@ xscreensaver
 xterm
 yad
 yazi
+ydotool
 yt-dlp
 zen-browser-bin
 zoxide
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
+zsh-vi-mode

@@ -5,13 +5,21 @@ import = [ "~/.config/alacritty/themes/Dracula.toml" ]
 [window]
 opacity = 0.87
 dynamic_title= true
+decorations = "full"
+
+
 
 [keyboard]
 bindings = [
+  # Scroll the terminal buffer by a full page
+  { key = "PageUp",   action = "ScrollPageUp" },
+  { key = "PageDown", action = "ScrollPageDown" },
   # Allow Ctrl+V to paste text
   { key = "V", mods = "Control", action = "Paste" },
      # Bind Alt+PageUp to scroll the terminal buffer up one page.
    { key = "PageUp",   mods = "Control", action = "ScrollPageUp"   },
+     # Bind pageup to scroll the terminal buffer up one page
+   # { key = "PageUp",   mods = "PageUp", action = "ScrollPageUp"   },
 
    # Bind Alt+PageDown to scroll the terminal buffer down one page.
    { key = "PageDown", mods = "Control", action = "ScrollPageDown" },
@@ -39,4 +47,27 @@ bindings = [
 # Background color for the selection
 # background = '0xFFCB6B'  # A nice yellow for the highlight
 
+# Alacritty Font Configuration
+# Sets the main fon-t to FiraCode Nerd Font Mono.
+# The system will automatically use Noto Color Emoji for emoji characters.
 
+[font]
+# You can change the size to whatever you prefer.
+size = 11.5
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+# Alacritty will use a slanted version if a true Italic face isn't found.
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font Mono"
+style = "Bold Italic"

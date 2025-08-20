@@ -28,7 +28,7 @@
 ! First, remove Scroll_Lock from any existing modifiers to prevent conflicts.
 ! We also clear Mod5 in case anything else was on it.
 clear Mod5
-remove Lock = Scroll_Lock
+! remove Lock = Scroll_Lock
 
 ! Get the keycode for your Scroll Lock key (usually 78)
 ! Map this keycode to a neutral keysym. F13 is a great choice as it's
@@ -38,3 +38,13 @@ keycode 78 = F13
 ! Finally, add our new neutral keysym (F13) to an unused modifier map.
 ! Mod5 is a good choice.
 add Mod5 = F13
+
+
+! remove Lock = ALt_R
+! keycode 135 = Hyper_L
+!
+! remove Lock = Menu
+! keycode 135 = Control_L
+
+
+

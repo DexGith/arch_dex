@@ -35,13 +35,18 @@
 
 # I only have this key. I tried to pair it it didn't work. I guess we actually make it
 # and explorer because it was just a useless button
-"dolphin"
-XF86Explorer
+# "dolphin"
+# XF86Explorer
+#
+# "dolphin"
+# Hyper_L
 
 # ---- The far away problamaic problamaic keyEND ----
 
 "killall xbindkeys && sleep 0.1 && xbindkeys &"
 Mod4 + shift + control + r
+
+
 
 # The release modifier is not a standard X modifier, but you can
 # use it if you want to catch release events instead of press events
@@ -144,24 +149,22 @@ Mod4 + g
 
 
 
-
-
-
-
+# chat key
+"skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd4.rc" 
+XF86Messenger
 
 
 
 # ---- zen browser related END----
 
 
-# --- [ Mouse ] -----
+# ---[MOUSE] [ mouse movements via keyboard, capslock+apphabit and scrolling ] END-----
 
 
 
 #1 ----- Scroll wheels movements-------
 
-"sleep 5; xdotool key F16"
-Mod4 + alt + s
+
 
 "xdotool click 5"
 Katakana
@@ -205,9 +208,85 @@ m:0x0 + c:97
 
 
 
+# END---[MOUSE] [ mouse movements via keyboard, capslock+apphabit and scrolling ] END-----
 
-# END--- [ Mouse ] END-----
 
+
+
+# ---[ WINDOWS ]---- [ resizing windows ] ---
+
+# Reduce width (left)
+"~/scripts/ddesk/resize_window.sh h -40"
+mod4 + control + alt + h
+
+# Increase width (right)
+"scripts/ddesk/resize_window.sh h 40"
+mod4 + control + alt + l
+
+# # Decrease height (up)
+"scripts/ddesk/resize_window.sh v -40"
+mod4 + control + alt + k
+
+# Increase height (down)
+"scripts/ddesk/resize_window.sh v 40"
+mod4 + control + alt + j
+
+
+# Reduce width (left)
+"~/scripts/ddesk/resize_window.sh h -40"
+mod5 + s
+
+# Increase width (right)
+"scripts/ddesk/resize_window.sh h 40"
+mod5 + f
+
+# # Decrease height (up)
+"scripts/ddesk/resize_window.sh v -40"
+mod5 + e
+
+# Increase height (down)
+"scripts/ddesk/resize_window.sh v 40"
+mod5 + d
+
+
+
+# Reduce width (left)
+"$HOME/scripts/ddesk/move_window2.sh x -40"
+mod5 + h
+
+# Increase width (right)
+"$HOME/scripts/ddesk/move_window2.sh x 40"
+mod5 + l
+
+# # Decrease height (up)
+"$HOME/scripts/ddesk/move_window2.sh y -40"
+mod5 + k
+
+# Increase height (down)
+"$HOME/scripts/ddesk/move_window2.sh y 40"
+mod5 + j
+
+
+
+# END---[ WINDOWS ]---- [ resizing windows ] END---
+
+
+
+# ----[TESTS]------ [ f7 test key ] ----
+
+# testing the stupid window position thing W32 Tue, 12 at 14:23
+"$HOME/scripts/ddesk/testkeyf7.sh"
+mod5 + F7
+
+
+# window class picker W32 Tue, 12 at 14:23
+"~/scripts/esentials/gitClassOfActiveWindow.sh"
+mod5 + F9
+
+# END----[TESTS]------ [ f7 test key ] END----
+
+
+# Increase height (down)
 
 
 #
@@ -391,14 +470,20 @@ control + F3
 "wmctrl -x -a copyq"
 Mod4 + shift + c 
 
+"wmctrl -x -a Thunderbird"
+Mod4 + shift + m 
+
+"wmctrl -x -a GIMP"
+Mod4 + shift + g 
+
 "wmctrl -a btop"
 Mod4 + shift + b 
 
 "wmctrl -x -a KeePassXC"
 Mod4 + shift + k 
 
-"wmctrl -x _n_"
-Mod4 + shift + m 
+"wmctrl -a _n_ nvim"
+Mod4 + shift + n 
 
 "wmctrl -a _tm_"
 Mod4 + shift + u
@@ -409,8 +494,11 @@ Mod4 + shift + u
 # "wmctrl -a irssi"
 # Mod4 + shift + i 
 
-# "wmctrl -a root"
-# Mod4 + shift + r 
+"wmctrl -a _r_"
+Mod4 + shift + r 
+
+"wmctrl -a _f_ fleet"
+Mod4 + shift + f 
 
 "wmctrl -x -a Sublime"
 Mod4 + shift + s 
@@ -422,7 +510,7 @@ Mod4 + shift + p
 Mod4 + shift + q 
 
 "wmctrl -a 'QEMU/KVM'"
-Mod4 + shift + m 
+Mod4 + shift + w 
 
 "wmctrl -a 'Virtual Machine Manager' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
 Mod4 + shift + v 
@@ -430,11 +518,14 @@ Mod4 + shift + v
 "wmctrl -a _ob_"
 Mod4 + shift + o 
 
-"wmctrl -a _t_ && wmctrl -a '_dt_' && wmctrl -x -a Clocks"
-Mod4 + shift + a 
-
-"wmctrl -a '_dt_'"
+"wmctrl -a _t_ && wmctrl -x -a Clocks && wmctrl -a '_dt_'"
 Mod4 + shift + d 
+
+"wmctrl -x -a 'Audacity'"
+Mod4 + shift + a
+
+# "wmctrl -a '_dt_'"
+# Mod4 + shift + d 
 
 "wmctrl -a _t_"
 Mod4 + shift + t 
@@ -587,7 +678,7 @@ Mod4 + equal
 
 
 
-# ------ ALT TAB, Simple Skippy-XD Bindings ---
+# ---[ALT-TAB]--- ALT TAB, Simple Skippy-XD Bindings ---
 
 # Alt + Tab to switch to the next window
 # "skippy-xd --switch"
@@ -601,8 +692,8 @@ m:0x18 + c:23
 m:0x19 + c:23
 
 # Win + F11 for Expose mode
-"skippy-xd --expose --config ~/.config/skippy-xd/skippy-xd.rc"
-Mod4 + F11
+# "skippy-xd --expose --config ~/.config/skippy-xd/skippy-xd.rc"
+# Mod4 + F11
 # m:0x48 + c:95 <--- these didn't work so I made it Mod4 + F11
 
 # Win + F12 for Paging mode
@@ -614,7 +705,7 @@ Mod4 + F12
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
 Mod4 + F10
 
-# Win+F10 this will only expose activate windows of similar class
+# Win+F9 this will only expose activate windows of similar class
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
 Mod4 + F9
 
@@ -654,6 +745,10 @@ Mod4+ control + 9
 Mod4+ control + 0
 
 # END----- Send windows to Desktops, specefic locations on desktops END ----
+
+
+# ---- alt ----
+
 
 
 
