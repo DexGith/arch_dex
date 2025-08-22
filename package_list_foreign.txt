@@ -41,6 +41,7 @@ phonon-qt5-gstreamer
 phonon-qt6-mpv
 polychromatic
 powershell
+protontricks
 protonup-qt
 pup-bin
 python-ewmh

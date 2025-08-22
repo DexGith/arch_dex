@@ -212,6 +212,16 @@ m:0x0 + c:97
 
 
 
+# --[]-- [ hints ] ----
+
+"scripts/ddesk/nothing/hint-focus.py"
+Mod4 + Alt + f
+
+
+# END--[]-- [ hints ] END----
+
+
+
 
 # ---[ WINDOWS ]---- [ resizing windows ] ---
 
@@ -748,6 +758,10 @@ Mod4+ control + 0
 
 
 # ---- alt ----
+
+
+
+
 
 
 

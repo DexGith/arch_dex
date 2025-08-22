@@ -60,6 +60,7 @@ electron36
 emacs
 eog
 espanso-x11
+ethtool
 evince
 eza
 fastfetch
@@ -141,6 +142,7 @@ linux
 linux-firmware
 linux-headers
 lolcat
+lutris
 lxappearance
 lxappearance-obconf
 lxde-common
@@ -177,6 +179,7 @@ man-pages
 mariadb
 mc
 mediainfo
+megasync
 merkuro
 mesa-utils
 minecraft-launcher
@@ -236,6 +239,7 @@ plocate
 polychromatic
 powerline-fonts
 powershell
+protontricks
 protonup-qt
 pup-bin
 pyenv
@@ -303,6 +307,7 @@ thorium-browser-bin
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunderbird
+time
 timg
 tk
 tmux
@@ -322,6 +327,7 @@ viu
 vlc
 vlc-plugin-ffmpeg
 vulkan-tools
+wakeonlan
 warehouse-git
 warpd
 waybar
