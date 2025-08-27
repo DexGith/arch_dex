@@ -528,7 +528,7 @@ Mod4 + shift + v
 "wmctrl -a _ob_"
 Mod4 + shift + o 
 
-"wmctrl -a _t_ && wmctrl -x -a Clocks && wmctrl -a '_dt_'"
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _t_ && wmctrl -x -a Clocks && wmctrl -a '_dt_' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + d 
 
 "wmctrl -x -a 'Audacity'"
@@ -758,6 +758,30 @@ Mod4+ control + 0
 
 
 # ---- alt ----
+
+
+
+
+# --[]-- [ snippets simulation ] ----
+
+"/home/dex/scripts/ddesk/personal_chat/chat-internet.sh"
+Mod4 + F1
+
+"/home/dex/scripts/ddesk/personal_chat/chat-notes.sh"
+Mod4 + F2
+
+"/home/dex/scripts/ddesk/personal_chat/chat-tester.sh"
+Mod4 + F3
+
+"/home/dex/scripts/ddesk/personal_chat/chat-coder.sh"
+Mod4 + F4
+
+"/home/dex/scripts/ddesk/personal_chat/chat-suggester.sh"
+Mod4 + F5
+
+# END--[]-- [ snippets simulation ] END----
+
+
 
 
 

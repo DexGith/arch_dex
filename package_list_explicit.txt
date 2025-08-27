@@ -16,6 +16,7 @@ base
 base-devel
 bat
 bc
+beebeep
 bind
 bitcomet
 blender
@@ -295,6 +296,7 @@ swayidle
 swtpm
 sxhkd
 syncthing
+tcpdump
 tealdeer
 telegram-desktop
 terminus-font
@@ -307,6 +309,7 @@ thorium-browser-bin
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunderbird
+tigervnc
 time
 timg
 tk
