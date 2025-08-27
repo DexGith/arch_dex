@@ -1,0 +1,81 @@
+pane	19	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	19	2	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	19	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	MyNvim	1	0	:-	1	archlinux1	:/home/dex/scripts/ddesk/nothing	1	zsh	:
+pane	MyNvim	71	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	Terminal	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	Timer	0	1	:*	1	archlinux1	:/home/dex	0	zsh	:
+pane	Timer	0	1	:*	2	archlinux1	:/home/dex	1	zsh	:
+pane	btop	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	zsh	:
+pane	date&time	0	1	:*	2	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	1	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	0	:-	1	Yazi: ~/Desktop	:/home/dex/Desktop	1	zsh	:
+pane	git	0	0	:-	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	git	1	0	:	1	archlinux1	:/home/dex/git	1	zsh	:
+pane	git	2	1	:*	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	irssi	0	1	:*	1	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	mpv	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian	0	1	:*	1	archlinux1	:/home/dex/Power	1	zsh	:
+pane	obsidian	1	0	:	1	Yazi: ~/Power	:/home/dex/Power	1	zsh	:
+pane	obsidian	71	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	1	0	:-	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	primenvim	71	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	projects	0	1	:*	1	archlinux1	:/home/dex/projects	1	zsh	:
+pane	root	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	0	0	:	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	2	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	4	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	5	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	6	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	7	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	8	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	9	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	tmux	1	1	:*	1	archlinux1	:/	1	zsh	:
+pane	todo	1	1	:*	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+pane	todo	71	0	:-	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+window	19	1	:test	0	:	5a69,88x33,0,0,58	off
+window	19	2	:zsh	0	:-	b460,88x33,0,0,3	:
+window	19	3	:zsh	1	:*	b45e,88x33,0,0,1	:
+window	MyNvim	0	:zsh	1	:*	b066,88x32,0,0,9	:
+window	MyNvim	1	:zsh	0	:-	585f,88x32,0,0,10	:
+window	MyNvim	71	:zsh	0	:	5860,88x32,0,0,11	:
+window	Terminal	0	:zsh	1	:*	5861,88x32,0,0,12	:
+window	Timer	0	:zsh	1	:*	85ff,88x32,0,0{44x32,0,0,13,43x32,45,0,14}	:
+window	btop	1	:zsh	1	:*	5864,88x32,0,0,15	:
+window	date&time	0	:date&time	1	:*	0607,88x32,0,0{44x32,0,0,16,43x32,45,0,17}	off
+window	date&time	1	:Timer	0	:	5867,88x32,0,0,18	off
+window	date&time	2	:zsh	0	:-	5868,88x32,0,0,19	:
+window	git	0	:zsh	0	:-	d85f,88x32,0,0,20	:
+window	git	1	:zsh	0	:	d860,88x32,0,0,21	:
+window	git	2	:zsh	1	:*	d861,88x32,0,0,22	:
+window	irssi	0	:irssi	1	:*	d862,88x32,0,0,23	:
+window	irssi	1	:zsh	0	:-	d863,88x32,0,0,24	:
+window	jobs	0	:zsh	1	:*	d864,88x32,0,0,25	:
+window	mpv	0	:zsh	1	:*	d865,88x32,0,0,26	:
+window	obsidian	0	:zsh	1	:*	d866,88x32,0,0,27	:
+window	obsidian	1	:zsh	0	:	d867,88x32,0,0,28	:
+window	obsidian	71	:zsh	0	:-	d868,88x32,0,0,29	:
+window	primenvim	1	:zsh	0	:-	5860,88x32,0,0,30	:
+window	primenvim	71	:zsh	1	:*	5861,88x32,0,0,31	:
+window	projects	0	:zsh	1	:*	5862,88x32,0,0,32	:
+window	root	0	:zsh	1	:*	5863,88x32,0,0,33	:
+window	testing W3	0	:zsh	0	:	5864,88x32,0,0,34	:
+window	testing W3	1	:REPL	0	:	5865,88x32,0,0,35	off
+window	testing W3	2	:Live Log Monitor	0	:	5866,88x32,0,0,36	off
+window	testing W3	3	:zsh	0	:	5867,88x32,0,0,37	:
+window	testing W3	4	:zsh	0	:	5868,88x32,0,0,38	:
+window	testing W3	5	:zsh	0	:	5869,88x32,0,0,39	:
+window	testing W3	6	:zsh	0	:	d860,88x32,0,0,40	:
+window	testing W3	7	:zsh	0	:	d861,88x32,0,0,41	:
+window	testing W3	8	:zsh	0	:-	d862,88x32,0,0,42	:
+window	testing W3	9	:zsh	1	:*	d863,88x32,0,0,43	:
+window	tmux	1	:zsh	1	:*	d864,88x32,0,0,44	:
+window	todo	1	:zsh	1	:*	d865,88x32,0,0,45	:
+window	todo	71	:zsh	0	:-	d866,88x32,0,0,46	:
+state	19	

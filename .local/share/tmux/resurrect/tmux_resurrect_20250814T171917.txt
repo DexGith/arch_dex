@@ -1,0 +1,59 @@
+pane	Terminal	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	Timer	0	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	btop	1	1	:*	1	archlinux1	:/home/dex	1	btop	:btop
+pane	date&time	0	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 60
+pane	date&time	0	1	:*	2	archlinux1	:/home/dex	0	sleep	:sleep 300
+pane	date&time	1	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	2	0	:-	1	Yazi: ~/Desktop	:/home/dex/Desktop	1	zsh	:
+pane	fleeting_notes	1	1	:*	1	archlinux1	:/home/dex/Fleet	1	zsh	:
+pane	git	0	0	:-	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	git	1	0	:	1	archlinux1	:/home/dex/git	1	zsh	:
+pane	git	2	1	:*	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	irssi	0	1	:*	1	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:sxhkd
+skippy-xd --start-daemon
+pane	mpv	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian_notes	1	1	:*	1	archlinux1	:/home/dex/Power	1	zsh	:
+pane	primenvim	1	0	:-	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	primenvim	71	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	projects	0	1	:*	1	archlinux1	:/home/dex/projects	1	zsh	:
+pane	root	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:su
+pane	root	0	1	:*	2	archlinux1	:/home/dex	0	zsh	:su
+pane	root	0	1	:*	3	archlinux1	:/home/dex	0	zsh	:su
+pane	root	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:su
+pane	root	1	0	:-	2	archlinux1	:/home/dex	0	zsh	:su
+pane	testing W3	1	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	testing W3	2	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	tmux	1	1	:*	1	archlinux1	:/	1	zsh	:
+pane	todo	1	1	:*	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+pane	todo	71	0	:-	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+window	Terminal	0	:zsh	1	:*	585f,88x32,0,0,10	:
+window	Timer	0	:zsh	1	:*	5960,69x23,0,0,11	:
+window	btop	1	:btop	1	:*	6052,136x35,0,0,13	:
+window	date&time	0	:date&time	1	:*	712f,83x19,0,0{50x19,0,0,14,32x19,51,0,15}	off
+window	date&time	1	:Timer	0	:	5865,88x32,0,0,16	off
+window	date&time	2	:zsh	0	:-	5866,88x32,0,0,17	:
+window	fleeting_notes	1	:fleet	1	:*	c264,213x55,0,0,7	off
+window	git	0	:zsh	0	:-	5867,88x32,0,0,18	:
+window	git	1	:zsh	0	:	5868,88x32,0,0,19	:
+window	git	2	:zsh	1	:*	d85f,88x32,0,0,20	:
+window	irssi	0	:irssi	1	:*	d860,88x32,0,0,21	:
+window	irssi	1	:zsh	0	:-	d861,88x32,0,0,22	:
+window	jobs	0	:zsh	1	:*	d862,88x32,0,0,23	:
+window	mpv	0	:zsh	1	:*	d863,88x32,0,0,24	:
+window	obsidian_notes	1	:Power_vault	1	:*	e754,174x48,0,0,25	off
+window	primenvim	1	:zsh	0	:-	d817,192x50,0,0,28	:
+window	primenvim	71	:nvim	1	:*	d818,192x50,0,0,29	:
+window	projects	0	:zsh	1	:*	5860,88x32,0,0,30	:
+window	root	0	:VM	1	:*	c2f5,123x31,0,0{66x31,0,0,31,56x31,67,0[56x16,67,0,48,56x14,67,17,51]}	off
+window	root	1	:VM2-management	0	:-	fe45,123x31,0,0{70x31,0,0,49,52x31,71,0,52}	off
+window	testing W3	1	:zsh	1	:*	6e06,192x50,0,0{96x50,0,0,32,95x50,97,0,50}	:
+window	testing W3	2	:REPL	0	:-	5863,88x32,0,0,33	off
+window	testing W3	3	:Live Log Monitor	0	:	5864,88x32,0,0,34	off
+window	tmux	1	:zsh	1	:*	d862,88x32,0,0,42	:
+window	todo	1	:zsh	1	:*	d863,88x32,0,0,43	:
+window	todo	71	:zsh	0	:-	d864,88x32,0,0,44	:
+state	Timer	

@@ -1,11 +1,16 @@
 {
 	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Color Scheme - Dracula Neue",
+		"C++ Completions",
+		"CP Parser",
+		"CppFastOlympicCoding",
 		"Package Control",
-	],
-	"in_process_packages":
-	[
+		"Python Completions",
+		"Terminus",
 	],
 }

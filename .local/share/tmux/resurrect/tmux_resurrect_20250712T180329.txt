@@ -1,8 +1,0 @@
-pane	0	0	0	:-	0	archlinux1	:/home/dex	1	zsh	:
-pane	0	1	1	:*	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim /home/dex/.config/nvim/init.vim
-pane	date&time	0	1	:*	0	archlinux1	:/home/dex	0	sleep	:sleep 60
-pane	date&time	0	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 300
-window	0	0	:zsh	0	:-	b05d,88x32,0,0,0	:
-window	0	1	:nvim	1	:*	c65e,213x56,0,0,1	:
-window	date&time	0	:sleep	1	:*	918e,65x14,0,0{33x14,0,0,2,31x14,34,0,3}	:
-state	0	

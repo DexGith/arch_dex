@@ -1,0 +1,68 @@
+pane	Music	1	1	:*	1	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:
+pane	Music	2	0	:-	1	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:
+pane	Terminal	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	Timer	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	btop	1	0	:-	1	archlinux1	:/home/dex	1	btop	:btop
+pane	btop	69	1	:*	1	archlinux1	:/home/dex	1	htop	:
+pane	date&time	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	date&time	1	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	fleeting_notes	1	1	:*	1	archlinux1	:/home/dex/fleet	1	zsh	:
+pane	git	0	0	:-	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	git	1	0	:	1	archlinux1	:/home/dex/git	1	zsh	:
+pane	git	2	1	:*	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	irssi	0	1	:*	1	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:picom
+pane	mpv	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	obsidian_notes	1	1	:*	1	archlinux1	:/home/dex/power	1	zsh	:
+pane	phone_ssh	1	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	phone_ssh	2	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	1	0	:-	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	primenvim	71	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	projects	0	1	:*	1	archlinux1	:/home/dex/projects	1	zsh	:
+pane	root	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	root	0	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	root	0	1	:*	3	archlinux1	:/home/dex	0	zsh	:
+pane	root	1	0	:-	1	archlinux1	:/home/dex	0	zsh	:
+pane	root	1	0	:-	2	archlinux1	:/home/dex	1	zsh	:
+pane	scrcpy	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	test1234	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	1	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	testing W3	2	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	tmux	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	todo	1	1	:*	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+pane	todo	71	0	:-	1	archlinux1	:/home/dex/Desktop	1	zsh	:
+window	Music	1	:zsh	1	:*	c55e,86x28,0,0,1	:
+window	Music	2	:zsh	0	:-	c55f,86x28,0,0,2	:
+window	Terminal	0	:zsh	1	:*	c560,86x28,0,0,3	:
+window	Timer	1	:zsh	1	:*	c561,86x28,0,0,4	:
+window	btop	1	:btop	0	:-	b442,136x32,0,0,5	:
+window	btop	69	:htop	1	:*	5a56,136x32,0,0,36	:
+window	date&time	1	:date&time	1	:*	d983,86x28,0,0{61x28,0,0,6,24x28,62,0,7}	off
+window	fleeting_notes	1	:fleet	1	:*	c565,86x28,0,0,8	off
+window	git	0	:zsh	0	:-	c566,86x28,0,0,9	:
+window	git	1	:zsh	0	:	62df,86x28,0,0,10	:
+window	git	2	:zsh	1	:*	62e0,86x28,0,0,11	:
+window	irssi	0	:irssi	1	:*	62e1,86x28,0,0,12	:
+window	irssi	1	:zsh	0	:-	62e2,86x28,0,0,13	:
+window	jobs	0	:zsh	1	:*	6563,88x29,0,0,14	:
+window	mpv	0	:zsh	1	:*	62e4,86x28,0,0,15	:
+window	obsidian_notes	1	:Power_vault	1	:*	62e5,86x28,0,0,16	off
+window	phone_ssh	1	:termux sshd	0	:-	62e6,86x28,0,0,17	off
+window	phone_ssh	2	:kali chroot	1	:*	62e7,86x28,0,0,18	off
+window	primenvim	1	:zsh	0	:-	62e8,86x28,0,0,19	:
+window	primenvim	71	:nvim	1	:*	e2df,86x28,0,0,20	:
+window	projects	0	:zsh	1	:*	e2e0,86x28,0,0,21	:
+window	root	0	:VM	1	:*	236c,86x28,0,0{59x28,0,0,22,26x28,60,0[26x11,60,0,23,26x16,60,12,24]}	off
+window	root	1	:VM2-management	0	:-	1393,86x28,0,0{51x28,0,0,25,34x28,52,0,26}	off
+window	scrcpy	1	:zsh	1	:*	e2e6,86x28,0,0,27	:
+window	test1234	1	:zsh	1	:*	e2e7,86x28,0,0,28	:
+window	testing W3	1	:zsh	1	:*	5a40,86x28,0,0{43x28,0,0,29,42x28,44,0,30}	:
+window	testing W3	2	:REPL	0	:-	62e1,86x28,0,0,31	off
+window	testing W3	3	:Live Log Monitor	0	:	62e2,86x28,0,0,32	off
+window	tmux	1	:zsh	1	:*	62e3,86x28,0,0,33	:
+window	todo	1	:zsh	1	:*	62e4,86x28,0,0,34	:
+window	todo	71	:zsh	0	:-	62e5,86x28,0,0,35	:
+state	btop	tmux

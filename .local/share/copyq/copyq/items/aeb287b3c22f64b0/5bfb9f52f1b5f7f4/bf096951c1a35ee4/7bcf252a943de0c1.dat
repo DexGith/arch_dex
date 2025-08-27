@@ -1,0 +1,1684 @@
+
+site logo
+Skip to main content
+Stack Overflow
+
+    About
+    Products
+    For Teams
+
+Home
+Questions
+AI Assist
+Labs
+Tags
+Challenges
+Chat
+Articles
+Users
+Companies
+Collectives
+
+        Communities for your favorite technologies. Explore all Collectives
+
+Illustration of upvote icon after it is clicked
+
+Illustration of upvote icon after it is clicked
+
+How do I clone a subdirectory only of a Git repository?
+Asked 16 years, 6 months ago
+Modified 14 days ago
+Viewed 1.7m times
+2141
+
+I have my Git repository which, at the root, has two subdirectories:
+
+/finisht
+/static
+
+When this was in SVN, /finisht was checked out in one place, while /static was checked out elsewhere, like so:
+
+svn co svn+ssh://admin@domain.example/home/admin/repos/finisht/static static
+
+Is there a way to do this with Git?
+
+    gitrepositorysubdirectorygit-clonesparse-checkout
+
+Share
+Improve this question
+Follow
+edited Feb 6, 2024 at 9:11
+Peter Mortensen's user avatar
+Peter Mortensen
+31.6k2222 gold badges110110 silver badges134134 bronze badges
+asked Mar 1, 2009 at 16:46
+Nick Sergeant's user avatar
+Nick Sergeant
+38.5k1212 gold badges3838 silver badges4444 bronze badges
+
+    18
+    possible duplicate of Checkout subdirectories in Git? – 
+    Joachim Breitner
+    Commented Jul 4, 2013 at 8:43
+    2
+    For a 2014's user, what the git clone simplest command?? I used this simple answer. If there are something more simple, please comment – 
+    Peter Krauss
+    Commented Nov 1, 2014 at 12:00 
+
+    1
+    For those trying to clone the contents of the repository (not creating the root folder), this is a very easy solution: stackoverflow.com/questions/6224626/… – 
+    Marc
+    Commented Mar 29, 2015 at 12:38
+    2
+    @NickSergeant: As of Git 2.19, released 3 weeks ago, this is finally possible, as can be seen in this answer: stackoverflow.com/a/52269934/2988 Consider accepting that one now. Note: in Git 2.19, only client-side support is implemented, server-side support is still missing, so it only works when cloning local repositories. Also note that large Git hosters, e.g. GitHub don't actually use the Git server, they use their own implementation, so even if support shows up in the Git server, it does not automatically mean that it works on Git hosters. (OTOH, they could implement it faster.) – 
+    Jörg W Mittag
+    Commented Nov 4, 2018 at 9:22
+    5
+    If you want to download a folder from a GitHub repo, download-directory.github.io might be just the thing – 
+    jemand771
+    Commented May 4, 2021 at 6:40
+
+Show 5 more comments
+33 Answers
+Sorted by:
+1
+2
+Next
+1928
+
+What you are trying to do is called a sparse checkout, and that feature was added in Git 1.7.0 (Feb. 2012). The steps to do a sparse clone are as follows:
+
+mkdir <repo>
+cd <repo>
+git init
+git remote add -f origin <url>
+
+This creates an empty repository with your remote, and fetches all objects but doesn't check them out. Then do:
+
+git config core.sparseCheckout true
+
+Now you need to define which files/folders you want to actually check out. This is done by listing them in .git/info/sparse-checkout, eg:
+
+echo "some/dir/" >> .git/info/sparse-checkout
+echo "another/sub/tree" >> .git/info/sparse-checkout
+
+Last but not least, update your empty repo with the state from the remote:
+
+git pull origin master
+
+You will now have files "checked out" for some/dir and another/sub/tree on your file system (with those paths still), and no other paths present.
+
+You might want to have a look at the extended tutorial and you should probably read the official documentation for sparse checkout and read-tree.
+
+As a function:
+
+function git_sparse_clone() (
+  rurl="$1" localdir="$2" && shift 2
+
+  mkdir -p "$localdir"
+  cd "$localdir"
+
+  git init
+  git remote add -f origin "$rurl"
+
+  git config core.sparseCheckout true
+
+  # Loops over remaining args
+  for i; do
+    echo "$i" >> .git/info/sparse-checkout
+  done
+
+  git pull origin master
+)
+
+Usage:
+
+git_sparse_clone "http://github.com/tj/n" "./local/location" "/bin"
+
+Note that this will still download the whole repository from the server – only the checkout is reduced in size. At the moment it is not possible to clone only a single directory. But if you don't need the history of the repository, you can at least save on bandwidth by creating a shallow clone. See udondan's answer below for information on how to combine shallow clone and sparse checkout.
+
+As of Git 2.25.0 (Jan 2020) an experimental sparse-checkout command is added in Git:
+
+git sparse-checkout init
+# same as:
+# git config core.sparseCheckout true
+
+git sparse-checkout set "A/B"
+# same as:
+# echo "A/B" >> .git/info/sparse-checkout
+
+git sparse-checkout list
+# same as:
+# cat .git/info/sparse-checkout
+
+Share
+Improve this answer
+Follow
+edited Aug 5, 2024 at 19:46
+Dr. Gut's user avatar
+Dr. Gut
+3,1751414 silver badges3232 bronze badges
+answered Dec 6, 2012 at 7:37
+Chronial's user avatar
+Chronial
+71.6k1414 gold badges100100 silver badges108108 bronze badges
+
+    19
+    on Apple the '-f' perimeter does not work. just do git remote add origin <url> without -f – 
+    Anno2001
+    Commented Feb 17, 2013 at 10:58 
+
+    180
+    It is an improvement but still needs to download and store a full copy of the remote repository in origin, which one might like to avoid at all if he is interested only in portions of the codebase (or if there is documentation subfolders as in my case) – 
+    a1an
+    Commented Jun 13, 2013 at 12:42
+    68
+    Is there a way to clone desired directory contents (not directory itself) right into my repository? For example I want clone contents of https://github.com/Umkus/nginx-boilerplate/tree/master/src right into /etc/nginx – 
+    mac
+    Commented Apr 10, 2014 at 5:40
+    30
+    @Chronial, @ErikE: you're both right / wrong :P The git remote add command does not imply a fetch, but git remote add -f, as used here, does! That's what the -f means. – 
+    ntc2
+    Commented May 16, 2014 at 0:02
+    26
+    Using this and --depth=1 I cloned Chromium Devtools in 338 MB instead of 4.9 GB of full Blink source + history. Excellent. – 
+    Rudie
+    Commented Oct 22, 2014 at 19:26
+
+Show 28 more comments
+1417
+
+git clone --filter + git sparse-checkout downloads only the required files
+
+E.g., to clone only files in subdirectory small/ in this test repository: https://github.com/cirosantilli/test-git-partial-clone-big-small-no-bigtree
+
+git clone --no-checkout --depth=1 --filter=tree:0 \
+  https://github.com/cirosantilli/test-git-partial-clone-big-small-no-bigtree
+cd test-git-partial-clone-big-small-no-bigtree
+git sparse-checkout set --no-cone /small
+git checkout
+
+You could also select multiple directories for download with:
+
+git sparse-checkout set --no-cone /small /small2
+
+The slash in /small is required, if you do just small then git also downloads any other directory with basename small, we have a subdir/small/ directory in the repository to test that.[1]
+
+Note: This method doesn't work for individual files however, but here is another method that does: How to sparsely checkout only one single file from a git repository?
+Confirming that we actually didn't download uneeded files
+
+The above test repository contains:
+
+    a big/ subdirectory with 10x 10MB files
+    10x 10MB files 0, 1, ... 9 on toplevel (this is because certain previous attempts would download toplevel files)
+    a small/ and small2/ subdirectories with 1000 files of size one byte each
+
+All contents are pseudo-random and therefore incompressible, so we can easily notice if any of the big files were downloaded, e.g. with ncdu.
+
+So if you download anything you didn't want, you would get 100 MB extra, and it would be very noticeable.
+
+All git commands ran were basically instantaneous, and we can confirm that the cloned repository is very small as desired:
+
+du --apparent-size -hs * .* | sort -hs
+
+giving:
+
+2.0K    small
+226K    .git
+
+Running git clone downloads a single object, presumably the commit:
+
+Cloning into 'test-git-partial-clone-big-small'...
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0
+Receiving objects: 100% (1/1), done.
+
+and then the final checkout downloads the files we requested:
+
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), 10.19 KiB | 2.04 MiB/s, done.
+remote: Enumerating objects: 253, done.
+remote: Counting objects: 100% (253/253), done.
+Receiving objects: 100% (253/253), 2.50 KiB | 2.50 MiB/s, done.
+remote: Total 253 (delta 0), reused 253 (delta 0), pack-reused 0
+Your branch is up to date with 'origin/master'.
+
+Tested on git 2.37.2, Ubuntu 22.10, on January 2023.
+Downloading from a specific branch
+
+The procedure is the same as checking out a different directory other than master: How do I clone a single branch in Git? just add -b branchname --single-branch:
+
+git clone -n --depth=1 --filter=tree:0 \
+  -b bigissmall --single-branch \
+  https://github.com/cirosantilli/test-git-partial-clone-big-small-no-bigtree
+cd test-git-partial-clone-big-small-no-bigtree
+git sparse-checkout set --no-cone /big
+git checkout
+
+The branch bigissmall renames small/ to big/ to ensure that there is no confusion between the branches when fetching, and the above fetch is quick and small as before.
+TODO Also prevent download of unneeded tree objects
+
+The above method downloads all Git tree objects (i.e. directory listings, but not actual file contents). We can confirm that by running:
+
+git ls-files
+
+and seeing that it contains the directories large files such as:
+
+big/0
+
+In most projects this won't be an issue, as these should be small compared to the actual file contents, but the perfectionist in me would like to avoid them.
+
+I've also created a very extreme repository with some very large tree objects (100 MB) under the directory big_tree: https://github.com/cirosantilli/test-git-partial-clone-big-small
+
+Let me know if anyone finds a way to clone just the small/ directory from it!
+About the Commands
+
+The --filter option was added together with an update to the remote protocol, and it truly prevents objects from being downloaded from the server.
+
+The sparse-checkout part is also needed unfortunately. You can also only download certain files with the much more understandable:
+
+git clone --depth 1  --filter=blob:none  --no-checkout \
+  https://github.com/cirosantilli/test-git-partial-clone-big-small
+cd test-git-partial-clone-big-small
+git checkout master -- d1
+
+but that method for some reason downloads files one by one very slowly, making it unusable unless you have very few files in the directory.
+
+Another less verbose but failed attempt was:
+
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/cirosantilli/test-git-partial-clone-big-small
+cd test-git-partial-clone-big-small
+git sparse-checkout set /small
+
+but that downloads all files in the toplevel directory: How to prevent git clone --filter=blob:none --sparse from downloading files on the root directory?
+The Dream: Any Directory can have Web Interface Metadata
+
+This feature could revolutionize Git.
+
+Imagine having all the code base of your enterprise in a single monorepo without ugly third-party tools like repo.
+
+Imagine storing huge blobs directly in the repo without any ugly third party extensions.
+
+Imagine if GitHub would allow per file / directory metadata like stars and permissions, so you can store all your personal stuff under a single repo.
+
+Imagine if submodules were treated exactly like regular directories: just request a tree SHA, and a DNS-like mechanism resolves your request, first looking on your local ~/.git, then first to closer servers (your enterprise's mirror / cache) and ending up on GitHub.
+
+I have a dream.
+
+The test cone monorepo philosophy
+
+This is a possible philosophy for monorepo maintenance without submodules.
+
+We want to avoid submodules because it is annoying to have to commit to two separate repositories every time you make a change that has a submodule and non-submodule component.
+
+Every directory with a Makefile or analogous should build and test itself.
+
+Such directories can depend on either:
+
+    every file and subdirectory under it directly at their latest versions
+    external directories can be relied upon only at specified versions
+
+Until git starts supporting this natively (i.e. submodules that can track only subdirectories), we can support this with some metadata in a git tracked file:
+
+monorepo.json
+
+{
+    "path": "some/useful/lib",
+    "sha": 12341234123412341234,
+}
+
+where sha refers to the usual SHA of the entire repository. Then we need scripts that will checkout such directories e.g. under a gitignored monorepo folder:
+
+monorepo/som/useful/lib
+
+Whenever you change a file, you have to go up the tree and test all directories that have Makefile. This is because directories can depend on subdirectories at their latest versions, so you could always break something above you.
+
+Related:
+
+    https://github.com/josh-project/josh
+    https://www.pantsbuild.org/
+
+Share
+Improve this answer
+Follow
+edited Aug 8 at 20:06
+answered Sep 11, 2018 at 6:32
+Ciro Santilli OurBigBook.com's user avatar
+Ciro Santilli OurBigBook.com
+390k117117 gold badges1.3k1.3k silver badges1.1k1.1k bronze badges
+
+    2
+    This fails when trying it on Windows 10 using GIT 2.24.1 (throws tons of "unable to read sha1 file of.." + "Unlink of file xxx failed."). Worked as a charm with same version on Linux. – 
+    Oyvind
+    Commented Dec 16, 2019 at 11:40 
+
+3
+@Ciro Santilli This still fails with "unable to read sha1 file of..." in git version 2.26.1.windows.1. I opened a bug report: github.com/git-for-windows/git/issues/2590 – 
+nharrer
+Commented Apr 18, 2020 at 16:43
+2
+@CiroSantilli郝海东冠状病六四事件法轮功 some/path is a directory and git checkout master -- some/path correctly clones only files in that directory and its subdirs - but it does it one by one with a message like: remote: Enumerating objects: 1, done. remote: Counting objects: 100% (1/1), done. remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0 Receiving objects: 100% (1/1), 51 bytes | 51.00 KiB/s, done. These 4 lines repeated for each of the 90 files in the dir and its subdirs (this is on git version 2.24.3 (Apple Git-128)) – 
+Faboor
+Commented Jan 6, 2021 at 11:33
+4
+@CiroSantilli - you've already found the solution! Just remove the --cone line and it will work fine. In your test repository try creating an additional file at the top level. If you follow your instructions, then you'll also get a copy of that file as well as the directory you want. Remove the 'git sparse-checkout init --cone' but follow all your other instructions, and you'll just get the directory tree you want. I'm not quite sure in what circumstances you'd want to use --cone! – 
+Mike Moreton
+Commented Apr 13, 2021 at 11:57
+
+    4
+    At least for git 2.33 and github.com filter=tree:0 also prevents blobs from being downloaded (except for files in the toplevel directory of HEAD). So you don't need to combine it with blob:none. – 
+    Socowi
+    Commented Sep 11, 2021 at 9:22
+
+Show 39 more comments
+781
+
+As of Git 2.19, this is finally possible, as can be seen in this answer.
+
+Consider upvoting that answer.
+
+Note: in Git 2.19, only client-side support is implemented, server-side support is still missing, so it only works when cloning local repositories. Also note that large Git hosters, e.g. GitHub, don't actually use the Git server, they use their own implementation, so even if support shows up in the Git server, it does not automatically mean that it works on Git hosters. (On the other hand, since they don't use the Git server, they could implement it faster in their own implementations before it shows up in Git server.)
+
+No, that's not possible in Git.
+
+Implementing something like this in Git would be a substantial effort and it would mean that the integrity of the client-side repository could no longer be guaranteed. If you are interested, search for discussions on "sparse clone" and "sparse fetch" on the Git mailing list.
+
+In general, the consensus in the Git community is that if you have several directories that are always checked out independently, then these are really two different projects and should live in two different repositories. You can glue them back together using Git Submodules.
+Share
+Improve this answer
+Follow
+edited Feb 6, 2024 at 9:14
+Peter Mortensen's user avatar
+Peter Mortensen
+31.6k2222 gold badges110110 silver badges134134 bronze badges
+answered Mar 1, 2009 at 18:00
+Jörg W Mittag's user avatar
+Jörg W Mittag
+371k7979 gold badges456456 silver badges666666 bronze badges
+
+    6
+    Depending on the scenario, you may want to use git subtree instead of git submodule. See alumnit.ca/~apenwarr/log/?m=200904#30 – 
+    C Pirate
+    Commented Aug 3, 2009 at 17:12
+    10
+    @StijndeWitt: Sparse checkouts happen during git-read-tree, which is long after get-fetch. The question was not about checking out only a subdirectory, it was about cloning only a subdirectory. I don't see how sparse checkouts could possibly do that, since git-read-tree runs after the clone has already completed. – 
+    Jörg W Mittag
+    Commented Mar 6, 2014 at 14:53
+    15
+    Rather than this "stub", would you like for me to delete this answer so Chronial's can float to the top? You can't delete it yourself, because it's accepted, but a moderator can. You would keep the reputation you've earned from it, since it's so old. (I came across this because someone flagged it as "link-only". :-) – 
+    Cody Gray
+    ♦
+    Commented Aug 21, 2017 at 17:49
+    1
+    @CodyGray: Chronial answer still clones the entire repository, and not only a subdirectory. (The last paragraph even explicitly says so.) Cloning only a subdirectory is not possible in Git. The network protocol doesn't support it, the storage format doesn't support it. Every single answer to this question always clones the whole repository. The question is a simple Yes/No question, and the answer is two characters: No. If at all, my answer is unnecessarily long, not short. – 
+    Jörg W Mittag
+    Commented Aug 31, 2018 at 14:45 
+
+    2
+    @JörgWMittag: Ciro Santili's answer seems to contradict you. – 
+    Dan Dascalescu
+    Commented Nov 4, 2018 at 0:53
+
+Show 7 more comments
+454
+
+You can combine the sparse checkout and the shallow clone features. The shallow clone cuts off the history and the sparse checkout only pulls the files matching your patterns.
+
+git init <repo>
+cd <repo>
+git remote add origin <url>
+git config core.sparsecheckout true
+echo "finisht/*" >> .git/info/sparse-checkout
+git pull --depth=1 origin master
+
+You'll need minimum git 1.9 for this to work. Tested it myself only with 2.2.0 and 2.2.2.
+
+This way you'll be still able to push, which is not possible with git archive.
+Share
+Improve this answer
+Follow
+edited Aug 28, 2024 at 19:48
+Benjamin Loison's user avatar
+Benjamin Loison
+5,72244 gold badges1919 silver badges3737 bronze badges
+answered Jan 20, 2015 at 7:33
+udondan's user avatar
+udondan
+60.4k2121 gold badges197197 silver badges181181 bronze badges
+
+    29
+    This is useful, and may be the best available answer, but it still clones the content that you don't care about (if it is on the branch that you pull), even though it doesn't show up in the checkout. – 
+    Brent Bradburn
+    Commented Aug 25, 2015 at 21:54
+    1
+    This does not work for me. --depth=1 is ignored, still tries to pull several thousand commits and about 100x too many files. – 
+    Tyguy7
+    Commented Sep 18, 2015 at 21:46
+    2
+    doesn't work for me when the last command is not git pull --depth=1 origin master but git pull --depth=1 origin <any-other-branch>. this is so strange, see my question here： stackoverflow.com/questions/35820630/… – 
+    Shuman
+    Commented Mar 6, 2016 at 0:15
+    6
+    On Windows, the second-to-last line needs to omit the quotes, or the pull fails. – 
+    nateirvin
+    Commented Mar 31, 2016 at 17:01
+    4
+    This still downloads all data! Found this solution, using svn: stackoverflow.com/a/18324458/2302437 – 
+    electronix384128
+    Commented May 18, 2016 at 0:09
+
+Show 12 more comments
+205
+
+For other users who just want to download a file/folder from github, simply use:
+
+svn export <repo>/trunk/<folder>
+
+e.g.
+
+svn export https://github.com/lodash/lodash.com/trunk/docs
+
+(yes, that's svn here. apparently in 2016 you still need svn to simply download some github files)
+
+Courtesy: Download a single folder or directory from a GitHub repo
+
+Important - Make sure you update the github URL and replace /tree/master/ with '/trunk/'.
+
+As bash script:
+
+git-download(){
+    folder=${@/tree\/master/trunk}
+    folder=${folder/blob\/master/trunk}
+    svn export $folder
+}
+
+Note This method downloads a folder, does not clone/checkout it. You can't push changes back to the repository. On the other hand - this results in smaller download compared to sparse checkout or shallow checkout.
+Share
+Improve this answer
+Follow
+edited Jun 18, 2018 at 11:32
+Amit G's user avatar
+Amit G
+2,43133 gold badges2525 silver badges4444 bronze badges
+answered Sep 4, 2016 at 13:02
+Anona112's user avatar
+Anona112
+3,80244 gold badges2323 silver badges3131 bronze badges
+
+    15
+    only version which worked for me with github. The git commands checked out >10k files, the svn export only the 700 i wanted. Thanks! – 
+    Christopher Lörken
+    Commented Feb 1, 2017 at 18:19
+    4
+    Tried doing this with https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/trunk/udacity but got svn: E170000: URL 'https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/trunk/udacity' doesn't exist error :( – 
+    Mysterious Otter
+    Commented Feb 19, 2017 at 21:55 
+
+    12
+    @zthomas.nc You need to remove the 'trunk' preceding udacity, and replace /tree/master/ with /trunk/ instead. – 
+    Speedy
+    Commented Mar 22, 2017 at 17:01
+    4
+    This command was the one that worked for me! I just wanted to get a copy of a file from a repo so I could modify it locally. Good old SVN to the rescue! – 
+    Michael J
+    Commented Jun 2, 2017 at 0:32
+    3
+    it works, but seems slow. takes a bit to start and then the files roll by relatively slowly – 
+    Aryeh Beitz
+    Commented Dec 24, 2017 at 10:15
+
+Show 8 more comments
+172
++500
+
+2022 Answer
+
+I'm not sure why there are so many complicated answers to this question. It can be done easily by doing a sparse cloning of the repo, to the folder that you want.
+
+    Navigate to the folder where you'd like to clone the subdirectory.
+    Open cmd and run the following commands.
+    git clone --filter=blob:none --sparse  %your-git-repo-url%
+    cd %the repository directory%
+    git sparse-checkout add %subdirectory-to-be-cloned%
+    cd %your-subdirectory%
+
+Voila! Now you have cloned only the subdirectory that you want!
+
+Explanation - What are these commands doing really?
+
+git clone --filter=blob:none --sparse  %your-git-repo-url%
+
+In the above command,
+
+    --filter=blob:none => You tell git that you only want to clone the metadata files. This way git collects the basic branch details and other meta from remote, which will ensure that your future checkouts from origin are smooth.
+    --sparse => Tell git that this is a sparse clone. Git will checkout only the root directory in this case.
+
+Now git is informed with the metadata and ready to checkout any subdirectories/files that you want to work with.
+
+git sparse-checkout add gui-workspace ==> Checkout folder
+
+git sparse-checkout add gui-workspace/assets/logo.png ==> Checkout a file
+
+Sparse clone is particularly useful when there is a large repo with several subdirectories and you're not always working on them all. Saves a lot of time and bandwidth when you do a sparse clone on a large repo.
+
+Additionally, now in this partially cloned repo you can continue to checkout and work like you normally would. All these commands work perfectly.
+
+git switch -c  %new-branch-name% origin/%parent-branch-name% (or) git checkout -b %new-branch-name% origin/%parent-branch-name% 
+git commit -m "Initial changes in sparse clone branch"
+git push origin %new-branch-name%
+
+Share
+Improve this answer
+Follow
+edited Sep 2, 2023 at 23:02
+Alfred Luu's user avatar
+Alfred Luu
+2,08644 gold badges2020 silver badges3030 bronze badges
+answered Aug 5, 2022 at 19:09
+Evan MJ's user avatar
+Evan MJ
+2,84311 gold badge1616 silver badges2020 bronze badges
+
+    8
+    Good update. Could you replace the old, confusing and obsolete command git checkout with the more modern git switch? git switch -c  %new-branch-name% origin/%parent-branch-name% – 
+    VonC
+    Commented Aug 5, 2022 at 19:33 
+
+    Good catch, added that as well. @VonC – 
+    Evan MJ
+    Commented Aug 5, 2022 at 19:44
+    7
+    If I clone from $CLONEDIR, the cloning creates another directory with the .git dir in it. lets call it REPO_DIRNAME. I have to cd $CLONEDIR/$REPO_DIRNAME before I can execute the git sparse-checkout ... bit. Could you amend? Ta :-) – 
+    Paddy3118
+    Commented Aug 12, 2022 at 11:02
+    3
+    This is the best answer so far. for me, it worked flawlessly as expected. Thank you. – 
+    Ahmad_Yousif
+    Commented Feb 11, 2024 at 22:19
+    3
+    Worked like a charm! Definitely the go-to answer for 2024. – 
+    datasci-iopsy
+    Commented Aug 20, 2024 at 12:18
+
+Show 4 more comments
+82
+
+If you never plan to interact with the repository from which you cloned, you can do a full git clone and rewrite your repository using
+
+git filter-branch --subdirectory-filter <subdirectory>
+
+This way, at least the history will be preserved.
+Share
+Improve this answer
+Follow
+edited Nov 18, 2021 at 12:49
+justarandomguy's user avatar
+justarandomguy
+33144 silver badges1616 bronze badges
+answered Mar 1, 2009 at 21:17
+hillu's user avatar
+hillu
+9,66144 gold badges2828 silver badges3030 bronze badges
+
+    13
+    For people that doesn't know the command, it is git filter-branch --subdirectory-filter <subdirectory> – 
+    Jaime Hablutzel
+    Commented Oct 26, 2014 at 14:32
+    10
+    This method has the advantage that the subdirectory you choose becomes the root of the new repository, which happens to be exactly what I want. – 
+    Andrew Schulman
+    Commented Dec 23, 2014 at 21:27
+    That's defenitly the best and easiest approach to use. Here's a one-step command using subdirectory-filter git clone https://github.com/your/repo_xx.git && cd repo_xx && git filter-branch --subdirectory-filter repo_xx_subdir – 
+    Alex
+    Commented Nov 3, 2019 at 4:55
+    3
+    If you repo is tens of GB big, this would not help too much. – 
+    Adrian Maire
+    Commented Nov 11, 2021 at 10:12
+
+Add a comment
+71
+
+This looks far simpler:
+
+git archive --remote=<repo_url> <branch> <path> | tar xvf -
+
+Share
+Improve this answer
+Follow
+edited Sep 2, 2016 at 19:22
+Peter Mortensen's user avatar
+Peter Mortensen
+31.6k2222 gold badges110110 silver badges134134 bronze badges
+answered Sep 10, 2014 at 17:03
+ErichBSchulz's user avatar
+ErichBSchulz
+15.8k66 gold badges6161 silver badges6464 bronze badges
+
+    19
+    When I do this on github I get fatal: Operation not supported by protocol. Unexpected end of command stream – 
+    Michael Fox
+    Commented Sep 25, 2014 at 17:37 
+
+    1
+    The protocol error could be because of HTTPS or : in the repo url. It could also be because of missing ssh key. – 
+    Umair A.
+    Commented Dec 7, 2014 at 17:34
+    2
+    If you're using github you can use svn export instead – 
+    Milo Wielondek
+    Commented Jul 5, 2015 at 15:25
+    4
+    Won't work wiht Github --> Invalid command: 'git-upload-archive 'xxx/yyy.git'' You appear to be using ssh to clone a git:// URL. Make sure your core.gitProxy config option and the GIT_PROXY_COMMAND environment variable are NOT set. fatal: The remote end hung up unexpectedly – 
+    Nianliang
+    Commented Jul 14, 2015 at 15:19
+    5
+    The reason why this doesn't work with GitHub: "We don't support using git-archive to pull an archive directly from GitHub. You can either clone the repo locally and run git-archive, or click on the Download ZIP button on the repo page." github.com/xuwupeng2000/capistrano-scm-gitcopy/issues/16 – 
+    Donn Lee
+    Commented Aug 29, 2016 at 23:17
+
+Show 2 more comments
+64
+
+Git 1.7.0 has “sparse checkouts”. See “core.sparseCheckout” in the git config manpage, “Sparse checkout” in the git read-tree manpage, and “Skip-worktree bit” in the git update-index manpage.
+
+The interface is not as convenient as SVN’s (e.g. there is no way to make a sparse checkout at the time of an initial clone), but the base functionality upon which simpler interfaces could be built is now available.
+Share
+Improve this answer
+Follow
+edited Jun 6, 2012 at 4:42
+Community's user avatar
+CommunityBot
+111 silver badge
+answered May 18, 2010 at 21:15
+Chris Johnsen's user avatar
+Chris Johnsen
+227k2828 gold badges214214 silver badges189189 bronze badges
+Add a comment
+43
+
+It's not possible to clone subdirectory only with Git, but below are few workarounds.
+Filter branch
+
+You may want to rewrite the repository to look as if trunk/public_html/ had been its project root, and discard all other history (using filter-branch), try on already checkout branch:
+
+git filter-branch --subdirectory-filter trunk/public_html -- --all
+
+Notes: The -- that separates filter-branch options from revision options, and the --all to rewrite all branches and tags. All information including original commit times or merge information will be preserved. This command honors .git/info/grafts file and refs in the refs/replace/ namespace, so if you have any grafts or replacement refs defined, running this command will make them permanent.
+
+    Warning! The rewritten history will have different object names for all the objects and will not converge with the original branch. You will not be able to easily push and distribute the rewritten branch on top of the original branch. Please do not use this command if you do not know the full implications, and avoid using it anyway, if a simple single commit would suffice to fix your problem.
+
+Sparse checkout
+
+Here are simple steps with sparse checkout approach which will populate the working directory sparsely, so you can tell Git which folder(s) or file(s) in the working directory are worth checking out.
+
+    Clone repository as usual (--no-checkout is optional):
+
+    git clone --no-checkout git@foo/bar.git
+    cd bar
+
+    You may skip this step, if you've your repository already cloned.
+
+    Hint: For large repos, consider shallow clone (--depth 1) to checkout only latest revision or/and --single-branch only.
+
+    Enable sparseCheckout option:
+
+    git config core.sparseCheckout true
+
+    Specify folder(s) for sparse checkout (without space at the end):
+
+    echo "trunk/public_html/*"> .git/info/sparse-checkout
+
+    or edit .git/info/sparse-checkout.
+
+    Checkout the branch (e.g. master):
+
+    git checkout master
+
+Now you should have selected folders in your current directory.
+
+You may consider symbolic links if you've too many levels of directories or filtering branch instead.
+Share
+Improve this answer
+Follow
+edited Jul 21, 2016 at 22:12
+answered Mar 22, 2016 at 23:06
+kenorb's user avatar
+kenorb
+168k9595 gold badges711711 silver badges793793 bronze badges
+
+    Would Filter branch still allow you to pull? – 
+    sam
+    Commented Dec 17, 2016 at 19:21
+    2
+    @sam: no. filter-branch would rewrite the parent commits so they'd have different SHA1 IDs, and thus your filtered tree would have no commits in common with the remote tree. git pull wouldn't know where to try to merge from. – 
+    Peter Cordes
+    Commented Jun 15, 2017 at 4:06 
+
+    This approach is mostly satisfying answer to my case. – 
+    Abbas
+    Commented Dec 15, 2019 at 11:16
+
+Add a comment
+14
+
+here is what I do
+
+git init
+git sparse-checkout init
+git sparse-checkout set "YOUR_DIR_PATH"
+git remote add origin https://github.com/AUTH/REPO.git
+git pull --depth 1 origin <SHA1_or_BRANCH_NAME>
+
+Simple note
+
+    sparse-checkout
+
+    git sparse-checkout init many articles will tell you to set git sparse-checkout init --cone If I add --cone will get some files that I don't want.
+
+    git sparse-checkout set "..." will set the .git\info\sparse-checkout file contents as ...
+
+    Suppose you don't want to use this command. Instead, you can open the git\info\sparse-checkout and then edit.
+
+Example
+
+Suppose I want to get 2 folderfull repo size>10GB↑ (include git), as below total size < 2MB
+
+    chrome/common/extensions/api
+    chrome/common/extensions/permissions
+
+git init
+git sparse-checkout init
+// git sparse-checkout set "chrome/common/extensions/api/"
+start .git\info\sparse-checkout   👈 open the "sparse-checkut" file
+
+/* .git\info\sparse-checkout  for example you can input the contents as below 👇
+chrome/common/extensions/api/
+!chrome/common/extensions/api/commands/     👈 ! unwanted : https://www.git-scm.com/docs/git-sparse-checkout#_full_pattern_set
+!chrome/common/extensions/api/devtools/
+chrome/common/extensions/permissions/
+*/
+
+git remote add origin https://github.com/chromium/chromium.git
+start .git\config
+
+/* .git\config
+[core]
+    repositoryformatversion = 1
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+[extensions]
+    worktreeConfig = true
+[remote "origin"]
+    url = https://github.com/chromium/chromium.git
+    fetch = +refs/heads/*:refs/remotes/Github/*
+    partialclonefilter = blob:none  // 👈 Add this line, This is important. Otherwise, your ".git" folder is still large (about 1GB)
+*/
+git pull --depth 1 origin 2d4a97f1ed2dd875557849b4281c599a7ffaba03
+// or
+// git pull --depth 1 origin master
+
+    partialclonefilter = blob:none
+
+    I know to add this line because I know from: git clone --filter=blob:none it will write this line. so I imitate it.
+
+git version: git version 2.29.2.windows.3
+Share
+Improve this answer
+Follow
+edited Aug 28, 2024 at 19:48
+Benjamin Loison's user avatar
+Benjamin Loison
+5,72244 gold badges1919 silver badges3737 bronze badges
+answered Aug 15, 2021 at 19:29
+Carson's user avatar
+Carson
+8,72222 gold badges6262 silver badges6161 bronze badges
+
+    this gives me error "Sparse checkout leaves no entry on working directory" on linux git pull --depth 1 origin dev – 
+    Sudhir N
+    Commented Apr 12, 2023 at 7:28 
+
+    Worked for me and looks much clearer than other approaches. git version 2.27.0 – 
+    hypers
+    Commented Dec 10, 2024 at 14:25
+
+Add a comment
+12
+
+It worked for me- (git version 2.35.1)
+
+git init
+git remote add origin <YourRepoUrl>
+git config core.sparseCheckout true
+git sparse-checkout set <YourSubfolderName>
+git pull origin <YourBranchName>
+
+Share
+Improve this answer
+Follow
+answered Apr 16, 2022 at 12:10
+Abdul97j's user avatar
+Abdul97j
+15522 silver badges66 bronze badges
+
+    It seems this is the fastest and shortest approach. – 
+    damdafayton
+    Commented Sep 29, 2022 at 10:54
+
+Add a comment
+11
+
+This will clone a specific folder and remove all history not related to it.
+
+git clone --single-branch -b {branch} git@github.com:{user}/{repo}.git
+git filter-branch --subdirectory-filter {path/to/folder} HEAD
+git remote remove origin
+git remote add origin git@github.com:{user}/{new-repo}.git
+git push -u origin master
+
+Share
+Improve this answer
+Follow
+answered Mar 22, 2019 at 4:01
+BARJ's user avatar
+BARJ
+2,05233 gold badges2424 silver badges3030 bronze badges
+
+    2
+    Here be dragons. You get greeted by WARNING: git-filter-branch has a glut of gotchas generating mangled history rewrites... Then the git-filter-branch docs has a rather long warning list. – 
+    Oyvind
+    Commented Dec 16, 2019 at 12:05 
+
+Add a comment
+10
+
+I wrote a Python 2 script for downloading a subdirectory from GitHub.
+
+Usage:
+
+python get_git_sub_dir.py path/to/sub/dir <RECURSIVE>
+
+Python 3 fork https://gitlab.com/vitaly-zdanevich/github-download-dir
+Share
+Improve this answer
+Follow
+edited Jul 19, 2024 at 3:47
+Vitaly Zdanevich's user avatar
+Vitaly Zdanevich
+15.4k1111 gold badges5656 silver badges8888 bronze badges
+answered Jan 23, 2014 at 18:49
+david_adler's user avatar
+david_adler
+11k1010 gold badges7272 silver badges121121 bronze badges
+
+    14
+    FYI, that's for GitHub only. – 
+    Sz.
+    Commented May 25, 2014 at 14:49
+    11
+    And apparently this is for downloading a directory, not cloning a piece of a repo with all its metadata... right? – 
+    LarsH
+    Commented Oct 15, 2015 at 19:18
+    15
+    You should include you code here and not somewhere else. – 
+    jww
+    Commented Dec 31, 2018 at 7:13
+    urllib2.HTTPError: HTTP Error 403: rate limit exceeded – 
+    diyism
+    Commented May 18, 2020 at 9:32
+    For downloading a directory, check stackoverflow.com/a/50925766/12649675 for a better script, in Python. – 
+    Godwin Mathias
+    Commented Oct 25, 2023 at 13:40
+
+Add a comment
+7
+
+Using Linux? And only want easy to access and clean working tree ? without bothering rest of code on your machine. try symlinks!
+
+git clone https://github.com:{user}/{repo}.git ~/my-project
+ln -s ~/my-project/my-subfolder ~/Desktop/my-subfolder
+
+Test
+
+cd ~/Desktop/my-subfolder
+git status
+
+Share
+Improve this answer
+Follow
+answered Dec 11, 2019 at 0:31
+Nasir Iqbal's user avatar
+Nasir Iqbal
+87277 silver badges2424 bronze badges
+Add a comment
+7
+
+Just to clarify some of the great answers here, the steps outlined in many of the answers assume that you already have a remote repository somewhere.
+
+Given: an existing git repository, e.g. git@github.com:some-user/full-repo.git, with one or more directories that you wish to pull independently of the rest of the repo, e.g. directories named app1 and app2
+
+Assuming you have a git repository as the above...
+
+Then: you can run steps like the following to pull only specific directories from that larger repo:
+
+mkdir app1
+cd app1
+git init
+git remote add origin git@github.com:some-user/full-repo.git
+git config core.sparsecheckout true
+echo "app1/" >> .git/info/sparse-checkout
+git pull origin master
+
+I had mistakenly thought that the sparse-checkout options had to be set on the original repository, but this is not the case: you define which directories you want locally, prior to pulling from the remote. The remote repo doesn't know or care about your only wanting to track a part of the repo.
+
+Hope this clarification helps someone else.
+Share
+Improve this answer
+Follow
+edited Dec 21, 2020 at 13:21
+answered Mar 5, 2020 at 18:17
+Everett's user avatar
+Everett
+9,73455 gold badges3939 silver badges5656 bronze badges
+
+    this is a bit late but what do i do if i need all contents inside app1 and not the app1 directory – 
+    Swapnil Shende
+    Commented Aug 3, 2020 at 15:26
+    That seems more like a cosmetic question, although it does seem like you don't have full freedom to "escape" the structure of the original repo. Maybe you could use symlinks? – 
+    Everett
+    Commented Dec 21, 2020 at 13:23
+    you still have to download the whole repo it seems ``` $ mkdir com.unity.render-pipelines.core $ cd com.unity.render-pipelines.core/ $ git init $ git remote add origin github.com/Oculus-VR/Unity-Graphics.git $ git config core.sparsecheckout true $ echo "com.unity.render-pipelines.core/" >> .git/info/sparse-checkout $ git pull origin 2021.2/oculus-appsw-particles ``` The folder size is around 7mb , however ... ``` $ ... $ Receiving objects: 6% (24305/375290), 27.30 MiB | 121.00 KiB/s ``` – 
+    Vlad
+    Commented Apr 15, 2022 at 21:50 
+
+Add a comment
+6
+
+Here's a shell script I wrote for the use case of a single subdirectory sparse checkout
+coSubDir.sh
+
+localRepo=$1
+remoteRepo=$2
+subDir=$3
+
+
+# Create local repository for subdirectory checkout, make it hidden to avoid having to drill down to the subfolder
+mkdir ./.$localRepo
+cd ./.$localRepo
+git init
+git remote add -f origin $remoteRepo
+git config core.sparseCheckout true
+
+# Add the subdirectory of interest to the sparse checkout.
+echo $subDir >> .git/info/sparse-checkout
+
+git pull origin master
+
+# Create convenience symlink to the subdirectory of interest
+cd ..
+ln -s ./.$localRepo/$subDir $localRepo
+
+Share
+Improve this answer
+Follow
+edited Aug 28, 2024 at 19:45
+Benjamin Loison's user avatar
+Benjamin Loison
+5,72244 gold badges1919 silver badges3737 bronze badges
+answered Mar 8, 2018 at 19:39
+jxramos's user avatar
+jxramos
+8,35499 gold badges6666 silver badges118118 bronze badges
+
+    2
+    Nice script, only something which should be fixed is the symlink, should be ln -s ./.$localRepo/$subDir $localRepo instead of ln -s ./.$localRepo$subDir $localRepo – 
+    valentin_nasta
+    Commented Mar 16, 2018 at 8:33
+
+Add a comment
+5
+
+@Chronial 's answer is no longer applicable to recent versions, but it was a useful answer as it proposed a script.
+
+To checkout only one or more subdirectories of a branch, I created the following shell function. It gets a shallow copy of only the most recent version in the branch for the provided directories.
+
+function git_sparse_clone_branch() (
+  local rurl="$1" localdir="$2" branch="$3" && shift 3
+
+  git clone "$rurl" --branch "$branch" --no-checkout "$localdir" --depth 1  # limit history
+  cd "$localdir" || return
+  
+  # git sparse-checkout init --cone  # fetch only root file
+
+  # Loops over remaining args
+  for i; do
+    git sparse-checkout add "$i"
+    # git sparse-checkout set "$i"
+  done
+
+  git checkout --ignore-other-worktrees "$branch"
+)
+
+So example use:
+
+git_sparse_clone_branch git@github.com:user/repo.git localpath branch-to-clone path1_to_fetch path2_to_fetch
+
+In my case the clone was "only" 23MB versus 385MB for the full clone.
+
+Tested with git version 2.36.1 .
+Share
+Improve this answer
+Follow
+edited Apr 15, 2024 at 17:57
+Nolca's user avatar
+Nolca
+6544 bronze badges
+answered Sep 2, 2022 at 20:03
+le_top's user avatar
+le_top
+49366 silver badges1616 bronze badges
+Add a comment
+5
+
+git init <repo>
+cd <repo>
+git remote add origin <url>
+git config core.sparsecheckout true
+echo "<path you want to clone>/*" >> .git/info/sparse-checkout
+git pull --depth=1 origin <branch you want to fetch>
+
+Example for cloning only Jetsurvey Folder from this repo
+
+git init MyFolder
+cd MyFolder 
+git remote add origin git@github.com:android/compose-samples.git
+git config core.sparsecheckout true
+echo "Jetsurvey/*" >> .git/info/sparse-checkout
+git pull --depth=1 origin main
+
+Share
+Improve this answer
+Follow
+edited Aug 28, 2024 at 19:45
+Benjamin Loison's user avatar
+Benjamin Loison
+5,72244 gold badges1919 silver badges3737 bronze badges
+answered May 18, 2022 at 8:22
+Jaswinder's user avatar
+Jaswinder
+2,27911 gold badge2323 silver badges3838 bronze badges
+Add a comment
+3
+
+Lots of great responses here, but I wanted to add that using the quotations around the directory names was failing for me on Windows Sever 2016. The files simply were not being downloaded.
+
+Instead of
+
+"mydir/myfolder"
+
+I had to use
+
+mydir/myfolder
+
+Also, if you want to simply download all sub directories just use
+
+git sparse-checkout set *
+
+Share
+Improve this answer
+Follow
+answered Apr 8, 2021 at 13:15
+Eric Stricklin's user avatar
+Eric Stricklin
+3122 bronze badges
+Add a comment
+3
+
+I wrote a .gitconfig [alias] for performing a "sparse checkout". Check it out (no pun intended):
+
+On Windows run in cmd.exe
+
+git config --global alias.sparse-checkout "!f(){ [ $# -eq 2 ] && L=${1##*/} L=${L%.git} || L=$2; mkdir -p \"$L/.git/info\" && cd \"$L\" && git init --template= && git remote add origin \"$1\" && git config core.sparseCheckout 1; [ $# -eq 2 ] && echo \"$2\" >> .git/info/sparse-checkout || { shift 2; for i; do echo $i >> .git/info/sparse-checkout; done }; git pull --depth 1 origin master;};f"
+
+Otherwise:
+
+git config --global alias.sparse-checkout '!f(){ [ $# -eq 2 ] && L=${1##*/} L=${L%.git} || L=$2; mkdir -p "$L/.git/info" && cd "$L" && git init --template= && git remote add origin "$1" && git config core.sparseCheckout 1; [ $# -eq 2 ] && echo "$2" >> .git/info/sparse-checkout || { shift 2; for i; do echo $i >> .git/info/sparse-checkout; done }; git pull --depth 1 origin master;};f'
+
+Usage:
+
+# Makes a directory ForStackExchange with Plug checked out
+git sparse-checkout https://github.com/YenForYang/ForStackExchange Plug
+
+# To do more than 1 directory, you have to specify the local directory:
+git sparse-checkout https://github.com/YenForYang/ForStackExchange ForStackExchange Plug Folder
+
+The git config commands are 'minified' for convenience and storage, but here is the alias expanded:
+
+# Note the --template= is for disabling templates.
+# Feel free to remove it if you don't have issues with them (like I did)
+# `mkdir` makes the .git/info directory ahead of time, as I've found it missing sometimes for some reason
+f(){
+    [ "$#" -eq 2 ] && L="${1##*/}" L=${L%.git} || L=$2;
+    mkdir -p "$L/.git/info"
+        && cd "$L"
+        && git init --template=
+        && git remote add origin "$1"
+        && git config core.sparseCheckout 1;
+    [ "$#" -eq 2 ]
+        && echo "$2" >> .git/info/sparse-checkout
+        || {
+            shift 2;
+            for i; do
+                echo $i >> .git/info/sparse-checkout;
+            done
+        };
+    git pull --depth 1 origin master;
+};
+f
+
+Share
+Improve this answer
+Follow
+edited Aug 28, 2024 at 19:46
+Benjamin Loison's user avatar
+Benjamin Loison
+5,72244 gold badges1919 silver badges3737 bronze badges
+answered Jul 26, 2019 at 23:48
+YenForYang's user avatar
+YenForYang
+3,3323333 silver badges2424 bronze badges
+
+    Why does this work: L=${1##*/} L=${L%.git} ? Is space an operator? – 
+    Gulzt
+    Commented Dec 13, 2019 at 12:33
+    You ought to mention this is for git < 2.25.0 (Jan 2020), which includes its own version of git sparse-checkout. – 
+    Nickolay
+    Commented Aug 19, 2020 at 19:09
+
+Add a comment
+2
+
+If you're actually ony interested in the latest revision files of a directory, Github lets you download a repository as Zip file, which does not contain history. So downloading is very much faster.
+Share
+Improve this answer
+Follow
+answered Jan 25, 2020 at 14:07
+weberjn's user avatar
+weberjn
+1,9832020 silver badges2525 bronze badges
+Add a comment
+2
+
+(extending this answer )
+Cloning subdirectory in specific tag
+
+If you want to clone a specific subdirectory of a specific tag you can follow the steps below.
+
+I clone the distribution/src/main/release/samples/ subdirectory of cxf github repo in cxf-3.5.4 tag.
+
+Note: if you attempt to just clone the above repo you will see that it is very big. The commands below clones only what is needed.
+
+git clone --depth 1 --filter=blob:none --sparse https://github.com/apache/cxf
+cd cxf/
+git sparse-checkout set distribution/src/main/release/samples/
+git fetch --depth 1 origin cxf-3.5.4
+# This is the hash on which the tag points, however using the tag does not work.
+git switch --detach 3ef4fde
+
+Cloning subdirectory in specific branch
+
+I clone the distribution/src/main/release/samples/ subdirectory of cxf github repo in 2.6.x-fixes branch.
+
+git clone --depth 1 --filter=blob:none --sparse https://github.com/apache/cxf --branch 2.6.x-fixes
+cd cxf/
+git sparse-checkout set distribution/src/main/release/samples/
+
+Share
+Improve this answer
+Follow
+edited Oct 19, 2022 at 18:38
+answered Oct 19, 2022 at 18:32
+Marinos An's user avatar
+Marinos An
+11.2k77 gold badges7676 silver badges113113 bronze badges
+Add a comment
+1
+
+While I hate actually having to use svn when dealing with git repos :/ I use this all the time;
+
+function git-scp() (
+  URL="$1" && shift 1
+  svn export ${URL/blob\/master/trunk}
+)
+
+This allows you to copy out from the github url without modification. Usage;
+
+--- /tmp » git-scp https://github.com/dgraph-io/dgraph/blob/master/contrib/config/kubernetes/helm                                                                                                                  1 ↵
+A    helm
+A    helm/Chart.yaml
+A    helm/README.md
+A    helm/values.yaml
+Exported revision 6367.
+
+--- /tmp » ls | grep helm
+Permissions Size User    Date Modified    Name
+drwxr-xr-x     - anthony 2020-01-07 15:53 helm/
+
+Share
+Improve this answer
+Follow
+answered Jan 7, 2020 at 13:52
+expelledboy's user avatar
+expelledboy
+2,42311 gold badge2121 silver badges2020 bronze badges
+Add a comment
+1
+
+Lots of good ideas and scripts above. I could not help myself and combined them into a bash script with help and error checking:
+
+#!/bin/bash
+
+function help {
+  printf "$1
+Clones a specific directory from the master branch of a git repository.
+
+Syntax:
+  $(basename $0) [--delrepo] repoUrl sourceDirectory [targetDirectory]
+
+If targetDirectory is not specified it will be set to sourceDirectory.
+Downloads a sourceDirectory from a Git repository into targetdirectory.
+If targetDirectory is not specified, a directory named after `basename sourceDirectory`
+will be created under the current directory.
+
+If --delrepo is specified then the .git subdirectory in the clone will be removed after cloning.
+
+
+Example 1:
+Clone the tree/master/django/conf/app_template directory from the master branch of
+git@github.com:django/django.git into ./app_template:
+
+\$ $(basename $0) git@github.com:django/django.git django/conf/app_template
+
+\$ ls app_template/django/conf/app_template/
+__init__.py-tpl  admin.py-tpl  apps.py-tpl  migrations  models.py-tpl  tests.py-tpl  views.py-tpl
+
+
+Example 2:
+Clone the django/conf/app_template directory from the master branch of
+https://github.com/django/django/tree/master/django/conf/app_template into ~/test:
+
+\$ $(basename $0) git@github.com:django/django.git django/conf/app_template ~/test
+
+\$ ls test/django/conf/app_template/
+__init__.py-tpl  admin.py-tpl  apps.py-tpl  migrations  models.py-tpl  tests.py-tpl  views.py-tpl
+
+"
+  exit 1
+}
+
+if [ -z "$1" ]; then help "Error: repoUrl was not specified.\n"; fi
+if [ -z "$2" ]; then help "Error: sourceDirectory was not specified."; fi
+
+if [ "$1" == --delrepo ]; then
+  DEL_REPO=true
+  shift
+fi
+
+REPO_URL="$1"
+SOURCE_DIRECTORY="$2"
+if [ "$3" ]; then
+  TARGET_DIRECTORY="$3"
+else
+  TARGET_DIRECTORY="$(basename $2)"
+fi
+
+echo "Cloning into $TARGET_DIRECTORY"
+mkdir -p "$TARGET_DIRECTORY"
+cd "$TARGET_DIRECTORY"
+git init
+git remote add origin -f "$REPO_URL"
+git config core.sparseCheckout true
+
+echo "$SOURCE_DIRECTORY" > .git/info/sparse-checkout
+git pull --depth=1 origin master
+
+if [ "$DEL_REPO" ]; then rm -rf .git; fi
+
+Share
+Improve this answer
+Follow
+answered Mar 8, 2021 at 12:52
+Mike Slinn's user avatar
+Mike Slinn
+8,46877 gold badges5757 silver badges9292 bronze badges
+Add a comment
+1
+
+    degit makes copies of git repositories. When you run degit some-user/some-repo, it will find the latest commit on https://github.com/some-user/some-repo and download the associated tar file to ~/.degit/some-user/some-repo/commithash.tar.gz if it doesn't already exist locally. (This is much quicker than using git clone, because you're not downloading the entire git history.)
+
+degit <https://github.com/user/repo/subdirectory> <output folder>
+
+Find out more https://www.npmjs.com/package/degit
+Share
+Improve this answer
+Follow
+answered Feb 12, 2022 at 14:17
+Parables Boltnoel's user avatar
+Parables Boltnoel
+3155 bronze badges
+Add a comment
+1
+
+You can still use svn:
+
+svn export https://admin@domain.example/home/admin/repos/finisht/static static --force
+
+to "git clone" a subdirectory and then to "git pull" this subdirectory.
+
+(It is not intended to commit & push.)
+Share
+Improve this answer
+Follow
+edited Jun 20, 2022 at 9:26
+Stephen Ostermiller's user avatar
+Stephen Ostermiller♦
+25.7k1717 gold badges9696 silver badges116116 bronze badges
+answered Sep 27, 2021 at 8:56
+Friedrich -- Слава Україні's user avatar
+Friedrich -- Слава Україні
+3,91511 gold badge3434 silver badges5151 bronze badges
+Add a comment
+0
+
+    If you want to clone
+
+    git clone --no-checkout <REPOSITORY_URL>
+    cd <REPOSITORY_NAME>
+
+        Now set the specific file / directory you wish to pull into the working-directory:
+
+        git sparse-checkout set <PATH_TO_A_SPECIFIC_DIRECTORY_OR_FILE_TO_PULL>
+
+        Afterwards, you should reset hard your working-directory to the commit you wish to pull.
+
+            For example, we will reset it to the default origin/master's HEAD commit.
+
+        git reset --hard HEAD
+
+    If you want to git init and then remote add
+
+    git init
+    git remote add origin <REPOSITORY_URL>
+
+        Now set the specific file / directory you wish to pull into the working-directory:
+
+        git sparse-checkout set <PATH_TO_A_SPECIFIC_DIRECTORY_OR_FILE_TO_PULL>
+
+        Pull the last commit:
+
+        git pull origin master
+
+    NOTE:
+
+    If you want to add another directory/file to your working-directory, you may do it like so:
+
+    git sparse-checkout add <PATH_TO_ANOTHER_SPECIFIC_DIRECTORY_OR_FILE_TO_PULL>
+
+    If you want to add all the repository to the working-directory, do it like so:
+
+    git sparse-checkout add *
+
+    If you want to empty the working-directory, do it like so:
+
+    git sparse-checkout set empty
+
+If you want, you can view the status of the tracked files you have specified, by running:
+
+git status
+
+If you want to exit the sparse mode and clone all the repository, you should run:
+
+git sparse-checkout set *
+git sparse-checkout set init
+git sparse-checkout set disable
+
+Share
+Improve this answer
+Follow
+answered Feb 19, 2022 at 12:12
+Tal Jacob - Sir Jacques's user avatar
+Tal Jacob - Sir Jacques
+67388 silver badges77 bronze badges
+Add a comment
+0
+
+I don't know if anyone succeeded pulling specific directory, here is my experience: git clone --filter=blob:none --single-branch <repo>, cancel immediately while downloading objects, enter repo, then git checkout origin/master <dir>, ignore errors (sha1), enter dir, repeat checkout (using new dir) for every sub-directory. I managed to quickly get source files in this way
+Share
+Improve this answer
+Follow
+answered Apr 6, 2022 at 11:03
+Ilir Liburn's user avatar
+Ilir Liburn
+22011 gold badge22 silver badges66 bronze badges
+Add a comment
+0
+For macOS users
+
+For zsh users (macOS users, specifically) cloning Repos with ssh, I just create a zsh command based on the answer by @Ciro Santilli:
+
+requirement: The version of git matters. It doesn't work on 2.25.1 because of the --sparse option. Try upgrade your git to the latest version. (e.g. tested 2.36.1)
+
+example usage:
+
+git clone git@github.com:google-research/google-research.git etcmodel
+
+code:
+
+function gitclone {
+    readonly repo_root=${1?Usage: gitclone repo.git sub_dir}
+    readonly repo_sub=${2?Usage: gitclone repo.git sub_dir}
+    echo "-- Cloning $repo_root/$repo_sub"
+    git clone \
+      --depth 1 \
+      --filter=tree:0 \
+      --sparse \
+      $repo_root \
+    ;
+    repo_folder=${repo_root#*/}
+    repo_folder=${repo_folder%.*}
+    cd $repo_folder
+    git sparse-checkout set $repo_sub
+    cd -
+}
+
+
+gitclone "$@"
+
+Share
+Improve this answer
+Follow
+edited Jun 15, 2022 at 16:58
+answered Jun 15, 2022 at 14:58
+NeoZoom.lua's user avatar
+NeoZoom.lua
+2,90144 gold badges4141 silver badges8585 bronze badges
+Add a comment
+1
+2
+Next
+Protected question. To answer this question, you need to have at least 10 reputation on this site (not counting the association bonus). The reputation requirement helps protect this question from spam and non-answer activity.
+
+Start asking to get answers
+
+Find the answer to your question by asking.
+
+Explore related questions
+
+    gitrepositorysubdirectorygit-clonesparse-checkout
+
+See similar questions with these tags.
+
+    The Overflow Blog
+
+From punch cards to prompts: a history of how software got better
+
+    Svelte was built on “slinging code for the sheer love of it”
+    Featured on Meta
+    Updated design for the new live activity panel experiment
+    Further Experimentation with Comment Reputation Requirements
+    Policy: Generative AI (e.g., ChatGPT) is banned
+
+Community activity
+Last 1 hr
+
+    Users online activity
+    12254 users online
+
+23 questions
+9 answers
+90 comments
+
+    232 upvotes
+
+Popular tags
+android
+javascript
+arrays
+python
+c#
+c++
+
+Popular unanswered question
+CSS Subgrid causing unwanted gap
+html
+css
+css-grid
+User avatar
+Paul
+
+    1.9k
+
+2 hours ago
+Linked
+34
+Cloning only a subdirectory with Git
+25
+clone parts of a github project
+2
+Git clone all but one file or folder, possible?
+2
+How to get a sub folder git path?
+-1
+Checkout single folder in Git
+0
+git check out part of a fork
+2
+git: clone ony a subdirectory
+0
+Clone only a subfolder in repository
+1
+how to clone a specific subdirectory from git using eclipse
+1
+Is there any way to download only a directory from git repo?
+See more linked questions
+Related
+3173
+How do I clone a Git repository into a specific folder?
+1
+How to copy git repository including only one subfolder?
+5
+Clone of Git repository excluding subdirectory
+3
+How can I clone only a subfolder of a Git repository and make all the files in the subfolder end up in the root?
+5
+Git clone only a subdirectory, at the root of the current directory
+2
+How can I clone a git's repository subdirectory content?
+11
+Cloning subtree/subdirectory of git repo
+15
+How do I clone, fetch or sparse checkout a single directory or a list of directories from git repository?
+0
+How to avoid creating a subfolder when cloning a repository
+1
+Clone a subfolder from git repo without the repo structure
+Hot Network Questions
+
+    Is "equal to" a good substitute for "meaning of"?
+    How long does blood smell for?
+    What building(s) were used as the filming locations for the “Jump Program”?
+    How do I push back on an impossible scope?
+    Ratio of the Area of Triangles
+    How can the magnetometers in migratory birds' eyes sense the *direction* of the Earth's magnetic field?
+    How to sort pandas groups by (multiple/all) values of the groups?
+    Handroll your own filters or use a library?
+    What would a god who controls the stars and heavens be called?
+    What's the opposite saying to "A broken clock is right twice a day"?
+    AGPL 3.0 github project collecting sensitive data
+    Looking for a single noun to describe an ugly looking person or, more broadly, an ugly image
+    A property of the rectangular (isosceles) hyperbola
+    How to fix .op spice directive not working but .trans spice directive working in ltspice simulation for a buck converter?
+    C++17: shared_mutex protected DNS cache (rare writes, many reads) return-by-value vs decltype(auto)?
+    "When have you read the police report?"
+    Conflict between cleveref, aliascnt, and amsmath
+    Turn off numbering in ConTeXt theorem environment, or force it to stay the same number, or alternatively use a title
+    Is there not a leap between moral facts and the normativity of facts?
+    Function to return free memory in Sinclair ZX Spectrum BASIC?
+    Is the "standard candle" model challenged by supernova Ia resulting from 2 white dwarfs?
+    Why doesn't the Brain just remove Pinky?
+    Monitor continuous blanking issue on Ubuntu 20.04
+    Should I add arrow indicators to dropdown-style buttons in my mobile app, or is it unnecessary visual clutter?
+
+Question feed
+
+Stack Overflow
+
+    Questions
+    Help
+    Chat
+
+Products
+
+    Teams
+    Advertising
+    Talent
+
+Company
+
+    About
+    Press
+    Work Here
+    Legal
+    Privacy Policy
+    Terms of Service
+    Contact Us
+    Cookie Settings
+    Cookie Policy
+
+Stack Exchange Network
+
+    Technology
+    Culture & recreation
+    Life & arts
+    Science
+    Professional
+    Business
+    API
+    Data
+
+    Blog
+    Facebook
+    Twitter
+    LinkedIn
+    Instagram
+
+Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under CC BY-SA . rev 2025.8.27.33312

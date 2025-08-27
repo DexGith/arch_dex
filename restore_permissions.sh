@@ -1,0 +1,79 @@
+#!/bin/bash
+#
+# This script restores configuration files FROM this repository TO a new system.
+# It handles system files by applying the correct permissions after copying.
+#
+# RUN THIS SCRIPT WITH CAUTION. It will overwrite existing system files.
+# It's best to run it with sudo from the start: `sudo ./restore.sh`
+
+set -e
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root. Please use sudo." 
+   exit 1
+fi
+
+echo "🔵 Starting system configuration restore..."
+
+# The location of your cloned repository
+REPO_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+HOME_USER="dex" # IMPORTANT: Change this if your username is different on the new machine
+HOME_DIR="/home/$HOME_USER"
+
+echo "   Restoring files for user: $HOME_USER"
+echo "   Source repository: $REPO_DIR"
+
+# --- 1. Restore Home Directory Files ---
+# These are safe to copy directly. rsync will handle it.
+echo "🏠 Restoring home directory files..."
+# Make sure the destination directory is owned by the user, not root
+mkdir -p "$HOME_DIR"
+chown "$HOME_USER:$HOME_USER" "$HOME_DIR"
+
+# List of files/dirs to copy from repo to the home directory
+# This should mirror your backup script's home directory lists
+HOME_ITEMS=(
+    ".zshrc" ".zshenv" ".gitconfig" ".tmux.conf" ".bashrc" ".vimrc" ".bash_logout"
+    ".nanorc" ".profile" ".xbindkeysrc" ".xmodmaprc" ".Xresources" ".Xdefaults"
+    ".Xauthority" "scripts" "Home" ".config" ".local"
+)
+
+for item in "${HOME_ITEMS[@]}"; do
+    source_path="$REPO_DIR/$item"
+    dest_path="$HOME_DIR/"
+    if [ -e "$source_path" ]; then
+        echo "   - Syncing ~/$item"
+        rsync -av --chown="$HOME_USER:$HOME_USER" "$source_path" "$dest_path"
+    fi
+done
+
+
+# --- 2. Restore System Files with Correct Permissions ---
+echo "⚙️  Restoring system files with proper permissions..."
+
+# Example for /etc/sudoers
+echo "   - Restoring /etc/sudoers"
+cp "$REPO_DIR/etc/sudoers" "/etc/sudoers"
+chown root:root "/etc/sudoers"
+chmod 440 "/etc/sudoers"
+
+# Example for /etc/sudoers.d/
+echo "   - Restoring /etc/sudoers.d/"
+cp -r "$REPO_DIR/etc/sudoers.d/"* "/etc/sudoers.d/"
+chown -R root:root "/etc/sudoers.d"
+find /etc/sudoers.d -type f -exec chmod 440 {} \;
+
+# Example for /etc/fstab
+echo "   - Restoring /etc/fstab"
+cp "$REPO_DIR/etc/fstab" "/etc/fstab"
+chown root:root "/etc/fstab"
+chmod 644 "/etc/fstab" # Note: Fstab permissions are typically 644
+
+# Add more files here, following the pattern:
+# 1. cp the file
+# 2. chown it to root:root
+# 3. chmod it to its required permissions
+
+echo ""
+echo "✅ Restore complete!"
+echo "   Please review the changes and reboot if necessary."

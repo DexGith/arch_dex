@@ -1,10 +1,13 @@
-<configuration version="37">
-    <folder id="3qkes-gp5h6" label="Fleet" path="~/Fleet" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+<configuration version="51">
+    <folder id="ckqsk-q3s4v" label="power" path="~/power" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" introducedBy="">
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -20,15 +23,14 @@
         <ignoreDelete>false</ignoreDelete>
         <scanProgressIntervalS>0</scanProgressIntervalS>
         <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
         <maxConflicts>10</maxConflicts>
         <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -43,12 +45,15 @@
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <folder id="giflt-kw6cx" label="Power" path="~/Power" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+    <folder id="default" label="Default Folder" path="~/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" introducedBy="">
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -64,15 +69,149 @@
         <ignoreDelete>false</ignoreDelete>
         <scanProgressIntervalS>0</scanProgressIntervalS>
         <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
         <maxConflicts>10</maxConflicts>
         <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+        <syncOwnership>false</syncOwnership>
+        <sendOwnership>false</sendOwnership>
+        <syncXattrs>false</syncXattrs>
+        <sendXattrs>false</sendXattrs>
+        <xattrFilter>
+            <maxSingleEntrySize>1024</maxSingleEntrySize>
+            <maxTotalSize>4096</maxTotalSize>
+        </xattrFilter>
+    </folder>
+    <folder id="dshng-kxac2" label="Neovim" path="~/.config/nvim" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <paused>false</paused>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+        <syncOwnership>false</syncOwnership>
+        <sendOwnership>false</sendOwnership>
+        <syncXattrs>false</syncXattrs>
+        <sendXattrs>false</sendXattrs>
+        <xattrFilter>
+            <maxSingleEntrySize>1024</maxSingleEntrySize>
+            <maxTotalSize>4096</maxTotalSize>
+        </xattrFilter>
+    </folder>
+    <folder id="fadus-prp7o" label="fleet" path="~/fleet" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <paused>false</paused>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+        <syncOwnership>false</syncOwnership>
+        <sendOwnership>false</sendOwnership>
+        <syncXattrs>false</syncXattrs>
+        <sendXattrs>false</sendXattrs>
+        <xattrFilter>
+            <maxSingleEntrySize>1024</maxSingleEntrySize>
+            <maxTotalSize>4096</maxTotalSize>
+        </xattrFilter>
+    </folder>
+    <folder id="ivcko-ygj6e" label="scripts" path="~/scripts" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <paused>false</paused>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -89,10 +228,10 @@
     </folder>
     <folder id="jz0u9-18iym" label="Camera" path="/home/dex/syncthing/phone_sync/Camera" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" introducedBy="">
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -108,15 +247,14 @@
         <ignoreDelete>false</ignoreDelete>
         <scanProgressIntervalS>0</scanProgressIntervalS>
         <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
         <maxConflicts>10</maxConflicts>
         <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -131,12 +269,12 @@
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <folder id="pe8rf-r2zzb" label="Screenshots" path="~/syncthing/phone_sync/Screenshots" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+    <folder id="kmnki-knxoh" label="screenshots" path="~/syncthing/phone_sync/Screenshots" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" introducedBy="">
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -152,15 +290,57 @@
         <ignoreDelete>false</ignoreDelete>
         <scanProgressIntervalS>0</scanProgressIntervalS>
         <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
         <maxConflicts>10</maxConflicts>
         <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+        <syncOwnership>false</syncOwnership>
+        <sendOwnership>false</sendOwnership>
+        <syncXattrs>false</syncXattrs>
+        <sendXattrs>false</sendXattrs>
+        <xattrFilter>
+            <maxSingleEntrySize>1024</maxSingleEntrySize>
+            <maxTotalSize>4096</maxTotalSize>
+        </xattrFilter>
+    </folder>
+    <folder id="neybe-mussx" label="Backup my_configs" path="~/Backup/my_configs" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <paused>false</paused>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -177,10 +357,13 @@
     </folder>
     <folder id="uqwny-qrmgg" label="Keypass" path="~/Home/K/Keepassxc" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" introducedBy="">
+        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" introducedBy="">
+        <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -196,15 +379,14 @@
         <ignoreDelete>false</ignoreDelete>
         <scanProgressIntervalS>0</scanProgressIntervalS>
         <pullerPauseS>0</pullerPauseS>
+        <pullerDelayS>1</pullerDelayS>
         <maxConflicts>10</maxConflicts>
         <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <maxConcurrentWrites>16</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -219,18 +401,6 @@
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <device id="BUSICL2-HZUYKBF-ITYI64K-TFRJAQA-CPLZYI2-MMPL7PF-4TOWPO3-OLSEOAQ" name="Redmi Note 8" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
-        <address>dynamic</address>
-        <paused>false</paused>
-        <autoAcceptFolders>false</autoAcceptFolders>
-        <maxSendKbps>0</maxSendKbps>
-        <maxRecvKbps>0</maxRecvKbps>
-        <ignoredFolder time="2025-08-08T08:32:38.811Z" id="ykqtg-6yvqd" label="Fleet"></ignoredFolder>
-        <maxRequestKiB>0</maxRequestKiB>
-        <untrusted>false</untrusted>
-        <remoteGUIPort>0</remoteGUIPort>
-        <numConnections>0</numConnections>
-    </device>
     <device id="MP2Q7J4-X2AR7KL-OT6QR6I-2J5NTHC-J6BPJ5I-HHDCOSE-XGUL6EE-VEQJHAC" name="archlinux1" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
@@ -242,7 +412,29 @@
         <remoteGUIPort>0</remoteGUIPort>
         <numConnections>0</numConnections>
     </device>
-    <gui enabled="true" tls="false" debugging="false" sendBasicAuthPrompt="false">
+    <device id="P7XXL75-UHBIMGN-M4M7EJR-3EXXWRK-G2SXRXN-4J7LF4F-OIVNOHC-5IMNIQN" name="Redmi noe 8 evolution x-cuh-kernel" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
+    <device id="T7GLH4X-22WPI6C-MEOGH6T-UU7Z72N-X66JM3O-TEGQLR5-IYIGBOO-HRVT2QG" name="dell laptop (kali)" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
+    <gui enabled="true" tls="false" sendBasicAuthPrompt="false">
         <address>127.0.0.1:8384</address>
         <user>dex</user>
         <password>$2a$10$usjpda9vt1l5OK96UxLI..VGdeaDAMx7zIOrR2hkYjlKRUSJH1H.i</password>
@@ -292,7 +484,6 @@
         <stunKeepaliveStartS>180</stunKeepaliveStartS>
         <stunKeepaliveMinS>20</stunKeepaliveMinS>
         <stunServer>default</stunServer>
-        <databaseTuning>auto</databaseTuning>
         <maxConcurrentIncomingRequestKiB>0</maxConcurrentIncomingRequestKiB>
         <announceLANAddresses>true</announceLANAddresses>
         <sendFullIndexOnUpgrade>false</sendFullIndexOnUpgrade>
@@ -326,15 +517,14 @@
             <ignoreDelete>false</ignoreDelete>
             <scanProgressIntervalS>0</scanProgressIntervalS>
             <pullerPauseS>0</pullerPauseS>
+            <pullerDelayS>1</pullerDelayS>
             <maxConflicts>10</maxConflicts>
             <disableSparseFiles>false</disableSparseFiles>
-            <disableTempIndexes>false</disableTempIndexes>
             <paused>false</paused>
-            <weakHashThresholdPct>25</weakHashThresholdPct>
             <markerName>.stfolder</markerName>
             <copyOwnershipFromParent>false</copyOwnershipFromParent>
             <modTimeWindowS>0</modTimeWindowS>
-            <maxConcurrentWrites>2</maxConcurrentWrites>
+            <maxConcurrentWrites>16</maxConcurrentWrites>
             <disableFsync>false</disableFsync>
             <blockPullOrder>standard</blockPullOrder>
             <copyRangeMethod>standard</copyRangeMethod>

@@ -3,8 +3,8 @@
         Copy the file to $HOME/.config/openbox/ instead. -->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
-    <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <strength>0</strength>
+    <screen_edge_strength>0</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
@@ -301,6 +301,11 @@
       <!-- Or your desired key combination -->
       <action name="MoveToCenter"/>
     </keybind>
+    <keybind key="W-b">
+        <action name="Lower"/>
+        <action name="FocusToBottom"/>
+        <action name="Unfocus"/>
+    </keybind>
     <keybind key="W-Right">
       <!-- Example key: Win + Menu key -->
       <action name="MoveResizeTo">
@@ -387,6 +392,10 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <!-- <keybind key="A-t"> -->
+    <!-- <action name="NextWindow"> -->
+    <!-- </action> -->
+    <!-- </keybind> -->
     <!-- Keybindings for window switching -->
     <!-- <keybind key="W-Tab"> -->
     <!--   <action name="NextWindow"> -->
@@ -555,24 +564,24 @@
           </else>
         </action>
       </mousebind>
-      <mousebind button="W-Left" action="Drag">
-        <action name="if">
-          <maximized>yes</maximized>
+      <!-- <mousebind button="W-Left" action="Drag"> -->
+      <!--   <action name="if"> -->
+      <!--     <maximized>yes</maximized> -->
           <!-- Check 2: (Given not fullscreen) Is it maximized? -->
-          <then>
+          <!-- <then> -->
             <!-- Path A1: Window is maximized (and not fullscreen) -->
-            <action name="UnmaximizeFull"/>
-            <action name="Move"/>
-          </then>
-          <else>
+          <!--   <action name="UnmaximizeFull"/> -->
+          <!--   <action name="Move"/> -->
+          <!-- </then> -->
+          <!-- <else> -->
             <!-- Path A2: Window is NOT maximized (and also not fullscreen) => It's a normal window -->
-            <action name="Move"/>
-          </else>
-        </action>
-      </mousebind>
-      <mousebind button="W-Right" action="Drag">
-        <action name="Resize"/>
-      </mousebind>
+      <!--       <action name="Move"/> -->
+      <!--     </else> -->
+      <!--   </action> -->
+      <!-- </mousebind> -->
+      <!-- <mousebind button="W-Right" action="Drag"> -->
+      <!--   <action name="Resize"/> -->
+      <!-- </mousebind> -->
       <mousebind button="A-Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>

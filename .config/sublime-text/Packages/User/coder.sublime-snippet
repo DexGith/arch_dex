@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+--------------------
+**Coder**
+---------
+
+$1
+]]></content>
+    <tabTrigger>u4</tabTrigger>
+    <scope>text.plain, text.markdown</scope>
+    <description>Chat log entry for Internet</description>
+</snippet>
+

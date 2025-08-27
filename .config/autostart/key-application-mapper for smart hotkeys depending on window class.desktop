@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=keyd-application-mapper -d
+Name=key-application-mapper for smart hotkeys depending on window class
+Type=Application
+Version=1.0

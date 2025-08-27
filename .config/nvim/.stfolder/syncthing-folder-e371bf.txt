@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: dshng-kxac2
+created: 2025-08-22T21:19:32+01:00

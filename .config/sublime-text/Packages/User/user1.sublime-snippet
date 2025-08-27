@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+
+--------------------
+**Internet**
+------------
+
+$1
+]]></content>
+    <tabTrigger>u1</tabTrigger>
+    <scope>text.plain, text.markdown</scope>
+    <description>Chat log entry for Internet</description>
+</snippet>

@@ -1,0 +1,67 @@
+┌──(dex㉿archlinux1)-[~/git/test]
+└─$ git clone --filter=blob:none --sparse git@github.com:DexGith/arch_dex.git
+Cloning into 'arch_dex'...
+remote: Enumerating objects: 557, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 557 (delta 8), reused 30 (delta 8), pack-reused 519 (from 1)
+Receiving objects: 100% (557/557), 81.42 KiB | 436.00 KiB/s, done.
+Resolving deltas: 100% (92/92), done.
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 19 (delta 0), reused 3 (delta 0), pack-reused 10 (from 1)
+Receiving objects: 100% (19/19), 25.11 KiB | 1.93 MiB/s, done.
+Updating files: 100% (20/20), done.
+
+┌──(dex㉿archlinux1)-[~/git/test]
+└─$ ls
+arch_dex
+
+┌──(dex㉿archlinux1)-[~/git/test]
+└─$ cd arch_dex
+
+┌──(dex㉿archlinux1)-[~/git/test/arch_dex]
+└─$ ls
+package_list_explicit.txt  package_list_foreign.txt  sudo_rsync.sh  sync
+
+┌──(dex㉿archlinux1)-[~/git/test/arch_dex]
+└─$ la
+total 144K
+-rw-r--r-- 1 dex dex   21 Aug 27 23:52 .bash_logout
+-rw-r--r-- 1 dex dex   57 Aug 27 23:52 .bash_profile
+-rw-r--r-- 1 dex dex 3.3K Aug 27 23:52 .bashrc
+drwxr-xr-x 7 dex dex 4.0K Aug 27 23:52 .git/
+-rw-r--r-- 1 dex dex   83 Aug 27 23:52 .gitconfig
+-rw-r--r-- 1 dex dex  196 Aug 27 23:52 .gitignore
+-rw-r--r-- 1 dex dex 1.3K Aug 27 23:52 .nanorc
+-rw-r--r-- 1 dex dex 5.0K Aug 27 23:52 package_list_explicit.txt
+-rw-r--r-- 1 dex dex  832 Aug 27 23:52 package_list_foreign.txt
+-rw-r--r-- 1 dex dex  148 Aug 27 23:52 .profile
+-rwxr-xr-x 1 dex dex 4.2K Aug 27 23:52 sudo_rsync.sh*
+-rwxr-xr-x 1 dex dex  959 Aug 27 23:52 sync*
+-rw-r--r-- 1 dex dex 4.2K Aug 27 23:52 .tmux.conf
+-rw-r--r-- 1 dex dex   63 Aug 27 23:52 .vimrc
+-rw-r--r-- 1 dex dex   55 Aug 27 23:52 .Xauthority
+-rw-r--r-- 1 dex dex  19K Aug 27 23:52 .xbindkeysrc
+-rw-r--r-- 1 dex dex   48 Aug 27 23:52 .Xdefaults
+-rw-r--r-- 1 dex dex 1.5K Aug 27 23:52 .xmodmaprc
+-rw-r--r-- 1 dex dex   48 Aug 27 23:52 .Xresources
+-rw-r--r-- 1 dex dex 3.0K Aug 27 23:52 .zshenv
+-rw-r--r-- 1 dex dex  35K Aug 27 23:52 .zshrc
+
+┌──(dex㉿archlinux1)-[~/git/test/arch_dex]
+└─$ git sparse-checkout set scripts/autostart
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 1 (delta 0), pack-reused 4 (from 1)
+Receiving objects: 100% (6/6), 3.04 KiB | 3.04 MiB/s, done.
+Updating files: 100% (6/6), done.
+
+┌──(dex㉿archlinux1)-[~/git/test/arch_dex]
+└─$ ls
+package_list_explicit.txt  package_list_foreign.txt  scripts  sudo_rsync.sh  sync
+
+┌──(dex㉿archlinux1)-[~/git/test/arch_dex]
+└─$

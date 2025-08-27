@@ -1,7 +1,6 @@
 [Desktop Entry]
-Exec=killall -q sxhkd; sxhkd &
+Exec=sxhkd
 Name=sxhkd startup
 Type=Application
 Version=1.0
-X-LXQt-Autostart-disabled=true
 X-LXQt-X11-Only=true

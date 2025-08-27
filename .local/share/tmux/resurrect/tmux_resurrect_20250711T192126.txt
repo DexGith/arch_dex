@@ -1,6 +1,0 @@
-pane	0	1	1	:*	0	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim /home/dex/.config/nvim/init.vim
-pane	date&time	0	1	:*	0	archlinux1	:/home/dex	1	sleep	:sleep 300
-pane	date&time	0	1	:*	1	archlinux1	:/home/dex	0	sleep	:sleep 300
-window	0	1	:nvim	1	:*	ca3f,174x47,0,0,2	:
-window	date&time	0	:sleep	1	:*	7108,136x36,0,0{100x36,0,0,9,35x36,101,0,11}	:
-state	date&time	
