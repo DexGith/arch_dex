@@ -156,6 +156,12 @@ XF86Messenger
 
 
 
+# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+"skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+XF86Mail
+
+
+
 # ---- zen browser related END----
 
 
@@ -437,8 +443,8 @@ alt+shift+grave
 
 
 # ---- Terminal Summuning --- 
-"scripts/ddesk/tmux/newTerm.sh"
-control+ alt + Tab
+# "scripts/ddesk/tmux/newTerm.sh"
+# control+ alt + Tab
 
 "scripts/ddesk/tmux/newTerm.sh"
 Mod4 + semicolon
@@ -696,11 +702,16 @@ Mod4 + equal
 #"skippy-xd --switch --next"
 
 "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd.rc" 
-m:0x18 + c:23
+Alt + Tab
+# m:0x18 + c:23
+# Tab
+# Alt + Tab
 
 # Alt + Shift + Tab to switch to the previous window
-"skippy-xd --switch --pivot Alt_L --prev --config ~/.config/skippy-xd/skippy-xd.rc"
-m:0x19 + c:23
+"skippy-xd --switch --prev --config ~/.config/skippy-xd/skippy-xd.rc"
+ALt + Shift + Tab
+# m:0x9 + c:50
+# Shift+Alt + Shift_L
 
 # Win + F11 for Expose mode
 # "skippy-xd --expose --config ~/.config/skippy-xd/skippy-xd.rc"
@@ -708,19 +719,34 @@ m:0x19 + c:23
 # m:0x48 + c:95 <--- these didn't work so I made it Mod4 + F11
 
 # Win + F12 for Paging mode
-"skippy-xd --paging"
-Mod4 + F12 
+"skippy-xd --paging --config ~/.config/skippy-xd/skippy-xd.rc"
+XF86Calculator
+
 # m:0x48 + c:96 <--- these didn't work so I made it Mod4 + F12
 
 # Win+F10 this will only expose activate windows of similar class
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
-Mod4 + F10
+XF86HomePage
+
+"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
+Mod4 + i
+
+"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
+Alt + Mod4 + Tab
 
 # Win+F9 this will only expose activate windows of similar class
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
-Mod4 + F9
+XF86Explorer
 
+# Win+F9 this will only expose activate windows of similar class
+"skippy-xd --paging --config ~/.config/skippy-xd/skippy-xd.rc"
+Control + Mod4 + Tab
 
+"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
+Control + Tab
+
+"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
+Control + XF86HomePage
 
 "skippy-xd --expose --pivot Super_L --next --config ~/.config/skippy-xd/skippy-xd3.rc" 
 Mod4 + Tab
@@ -765,24 +791,42 @@ Mod4+ control + 0
 
 # --[]-- [ snippets simulation ] ----
 
-"/home/dex/scripts/ddesk/personal_chat/chat-internet.sh"
+"/home/dex/scripts/ddesk/personal_chat/u1_Searcher.sh"
 Mod4 + F1
 
-"/home/dex/scripts/ddesk/personal_chat/chat-notes.sh"
+"/home/dex/scripts/ddesk/personal_chat/u2_Noter.sh"
 Mod4 + F2
 
-"/home/dex/scripts/ddesk/personal_chat/chat-tester.sh"
+"/home/dex/scripts/ddesk/personal_chat/u3_Tester.sh"
 Mod4 + F3
 
-"/home/dex/scripts/ddesk/personal_chat/chat-coder.sh"
+"/home/dex/scripts/ddesk/personal_chat/u4_Editor.sh"
 Mod4 + F4
 
-"/home/dex/scripts/ddesk/personal_chat/chat-suggester.sh"
+"/home/dex/scripts/ddesk/personal_chat/u5_Chater.sh"
 Mod4 + F5
 
+"/home/dex/scripts/ddesk/personal_chat/u6_Suggester.sh"
+Mod4 + F6
+
+"/home/dex/scripts/ddesk/personal_chat/u7_Reminder.sh"
+Mod4 + F7
+
+"/home/dex/scripts/ddesk/personal_chat/u8_Rater.sh"
+Mod4 + F8
+
+"/home/dex/scripts/ddesk/personal_chat/u9_Dumper.sh"
+Mod4 + F9
+
+"/home/dex/scripts/ddesk/personal_chat/u10_Idea.sh"
+Mod4 + F10
+
+"/home/dex/scripts/ddesk/personal_chat/u11_System.sh"
+Mod4 + F11
+
+"/home/dex/scripts/ddesk/personal_chat/u12_Watcher.sh"
+Mod4 + F12
 # END--[]-- [ snippets simulation ] END----
-
-
 
 
 

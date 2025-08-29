@@ -50,7 +50,8 @@ pseudoTrans = false
 [layout]
 
 # Wait time before displaying switch previews
-switchWaitDuration = 1
+switchWaitDuration = 0
+# switchWaitDuration = 1
 
 # Set = 0 to switch off animations
 # For switch, there is never animation
@@ -102,7 +103,7 @@ cornerRadius = 0
 # Whether to show icons on live preview thumbnails
 icon = true
 iconPlace = right right
-iconSize = 28
+iconSize = 20
 
 [filler]
 tint = #333333
@@ -130,9 +131,9 @@ tintOpacity = 50
 opacity = 255
 
 [panel]
-show = true
-backgroundTinting = true
-reserveSpace = true
+show = false
+backgroundTinting = false
+reserveSpace = false
 
 [tooltip]
 show = true

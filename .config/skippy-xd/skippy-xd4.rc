@@ -129,9 +129,9 @@ tintOpacity = 50
 opacity = 255
 
 [panel]
-show = true
-backgroundTinting = true
-reserveSpace = true
+show = false
+backgroundTinting = false
+reserveSpace = false
 
 [tooltip]
 show = true

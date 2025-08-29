@@ -515,6 +515,8 @@ matches:
   # make sure you are in the / search mode then type this
   - trigger: ";;c;"
     replace: "$|$\\c"
+  - trigger: ";;s;"
+    replace: "s/$|$/"
 
 
 
