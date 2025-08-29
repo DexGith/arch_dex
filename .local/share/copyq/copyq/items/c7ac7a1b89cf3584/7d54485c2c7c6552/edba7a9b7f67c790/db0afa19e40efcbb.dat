@@ -1,0 +1,160 @@
+nested VMs wow... you can ? I thought you can't do it.
+hackterr[HKTR]
+ — 
+9:39 PM
+depends on the set up
+but you can
+ExD[SUDO]
+ — 
+9:40 PM
+but nobody does nested vm it's better to 
+like make 2 vms then make a VM then open a VM inside it
+hackterr[HKTR]
+ — 
+9:40 PM
+'better' for what , depends on use case
+ExD[SUDO]
+ — 
+9:40 PM
+performance wise and for servers nested vms is meh ?
+hackterr[HKTR]
+ — 
+9:40 PM
+and yeah it will be aweful performance wise
+yeah
+ExD[SUDO]
+ — 
+9:41 PM
+but security wise
+would be a hell?
+hackterr[HKTR]
+ — 
+9:41 PM
+are you looking for performance or isolation ? or both
+ExD[SUDO]
+ — 
+9:41 PM
+isolation
+Narekxy
+ — 
+9:41 PM
+Why would a person use linux for gaming? Instead of using windows
+ExD[SUDO]
+ — 
+9:41 PM
+let's imagine I have a really really scary USB
+really scary...
+I don't think a VM is enough
+hackterr[HKTR]
+ — 
+9:42 PM
+you need a forensics tool
+and know how
+ExD[SUDO]
+ — 
+9:42 PM
+when would be a nested VM be good ?
+hackterr[HKTR]
+ — 
+9:42 PM
+when its a pain to convert existing VM images
+ExD[SUDO]
+ — 
+9:43 PM
+for isolation purposes... a spare hardware and freqent formats would be better for isolation. and ofc no internet access... and you know limited OS on top. to test USBS
+ExD[SUDO]
+ — 
+9:43 PM
+?
+hackterr[HKTR]
+ — 
+9:43 PM
+in migrations for example
+ExD[SUDO]
+ — 
+9:43 PM
+never heard of that
+hackterr[HKTR]
+ — 
+9:43 PM
+https://cloud.google.com/blog/products/gcp/introducing-nested-virtualization-for
+ExD[SUDO]
+ — 
+9:44 PM
+Run VMs inside VMs: This is useful if you want run a VM and you are already on a VM(google compute engine)
+    Run multiple VMs on the same machine: This is useful to reduce costs, or share identical environment between VMs with minimal effort.
+And a real life customer case, where they are concurrently testing an app on multiple virtual android environments on the same compute engine instance.
+I don't get the android environements thing
+but ty
+hackterr[HKTR]
+ — 
+9:45 PM
+if you would have read through what i gave , these would be answered
+ExD[SUDO]
+ — 
+9:45 PM
+virtualized workloads to the cloud without having to import and convert VM images
+so it's money thing
+dentical environments for learning
+and testing
+it's like Nixos
+hackterr[HKTR]
+ — 
+9:47 PM
+its a ease of development and not having to replicate environments for various things like disparate dev cases, CI/CD automation and one example they have cited is to provide a leanring environment for classroom
+hackterr[HKTR]
+ — 
+9:47 PM
+no not really
+ExD[SUDO]
+ — 
+9:48 PM
+replicate environments. 
+
+I still don't understand this aspect
+there is s in environments so they are nesting tons of VMs inside that VM
+hackterr[HKTR]
+ — 
+9:50 PM
+when you have a ready image where everything works, and instead of having to re do an image to have it run someplace between cloud, hosted or hybrid , without having to rebuild the entire environment again for each (infra) platform .. you can just instead run it on an exisitng VM that is running well and is tested to run there ..
+ExD[SUDO]
+ — 
+9:50 PM
+CI/CD automation is a cool one to test software on differnet eenvironment  just don't like see how. why not just make another VM ? It would achieve the same job, why nest it. This Environment things doens't make sense in my mind
+hackterr[HKTR]
+ — 
+9:51 PM
+almost every enterprise environment you work in is nested just fyi
+ExD[SUDO]
+ — 
+9:51 PM
+like ?
+hackterr[HKTR]
+ — 
+9:51 PM
+be it microservices or other ..
+ExD[SUDO]
+ — 
+9:51 PM
+examples ?
+hackterr[HKTR]
+ — 
+9:51 PM
+take AWS compute for e.g. or azure
+very few things run on actual hardware directly
+its just abstracted from end user
+ExD[SUDO]
+ — 
+9:52 PM
+alright thanks
+.
+ — 
+9:53 PM
+Guys, what is the most popular training site you train on?
+ExD[SUDO]
+ — 
+9:53 PM
+I'll dig in more into this. this blows my minds didn't know about it. 
+
+on youtube videos they say you can't nest VMs in virtualbox
+the software they use to nest VMs is different right ?

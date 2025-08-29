@@ -70,7 +70,10 @@ ffmpegthumbnailer
 ffmpegthumbs
 filezilla
 firefox
+firefox-tree-style-tab
+firefox-tridactyl
 firefoxpwa
+firejail
 flameshot
 flatpak
 foliate
@@ -120,6 +123,7 @@ iperf3
 irssi
 jdownloader2
 jgmenu
+jumpapp-git
 kazam
 kdegraphics-thumbnailers
 kdenlive

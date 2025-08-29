@@ -1,0 +1,34 @@
+┌──(dex㉿archlinux1)-[~/Downloads]
+└─$ ls
+ ginkgo⁄7.x   MEGA  'Telegram Desktop'   Udemy_Courses   WG71-WriterGuide.pdf
+
+┌──(dex㉿archlinux1)-[~/Downloads]
+└─$ file WG71-WriterGuide.pdf
+WG71-WriterGuide.pdf: PDF document, version 1.6
+
+┌──(dex㉿archlinux1)-[~/Downloads]
+└─$ cd Udemy_Courses
+
+┌──(dex㉿archlinux1)-[~/Downloads/Udemy_Courses]
+└─$ ls
+'75+ Essential Windows Commands Every Cybersecurity Analyst.pdf'
+ animation.gif
+'Kali Linux Commands PDF-converted.pdf'
+'KALI LINUX.pdf'
+ Linux-Basic-For-Hacking.pdf
+ nh
+ Tryhackme.pdf
+'Udemy - Cyber Security For Beginners v2023.z01'
+'Udemy - Cyber Security For Beginners v2023.z02'
+'Udemy - Cyber Security For Beginners v2023.z03'
+'Udemy - Cyber Security For Beginners v2023.zip'
+ Udemy_KALI_Linux_Complete_Course_Hacking_with_Kali_Linux_2023_9.z01
+ Udemy_KALI_Linux_Complete_Course_Hacking_with_Kali_Linux_2023_9.z02
+ Udemy_KALI_Linux_Complete_Course_Hacking_with_Kali_Linux_2023_9.zip
+
+┌──(dex㉿archlinux1)-[~/Downloads/Udemy_Courses]
+└─$ file Udemy_KALI_Linux_Complete_Course_Hacking_with_Kali_Linux_2023_9.z01
+Udemy_KALI_Linux_Complete_Course_Hacking_with_Kali_Linux_2023_9.z01: Zip multi-volume archive data, at least PKZIP v2.50 to extract
+
+┌──(dex㉿archlinux1)-[~/Downloads/Udemy_Courses]
+└─$

@@ -21,6 +21,7 @@ gromit-mpx
 imhex-bin
 input-remapper-bin
 jdownloader2
+jumpapp-git
 kazam
 komorebi
 legcord-bin

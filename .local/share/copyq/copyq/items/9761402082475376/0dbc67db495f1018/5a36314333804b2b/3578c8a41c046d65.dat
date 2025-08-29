@@ -1,0 +1,175 @@
+
+Skip to content
+Navigation Menu
+felixfung
+skippy-xd
+
+Code
+Issues 16
+Pull requests 1
+Discussions
+Actions
+Wiki
+Security
+
+    Insights
+
+Owner avatar
+skippy-xd
+Public
+forked from dreamcat4/skippy-xd
+
+felixfung/skippy-xd
+t
+This branch is 871 commits ahead of, 243 commits behind dreamcat4/skippy-xd:master.
+Name	Last commit message
+	Last commit date
+felixfung
+felixfung
+Merge pull request #307 from felixfung/version
+0946d14
+ · 
+Aug 16, 2025
+Packaging
+	
+Add text file for debian packaging
+	
+Aug 5, 2024
+src
+	
+Merge pull request #305 from felixfung/log
+	
+Aug 15, 2025
+.gitignore
+	
+add: can now keep local custom user rc file ./skippy-xd.rc in-repo (.…
+	
+Feb 21, 2023
+.valgrind.suppressions
+	
+makefile: multiple improvements, and other developer features. see CH…
+	
+Sep 22, 2018
+CHANGELOG
+	
+Version 0.10.3 Steampunk
+	
+Aug 16, 2025
+COPYING
+	
+Initial commit of skippy-xd with changes for auto-detecting 32 or 64 …
+	
+Dec 23, 2011
+Makefile
+	
+Store version string in file
+	
+Feb 18, 2025
+README.md
+	
+Update README.md
+	
+Aug 10, 2025
+meson.build
+	
+Remove unnecessary conditionals in meson.build
+	
+Feb 18, 2025
+meson.options
+	
+Add meson.options
+	
+Feb 16, 2025
+skippy-xd.sample.rc
+	
+Update config file comments
+	
+Aug 15, 2025
+version.txt
+	
+Version 0.10.3 Steampunk
+	
+Aug 16, 2025
+Repository files navigation
+
+README
+
+    License
+
+Welcome to skippy-xd!
+
+Skippy-xd is a lightweight, window-manager-agnostic window selector on the X server. With skippy-xd, you get live-preview on your alt-tab motions; you get the much coveted expose feature from Mac; you get a handy overview of all your virtual desktops in one glance with paging mode.
+
+Switch is similar to Alt-Tab:
+
+Expose is inspired from Mac:
+
+Paging shows you your entire desktop:
+
+If you are looking for a slick and minimalistic window selector that turns every of your little grrrrh throughout the day into a little bit of a yay, skippy-xd may be for you. If you agree with https://github.com/felixfung/skippy-xd/wiki/Skippy-xd-philosophy, then skippy-xd definitely is for you.
+
+Check out the youtube videos:
+
+Skippy-xd window selector! Skippy-xd invocation methods!! Skippy-xd config file! Skippy-xd window selector pivoting! Skippy-xd exposé layout algorithm cosmos! Skippy-xd and tiling managers
+
+skippy-xd works on anything X. See https://github.com/felixfung/skippy-xd/wiki/Adoption#compatible-desktop-environmentswindow-managers for details.
+
+Installation and usage is simple:
+
+git clone https://github.com/felixfung/skippy-xd.git
+cd skippy-xd
+make
+make install
+
+skippy-xd --start-daemon
+skippy-xd --switch --next
+skippy-xd --expose
+skippy-xd --paging
+
+Check the wiki for documentation on basic use https://github.com/felixfung/skippy-xd/wiki/How-to-Use and advanced tips and tricks https://github.com/felixfung/skippy-xd/wiki/Advanced-Uses-and-Special-Set-Ups.
+
+And please! If you share our love for skippy-xd, please do:
+
+    Use it! Nothing is more rewarding to developers than widespread adoption of the app.
+    Share it! Tell others about the app. Showcase screenshots and videos. Package it for your distros.
+    Improve it! Make suggestions on feature improvements. Report bugs and they will be fixed. If you are a coder, start hacking!
+
+About
+
+A window selector for X11 with Expose/Exposé and live preview Alt-Tab effects and more
+Resources
+Readme
+License
+GPL-2.0 license
+Activity
+Stars
+74 stars
+Watchers
+4 watching
+Forks
+11 forks
+Report repository
+Releases
+9 tags
+Packages
+No packages published
+Languages
+
+C 96.5%
+Shell 1.6%
+Makefile 1.2%
+
+    Meson 0.7% 
+
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact
+
+felixfung/skippy-xd: A window selector for X11 with Expose/Exposé and live preview Alt-Tab effects and more

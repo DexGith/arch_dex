@@ -1,0 +1,81 @@
+Jump to Content
+Cloud
+Blog
+
+    Solutions & technology
+
+Ecosystem
+
+    Developers & Practitioners
+    Transform with Google Cloud
+
+Contact sales
+Get started for free
+Google Cloud
+Introducing nested virtualization for Google Compute Engine
+September 28, 2017
+
+Scott Van Woudenberg
+
+Product Manager, Google Compute Engine
+
+Google Compute Engine
+now supports nested virtualization in beta. This feature allows you to run one or more virtual machines inside a Compute Engine Linux virtual machine -- VMs inside of VMs. This leverages Intel VT-x, processor virtualization instructions, to deliver better performance than what's possible with alternative technologies like emulation.
+https://storage.googleapis.com/gweb-cloudblog-publish/images/image1h3kz.max-500x500.PNG
+
+Nested virtualization makes it easier for enterprise users to move their on-premises, virtualized workloads to the cloud without having to import and convert VM images. Dev/test and CI/CD workloads that need to validate software in multiple environments are a good match for nested virtualization. Nested virtualization also enables more cost-effective, cloud-based disaster recovery solutions and is ideal for technical training and certification courses where students need identical environments to practice the exercises.
+
+You can enable nested virtualization on Linux VMs of any size or shape, including predefined and custom machine types and Preemptible VMs, as long as the VM is running on an Intel's Haswell CPU or newer. See our list of available regions and zones for the CPU platforms available in each zone. Compute Engine's nested virtualization currently supports KVM-based hypervisors.
+
+A number of partners participated in our nested virtualization alpha, including Scale Computing and appOrbit.
+
+Scale Computing is a leading provider of complete hyper-converged (HC3) solutions with thousands of deployments, from SMBs to enterprises. Scale has been building a new offering, HC3 Cloud Unity, in collaboration with Google, that creates a seamless, private virtual network that connects Scale's HC3 appliances running on-premises with virtualized HC3 appliances running on Compute Engine, and that uses our hardware-accelerated nested virtualization. Organizations can now move application workloads and data freely over HC3 Cloud Unity's virtual LAN, combining their GCP and on-premise environments to make a single platform.
+
+appOrbit's application platform on Google Cloud gives end users the flexibility to make both legacy and cloud-native applications -- inclusive of the data they rely on -- portable to any modern infrastructure, without rewriting code, in minutes. Customers using appOrbit with Google's nested virtualization can rapidly deploy and run a broader set of application workloads with zero modification, as well as simultaneously manage hybrid infrastructure and realize the full value of hybrid IT.
+
+Other Compute Engine customers, like Functionize, also participated in our nested virtualization alpha and were able to deliver benefits such as improved performance and lower cost to their customers.
+This is a huge win for QA and development teams who need native mobile systems, such as Android, for testing/validating mobile apps. Using Google’s new hardware-accelerated nested virtualization, Functionize now enables QA teams to dramatically reduce costs, time-to-test, and the pain of maintaining a complex device inventory.
+
+— Tamas Cser, Founder and CEO, Functionize
+Tweet this quote
+
+To learn more, check out the Compute Engine nested virtualization documentation. And be sure to contact us to share your feedback or if you encounter any issues.
+
+Ready to try out nested virtualization? Sign up for a free trial today and get $300 in credits to get started.
+Posted in
+
+    Google Cloud
+    Compute
+    Compute Engine
+
+Related articles
+https://storage.googleapis.com/gweb-cloudblog-publish/images/monthly_ai_news.max-700x700.png
+AI & Machine Learning
+What Google Cloud announced in AI this month
+
+By Andrea Sanin • 30-minute read
+https://storage.googleapis.com/gweb-cloudblog-publish/images/EuroDaT_Header_Image_Blog_Article.max-700x700.jpg
+Google Cloud
+Gemeinsam gegen Geldwäsche: Wie EuroDaT den sicheren Austausch sensibler Finanzdaten ermöglicht
+
+By Google Cloud Marketing • 4-minute read
+https://storage.googleapis.com/gweb-cloudblog-publish/images/52_-_Whats_new.max-700x700.jpg
+Inside Google Cloud
+What’s new with Google Cloud
+
+By Google Cloud Content & Editorial • 25-minute read
+https://storage.googleapis.com/gweb-cloudblog-publish/images/top_25.max-700x700.jpg
+Google Cloud
+Top 25 blogs of 2025… so far
+
+By Google Cloud Content & Editorial • 8-minute read
+Footer Links
+Follow us
+
+    Google Cloud
+    Google Cloud Products
+    Privacy
+    Terms
+
+Help
+visual
