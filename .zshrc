@@ -1,12 +1,43 @@
 # ~/.zshrc file for zsh interactive shells.
+xset r rate 180 60
+
+# 1) git oh-my-zsh
+# requirements, zsh shell, curl or wget
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# 2) get zsh-vi-mode
+# git clone https://github.com/jeffreytse/zsh-vi-mode \
+#   $ZSH_CUSTOM/plugins/zsh-vi-mode
+
+
 KEYTIMEOUT=1
 
 ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
 
+# Source the plugin now td_hat it's installed via AUR
+
+
+# ~/.zshrc file for zsh interactive shells.
+KEYTIMEOUT=1
+
+ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
+
+ZSH_THEME=""
+
+export ZSH="$HOME/.oh-my-zsh"
+
+# 2. Define which plugins you want to load
+#    (list the names separated by spaces inside the parentheses)
+
+plugins+=(zsh-vi-mode)
+
+
+# 3. Load Oh My Zsh itself. This MUST be the last line.
+source "$ZSH/oh-my-zsh.sh"
+
+
 # Source the plugin now that it's installed via AUR
-source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-
+# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # --- FZF Integration with zsh-vi-mode ---
 # This function will be run automatically by the plugin after it loads.
@@ -630,6 +661,10 @@ if [ -x /usr/bin/dircolors ]; then
     # 2. Create the alias you want, which simply calls the function above.
     alias ]timer='_my_timer_func'
     alias T='thunar .'
+    alias tt='thunar .'
+    alias qq='exit'
+    alias ee='exit'
+    alias aa='nohup alacritty --working-directory . >/dev/null 2>&1 & disown ; exit'
 
     # alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
 
@@ -902,10 +937,18 @@ bindkey '\ek' clear-kill-ring      # For Vi INSERT mode
 # xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
 
 
-eval $(keychain --eval --quiet id_ed25519)
-eval $(keychain --eval --quiet ssh)
+if command -v keychain > /dev/null; then
+
+    eval $(keychain --eval --quiet id_ed25519)
+    eval $(keychain --eval --quiet ssh)
+fi
 
 
+if command -v zoxide > /dev/null; then
+    # 
+    # eval "$(zoxide init zsh --cmd cd)"
+    eval "$(zoxide init zsh)"
+fi
 
 
 cdcp() {
@@ -964,7 +1007,13 @@ fg-widget() {
     zle accept-line
 }
 
-
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
 

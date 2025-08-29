@@ -217,6 +217,8 @@ matches:
     replace: 'tldr'
   - trigger: ';;cp;' # leader concept works 
     replace: ' | ]cp '
+  - trigger: ';;a;' # leader concept works 
+    replace: 'nohup alacritty --working-directory . >/dev/null 2>&1 & disown ; exit'
 
     # just for ideas purpuses
   - trigger: '!]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick

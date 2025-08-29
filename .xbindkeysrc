@@ -150,7 +150,8 @@ Mod4 + g
 
 
 # chat key
-"skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd4.rc" 
+# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd4.rc" 
+"skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd5.rc" 
 XF86Messenger
 
 
