@@ -1015,5 +1015,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# Custom function for xdg-open
+oo() {
+  xdg-open "$@"
+}
+
 # ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
 

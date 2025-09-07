@@ -61,6 +61,7 @@ HOME_DIRS_TO_SYNC=(
     ".config/mimeapps.list"
     ".config/picom/picom.conf"
     ".config/espanso"
+    ".config/yazi"
     ".config/copyq"
     ".config/dolphinrc"
     ".config/autostart"
