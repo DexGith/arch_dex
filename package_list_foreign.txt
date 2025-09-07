@@ -28,7 +28,6 @@ legcord-bin
 libajantv2
 libeb
 libopenrazer
-minecraft-launcher
 nautilus-open-any-terminal
 neofetch
 obsidian-cli-bin

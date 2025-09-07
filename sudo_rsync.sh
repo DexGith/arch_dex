@@ -56,6 +56,8 @@ HOME_DIRS_TO_SYNC=(
     "scripts"
     "Home/K/Keepassxc"
     ".config/alacritty"
+    ".config/pipewire"
+    ".config/wireplumber"
     ".config/mimeapps.list"
     ".config/picom/picom.conf"
     ".config/espanso"

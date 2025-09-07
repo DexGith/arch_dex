@@ -1,5 +1,5 @@
 # ~/.zshrc file for zsh interactive shells.
-xset r rate 180 60
+xset r rate 176 59
 
 # 1) git oh-my-zsh
 # requirements, zsh shell, curl or wget
@@ -717,7 +717,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias nvrc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias ]xnv='xset r rate 178 63;xset q | grep delay'
     alias ]xnv2='xset r rate 173 66;xset q | grep delay'
-    alias ]xset='xset r rate 180 60;xset q | grep delay'
+    alias ]xset='xset r rate 176 59;xset q | grep delay'
     alias ]pc='fastfetch'
 
 	alias ]]r='source ~/.zshrc'

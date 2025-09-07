@@ -12,9 +12,23 @@ sleep 0.01
 
 xdotool key End shift+Home control+c Delete
 
-sleep 0.1
-sleep 0.1
+sleep 0.01
+# sleep 0.01
+#
+# sleep 0.01
 
+# xdotool key BackSpace 
+# sleep 0.1
+# xdotool key End
+# sleep 0.01
+# sleep 0.1
+# sleep 0.01
+# sleep 0.1
+#
+# # xdotool key Down End
+# sleep 0.1
+# sleep 0.1
+# xdotool key End
 # after control+c we will have in index 0 the deleted stuff
 # now we will copy index 1 then remove index 1 then add it again to make the 
 # deleted stuff the new index 0

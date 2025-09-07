@@ -27,6 +27,9 @@
 #
 #
 
+# "xdotool key F24"
+# m:0x0 + c:202
+
 
 # ---- The far away problamaic problamaic key ----
 
@@ -149,16 +152,6 @@ Mod4 + g
 
 
 
-# chat key
-# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd4.rc" 
-"skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd5.rc" 
-XF86Messenger
-
-
-
-# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
-"skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
-XF86Mail
 
 
 
@@ -338,8 +331,14 @@ mod5 + F9
 "/home/dex/scripts/ddesk/nothing/capslock_movewindow_to_mouse_pos"
 Mod5 + a
 
+# "/home/dex/scripts/ddesk/nothing/capslock_movewindow_to_mouse_pos"
+# Mod6 + a
+
 # ---- Scroll_Lock which is now Mod5 END----
 
+
+# "/home/dex/scripts/ddesk/nothing/capslock_movewindow_to_mouse_pos"
+# F13 + a
 
 
 # ----- Send windows to Desktops With NUMPADS numbers (rarely use) -----
@@ -480,77 +479,126 @@ control + F3
 # ---- Terminal Summuning END --- 
 
 
-# ---- 2nd monitor windows activating----
 
 
-# && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0 # <-- if you want to move mouse to middle of the window put these after activating the window
-"wmctrl -x -a copyq"
-Mod4 + shift + c 
+# START--[MOVEMENTS]-- [ activating windows ] START------
+# DESCRIPTION: 
 
-"wmctrl -x -a Thunderbird"
-Mod4 + shift + m 
 
-"wmctrl -x -a GIMP"
-Mod4 + shift + g 
-
-"wmctrl -a btop"
-Mod4 + shift + b 
-
-"wmctrl -x -a KeePassXC"
-Mod4 + shift + k 
-
-"wmctrl -a _n_ nvim"
-Mod4 + shift + n 
-
-"wmctrl -a _tm_"
-Mod4 + shift + u
-
-# "wmctrl -x -a Thunar && wmctrl -x -a VLC"
-# Mod4 + shift + m 
-
-# "wmctrl -a irssi"
-# Mod4 + shift + i 
-
-"wmctrl -a _r_"
-Mod4 + shift + r 
-
-"wmctrl -a _f_ fleet"
-Mod4 + shift + f 
-
-"wmctrl -x -a Sublime"
-Mod4 + shift + s 
-
-"$HOME/scripts/ddesk/nothing/mod4_p_forPhone_for_mod4_grave_soItWorks.sh"
-Mod4 + shift + p 
-
-"wmctrl -a 'QEMU/KVM' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
-Mod4 + shift + q 
-
-"wmctrl -a 'QEMU/KVM'"
-Mod4 + shift + w 
-
-"wmctrl -a 'Virtual Machine Manager' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0"
-Mod4 + shift + v 
-
-"wmctrl -a _ob_"
-Mod4 + shift + o 
-
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _t_ && wmctrl -x -a Clocks && wmctrl -a '_dt_' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + d 
-
-"wmctrl -x -a 'Audacity'"
+# ------ Frequently Used --------
+# btop
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a btop && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + a
 
-# "wmctrl -a '_dt_'"
-# Mod4 + shift + d 
+# Sublime
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Sublime && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + s 
 
-"wmctrl -a _t_"
+# Yazi
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + f
+
+# Copyq
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a copyq && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + d 
+
+# END---
+
+# btop
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a btop && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + b
+
+
+# btop
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a GoldenDict-ng && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + g
+
+# Yazi
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + y
+
+"$HOME/scripts/ddesk/nothing/move_to_last_desktop.sh"
+Mod4 + shift + z
+
+
+
+# Thunderbird for mail
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Thunderbird && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + m 
+
+# GIMP
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a GIMP && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + g 
+
+# KeePassXC
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a KeePassXC && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + k 
+
+#nvim
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _n_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + n 
+
+#tmux
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _tm_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + x
+
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a VLC && wmctrl -x -a Thunar && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + backslash
+
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a irssi && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + apostrophe
+
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _r_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + r 
+
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _f_ fleet && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + e 
+
+# Activating scrcpy The Phone. I should probably do one for VNC you know tigervnc through adb port forwarding or ssh port forwarding... ssh is more secure
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'Redmi Note 8' && sleep 0.1 && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + p 
+
+# Activate the window QEMU/KVM The VM runing and center mouse
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'QEMU/KVM' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0 && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + q 
+
+# Activate the window QEMU/KVM The VM runing
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'QEMU/KVM' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + w 
+
+# Virtual Machine Manager
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'Virtual Machine Manager' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0 && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + v 
+
+# Terminal _ob_ Obsidian
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _ob_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + o 
+
+# Terminals _d_ _t_ and clock _l_
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _t_ && wmctrl -x -a Clocks && wmctrl -a '_dt_' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + h
+
+# Audacity
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a 'Audacity' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + u
+
+# _dt_ date and time terminal alone
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a '_dt_' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + semicolon 
+
+#Timer
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _t_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + t 
 
-"wmctrl -x -a Clocks"
+#gnome-clocks
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Clocks && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + l 
 
-# ---- 2nd monitor windows activating----
+# END--[MOVEMENTS]-- [ activating windows ] END------
+
+
+
+
 
 
 
@@ -693,9 +741,23 @@ Mod4 + equal
 
 
 
+# --[ALTTAB]-- [ skippy-xd ] ----
 
 
-# ---[ALT-TAB]--- ALT TAB, Simple Skippy-XD Bindings ---
+
+
+
+# chat key
+# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd4.rc" 
+"skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd5.rc" 
+XF86Messenger
+
+
+
+# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+"skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+XF86Mail
+
 
 # Alt + Tab to switch to the next window
 # "skippy-xd --switch"
@@ -742,8 +804,9 @@ XF86Explorer
 "skippy-xd --paging --config ~/.config/skippy-xd/skippy-xd.rc"
 Control + Mod4 + Tab
 
-"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
-Control + Tab
+# !! You can' have control+tab that's for other applicatoins !! 
+# "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
+# Control + Tab
 
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd2.rc"
 Control + XF86HomePage
@@ -755,7 +818,11 @@ Mod4 + Tab
 "skippy-xd --expose --pivot Super_L --prev --config ~/.config/skippy-xd/skippy-xd3.rc"
 Mod4 + Shift + Tab
 
-# END------- ALT TAB, Simple Skippy-XD Bindings END ---
+
+# END--[ALTTAB]-- [ skippy-xd ] END----
+
+
+
 
 
 # ----- Send windows to Desktops, specefic locations on desktops ----

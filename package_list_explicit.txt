@@ -187,7 +187,6 @@ mediainfo
 megasync
 merkuro
 mesa-utils
-minecraft-launcher
 mosh
 most
 mousepad
