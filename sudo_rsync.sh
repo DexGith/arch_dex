@@ -54,6 +54,8 @@ HOME_FILES_TO_SYNC=(
 # Add directories from your HOME folder here.
 HOME_DIRS_TO_SYNC=(
     "scripts"
+    ".tmux"
+    ".config/yazi"
     "Home/K/Keepassxc"
     ".config/alacritty"
     ".config/pipewire"
@@ -61,7 +63,6 @@ HOME_DIRS_TO_SYNC=(
     ".config/mimeapps.list"
     ".config/picom/picom.conf"
     ".config/espanso"
-    ".config/yazi"
     ".config/copyq"
     ".config/dolphinrc"
     ".config/autostart"
