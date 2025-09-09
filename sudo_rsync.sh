@@ -76,6 +76,7 @@ HOME_DIRS_TO_SYNC=(
     ".config/keepassxc"
     ".config/Deskflow"
     ".config/nvim"
+    ".config/nvim2"
     ".config/input-remapper-2"
     ".config/openbox"
     ".config/openrazer"

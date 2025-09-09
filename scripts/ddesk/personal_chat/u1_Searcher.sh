@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WEEK=$(date +%U)
+WEEK=$(date +%V)
 DATE="$WEEK $(date +"%a, %d at %H:%M")"
 THIS="W$WEEK $DATE"
 

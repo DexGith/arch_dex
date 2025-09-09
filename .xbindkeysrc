@@ -755,7 +755,9 @@ XF86Messenger
 
 
 # "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
-"skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+# "skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
+# "skippy-xd --switch --toggle --config ~/.config/skippy-xd/skippy-xd6.rc" 
+"skippy-xd --switch --toggle --config ~/.config/skippy-xd/skippy-xd6.rc" 
 XF86Mail
 
 
