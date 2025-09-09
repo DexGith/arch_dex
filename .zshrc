@@ -59,6 +59,8 @@ function zvm_after_init() {
   bindkey -s -M vicmd '\en' "tmux-sessionizer -s 2\r"
   bindkey -s -M viins '\es' "tmux-sessionizer -s 3\r"
   bindkey -s -M vicmd '\es' "tmux-sessionizer -s 3\r"
+  bindkey -s -M viins '\eb' "tmux-sessionizer -s 4\r"
+  bindkey -s -M vicmd '\eb' "tmux-sessionizer -s 4\r"
 
 
   # --- General Editing & Navigation (Mostly for Insert Mode) ---
