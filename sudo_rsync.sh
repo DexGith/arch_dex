@@ -56,6 +56,8 @@ HOME_DIRS_TO_SYNC=(
     "scripts"
     ".tmux"
     ".config/yazi"
+    "Desktop/zen"
+    "Desktop/I_want_to_Do.maybe.md"
     "Home/K/Keepassxc"
     ".config/alacritty"
     ".config/pipewire"
