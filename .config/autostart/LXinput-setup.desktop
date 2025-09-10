@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Setup keyboard and mouse using settings done in LXInput
-Exec=sh -c \\\\'xset r rate 180 60\\\\'
+Exec=sh -c \\\\\\'xset r rate 176 59\\\\\\'
 Name=]xset on autostart
 NoDisplay=true
 NotShowIn=GNOME;KDE;XFCE;

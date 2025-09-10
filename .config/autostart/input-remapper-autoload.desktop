@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=Starts injecting all presets that are set to automatically load for the user
-Exec=bash -c \\\\"input-remapper-gtk\\\\"
+Exec=bash -c "input-remapper-control --command stop-all && input-remapper-control --command autoload"
 Icon=input-remapper
-Name=input-remapper
+Name=input-remapper-autoload
 Type=Application
 X-LXQt-Autostart-disabled=true

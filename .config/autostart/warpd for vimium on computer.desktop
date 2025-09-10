@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=warpd
-Name=warpd for vimium on computer
+Exec=warpd &
+Name=warpd for vimium on computer just for fun, also try out the vimum everything ahk thing you need ahk_X11
 Type=Application
 Version=1.0
