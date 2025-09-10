@@ -141,9 +141,12 @@ function zvm_after_init() {
   bindkey -M viins '^[z]' fg-widget
   bindkey -M vicmd '^[z]' fg-widget
   
+  bindkey -M viins '^[x]' zi-widget
+  bindkey -M vicmd '^[x]' zi-widget
 
 
   zle -N fg-widget
+  zle -N zi-widget
 }
 
 
@@ -662,6 +665,7 @@ if [ -x /usr/bin/dircolors ]; then
 
     # 2. Create the alias you want, which simply calls the function above.
     alias ]timer='_my_timer_func'
+    alias streamlink='streamlink --player mpv'
     alias T='thunar .'
     alias tt='thunar .'
     alias qq='exit'
@@ -1006,6 +1010,11 @@ obcd() {
 
 fg-widget() {
     BUFFER="fg"
+    zle accept-line
+}
+
+zi-widget() {
+    BUFFER="zi"
     zle accept-line
 }
 

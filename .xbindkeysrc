@@ -548,7 +548,9 @@ Mod4 + shift + backslash
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a irssi && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + apostrophe
 
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _r_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+# I don't use this anyway... yeah the root terminal with like VM stuff like virsh and stuff... I alraedy forgot the names are sick but yeah
+# "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _r_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+"~/test.sh"
 Mod4 + shift + r 
 
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _f_ fleet && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -752,12 +754,9 @@ Mod4 + equal
 "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd5.rc" 
 XF86Messenger
 
-
-
-# "skippy-xd --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
-# "skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
-# "skippy-xd --switch --toggle --config ~/.config/skippy-xd/skippy-xd6.rc" 
-"skippy-xd --switch --toggle --config ~/.config/skippy-xd/skippy-xd6.rc" 
+# Alt+Capslock
+# I think I should make this --next alawys... to avoid moveing glitches
+"skippy-xd --switch --toggle --next --config ~/.config/skippy-xd/skippy-xd6.rc" 
 XF86Mail
 
 
