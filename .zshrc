@@ -720,7 +720,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias c.dd='cd ~/Downloads' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
     alias src='source ~/.zshrc'
     alias md='mkdir -p' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+
+    # very useful to quickly open .zshrc
+    alias ]rc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
     alias nvrc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+	alias ]nv='nvim ~/.config/nvim/'
+	alias nvnv='nvim ~/.config/nvim/'
     alias ]xnv='xset r rate 178 63;xset q | grep delay'
     alias ]xnv2='xset r rate 173 66;xset q | grep delay'
     alias ]xset='xset r rate 176 59;xset q | grep delay'
@@ -737,7 +742,6 @@ if [ -x /usr/bin/dircolors ]; then
 	alias ]ss='systemctl start'
 	alias ]sp='systemctl stop'
 	alias ]se='systemctl enable'
-	alias ]e.nv='nvim ~/.config/nvim/init.vim'
 	alias ]show='pacman -Si'
 	alias ]pac='pacman -Qi'
     export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink

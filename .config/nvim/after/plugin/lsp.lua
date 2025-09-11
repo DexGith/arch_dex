@@ -3,11 +3,39 @@
 -- This is the core setup for your LSP configuration.
 -- It should be called after your LSP-related plugins have been loaded.
 
-
--- Setup for nvim-cmp, the completion engine
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
+local navic = require("nvim-navic")
+local navbuddy = require("nvim-navbuddy")
 
+-- This function gets called for every language server that attaches to a buffer
+local on_attach = function(client, bufnr)
+  -- Enable nvim-navic for this buffer
+  navic.attach(client, bufnr)
+  navbuddy.attach(client, bufnr)
+
+
+
+  -- This is the recommended place to set LSP-specific keymaps
+  local map = function(keys, func, desc)
+    vim.keymap.set('n', keys, func, { buffer = bufnr, noremap = true, silent = true, desc = 'LSP: ' .. desc })
+  end
+
+  -- Keymaps for LSP features. Feel free to uncomment and customize.
+  map('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+  map('gr', vim.lsp.buf.references, '[G]oto [R]eferences')
+  map('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
+  map('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
+  map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+  map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+  map('K', vim.lsp.buf.hover, 'Hover Documentation')
+
+  -- For more advanced LSP keymaps, you may want to use a plugin like which-key.nvim
+  -- map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+end
+
+
+-- Setup for nvim-cmp, the completion engine
 cmp.setup({
   snippet = {
     -- This is the official snippet integration for nvim-cmp
@@ -58,8 +86,8 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "rust_analyzer",
     "gopls",
-    "pyright"
-    -- Add other servers here, like "pyright", "tsserver", etc.
+    "pyright",
+    "clangd", 
   },
   -- This is where you configure each LSP server
   handlers = {
@@ -67,6 +95,7 @@ require("mason-lspconfig").setup({
     function(server_name)
       require("lspconfig")[server_name].setup {
         capabilities = lsp_capabilities,
+        on_attach = on_attach, -- Use our central on_attach function
       }
     end,
 
@@ -74,16 +103,14 @@ require("mason-lspconfig").setup({
     ["lua_ls"] = function()
       require("lspconfig").lua_ls.setup {
         capabilities = lsp_capabilities,
+        on_attach = on_attach, -- Also use our central on_attach function
         settings = {
           Lua = {
-            -- Tell the language server about your Neovim runtime files
             runtime = { version = 'Neovim' },
             diagnostics = {
-              -- Get the language server to recognize "vim" as a global
               globals = { 'vim' },
             },
             workspace = {
-              -- Make the server aware of Neovim runtime files
               library = vim.api.nvim_get_runtime_file("", true),
             },
             telemetry = { enable = false },
@@ -108,4 +135,3 @@ require("conform").setup({
   --   lsp_fallback = true,
   -- },
 })
-
