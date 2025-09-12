@@ -7,9 +7,20 @@ import = [ "~/.config/alacritty/themes/Dracula.toml" ]
 dynamic_title= true
 decorations = "full"
 
+# Sets the initial dimensions of the window.
+# These are measured in character cells, not pixels.
+dimensions.columns = 120
+dimensions.lines = 45
 
+# You can also add padding if you like (optional)
+padding.x = 0
+padding.y = 0
 
 [keyboard]
+
+# There is no such thing as protocol = kitty.... that's just ai halusination
+# protocol = "Kitty"
+
 bindings = [
   # Scroll the terminal buffer by a full page
   { key = "PageUp",   action = "ScrollPageUp" },

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+xdotool keyup Super
 WEEK=$(date +%V)
 DATE="$WEEK $(date +"%a, %d at %H:%M")"
 THIS="W$WEEK $DATE"
@@ -10,6 +12,7 @@ THE_TEXT="
 $THIS
 --------------------------------------------
 **Suggester**:Gives_Suggestions_and_says_why
+Note:
 --------------------------------------------
 
 "

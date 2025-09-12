@@ -79,8 +79,10 @@ require("neo-tree").setup({
       --   fuzzy finder better I guess... Anyways 
       ["f"] = "fuzzy_sorter",
       ["#"] = "fuzzy_finder",
+      ["e"] = "toggle_node",
       -- Add this mapping to recursively open all nodes
       ["E"] = "expand_all_nodes",
+        ["X"] = "filter_on_submit", -- Map <leader>f to the "submit" action
       -- this is fine can act as a filter but I never really use it? why even use this again
       -- instead of like find or telescope or just terminal idk man 
       -- it's meh man... btw you clear it with ctrl+x... it's whatever dude
@@ -96,17 +98,15 @@ require("neo-tree").setup({
     filter = {
       -- STEP 1: ENABLE THE SETTING
       filter_on_submit = true, -- This tells neo-tree to WAIT for a submit key
-      
       -- STEP 2: MAP THE SUBMIT KEY
-      mappings = {
-        -- This is a special mapping context that is ONLY active
-        -- when you are typing in the filter prompt.
-        ["<leader>f"] = "submit", -- Map <leader>f to the "submit" action
-        ["<cr>"] = "submit",      -- Keep Enter as a submit key too
-        ["<esc>"] = "cancel",     -- Escape key to cancel filtering
-      }
+      -- mappings = {
+      --   -- This is a special mapping context that is ONLY active
+        -- ["<leader>f"] = "filter_on_submit", -- Map <leader>f to the "submit" action
+      --   -- when you are typing in the filter prompt.
+      --   ["<cr>"] = "submit",      -- Keep Enter as a submit key too
+      --   ["<esc>"] = "cancel",     -- Escape key to cancel filtering
+      -- }
     },
-    
     -- ... your other filesystem settings like filtered_items ...
     filtered_items = {
       visible = false,
@@ -139,20 +139,6 @@ vim.api.nvim_create_user_command('NeotreeFocusSidebarHere',
   }
 )
 
--- Command to ALWAYS open Neotree in the left sidebar, focused on the current file
-vim.api.nvim_create_user_command('NeotreeFocusSidebar',
-  function()
-    require('neo-tree.command').execute({
-      source = 'filesystem',
-      position = 'left', -- Explicitly set the position!
-      toggle = true,
-      -- dir = vim.fn.expand('%:p:h')
-    })
-  end,
-  {
-    desc = 'Open Neotree sidebar at the current file\'s directory'
-  }
-)
 
 -- Command to ALWAYS open Neotree in the left sidebar, focused on the current file
 vim.api.nvim_create_user_command('NeotreeFocusSidebarFocus',
@@ -162,6 +148,20 @@ vim.api.nvim_create_user_command('NeotreeFocusSidebarFocus',
       position = 'left', -- Explicitly set the position!
       -- toggle = true,
       -- dir = vim.fn.expand('%:p:h')
+    })
+  end,
+  {
+    desc = 'Open Neotree sidebar at the current file\'s directory'
+  }
+)
+
+vim.api.nvim_create_user_command('NeotreeFocusSidebarFocus',
+  function()
+    require('neo-tree.command').execute({
+      source = 'filesystem',
+      position = 'left', -- Explicitly set the position!
+      -- toggle = true,
+      dir = vim.fn.expand('%:p:h')
     })
   end,
   {
@@ -232,23 +232,18 @@ vim.api.nvim_create_user_command('NeotreeNetrw',
 
 
 -- Place this in your keymaps file or after the command definition
-vim.keymap.set('n', '<leader>ppe', vim.cmd.NeotreeFocusSidebarHere, { silent = true, desc = 'Neotree at current file' })
+-- vim.keymap.set('n', '<leader>ppe', vim.cmd.NeotreeFocusSidebarHere, { silent = true, desc = 'Neotree at current file' })
 
 
 -- # This is sick but I don't like using netrw anymore it makes the buffers scuffed
 vim.keymap.set("n", "<leader>pv", vim.cmd.NeotreeFloat)
-vim.keymap.set("n", "<leader>ppv", vim.cmd.NeotreeFloatHere)
+vim.keymap.set("n", "<leader>pV", vim.cmd.NeotreeFloatHere)
 
 vim.keymap.set("n", "<leader>pw", vim.cmd.NeotreeNetrw)
-vim.keymap.set("n", "<leader>ppw", vim.cmd.NeotreeNetrwHere)
+vim.keymap.set("n", "<leader>pW", vim.cmd.NeotreeNetrwHere)
 
-vim.keymap.set("n", "<leader>pe", vim.cmd.NeotreeFocusSidebar)
-vim.keymap.set("n", "<leader>e", vim.cmd.NeotreeFocusSidebarFocus)
-
-
-
+-- vim.keymap.set("n", "<leader>e", vim.cmd.NeotreeFocusSidebarFocus)
 -- vim.keymap.set("n", "<leader>nf", vim.cmd.NeotreeFocusSidebarFocus)
-
 
 vim.keymap.set('n', '<leader>nf', function()
   require('neo-tree.command').execute({
@@ -257,7 +252,10 @@ vim.keymap.set('n', '<leader>nf', function()
       -- toggle = true,
       -- dir = vim.fn.expand('%:p:h')
   })
-end, { desc = "Neo-tree: Toggle filesystem left" })
+end, { desc = "Neo-tree: open/focus filesystem left" })
+
+-- vim.keymap.set("n", "<leader>nnf", vim.cmd.NeotreeFocusSidebarHere)
+
 
 vim.keymap.set('n', '<leader>nF', '<cmd>Neotree reveal<CR>', { desc = 'Neotree: Reveal current file' })
 

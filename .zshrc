@@ -1,5 +1,10 @@
 # ~/.zshrc file for zsh interactive shells.
-xset r rate 176 59
+
+# ---- Requirements ------
+# for root user log in with `su -` or log out and log in with root user
+# if you do just `su` it will keep the env variables of your daily driver users
+# which will not let you do step (1) in the requirements. also don't overwrite when prompted
+# in oh-my-zsh you already have a .zshrc and .zshenv set up
 
 # 1) git oh-my-zsh
 # requirements, zsh shell, curl or wget
@@ -8,40 +13,33 @@ xset r rate 176 59
 # 2) get zsh-vi-mode
 # git clone https://github.com/jeffreytse/zsh-vi-mode \
 #   $ZSH_CUSTOM/plugins/zsh-vi-mode
+# (OPTIONAL) if you can't use oh-my-zsh for some reason you can get the plugin in the AUR
+# If installed via aur you can source it with 
+# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+# END---- Requirements END------
 
-KEYTIMEOUT=1
+# The top of your .zshrc should look like this
+export KEYTIMEOUT=1
 
-ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
-
-# Source the plugin now td_hat it's installed via AUR
-
-
-# ~/.zshrc file for zsh interactive shells.
-KEYTIMEOUT=1
-
-ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
-
-ZSH_THEME=""
+# I don't even need this tbh. and it sucks tbh
+# export ZVM_VI_INSERT_ESCAPE_BINDKEY=JJ
 
 export ZSH="$HOME/.oh-my-zsh"
 
-# 2. Define which plugins you want to load
-#    (list the names separated by spaces inside the parentheses)
+ZSH_THEME=""
 
-plugins+=(zsh-vi-mode)
+plugins=(
+    zsh-vi-mode
+)
 
-
-# 3. Load Oh My Zsh itself. This MUST be the last line.
 source "$ZSH/oh-my-zsh.sh"
 
-
-# Source the plugin now that it's installed via AUR
-# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-# --- FZF Integration with zsh-vi-mode ---
-# This function will be run automatically by the plugin after it loads.
+# --- FZF Integration with zsh-vi-mode and keybindsings ---
+# after sourcing either thorugh oh-my-zsh (recommended on allacrity) or via the AUR
+# This function zvm_after_init() will be run automatically by the plugin after it loads.
 function zvm_after_init() {
+
   # Load fzf keybindings and completions
   source <(fzf --zsh)
 
@@ -154,6 +152,10 @@ function zvm_after_init() {
 
 
 
+
+
+xset r rate 176 59
+stty -ixon
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -167,45 +169,6 @@ WORDCHARS=${WORDCHARS//\/} # Don't consider certain characters part of the word
 
 # hide EOL sign ('%')
 PROMPT_EOL_MARK=""
-
-
-stty -ixon # to stop the ctrl + s freezing the terminal (ctrl+q unfreezes terminal) so that I use ctrl + s as a prefix in tmux 
-
-# configure key keybindings
-bindkey -e                                        # emacs key bindings
-# bindkey -v                                        # emacs key bindings
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '\ee' edit-command-line # Or use '\ev' if you prefer
-bindkey ' ' magic-space                           # do history expansion on space
-bindkey -r '^S'					  # Unbinding Ctrl+s (forward-i-search) this way stty -ixon works fine
-bindkey '^U' backward-kill-line                   # ctrl + U
-bindkey '^[[3;5~' kill-word                       # ctrl + Supr
-# if you want to apply this to vim and everythig you can do
-# the -a option for example bindkey -a tells zsh to apply this binding 
-# to the viins keymap (Vi INSERT mode). just saying
-bindkey '^K' kill-line                            # This binds Ctrl+K to the kill-line action, specifically for Vi's INSERT mode
-bindkey '^[[3~' delete-char                       # delete
-bindkey '^[[1;5C' forward-word                    # ctrl + ->
-bindkey '^[[1;5D' backward-word                   # ctrl + <-
-bindkey '^[[5~' beginning-of-buffer-or-history    # page up
-bindkey '^[[6~' end-of-buffer-or-history          # page down
-bindkey '^[[H' beginning-of-line                  # home
-bindkey '^[[F' end-of-line                        # end
-bindkey '^A' beginning-of-line                  # home
-bindkey '^E' end-of-line                        # end
-bindkey '^[[Z' undo                               # shift + tab undo last action
-# Add Emacs-style yank/paste to Vi's INSERT mode
-bindkey '^Y' yank
-bindkey '\ey' yank-pop
-# bindkey '^Y' redo                                 # Bind Ctrl+Y to redo
-bindkey '^J' self-insert                        # Bind Alt+Enter, but it t does'work so ctrl+J is my next bet to insert a newline in the command line
-
-bindkey -s ^f "tmux-sessionizer\r"
-bindkey -s '\eh' "tmux-sessionizer -s 0\r"
-bindkey -s '\et' "tmux-sessionizer -s 1\r"
-bindkey -s '\en' "tmux-sessionizer -s 2\r"
-bindkey -s '\es' "tmux-sessionizer -s 3\r"
 
 
 

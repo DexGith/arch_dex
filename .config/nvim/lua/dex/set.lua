@@ -2,6 +2,9 @@ vim.opt.guicursor = ""
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+--# whatt even is this lol 
+-- vim.o.laststatus = 3 -- Use a global statusline at the very bottom of the window
+
 local opt = vim.opt
 opt.number = true
 -- ... all your other persona

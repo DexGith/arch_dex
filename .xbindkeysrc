@@ -877,13 +877,13 @@ Mod4 + F5
 "/home/dex/scripts/ddesk/personal_chat/u6_Suggester.sh"
 Mod4 + F6
 
-"/home/dex/scripts/ddesk/personal_chat/u7_Reminder.sh"
+"/home/dex/scripts/ddesk/personal_chat/u7_Problems.sh"
 Mod4 + F7
 
 "/home/dex/scripts/ddesk/personal_chat/u8_Rater.sh"
 Mod4 + F8
 
-"/home/dex/scripts/ddesk/personal_chat/u9_Dumper.sh"
+"/home/dex/scripts/ddesk/personal_chat/u9_Empty.sh"
 Mod4 + F9
 
 "/home/dex/scripts/ddesk/personal_chat/u10_Idea.sh"
