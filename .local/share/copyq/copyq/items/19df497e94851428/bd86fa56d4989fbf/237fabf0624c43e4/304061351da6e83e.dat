@@ -1,0 +1,20 @@
+┌──(dex㉿archlinux1)-[~/git/arch_dex/.config]
+└─$ rsync -r ~/.config/espanso .
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/config" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/match/coding" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/match/communication" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/match/packages/misspell-en" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/match/packages/typofixer-en" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [generator] recv_generator: mkdir "/home/dex/git/arch_dex/.config/espanso/match/play" failed: Permission denied (13)
+*** Skipping any contents from this failed directory ***
+rsync: [receiver] mkstemp "/home/dex/git/arch_dex/.config/espanso/match/.base.yml.snt2vi" failed: Permission denied (13)
+rsync: [receiver] mkstemp "/home/dex/git/arch_dex/.config/espanso/match/.test.yml.HGb8Fe" failed: Permission denied (13)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.4.1]
+
+┌──(dex㉿archlinux1)-[~/git/arch_dex/.config]
+└─$

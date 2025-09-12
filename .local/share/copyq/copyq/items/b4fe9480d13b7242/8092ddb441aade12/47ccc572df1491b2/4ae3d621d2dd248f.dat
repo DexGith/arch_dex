@@ -1,0 +1,37 @@
+The Solution: Enabling the Kitty Keyboard Protocol
+
+The most robust solution to this problem is to use a modern terminal feature that eliminates this ambiguity: the kitty keyboard protocol. This protocol sends unambiguous escape sequences for all key combinations, including Ctrl + punctuation.
+
+Fortunately, recent versions of Alacritty, tmux, and Neovim all have support for this protocol. Here's how to enable it:
+1. Configure Alacritty
+
+Recent versions of Alacritty have support for the kitty keyboard protocol. You may not need to do anything in your alacritty.toml file.
+2. Configure Tmux
+
+Add the following to your ~/.tmux.conf file:
+code Tmux
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+
+    
+set -g "tmux-features" "xterm-kitty"
+set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'  # undercurl support
+set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d:%p1%{256}%/%{255}%&%d:%p1%{255}%&%d;m'  # underscore colours - needs tmux-3.0```
+
+The crucial part is `set -g "tmux-features" "xterm-kitty"`. This tells tmux to recognize and forward kitty's extended keyboard protocol sequences.
+
+After adding this to your configuration, either restart your tmux server (`tmux kill-server`) or source the configuration file (`tmux source-file ~/.tmux.conf`).
+
+#### 3. Let Neovim Do Its Thing
+
+Recent versions of Neovim automatically detect and use the kitty keyboard protocol if the terminal and any intermediary (like tmux) support and announce it. You shouldn't need any special Neovim configuration for this to work.
+
+With these changes in place, the flow of information will now be unambiguous:
+
+*   **Alacritty (`Ctrl+.`) -> `\e[46;5u` (kitty protocol sequence)**
+*   **Alacritty -> tmux -> `\e[46;5u`**
+*   **Alacritty -> tmux -> Neovim -> `Ctrl+.`**
+
+Neovim will now be able to correctly identify the `Ctrl+.` keypress and trigger your mapped action. Your keymaps in `init.lua` should work as expected without any changes.
+
+  

@@ -51,29 +51,29 @@ pseudoTrans = false
 # Wait time before displaying switch previews
 switchWaitDuration = 100
 
-# Set = 0 to switch off animations
-# For switch, there is never animation
-animationDuration = 0
-
-# Refresh rate during animation
-animationRefresh = 60
-
 # Relative minimal distance between windows
-distance = 0
+distance = 15
 
-# xd layout is the switch layout
-# boxy layout uses box heuristics (legacy)
-# cosmos layout uses physics based modeling
+# Enable to cycle through all virtual desktops
+switchCycleDesktops = false
+exposeCycleDesktops = false
+
+# xd: row-to-row layout
+# cosmos: position preserving layout
+switchLayout = xd
 exposeLayout = xd
+
 
 # Whether to show the window bigger than its original size
 allowUpscale = false
 
 [display]
 
-# Shows _NET_WM_WINDOW_TYPE_DESKTOP windows
-# which are usually wallpaper/background related
-showDesktop = false
+# Set = 0 to switch off animations
+animationDuration = 0
+
+# Animation refresh rate in fps
+animationRefresh = 60
 
 # Background when skippy-xd is activated
 # To display background wallpaper:
@@ -133,7 +133,13 @@ show = false
 backgroundTinting = false
 reserveSpace = false
 
-[tooltip]
+# Windows of type _NET_WM_WINDOW_TYPE_DESKTOP
+[desktop]
+show = true
+backgroundTinting = true
+
+
+[label]
 show = true
 offsetX = 0
 offsetY = -5
@@ -192,6 +198,9 @@ keysSelect = Return space
 keysCancel = Escape
 keysNext = n
 keysPrev = p
+
+keysCancel = q
+
 
 keysIconify = 1 i
 keysShade = 2 s

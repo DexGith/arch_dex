@@ -44,37 +44,35 @@ clientList = _NET_CLIENT_LIST
 
 # when compositors such as picom are not used
 # turn on pseudo-transparency
-pseudoTrans = false
-# pseudoTrans = true
+# pseudoTrans = false
+pseudoTrans = true
 
 [layout]
 
 # Wait time before displaying switch previews
 switchWaitDuration = 1
 
-# Set = 0 to switch off animations
-# For switch, there is never animation
-animationDuration = 0
-
-# Refresh rate during animation
-animationRefresh = 60
 
 # Relative minimal distance between windows
-distance = 15
+distance = 1
 
-# xd layout is the switch layout
-# boxy layout uses box heuristics (legacy)
-# cosmos layout uses physics based modeling
-exposeLayout = cosmos
+# xd: row-to-row layout
+# cosmos: position preserving layout
+switchLayout = xd
+exposeLayout = xd
 
 # Whether to show the window bigger than its original size
 allowUpscale = true
 
 [display]
 
-# Shows _NET_WM_WINDOW_TYPE_DESKTOP windows
-# which are usually wallpaper/background related
-showDesktop = true
+# Set = 0 to switch off animations
+animationDuration = 0
+
+# Animation refresh rate in fps
+animationRefresh = 60
+
+
 
 # Background when skippy-xd is activated
 # To display background wallpaper:
@@ -87,13 +85,13 @@ background = #00000055
 
 # During paging mode, preserve original desktop appearance
 # From the background being applied
-preservePages = true
+preservePages = false
 
 # Move the mouse cursor when skippy is activated
 movePointer = true
 
 # Whether to display window frames
-includeFrame = true
+includeFrame = false
 
 # Show window previews with rounded corners,
 # with corner radius in pixels
@@ -134,7 +132,13 @@ show = fales
 backgroundTinting = false
 reserveSpace = false
 
-[tooltip]
+# Windows of type _NET_WM_WINDOW_TYPE_DESKTOP
+[desktop]
+show = true
+backgroundTinting = true
+
+
+[label]
 show = true
 offsetX = 0
 offsetY = -5
@@ -172,7 +176,7 @@ exposeShowAllDesktops = false
 
 # Whether the filtering of window class
 # Will be persistent across activations
-persistentFiltering = false
+persistentFiltering = flase
 
 [bindings]
 
@@ -191,6 +195,7 @@ keysRight = Right l
 
 keysSelect = Return space
 keysCancel = Escape
+keysCancel = q
 keysNext = n
 keysPrev = p
 

@@ -42,7 +42,7 @@
        following: 'Mouse' - where the mouse is, or
                   'Active' - where the active window is -->
   <theme>
-    <name>Clearlooks</name>
+    <name>Onyx</name>
     <titleLayout>DNLSIMC</titleLayout>
     <!--       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -238,9 +238,11 @@
     <!-- </keybind> -->
     <!-- Cycle to next window (simulating 'right on taskbar') -->
     <!-- Cycle focus to the next monitor/screen -->
-    <!-- <keybind key="A-Escape"> -->
-    <!--   <action name="NextScreen"/> -->
-    <!-- </keybind> -->
+    <keybind key="W-A-z">
+        <action name="MoveResizeTo">
+          <monitor>next</monitor>
+        </action>
+    </keybind>
     <keybind key="W-A-Up">
       <action name="UnmaximizeFull"/>
       <!-- Ensure it's not maximized -->
@@ -302,9 +304,9 @@
       <action name="MoveToCenter"/>
     </keybind>
     <keybind key="W-b">
-        <action name="Lower"/>
-        <action name="FocusToBottom"/>
-        <action name="Unfocus"/>
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
     </keybind>
     <keybind key="W-Right">
       <!-- Example key: Win + Menu key -->
@@ -567,14 +569,14 @@
       <!-- <mousebind button="W-Left" action="Drag"> -->
       <!--   <action name="if"> -->
       <!--     <maximized>yes</maximized> -->
-          <!-- Check 2: (Given not fullscreen) Is it maximized? -->
-          <!-- <then> -->
-            <!-- Path A1: Window is maximized (and not fullscreen) -->
-          <!--   <action name="UnmaximizeFull"/> -->
-          <!--   <action name="Move"/> -->
-          <!-- </then> -->
-          <!-- <else> -->
-            <!-- Path A2: Window is NOT maximized (and also not fullscreen) => It's a normal window -->
+      <!-- Check 2: (Given not fullscreen) Is it maximized? -->
+      <!-- <then> -->
+      <!-- Path A1: Window is maximized (and not fullscreen) -->
+      <!--   <action name="UnmaximizeFull"/> -->
+      <!--   <action name="Move"/> -->
+      <!-- </then> -->
+      <!-- <else> -->
+      <!-- Path A2: Window is NOT maximized (and also not fullscreen) => It's a normal window -->
       <!--       <action name="Move"/> -->
       <!--     </else> -->
       <!--   </action> -->

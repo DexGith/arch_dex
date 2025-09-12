@@ -1,2 +1,1212 @@
-ERR 2025-06-28T03:00:59.298 ui.3605    tui_stop:618: TUI already stopped (race?)
-ERR 2025-08-06T04:41:06.574 ui.1723512 tui_stop:615: TUI already stopped (race?)
+ERR 2025-05-02T16:59:41.072 ui.9966    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-02T16:59:42.097 ui.9938    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-02T21:06:30.805 ui.76114   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-04T18:44:04.557 ui.2300    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-06T23:51:24.591 nvim.165285.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-06T23:51:43.011 nvim.165360.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-07T00:33:52.228 ui.165359  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-09T06:18:45.528 ui.27277   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-09T19:48:11.329 nvim.2652.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T19:48:53.513 nvim.2740.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T19:50:17.605 nvim.2869.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T20:33:47.282 nvim.7674.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T20:35:14.902 nvim.7794.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T20:35:34.406 nvim.7835.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T20:35:59.191 nvim.7882.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-09T23:35:35.242 nvim.37604.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-10T02:12:32.248 nvim.77163.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-10T02:12:52.136 nvim.77226.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-10T02:30:38.958 nvim.81246.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-10T04:10:44.707 nvim.101812.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-18T08:28:53.651 ui.2310    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-18T23:41:28.247 nvim.9131.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-19T02:30:37.286 nvim.13905.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-19T02:32:30.492 nvim.13963.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-19T03:36:27.552 ui.13904   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-20T11:38:04.220 nvim.37956.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-21T03:13:08.888 nvim.76525.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-22T00:59:58.812 nvim.89565.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-22T01:00:26.153 ui.89563   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-22T01:00:35.116 nvim.89698.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-22T03:29:48.480 ui.89697   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-22T17:08:48.388 nvim.147422.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-23T02:53:22.521 ui.29130   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-27T00:13:38.877 ui.24820   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-27T00:18:34.888 ui.25809   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-27T00:32:46.397 ui.8563    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T10:53:20.681 ui.92019   tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T13:37:56.293 ui.111198  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T15:31:45.831 ui.209263  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T17:30:28.153 ui.241945  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:22:42.855 ui.280942  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:23:25.658 ui.281087  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:27:27.928 ui.281865  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:31:13.551 ui.282783  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:31:25.004 ui.282137  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:56:45.535 ui.285611  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-28T21:57:12.343 ui.285789  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T11:39:11.358 nvim.300340.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-05-29T11:56:59.635 ui.301157  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T12:58:37.674 ui.308381  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T13:03:37.669 ui.309067  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T13:19:33.914 ui.311440  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T14:48:50.450 ui.318656  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-29T15:12:19.572 ui.320998  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-30T12:20:27.668 ui.9287    tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-31T05:34:20.130 ui.164830  tui_stop:617: TUI already stopped (race?)
+ERR 2025-05-31T13:54:10.359 nvim.9626.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-03T00:12:40.395 ui.86103   tui_stop:617: TUI already stopped (race?)
+ERR 2025-06-03T00:48:11.529 ui.88556   tui_stop:617: TUI already stopped (race?)
+ERR 2025-06-03T01:09:47.759 ui.90618   tui_stop:617: TUI already stopped (race?)
+ERR 2025-06-06T23:33:35.243 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:35.246 ui.9925    nvim_error_event:2163: async error on channel 3: UI not attached to channel: 1
+ERR 2025-06-06T23:33:36.249 ui.9925    tui_stop:617: TUI already stopped (race?)
+ERR 2025-06-20T16:19:25.401 ui.7451    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-20T17:21:51.447 ui.3589    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-20T19:19:53.615 ui.18989   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-20T19:34:23.886 ui.19667   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-20T19:58:22.207 ui.7854    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T01:30:20.490 ui.2981    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T01:56:42.394 ui.11771   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T02:12:33.460 ui.13049   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T02:12:36.835 ui.11948   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T02:19:03.311 ui.18997   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T02:40:07.021 ui.23727   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T02:40:08.675 ui.23996   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T03:01:10.547 ui.25733   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T03:01:17.608 ui.26034   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T13:48:15.992 ui.4305    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T15:52:00.190 ui.10150   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T16:17:32.100 ui.11699   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T16:18:58.177 ui.8834    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T16:26:17.725 ui.12497   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T18:11:25.075 ui.3330    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T19:06:41.173 ui.10513   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T22:53:17.604 ui.19893   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T23:24:22.920 ui.3065    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T23:25:19.086 ui.21293   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-21T23:25:29.375 ui.18541   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T14:23:09.786 ui.34294   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T14:29:28.391 ui.34781   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T14:34:24.405 ui.34876   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T14:34:56.184 ui.35028   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T14:51:23.779 ui.36093   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T15:41:26.363 ui.37525   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T16:31:37.966 ui.37832   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T16:31:39.049 ui.37874   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T18:33:19.776 ui.41463   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T19:43:00.452 ui.43414   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T19:58:38.094 ui.43828   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T19:58:40.484 ui.43535   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:02:59.775 ui.44213   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:03:01.335 ui.44165   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:04:05.694 ui.44474   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:04:13.161 ui.44061   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:04:14.696 ui.44282   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:04:17.613 ui.43950   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:08:30.788 ui.44621   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:23:05.891 ui.44691   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:37:18.701 ui.45161   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T20:37:57.036 ui.45524   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T22:26:28.450 ui.48729   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T22:26:31.770 ui.48816   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T22:53:15.515 ui.47346   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T22:55:57.858 ui.46582   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T23:01:27.428 ui.50765   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T23:48:59.607 ui.52343   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-22T23:49:00.765 ui.51740   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T00:15:27.546 ui.77321   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T00:15:31.977 ui.76388   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T00:15:33.646 ui.75157   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T02:46:19.267 ui.84339   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:16:05.392 ui.88386   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:21:55.736 ui.88624   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:23:49.407 ui.88756   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:29:22.314 ui.89093   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:33:33.679 ui.89364   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T03:54:52.357 ui.90724   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T04:03:42.748 ui.91607   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T04:03:45.112 ui.91314   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T04:41:28.075 ui.92461   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T04:48:53.693 ui.95743   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T05:10:45.972 ui.96406   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T05:28:34.701 ui.97791   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T05:32:02.862 ui.95435   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T12:32:09.275 ui.101669  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T12:32:10.416 ui.102115  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T13:21:19.939 ui.105436  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T13:21:20.960 ui/c/nvim.105437.0 tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T14:45:54.996 ui.109405  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T15:13:50.199 ui.112296  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T15:13:51.617 ui.112248  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-23T16:58:10.082 ui.114926  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T13:36:48.020 ui.124874  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T14:18:11.993 ui.125264  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T17:35:27.149 ui.129416  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T18:56:35.401 ui.131952  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T19:03:22.262 ui.132212  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T19:10:25.238 ui.132690  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T19:48:31.290 ui.134155  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T20:45:54.199 ui.136383  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T20:45:54.755 ui.136186  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T21:54:39.591 ui.139196  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T21:54:42.817 ui.138923  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:15:51.802 ui.140141  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:22:38.425 ui.140629  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:24:21.975 ui.140830  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:25:21.888 ui.140923  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:25:56.162 ui.141000  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:31:06.043 ui.141198  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:31:09.232 ui.140727  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:31:11.739 ui.140538  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:31:16.559 ui.140458  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:31:19.004 ui.140312  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:38:37.549 ui.143089  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:46:47.603 ui.147797  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-24T22:49:13.516 ui.156191  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T00:40:01.563 ui.160374  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T00:51:47.414 ui.159992  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T00:52:03.289 ui.160442  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T00:52:08.235 ui.159901  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T01:57:49.100 ui.161706  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T02:10:49.504 ui.161936  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T04:03:42.481 ui.163205  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T04:03:49.452 ui.163888  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T04:04:05.021 ui.165032  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:00:27.272 ui.34240   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:13:39.647 ui/c/nvim.35709.0 tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:15:29.725 ui/c/nvim.35709.0 tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:27:48.361 ui/c/nvim.35709.0 tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:29:07.778 ui.38417   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:38:19.750 ui.46888   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T12:50:14.318 ui.46709   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T16:38:58.004 ui.68638   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T16:38:58.004 ui.68490   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T16:42:52.709 ui.68825   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T16:43:20.862 c/nvim.35709.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-25T16:44:10.474 nvim.69389.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-25T16:45:31.303 ui.69388   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T17:38:44.436 ui.71373   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T17:39:46.695 ui.71610   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T17:51:14.031 ui.72654   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-25T21:46:08.384 ui.77456   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-26T21:22:22.276 ui.136019  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-26T22:01:49.830 ui.141787  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T15:24:09.717 ui/c/nvim.35709.0 tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T15:24:55.891 ui.159387  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T15:30:59.685 ui.159501  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T15:47:48.501 ui.160203  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T15:59:19.101 ui.161343  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:02:57.215 ui.161484  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:09:42.332 ui.161779  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:38:57.111 ui.162348  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:40:54.603 ui.162454  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:42:36.611 ui.160834  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T16:54:13.791 ui.163290  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:06:33.193 ui.163405  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:06:34.916 ui.163823  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:06:36.511 ui.163934  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:06:37.901 ui.163665  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:08:54.045 ui.162756  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:20:39.227 ui.164860  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:20:40.910 ui.162944  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:20:48.333 ui.164340  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:25:42.469 ui.165258  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-27T17:28:59.935 ui.165497  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T00:13:10.870 ui.164965  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T00:21:01.097 ui.184265  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T00:42:34.806 ui.189479  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T00:58:32.802 ui.191203  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T01:03:00.648 ui.191792  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T01:06:25.758 ui.192488  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T01:13:38.498 ui.192980  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T02:19:15.401 ui.196267  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T12:07:33.357 ui.3723    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T14:47:13.738 ui.3815    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T15:20:52.966 ui.2976    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T16:01:54.949 ui.19182   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T17:48:42.048 ui.52169   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T18:01:12.357 ui.53847   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T18:08:16.601 ui.55769   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T18:32:58.834 ui.53458   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T18:32:58.935 ui.54606   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T19:04:06.059 ui.6726    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:14:13.420 ui.9522    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:29:41.828 nvim.10759.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:30:18.831 nvim.10804.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:33:15.607 nvim.11134.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:34:00.783 nvim.11245.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:34:05.975 nvim.11292.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:39:20.029 ui.11291   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:39:34.257 ui.10648   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:41:13.764 nvim.11755.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:45:37.639 ui.11752   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:45:40.563 nvim.11981.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:46:01.188 ui.12109   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:46:18.228 ui.12189   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:46:19.823 nvim.12285.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T20:49:07.399 ui.12421   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:49:27.082 ui.12282   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:49:28.440 ui.11980   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:49:29.864 ui.12348   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T20:58:39.022 nvim.13112.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:00:17.747 nvim.13156.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:01:16.738 ui.13229   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T21:01:18.163 nvim.13293.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:02:15.713 nvim.13411.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:02:47.607 nvim.13456.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:03:32.566 nvim.13496.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:04:12.760 nvim.13538.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:05:28.682 nvim.13584.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:07:02.662 nvim.13713.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:07:49.189 nvim.13758.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T21:08:32.299 ui.13646   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-28T21:14:26.818 nvim.14254.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-28T23:53:20.744 ui.21349   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T00:26:53.186 ui.20913   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T00:43:17.978 ui.23597   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T01:08:20.374 ui.25990   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T12:29:26.600 ui.35648   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T14:35:06.130 ui.44939   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T14:37:18.958 ui.45087   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T14:41:04.963 ui.46343   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T14:41:20.588 ui.46526   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T14:49:06.042 ui.46932   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T15:12:09.453 ui.49504   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T16:07:23.256 ui.55071   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T16:09:43.209 nvim.55452.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-29T16:09:59.342 ui.55450   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T16:11:15.947 nvim.55915.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-29T17:07:31.575 ui.57097   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T17:25:15.301 ui.58861   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T17:25:40.073 ui.58478   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T17:27:09.378 ui.59491   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T23:34:01.066 nvim.74502.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-29T23:35:08.588 ui.73591   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-29T23:50:29.027 nvim.76286.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-30T00:26:29.163 nvim.86023.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-30T00:28:39.812 nvim.86545.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-30T00:45:52.816 ui.52926   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T00:46:36.949 ui.60256   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T01:07:56.654 ui.97840   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T01:27:50.822 ui.103024  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T01:31:21.059 ui.93917   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T01:32:09.885 ui.104424  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T04:59:26.357 nvim.157334.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-30T05:20:31.576 ui.150509  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T05:20:38.484 ui.157332  tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T14:49:45.912 ui.4719    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T14:50:35.150 ui.5021    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T14:52:02.229 ui.5383    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T14:57:29.016 ui.5750    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T15:00:03.508 ui.6213    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T15:03:56.506 ui.6701    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T15:05:04.319 ui.6121    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T15:05:07.691 ui.5674    tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T16:06:29.633 ui.10521   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T16:17:10.472 ui.11820   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T16:52:42.800 ui.12566   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T17:50:01.449 ui.15798   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T17:53:04.621 ui.16260   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T17:55:19.839 ui.15886   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T18:14:21.172 ui.17464   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T19:17:16.892 nvim.22110.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-06-30T19:23:20.864 ui.22109   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T21:09:10.939 ui.29640   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T21:09:33.262 ui.29784   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T21:25:49.251 ui.29178   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T21:25:50.591 ui.28111   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:14:08.554 ui.51846   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:19:36.555 ui.54547   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:19:52.819 ui.57532   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:20:17.001 ui.58266   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:21:44.758 ui.59169   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:21:58.935 ui.60016   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:27:45.127 ui.61143   tui_stop:618: TUI already stopped (race?)
+ERR 2025-06-30T23:44:37.136 ui.62641   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T01:06:56.671 ui.75823   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T01:09:19.446 ui.76105   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T01:10:51.937 ui.76373   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:31:35.674 ui.89693   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:41:24.408 ui.90406   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:42:58.487 ui.90693   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:44:58.363 ui.91038   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:45:05.473 ui.90791   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:45:34.086 ui.91232   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:43.777 ui.92448   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:45.473 ui.92011   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:48.674 ui.92238   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:50.235 ui.92168   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:51.126 ui.92090   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:52.213 ui.91946   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:51:53.184 ui.91883   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:52:01.869 ui.91805   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:52:03.027 ui.91742   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:52:05.064 ui.91662   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:52:18.149 ui.92819   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:54:31.261 ui.93384   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:55:37.262 ui.93592   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:55:38.297 ui.93658   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T02:56:28.434 ui.93772   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:05:44.944 ui.94455   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:05:46.362 ui.94552   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:06:28.229 ui.89590   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:06:52.895 ui.94802   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:06:54.175 ui.94867   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:23.454 ui.93298   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:25.025 ui.93166   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:26.493 ui.92954   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:28.040 ui.93043   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:29.396 ui.92890   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:30.986 ui.91333   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:07:52.726 ui.89014   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:32:03.905 ui.98157   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:35:55.074 ui.97037   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:35:58.858 ui.97448   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:37:15.685 ui.99874   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T03:55:02.916 ui.106113  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T04:00:46.360 ui.107046  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T06:03:00.004 ui.128911  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T18:12:48.221 ui.164559  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T21:51:05.171 ui.218398  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T22:51:52.844 ui.219987  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-01T23:43:05.045 nvim.230774.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-02T01:21:06.252 ui.239468  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T03:56:01.737 ui.259462  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T03:58:55.544 ui.260594  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T04:04:18.739 ui.10999   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T04:04:20.497 ui.10762   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T13:35:41.839 ui.3403    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T15:06:18.462 ui.31034   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T15:21:16.049 ui.39825   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T15:25:27.367 nvim.42201.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-02T15:27:59.943 ui.43617   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T15:43:05.353 ui.51602   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:02:13.711 ui.62102   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:24:54.485 ui.73741   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:38:08.362 ui.80959   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:48:57.795 ui.90045   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:53:08.223 ui.92296   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:56:45.902 ui.88930   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:56:48.310 ui.92687   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T16:56:54.300 ui.51004   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T19:00:33.072 ui.137907  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T19:23:10.193 ui.172585  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T19:28:59.443 ui.171805  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T20:17:28.009 nvim.205309.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-02T20:27:53.957 nvim.210443.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-02T21:56:34.400 ui.194835  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T22:02:44.066 ui.181821  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-02T23:30:02.332 nvim.328445.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-03T01:37:24.410 nvim.430035.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-03T01:38:03.938 nvim.430507.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-03T01:38:37.604 ui.430504  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T06:06:35.390 ui.435777  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T06:06:35.393 ui.440639  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T06:44:20.983 ui.21547   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T16:49:11.136 ui.11161   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T16:50:48.286 nvim.15138.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-03T22:57:23.790 ui.15132   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-03T23:39:03.650 ui.42034   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T01:05:36.713 ui.143465  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T04:48:48.598 ui.179997  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T09:44:26.399 ui.3257    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T10:27:08.440 ui.3382    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T10:27:19.026 ui.5646    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T11:19:04.051 ui.16476   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T12:32:04.285 nvim.27603.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-04T12:34:15.554 ui.27601   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T15:18:27.733 ui.29687   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T15:48:01.059 nvim.5616.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-04T15:54:30.979 ui.4043    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T16:26:25.796 ui.7582    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T16:40:54.854 ui.3174    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T16:57:35.866 ui.5611    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:04:59.675 ui.8983    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:05:16.911 ui.9083    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:10:10.385 ui.9473    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:50:17.528 ui.12982   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:52:01.020 ui.13402   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T17:52:13.646 ui.13493   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T18:37:25.979 ui.13824   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T20:26:15.081 ui.60939   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:47:40.432 ui.131223  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:49:26.533 ui.131962  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:58:35.744 ui.135014  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:58:49.154 ui.134227  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:59:02.931 ui.135211  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-04T22:59:15.337 ui.135342  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T01:58:39.740 ui.19254   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T01:58:40.118 ui.136663  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T15:27:26.412 ui.43295   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T22:06:05.526 nvim.214330.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-05T22:22:26.446 ui.214324  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T22:41:05.362 ui.228570  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-05T22:42:36.607 ui.227378  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-06T02:31:38.903 ui.320924  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-06T02:33:16.954 ui.321318  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-06T02:35:18.222 ui.322962  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-06T02:35:27.687 ui.323059  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-06T04:54:05.835 ui.42957   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-07T22:49:30.882 ui.421157  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-07T22:49:53.222 ui.421394  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-07T22:50:53.684 ui.421653  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-08T15:25:50.927 ui.620901  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-08T15:25:54.381 ui.620444  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-08T15:26:34.925 ui.118439  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-08T19:17:08.821 ui.615294  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-09T20:41:50.423 ui.1036568 tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T00:04:36.254 ui.912401  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T01:33:06.242 ui.26895   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T02:30:05.519 nvim.85374.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-11T03:47:20.139 ui.131221  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T03:59:45.333 ui.136177  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T04:17:42.578 ui.143490  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T05:32:27.078 ui.165578  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T06:32:10.002 nvim.238660.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-11T06:33:52.940 nvim.239712.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-11T06:50:50.479 nvim.248823.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-11T07:21:39.341 ui.5281    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T15:17:43.375 ui.7308    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T15:17:49.509 ui.7065    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T17:43:29.580 ui.98448   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T17:43:52.989 ui.98964   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T17:44:29.056 ui.97570   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T18:17:37.204 nvim.140204.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-11T19:05:58.061 ui.180760  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-11T19:06:19.112 ui.181060  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-12T03:36:26.594 ui.13806   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-12T19:50:55.953 ui.169716  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-12T23:22:41.409 ui.3591    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-13T02:14:01.953 ui.102781  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-13T15:50:05.899 ui.441885  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-13T18:28:26.745 ui.578484  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-13T22:41:31.649 ui.797100  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-14T03:13:53.022 nvim.1103763.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-15T20:46:50.457 c/nvim.772295.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-15T20:52:11.463 ui.2254764 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-15T20:52:11.472 ui.22478   tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-15T20:52:11.480 ui.2255485 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T01:56:04.549 nvim.143572.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-16T02:54:30.607 ui.10227   tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T02:54:30.613 ui.25222   tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T03:12:10.671 ui.209879  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T03:12:35.928 ui.211135  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T03:16:11.731 ui.213712  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T07:04:35.682 ui.413139  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-16T07:06:01.257 ui.413670  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-17T07:56:11.805 nvim.1145596.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-18T05:12:27.802 nvim.1970078.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-18T05:29:46.831 nvim.1991757.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-18T05:29:57.570 nvim.1991986.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-19T05:07:23.506 ui.3409537 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-21T06:35:21.890 nvim.2339047.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-21T07:01:30.669 ui.2375247 terminfo_start:490: uv_tty_init failed: invalid argument
+ERR 2025-07-21T07:01:30.674 ui.2375247 flush_buf:2621: uv_write failed: bad file descriptor
+ERR 2025-07-21T07:01:30.674 ui.2375247 flush_buf:2621: uv_write failed: bad file descriptor
+ERR 2025-07-21T07:01:30.675 ui.2375247 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-21T10:11:24.483 nvim.2803622.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-21T10:23:08.402 nvim.2835271.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-21T11:14:04.658 nvim.2940654.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-21T12:00:24.196 nvim.3034864.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T12:01:18.166 nvim.3034864.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T12:35:35.725 nvim.3076878.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T22:12:26.595 nvim.3349807.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T22:12:31.687 nvim.3349807.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T22:12:46.887 nvim.3349807.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T23:02:10.409 nvim.3608540.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T23:12:36.035 nvim.3618630.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-21T23:13:16.427 nvim.3618630.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-22T01:24:18.104 nvim.3916380.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-22T03:57:20.607 ui.220353  tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-22T03:57:20.635 ui.3472015 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-22T03:57:20.703 ui.3626540 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-24T02:24:51.982 ui.1568728 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-27T01:21:25.689 nvim.2321973.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-27T01:27:12.988 nvim.2321973.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-27T02:08:26.441 nvim.2423575.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-27T02:34:46.695 nvim.2475489.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-30T12:22:21.254 ui.2660331 tui_stop:615: TUI already stopped (race?)
+ERR 2025-07-30T13:30:26.591 nvim.2792343.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-30T13:39:58.672 nvim.2808878.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-30T14:36:41.454 nvim.2906279.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-30T16:05:11.574 nvim.3072620.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T04:22:02.077 nvim.3444943.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T09:21:41.469 nvim.4085589.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T11:57:27.345 nvim.231499.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T13:17:21.689 nvim.367363.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T13:17:34.775 nvim.367855.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T13:40:14.247 nvim.420824.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T14:15:29.945 nvim.491086.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T14:20:31.874 nvim.499939.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T14:50:57.945 nvim.552303.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-07-31T15:13:49.566 nvim.594451.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-01T03:48:37.058 nvim.1041232.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-01T07:53:46.686 nvim.1526522.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-01T07:57:36.748 nvim.1533851.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-01T08:25:03.022 nvim.1583490.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-01T08:35:32.660 ui.1435559 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-01T08:35:32.665 ui.2601996 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-03T07:19:36.397 nvim.3554018.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-03T08:36:46.828 ui.3827929 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-03T11:42:38.643 nvim.120434.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-03T11:43:37.141 nvim.122723.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T05:08:36.846 nvim.1462586.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T05:13:41.185 nvim.1473795.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T05:15:38.888 nvim.1478434.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T05:20:58.103 nvim.1492293.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T05:38:46.091 nvim.1533701.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-04T07:05:11.607 nvim.1755613.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T07:55:26.402 nvim.1131692.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T08:07:18.875 ui.1158120 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-05T08:37:45.205 nvim.1229783.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T09:16:26.804 nvim.1342770.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T09:19:24.644 nvim.1350107.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T09:50:06.913 nvim.1449062.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T14:27:02.382 nvim.2199496.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T17:46:47.142 nvim.2671326.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-05T17:47:53.780 nvim.2674153.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T05:16:29.188 ui.3593019 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-06T05:23:56.270 ui.3616734 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-06T05:25:55.405 ui.3621761 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-06T05:29:45.741 nvim.3632458.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T08:59:21.599 nvim.4192114.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T09:03:05.598 nvim.8302.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T09:08:38.341 ui.25082   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-06T10:43:14.663 nvim.290333.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T14:52:00.536 nvim.14264.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T15:01:12.587 nvim.19572.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T15:18:29.589 nvim.23982.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T15:25:02.240 nvim.25277.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T15:30:50.203 nvim.26504.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T16:30:37.391 nvim.38150.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-06T16:39:56.010 nvim.40276.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-07T12:20:52.406 nvim.769911.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-07T17:56:07.338 nvim.1145971.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T13:51:04.313 nvim.1818960.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T19:48:04.833 nvim.2333667.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T20:02:43.821 nvim.2352218.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T20:04:08.610 nvim.2353938.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T20:04:48.111 nvim.2354902.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T20:13:59.401 nvim.2369669.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T20:35:08.470 nvim.2456263.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-08T23:02:56.799 nvim.2762898.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-09T11:51:16.261 nvim.3012674.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-09T16:31:25.157 ui.122654  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-09T16:31:25.167 ui.2362581 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-09T16:31:25.231 ui.133071  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-10T10:24:12.631 nvim.264500.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-10T10:27:03.989 nvim.268795.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-10T14:47:56.381 ui.634649  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-10T21:01:17.536 ui.1565118 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T13:13:16.739 nvim.263340.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T15:55:51.837 nvim.562125.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T16:40:10.463 nvim.619323.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T17:12:40.727 nvim.622871.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T17:17:05.662 nvim.624208.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T18:49:50.764 nvim.669411.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-11T23:31:19.596 ui.886028  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:34:47.267 ui.922692  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:41:55.253 ui.942887  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:48:27.974 ui.975557  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:52:39.514 ui.998518  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:52:42.562 ui.998265  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-11T23:53:13.102 ui.999418  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-12T00:18:20.180 nvim.1015709.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-08-12T09:05:05.590 nvim.1122106.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-12T09:51:09.904 nvim.1149447.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-12T09:51:39.641 nvim.1150734.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-12T10:30:23.008 nvim.1168096.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-12T12:22:31.355 ui.1209371 terminfo_start:490: uv_tty_init failed: invalid argument
+ERR 2025-08-12T12:22:31.361 ui.1209371 flush_buf:2621: uv_write failed: bad file descriptor
+ERR 2025-08-12T12:22:31.361 ui.1209371 flush_buf:2621: uv_write failed: bad file descriptor
+ERR 2025-08-12T12:22:31.362 ui.1209371 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-12T12:33:41.764 nvim.1223427.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-12T12:53:45.034 nvim.1226581.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter.lua:195: Index out of bounds
+stack traceback:
+	[C]: in function 'nvim_buf_get_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:195: in function 'get_node_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:553: in function 'handler'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:884: in function '_match_predicates'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:1013: in function 'iter'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:343: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-12T13:17:47.766 nvim.1241366.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-12T14:54:58.959 nvim.1253798.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-12T19:17:06.894 ui.1116061 terminfo_start:501: uv_tty_set_mode failed: i/o error
+ERR 2025-08-13T11:41:22.030 nvim.32254.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T11:45:11.280 nvim.33434.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T11:47:54.703 nvim.34451.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T11:48:06.785 nvim.34491.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T12:17:53.062 nvim.57764.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T23:43:14.237 nvim.1347623.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-13T23:44:28.547 nvim.1351086.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-14T13:07:17.479 ui.1968868 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-14T16:15:52.526 nvim.2605790.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-14T17:19:01.555 nvim.2843866.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-08-14T20:10:36.832 nvim.3395600.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-14T20:46:58.394 nvim.3514189.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-14T20:48:29.256 ui.3517878 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-15T11:43:01.344 nvim.812267.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-15T23:28:46.047 nvim.2764959.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-16T12:24:18.751 nvim.3397214.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-16T14:08:43.236 nvim.3710756.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-17T11:32:28.023 nvim.1964746.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-17T11:37:55.342 nvim.1979206.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-17T11:55:36.414 nvim.2028506.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-18T15:41:17.211 nvim.1182103.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-18T17:51:36.516 ui.85925   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-19T00:37:44.271 ui.161983  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-19T00:57:34.277 nvim.40517.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-19T15:21:07.520 nvim.539481.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-19T15:53:12.194 nvim.664292.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-19T23:26:20.219 ui.15111   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T02:46:47.197 ui.1579787 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T14:58:24.359 ui.209963  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T14:58:49.170 ui.210729  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T14:58:57.431 ui.211344  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T14:59:19.827 ui.212012  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T14:59:46.161 ui.212748  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:00:17.468 ui.213675  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:05:00.216 nvim.224400.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-20T15:19:36.648 nvim.255339.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-20T15:21:40.448 ui.259426  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:21:59.968 ui.260754  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:22:28.742 ui.261602  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:43:06.896 ui.305233  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:51:46.810 ui.322776  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:54:36.162 ui.328677  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T15:54:54.946 ui.329458  tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-20T22:14:15.441 nvim.1168272.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-20T22:16:11.914 nvim.1171463.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-20T22:16:11.971 nvim.1171463.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-08-20T22:17:37.608 nvim.1174077.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-20T22:27:26.614 nvim.1194614.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-08-20T22:31:28.692 nvim.1201410.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-08-20T22:40:06.971 nvim.1226561.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-21T01:34:37.764 nvim.1602357.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T11:44:55.829 ui.1763919 terminfo_start:501: uv_tty_set_mode failed: i/o error
+ERR 2025-08-21T12:51:27.252 nvim.1896416.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T13:34:33.780 nvim.2012102.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T13:40:10.193 nvim.2024734.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T15:25:59.263 nvim.2237158.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T15:52:37.372 nvim.2302624.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T16:06:26.119 nvim.2330916.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-21T16:08:41.712 nvim.2335979.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-22T04:44:42.660 ui.3888772 tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-22T16:19:36.748 nvim.187310.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T05:32:31.234 ui.13139   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-25T13:31:47.180 nvim.40561.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T13:45:37.021 nvim.58264.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T14:50:40.336 nvim.168983.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T18:23:46.696 nvim.516902.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T18:24:42.498 nvim.518578.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-25T18:26:36.621 nvim.495804.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter.lua:195: Index out of bounds
+stack traceback:
+	[C]: in function 'nvim_buf_get_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:195: in function 'get_node_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:553: in function 'handler'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:884: in function '_match_predicates'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:1013: in function 'iter'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:343: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-08-25T18:46:34.167 nvim.562887.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-27T17:53:34.721 ui.15379   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-27T19:01:38.278 nvim.96323.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-27T19:13:39.967 nvim.105106.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-29T04:48:18.772 nvim.1948519.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-08-29T05:35:02.450 ui.12761   tui_stop:615: TUI already stopped (race?)
+ERR 2025-08-29T20:59:29.654 nvim.241767.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-01T06:02:08.177 ui.63070   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-01T06:02:08.327 ui.55826   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-02T05:46:31.885 ui.15757   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-02T05:46:32.061 ui.32543   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-07T21:47:40.330 nvim.96357.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-07T21:50:07.598 nvim.104331.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-07T21:50:32.627 nvim.105877.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-08T04:40:52.588 ui.40493   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-08T04:40:52.773 ui.42026   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-08T22:13:58.521 nvim.945810.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-08T23:33:58.183 nvim.1142303.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-09T15:54:34.852 nvim.1942975.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-09T16:14:20.351 nvim.1984789.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-09T17:04:03.214 ui.2101162 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-09T17:08:29.234 nvim.2119748.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-09T17:12:44.649 nvim.2130929.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-09T17:15:07.061 nvim.2139367.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-10T01:38:53.800 nvim.3332674.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-10T02:20:09.830 nvim.3443099.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-10T02:51:33.186 nvim.3543067.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-10T22:57:41.965 nvim.298491.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-10T22:59:48.936 nvim.298491.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-10T23:01:01.088 nvim.298491.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-10T23:01:15.458 nvim.298491.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-10T23:57:44.281 nvim.961694.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T00:03:45.901 nvim.961694.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T00:59:20.367 nvim.1119911.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T01:04:35.832 nvim.1119911.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T02:23:07.652 nvim.1377688.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T04:38:19.316 nvim.1801351.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T06:01:28.919 nvim.2093142.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T06:33:14.651 nvim.2209498.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T06:39:15.798 nvim.2226241.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T06:50:56.973 nvim.2260398.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T07:03:07.301 nvim.2301328.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T07:19:30.024 nvim.2393492.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T07:23:33.879 nvim.2342243.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T08:52:35.177 nvim.2661363.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T09:31:39.126 nvim.2804479.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T09:32:11.971 nvim.2804479.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T09:33:30.785 nvim.2804479.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T09:35:12.046 nvim.2804479.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-11T09:41:12.327 nvim.2804479.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T10:43:49.062 nvim.2880370.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T10:55:11.148 nvim.3053114.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_row': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T21:00:25.006 ui.3531255 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:01:12.873 ui.3534202 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:01:26.563 ui.3535005 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:03:25.274 ui.3543071 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:03:55.258 ui.3545191 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:09:04.448 nvim.3430725.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T21:09:15.150 nvim.3430725.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T21:09:24.880 nvim.3430725.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-11T21:48:05.014 c/nvim.3679272.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-11T21:48:07.353 ui/c/nvim.3679272.0 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:48:14.767 c/nvim.3679272.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-11T21:48:17.144 ui/c/nvim.3679272.0 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T21:48:19.284 c/nvim.3679272.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-11T21:48:20.782 ui/c/nvim.3679272.0 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T23:22:45.122 ui.4002171 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-11T23:24:13.692 nvim.4099316.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-12T02:12:52.634 ui.438747  tui_stop:615: TUI already stopped (race?)
