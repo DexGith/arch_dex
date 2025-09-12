@@ -100,8 +100,8 @@ cornerRadius = 0
 
 # Whether to show icons on live preview thumbnails
 icon = true
-iconPlace = right right
-iconSize = 28
+iconPlace = right mid
+iconSize = 33
 
 [filler]
 tint = #333333
@@ -141,6 +141,7 @@ backgroundTinting = true
 
 [label]
 show = true
+option = windowTitle
 offsetX = 0
 offsetY = -5
 width = 0.8

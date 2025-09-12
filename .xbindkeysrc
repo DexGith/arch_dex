@@ -815,6 +815,9 @@ Control + XF86HomePage
 "skippy-xd --expose --pivot Super_L --next --config ~/.config/skippy-xd/skippy-xd3.rc" 
 Mod4 + Tab
 
+"skippy-xd --expose --switch --pivot Alt_L --next --config ~/.config/skippy-xd/skippy-xd7.rc" 
+Mod4 + Shift + Alt + Control + Tab
+
 # Alt + Shift + Tab to switch to the previous window
 "skippy-xd --expose --pivot Super_L --prev --config ~/.config/skippy-xd/skippy-xd3.rc"
 Mod4 + Shift + Tab

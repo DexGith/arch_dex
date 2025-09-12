@@ -1210,3 +1210,4 @@ ERR 2025-09-11T21:48:20.782 ui/c/nvim.3679272.0 tui_stop:615: TUI already stoppe
 ERR 2025-09-11T23:22:45.122 ui.4002171 tui_stop:615: TUI already stopped (race?)
 ERR 2025-09-11T23:24:13.692 nvim.4099316.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
 ERR 2025-09-12T02:12:52.634 ui.438747  tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-12T09:07:37.630 nvim.1826025.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
