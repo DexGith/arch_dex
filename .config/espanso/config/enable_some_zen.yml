@@ -1,9 +1,10 @@
 
 #for example
-filter_title: (Reddit|^Google|Google Search|eTools.ch|NotebookLM|DuckDuckGo|Google Drive|Colab|tldraw|Excalidraw)
+filter_title: (Reddit|Google Search|eTools.ch|NotebookLM|DuckDuckGo|Google Drive|Colab|tldraw|Excalidraw)
 # filter_title: (Reddit|^Google|Goggle Search)
 filter_class: zen
 enable: true
+
 
 
 key_delay: 10
