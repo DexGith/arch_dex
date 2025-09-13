@@ -9,8 +9,8 @@ decorations = "full"
 
 # Sets the initial dimensions of the window.
 # These are measured in character cells, not pixels.
-dimensions.columns = 120
-dimensions.lines = 45
+dimensions.columns = 100
+dimensions.lines = 33
 
 # You can also add padding if you like (optional)
 padding.x = 0
