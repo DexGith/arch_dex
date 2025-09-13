@@ -449,17 +449,17 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 configure_prompt() {
-    prompt_symbol=㉿
+    # prompt_symbol=@
     # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-            PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B${PROMPT_INDICATOR}%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+            PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$'%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B${PROMPT_INDICATOR}%(#.%F{red}#.%F{blue}$)%b%F{reset} '
                 # Right-side prompt with exit codes and background processes
             #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
         oneline)
-            PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n@%m%b%F{reset}:%B%F{%(#.blue.green)}%~%b%F{reset}%(#.#.$) '
+            PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n%b%F{reset}:%B%F{%(#.blue.green)}%~%b%F{reset}%(#.#.$) '
             RPROMPT=
             ;;
         backtrack) # This was likely a custom name, keeping it.
@@ -473,22 +473,23 @@ configure_prompt() {
 
 # ----- trying to remove capslock stupid letters ---- 
 
-caps_lock_noop(){
+# caps_lock_noop(){
+#
+# }
+#
+# zle -N caps_lock_noop
+#
+# bindkey "^[[57387u" caps_lock_noop
+# bindkey "^[[57387;2u" caps_lock_noop
+# ----- trying to remove capslock stupid letters END ---- 
 
-}
-
-zle -N caps_lock_noop
 # bindkey "\e[387u" caps_lock_noop
 # bindkey "387u" caps_lock_noop
 # bindkey "\e^[[57387u" caps_lock_noop
-
-bindkey "^[[57387u" caps_lock_noop
-bindkey "^[[57387;2u" caps_lock_noop
-# ----- trying to remove capslock stupid letters END ---- 
-
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
 # START KALI CONFIG VARIABLES
+
 PROMPT_ALTERNATIVE=twoline
 NEWLINE_BEFORE_PROMPT=yes
 # STOP KALI CONFIG VARIABLES
@@ -628,6 +629,7 @@ if [ -x /usr/bin/dircolors ]; then
 
     # 2. Create the alias you want, which simply calls the function above.
     alias ]timer='_my_timer_func'
+    alias mpvg='mpv --player-operation-mode=pseudo-gui'
     alias streamlink='streamlink --player mpv'
     alias T='thunar .'
     alias tt='thunar .'

@@ -494,13 +494,21 @@ Mod4 + shift + a
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Sublime && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + s 
 
-# Yazi
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + f
-
 # Copyq
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a copyq && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + d 
+
+#gnome-clocks
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Clocks && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + f
+
+# goldendict
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a GoldenDict-ng && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + g
+
+# [TMUX] conf
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _c_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + c 
 
 # END---
 
@@ -508,19 +516,12 @@ Mod4 + shift + d
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a btop && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + b
 
-
-# btop
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a GoldenDict-ng && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + g
-
 # Yazi
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + y
 
 "$HOME/scripts/ddesk/nothing/move_to_last_desktop.sh"
 Mod4 + shift + z
-
-
 
 # Thunderbird for mail
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Thunderbird && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -609,6 +610,13 @@ Mod4 + shift + l
 # Very useful I use it a lot, this is kinda ergonomic 
 "xfce4-appfinder"
 alt + F2	
+
+
+
+
+"alacritty --working-directory /home/dex"
+Control + Alt + t
+
 
 # Meh
 "jgmenu_run"

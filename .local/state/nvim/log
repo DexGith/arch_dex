@@ -1211,3 +1211,21 @@ ERR 2025-09-11T23:22:45.122 ui.4002171 tui_stop:615: TUI already stopped (race?)
 ERR 2025-09-11T23:24:13.692 nvim.4099316.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
 ERR 2025-09-12T02:12:52.634 ui.438747  tui_stop:615: TUI already stopped (race?)
 ERR 2025-09-12T09:07:37.630 nvim.1826025.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-12T09:43:56.042 nvim.1944425.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-12T09:48:12.367 nvim.1959824.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-12T20:56:34.463 nvim.2287290.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T00:12:35.279 nvim.2887184.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T00:18:56.369 nvim.2907275.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T00:24:39.903 nvim.3873165.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-13T02:37:11.311 ui.3375171 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-13T02:39:33.381 nvim.3383654.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T02:40:24.915 nvim.3386848.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T02:42:22.439 nvim.3392615.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T02:55:01.486 nvim.3434262.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor

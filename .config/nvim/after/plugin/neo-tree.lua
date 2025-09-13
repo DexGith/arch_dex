@@ -65,6 +65,8 @@ require("neo-tree").setup({
 
 
   window = {
+      -- position = "left",
+      width = 27,
     mappings = {
       --    This is useful for jumping and highlighting really good. should be there by default in 
       --    neo tree
@@ -94,6 +96,11 @@ require("neo-tree").setup({
 
   filesystem = {
     find_by_full_path_words = true,
+    follow_current_file = {
+        enabled = true,
+        leave_dirs_open = true,
+    },
+    -- hijack_netrw_behavior = "open_current",
     -- ADD OR MODIFY THIS "filter" SECTION
     filter = {
       -- STEP 1: ENABLE THE SETTING
@@ -174,7 +181,7 @@ vim.api.nvim_create_user_command('NeotreeFloat',
   function()
     require('neo-tree.command').execute({
       source = 'filesystem',
-      toggle = true,
+      -- toggle = true,
       position = 'float',
       -- dir = vim.fn.expand('%:p:h')
     })

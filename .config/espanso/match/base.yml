@@ -387,6 +387,20 @@ matches:
         type: date
         params:
           format: "%V %a, %d at %H:%M"
+  - trigger: ";;12"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%r"
+  - trigger: ";;24"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%H:%M"
   - trigger: ";;u1"
     replace: "--------------------\nW{{mydate}}\nu1$|$"
     vars:
