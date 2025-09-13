@@ -141,6 +141,7 @@ leafpad
 legcord-bin
 libkeybinder3
 libpulse
+libqalculate
 libreoffice-fresh
 lightdm
 lightdm-gtk-greeter
