@@ -12,4 +12,4 @@ end
 
 -- Map this function to a key. <leader>w is a common choice.
 -- The 'n' means normal mode.
-vim.keymap.set('n', '<leader>pa', pick_and_jump, { desc = "Pick a window to focus" })
+vim.keymap.set('n', '<leader>a', pick_and_jump, { desc = "Pick a window to focus" })

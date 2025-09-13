@@ -34,13 +34,16 @@ vim.keymap.set("n", "<leader>zig", "<cmd>LspRestart<cr>")
 
 
 -- This is going to get me cancelled
+-- This is an old thing I guess... to be honest they probably fixed this right? 
+-- I could remove it... this will make me one like place to do things
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<c-h>", "<cmd>silent !tmux-sessionizer -s 0 --vsplit<CR>")
+vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux-sessionizer -s 0 --vsplit<CR>")
 vim.keymap.set("n", "<M-H>", "<cmd>silent !tmux neww tmux-sessionizer -s 0<CR>")
-vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux-sessionizer -s 1 --vsplit<CR>")
+vim.keymap.set("n", "<M-l>", "<cmd>silent !tmux-sessionizer -s 1 --vsplit<CR>")
+vim.keymap.set("n", "<M-L>", "<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>")
 
 --# What is this even for ?
 vim.keymap.set("n", "<leader>f", function()

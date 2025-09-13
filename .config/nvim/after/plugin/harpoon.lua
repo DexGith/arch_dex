@@ -11,7 +11,15 @@ local ui = require("harpoon.ui")
 
 vim.keymap.set("n", "<leader>a", mark.add_file)
 vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
+
+
 vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
+
+--# I don't use <leader>h but if I end up using it for something
+-- like umm using it for bellow to free up those hotkeys then yeah
+-- maybe we do <leacer>hh for gui and remove the C-e and free it up 
+-- but for now Idk man
+-- vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu)
 
 -- vim.keymap.set("n", "<C-s>", function() ui.nav_file(1) end)
 vim.keymap.set("n", "<M-q>", function() ui.nav_file(1) end)
