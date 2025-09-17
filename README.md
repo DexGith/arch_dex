@@ -12,3 +12,4 @@ and sync again with the same script.
   
   - For some reason the .config/yazi isn't syncing. I have to manyally rsync if I do any changes to yazi
 
+hello owrld 
