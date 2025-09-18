@@ -21,3 +21,21 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+-- ~/.config/nvim/init.lua
+
+-- Tell Neovim to recognize .tmux.conf as a tmux file
+vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
+  pattern = '.tmux.conf',
+  callback = function()
+    vim.opt.filetype = 'tmux'
+  end,
+})
+
+-- To make the background red and the text bold
+
+-- Or, if you just want to make the text red and underlined (no background change)
+-- vim.api.nvim_set_hl(0, 'MatchParen', { fg = '#ff5555', underline = true })
+
+-- A nice "reverse" option that swaps the foreground and background of the character
+-- vim.api.nvim_set_hl(0, 'MatchParen', { reverse = true, bold = true })

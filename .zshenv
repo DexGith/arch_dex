@@ -79,3 +79,26 @@ fi
 # Clean up the helper functions so they don't pollute the shell
 unset -f addToPath
 unset -f addToPathFront
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+
+# --- PASTE THIS BLOCK IN ITS PLACE ---
+
+# --------------------------------------------------------------------
+# Luarocks - Path configuration for locally installed Lua packages
+# --------------------------------------------------------------------
+# Set the search paths for Lua modules
+export LUA_PATH='/usr/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;/usr/lib/lua/5.1/?.lua;/usr/lib/lua/5.1/?/init.lua;./?.lua;./?/init.lua;/home/dex/.luarocks/share/lua/5.1/?.lua;/home/dex/.luarocks/share/lua/5.1/?/init.lua'
+export LUA_CPATH='/usr/local/lib/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/usr/lib/lua/5.1/loadall.so;./?.so;/home/dex/.luarocks/lib/lua/5.1/?.so'
+
+# Safely add the luarocks executable path to the FRONT of the PATH variable
+# We need to re-define the function here since it was unset earlier in the script.
+addToPathFront() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        export PATH="$1:$PATH"
+    fi
+}
+
+addToPathFront "/home/dex/.luarocks/bin"
+unset -f addToPathFront
+

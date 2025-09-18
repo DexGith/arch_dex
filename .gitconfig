@@ -1,5 +1,7 @@
 [user]
-	name = DexGith
+	name = gitdexgit
 	email = ttdextester@gmail.com
 [credential]
 	helper = cache
+[core]
+	excludesFile = /home/dex/.gitignore_global

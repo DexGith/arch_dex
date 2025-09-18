@@ -183,6 +183,7 @@ matches:
   #          bash '/home/dex/scripts/ddesk/espanso/insert_comment_gc_hashtag.sh'
 
   - trigger: ";;gc#"
+    force_mode: clipboard
     replace: |
       # START--[]-- [ {{my_title}} ] START----
       # DESCRIPTION: 
@@ -199,6 +200,23 @@ matches:
           cmd:
             'zenity --entry --title="Comment Header" --text="Enter the header title:"'
 
+  - trigger: ";;gc-"
+    force_mode: clipboard
+    replace: |
+      --# START--[]-- [ {{my_title}} ] START----
+      --# DESCRIPTION: 
+
+      $|$
+
+
+      --# END--[]-- [ {{my_title}} ] END----
+    vars:
+      - name: my_title
+        type: shell
+        params:
+          # cmd: bash '/home/dex/scripts/ddesk/espanso/insert_comment_gc_hashtag.sh'
+          cmd:
+            'zenity --entry --title="Comment Header" --text="Enter the header title:"'
 
   # ----- Experemental END----
 
@@ -232,6 +250,27 @@ matches:
     replace: ']h '
   - trigger: '?]h]' # ]h is tldr in terminal so it's an alias to an alias in terminal that's sick
     replace: '["]h"]_[" ]h"]_["!]h]'
+
+  - trigger: ';;mpvyt;'
+    replace: 'mpv --ytdl-format=<worst|best |OR| 18|169..etc --> (yt-dlp -F "link")> "youtube link"'
+
+  - trigger: ';;feh;'
+    replace: 'feh --geometry 3286x1080+0+0 --borderless .'
+
+  - trigger: ';;pbin;'
+    replace: 'xclip -o -selection clipboard > /tmp/mypaste.txt && wgetpaste -r -C /tmp/mypaste.txt && rm /tmp/mypaste.txt'
+
+  - trigger: ';;gbin;'
+    replace: 'grep $|$ <(curl {{my_clip}})'
+    vars:
+      - name: my_clip
+        type: clipboard
+
+  - trigger: ';;vbin;'
+    replace: '(curl {{my_clip}}) | vim'
+    vars:
+      - name: my_clip
+        type: clipboard
 
   # ---- terminal END----
 
@@ -318,295 +357,13 @@ matches:
             - bash 
             - /home/dex/scripts/ddesk/nothing/fleet.note.sh
 
-  - trigger: ";;.24;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%H:%M"
-
-  - trigger: ";;.t;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%H:%M"
-
-  - trigger: ";;.tt;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%H:%M | %r"
-
-  - trigger: ";;.12;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%r"
-
-  - trigger: ";;.df;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: '%a, %d | %d/%m/%Y | %H:%M'
-
-  - trigger: ";;.date;"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%d/%m/%Y\n\n%a, %d, %B\n\n%H:%M\n\n"
-
-  - trigger: "].lm]"
-    replace: "W{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d"
-  - trigger: ";;.lm;"
-    replace: "W{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d"
-  - trigger: ";;now"
-    replace: "W{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%V %a, %d at %H:%M"
-  - trigger: ";;12"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%r"
-  - trigger: ";;24"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%H:%M"
-  - trigger: ";;u1"
-    replace: "--------------------\nW{{mydate}}\nu1$|$"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d at %H:%M"
-  - trigger: ";;u2"
-    replace: "--------------------\nW{{mydate}}\nu2$|$"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d at %H:%M"
-  - trigger: ";;u3"
-    replace: "--------------------\nW{{mydate}}\nu3$|$"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d at %H:%M"
-  - trigger: ";;u4"
-    replace: "--------------------\nW{{mydate}}\nu4$|$"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d at %H:%M"
-  - trigger: ";;u5"
-    replace: "--------------------\nW{{mydate}}\nu5$|$"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%U %a, %d at %H:%M"
-
   # ----- Date & Time END------
 
-  - trigger: ";;;y;"
-    replace: "/me Gives a Thumbs Up (y)"
-
-  - trigger: ";;;y]"
-    replace: "^Thumbs Up (y)"
-
-  - trigger: ";;;k]"
-    replace: "OK (y)"
-  - trigger: ";;;k;"
-    replace: "✔"
-  - trigger: ";;;ok;"
-    replace: "[OK]"
-  - trigger: ";;;task;"
-    replace: "- [ ] "
-  - trigger: ";;;b;"
-    replace: "- [ ] "
-  - trigger: ";;;block;"
-    replace: "- [ ] "
-  - trigger: ";;;todo;"
-    replace: "- [ ] "
-  - trigger: ";;;d;"
-    replace: "[x] "
-  - trigger: ";;;done;"
-    replace: "- [x] "
-
-  - trigger: ";;;t;"
-    replace: "b(^_^)d"
-  - trigger: ";;;t]"
-    replace: "Nice! b(^_^)d"
-
-  - trigger: ";;;c]"
-    replace: "^Gives a 🍪(Cookie) to $|$ !"
-
-  - trigger: ";;;c;"
-    replace: "me ^Gives a Thanks Cookie 🍪! Ty for the help"
-
-  - trigger: ";;;cookie;"
-    replace: "🍪"
-
-  - trigger: ";;;cat;"
-    replace: "🐱"
-  - trigger: ";;;x;"
-    replace: "❌"
-  - trigger: ";;;sparkles;"
-    replace: "✨"
-    
-  - trigger: ";;;heart;"
-    replace: "❤"
-  - trigger: ";;;f;"
-    replace: "(^^)"
   # ---- help ----
 # espanso match file
 
 # For a complete introduction, visit the official docs at: https://espanso.org/docs/
 
-  - triggers: 
-      - ";;espanso;"
-      - ";;espanso trigger"
-    replace: |
-      - triggers:
-          - ";;$|$"
-        replace: ""
-        force_mode: 
-        label: 
-        search_terms: 
-        paragraph: 
-        word: 
-        left_word: 
-        right_word: 
-        propagate_case: 
-        uppercase_style: 
-        image_path: 
-        vars: 
-        form: 
-     
-  - triggers: 
-      - ";;espanso;"
-      - ";;espanso regex"
-    replace: |
-      - regex: ";;$|$"
-        replace: ""
-        force_mode: 
-        label: 
-        search_terms: 
-        paragraph: 
-        word: 
-        left_word: 
-        right_word: 
-        propagate_case: 
-        uppercase_style: 
-        image_path: 
-        vars: 
-        form: 
-
-  # ---- help End---
-
-  # ---- nvim stuff ---
-
-  # helps changes the root dir in nvim to current buffer dir location.
-  # to check current buffer location do pwd
-  - trigger: "cd ;;h"
-    replace: "cd %:h"
-
-  # make sure you are in the / search mode in nvim then type this 
-  # This makes the search non-case sensitive so it highlights everyting
-  - trigger: ";;c;"
-    replace: "$|$\\c"
-
-  # Make sure you select something then hit / and type bellow
-  # btw you can use ;;c; after ;;v; when it's in \%V so like \%V;;c;
-  # which will give \%V<You_Type_Here_something>\c which will search
-  # everything that matches within the selection be it in case sensitive or case
-  # sadly this works only on first match
-  - trigger: ";;v;"
-    replace: "\\%V"
- 
-  # this owrks on like first match and then you hit n to go to next and what not... 
-  # sadly I can't go back with N
-  # and sadly when it reaches the end it goes to all occurrences so yeah idk it's alright
-  # the trick is that c in /gc the c adds the converm thing
-  - trigger: ";;vv;"
-    replace: "s/$|$/&/gc"
-  
-  # This is the work around this works 100% just hit enter... N works everything works
-  # no bs
-  - trigger: ";;vvv;"
-    replace: "vimgrep /$|$/g %"
-  # to make \%V<You_Type_Here_something>\c easier in one go I do this
-  - trigger: ";;vc;"
-    replace: "\\%V$|$\\c"
-  # In nvim I think subsitute in general this replaces lines with new line
-  # makes space between lines. make sure you select stuff with V
-  # stuff must be like :'<,'> you know
-  # For the whole file... just do like :% then type the trigger ;;\r; and hit enter
-  - trigger: ";;\\r;"
-    replace: "s/.*/&\\r/"
-
-  # A really fast way to type the subsitute string so I don't deal with the / / typing
-  - trigger: ";;s;"
-    replace: "s/$|$/"
-
-
-  # ---- nvim stuff End---
-
-
-
-
-
-  # ---- cli expnading like fish ----
-
-        # ---- cli expnading like fish ----
-
-
-        #---------------------------------------------------
-        # Shell and Time utilities
-        #---------------------------------------------------
-        # Converts a time string from the clipboard (HH:MM:SS or MM:SS) to seconds
-  - trigger: ";;tosecs"
-    replace: "t=\"00:00$|$:00\"; IFS=: read h m s <<< \"$t\"; echo $((h*3600 + m*60 + s))"
-
-
-  - trigger: ";;timer;"
-    replace: " echo \"\\n[$|$]\\n\" ; ]timer"
-  
-  - trigger: ";;zen;"
-    replace: "zen-browser --search \"$|$\""
-
-  # ---- cli expnading like fish END----
 
 
 
@@ -616,29 +373,7 @@ matches:
 
 
 
-  # ---- dictionary help typo def ----
-  
-  # this way of typing trigger with idk word or maybe everything in 1 line or maybe
-  # the word true or propagate true helps in terminal so it doesn't enter new line
 
-  - trigger: "serach"
-    replace: "search"
-    propagate_case: true
-    word: true
-  - trigger: "shfit"
-    replace: "shift"
-    propagate_case: true
-    word: true
-  - trigger: "genreal"
-    replace: "general"
-    propagate_case: true
-    word: true
-  - trigger: "scirpts"
-    replace: "scripts"
-    propagate_case: true
-    word: true
-  - trigger: "thansk"
-    replace: "thanks"
-    propagate_case: true
-    word: true
-  # ---- dictionary help typo def END----
+
+
+

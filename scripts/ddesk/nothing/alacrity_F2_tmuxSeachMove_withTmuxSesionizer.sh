@@ -29,5 +29,5 @@ WINDOW_ID=$(xdotool search --sync --pid "$APP_PID" | head -n 1)
 if [ -n "$WINDOW_ID" ]; then
     xdotool mousemove --window "$WINDOW_ID" --polar 0 0
     
-    xdotool key control+f
+    xdotool key control+t
 fi

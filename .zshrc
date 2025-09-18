@@ -40,34 +40,36 @@ source "$ZSH/oh-my-zsh.sh"
 # This function zvm_after_init() will be run automatically by the plugin after it loads.
 function zvm_after_init() {
 
-  # Load fzf keybindings and completions
-  source <(fzf --zsh)
-
+# Load fzf keybindings and completions
+# Load fzf keybindings and completions
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
    # --- Re-bind Custom Keys for Vi Insert and Normal Modes ---
 
   # --- Application Launchers (Both Modes) ---
-  bindkey -s -M viins '^f' "tmux-sessionizer\r"
-  bindkey -s -M vicmd '^f' "tmux-sessionizer\r"
+  bindkey -s -M viins '^t' "tmux-sessionizer\r"
+  bindkey -s -M vicmd '^t' "tmux-sessionizer\r"
   bindkey -s -M viins '\eh' "tmux-sessionizer -s 0\r"
   bindkey -s -M vicmd '\eh' "tmux-sessionizer -s 0\r"
-  bindkey -s -M viins '\el' "tmux-sessionizer -s 1\r"
-  bindkey -s -M vicmd '\el' "tmux-sessionizer -s 1\r"
+  # bindkey -s -M viins '\el' "tmux-sessionizer -s 1\r"
+  # bindkey -s -M vicmd '\el' "tmux-sessionizer -s 1\r"
+  bindkey -s -M viins '\el' "lazygit\r"
+  bindkey -s -M vicmd '\el' "lazygit\r"
   bindkey -s -M viins '\en' "tmux-sessionizer -s 2\r"
   bindkey -s -M vicmd '\en' "tmux-sessionizer -s 2\r"
   bindkey -s -M viins '\es' "tmux-sessionizer -s 3\r"
   bindkey -s -M vicmd '\es' "tmux-sessionizer -s 3\r"
-  bindkey -s -M viins '\eb' "tmux-sessionizer -s 4\r"
-  bindkey -s -M vicmd '\eb' "tmux-sessionizer -s 4\r"
-
+  # bindkey -s -M viins '\eb' "tmux-sessionizer -s 4\r"
+  # bindkey -s -M vicmd '\eb' "tmux-sessionizer -s 4\r"
 
   # --- General Editing & Navigation (Mostly for Insert Mode) ---
   # Some are also bound in Normal mode for a consistent experience,
   # overriding some default Vi keybindings.
 
   # Unbind Ctrl+S to prevent terminal freeze
-  bindkey -r -M viins '^S'
-  bindkey -r -M vicmd '^S'
+  ##DON't: because I need this for things that move fast in the terminal and for htop
+  # bindkey -r -M viins '^S'
+  # bindkey -r -M vicmd '^S'
 
   # Line editing
   bindkey -M viins '^U' backward-kill-line
@@ -82,6 +84,7 @@ function zvm_after_init() {
   bindkey -M vicmd '^[[1;5C' forward-word
   bindkey -M viins '^[[1;5D' backward-word  # Ctrl+Left
   bindkey -M vicmd '^[[1;5D' backward-word
+  bindkey -M viins '^H' backward-delete-char  # fix C-h buggy in insert mode after normal mode
 
   # Line Navigation (Emacs style)
   bindkey -M viins '^A' beginning-of-line # Ctrl+A
@@ -132,7 +135,6 @@ function zvm_after_init() {
   # NOTE: Not bound in vicmd mode, as 'j' is used for navigation.
   bindkey -M viins '^J' self-insert
 
-
   # --- Special Bindings & Custom Widgets ---
 
   # WIDGET: Bring the last background job to the foreground (fg)
@@ -142,20 +144,19 @@ function zvm_after_init() {
   bindkey -M viins '^[x]' zi-widget
   bindkey -M vicmd '^[x]' zi-widget
 
-
   zle -N fg-widget
   zle -N zi-widget
 }
 
+# sets my keyboard typing speed
+xset r rate 180 68
 
+# disables terminal freezing
+# stty -ixon
 
+# enables terminal freezing
+stty ixon
 
-
-
-
-
-xset r rate 176 59
-stty -ixon
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
@@ -170,11 +171,118 @@ WORDCHARS=${WORDCHARS//\/} # Don't consider certain characters part of the word
 # hide EOL sign ('%')
 PROMPT_EOL_MARK=""
 
+# START--[]-- [ aliases ] START----
+# # DESCRIPTION: 
 
+##------------------- TIPS ---------------
+## yeah yeah ofc I'll make them smart but whatever... that's for another day
+
+# Command names (and aliases) cannot begin with a character that the shell uses for command separation or control flow, like ;, |, &, (, or ).
+# Before you add alias myalias='...' to your .zshrc, run this command in your terminal: `type <proposed_alias_name>` so for example `type dd` (type it)
+# in espanso use umm ;;<trigger>; and ,,<trigger>, and ..<trigger>. and ]]<trigger>] or and ]<trigger>]....(the ] is a special thing I rremember ahk with hhh.... for example ,,c, ..c. ;;c;. but for shell you always just do 
+# in terminal you just do you now ,c<enter> or like `.<alias><enter>` or `]<alias><enter>` or `]]<alias><enter>` or `,,<alias><enter>` or `..<alias><enter<alias><enter>>`
+##------------------- TIPS END---------------
+
+# some more ls aliases
+alias ll='ls -alhF' # Added -h for human-readable, -F for type indicators
+alias la='ls -AlhF' # Added -h
+alias l='ls -CF'
+
+alias c.dp='~/Pictures/Screenshots'
+
+# ---- Time  ----
+
+# 2. Create the alias you want, which simply calls the function above.
+alias ]timer='_my_timer_func'
+alias P='ps aux | grep'
+alias mpvg='mpv --player-operation-mode=pseudo-gui'
+alias mpvyt='mpv --ytdl-format='
+alias streamlink='streamlink --player mpv'
+alias T='thunar .'
+alias tt='thunar .'
+alias qq='exit'
+alias ee='exit'
+alias aa='nohup alacritty --working-directory . >/dev/null 2>&1 & disown ; exit'
+
+# alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+
+# ---- Time  END----
+
+alias py='python' # The space at the end tells the shell to perfom alias expansion on the word following sudo
+alias msgbox='zenity' # The space at the end tells the shell to perfom alias expansion on the word following sudo
+alias sudo='sudo ' # The space at the end tells the shell to perfom alias expansion on the word following sudo
+alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias oboo='ob o t -v' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obo='~/scripts/ddesk/obsidian/run-obsidian-script.sh' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsearch='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsh='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obshc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obse='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsearchc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obset='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias obsd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias o='less' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias c='cd' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
+alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+alias vim='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+alias hx='helix'
+alias ]exe='chmod +x'
+alias ]cpuinfo='cpupower frequency-info'
+alias ]cp=' col -b | xclip -selection clipboard'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip --color=auto'
+# ARCH LINUX: Changed ']]c' to 'cls' for clear, more common, and ']]r' to 'src', ']]ev' to 'virc'
+alias ",c"='clear'
+alias ",d"='cd ~/Desktop' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
+alias c.d='cd ~/Desktop' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
+alias c.dd='cd ~/Downloads' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
+# bro just type it man
+# alias sc='scrcpy -b 20M -m 1920'
+#!! but isn't src bad because I have sc you now scrcpy? 
+# I like ]]r more than this 
+# alias src='source ~/.zshrc'
+alias ]]r='source ~/.zshrc'
+# tbh mkdir is better and should be typed than md but it's alright
+alias md='mkdir -p' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+
+# very useful to quickly open .zshrc
+# ]e stands for edit
+alias ]erc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+# I like typing nvnv and nvrc I make nv = ]e which is nv = edit too
+alias nvrc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
+alias ]evim='nvim ~/.config/nvim/'
+alias nvnv='nvim ~/.config/nvim/'
+alias ]xset='xset r rate 194 68;xset q | grep delay'
+alias ]xset?='xset q | grep delay'
+
+alias ]pqo='pacman -Qo'
+# because I have o = you know trying to make variants of o
+alias ]o='pacman -Qo'
+# this is stupd hhh but could be useful you now it's anonying to keep
+# typing the freaking ip address each single time creating aliases is 
+# interesting if you are you know hopping a lot 
+# alias kdex='dex@192.168.11.119'
+# alias ]st='systemctl status'
+# alias ]ss='systemctl start'
+# alias ]sp='systemctl stop'
+# alias ]se='systemctl enable'
+alias ]psi='pacman -Si'
+alias ]pqi='pacman -Qi'
+
+# force zsh to show the complete history
+alias history="history 0"
+
+# END--[]-- [ aliases ] END----
 
 # --[VI]-- [ VI keybinds for zsh ] --W32 Tue, 12 at 15:48--
-
-
 
 # NOT_NEEDED this is not needed because we are trying to set up the
 # zsh-vi-mode plugin W32 Tue, 12 at 15:47
@@ -184,8 +292,6 @@ PROMPT_EOL_MARK=""
 # bindkey -M viins '^W' backward-kill-word
 
 #2 END---- [viins-insert keybinds] ----
-
-
 
 # # -------------------------------------------------------------------
 # # ZSH VI-MODE: The Final and Correct Architecture
@@ -289,20 +395,16 @@ PROMPT_EOL_MARK=""
 #
 # END--[VI]-- [ VI keybinds for zsh ] END----
 
-
-
-
-
-
-
-
-
-
-
-# enable completion features
-autoload -Uz compinit
-compinit -U -d ~/.cache/zcompdump # -U for security, -d to specify dump file
-
+# # enable completion features
+# autoload -Uz compinit
+# Smarter compinit - only runs if necessary
+autoload -U compinit
+if [ -n "$HOME/.cache/zcompdump"(.om[1]) ]; then
+  compinit -i -U -d "$HOME/.cache/zcompdump"
+else
+  # If the file doesn't exist, create it. -C stops it from reading .zshrc files
+  compinit -i -C -U -d "$HOME/.cache/zcompdump"
+fi
       
 # Style for ZLE states like visual mode, search, etc.
 # This is the modern and correct way to style selections.
@@ -381,8 +483,6 @@ compinit -U -d ~/.cache/zcompdump # -U for security, -d to specify dump file
 # This matches the effect in your new screenshot by setting a specific
 # background color for the selection.
 
-
-
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete
@@ -397,10 +497,6 @@ zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-
-
-
-
 # History configurations
 HISTFILE=~/.zsh_history
 HISTSIZE=10000 # Increased HISTSIZE
@@ -410,9 +506,6 @@ setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 #setopt share_history         # share command history data - uncomment if you use multiple zsh sessions simultaneously and want shared history immediately
-
-# force zsh to show the complete history
-alias history="history 0"
 
 # configure `time` format
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
@@ -470,7 +563,6 @@ configure_prompt() {
     unset prompt_symbol
 }
 
-
 # ----- trying to remove capslock stupid letters ---- 
 
 # caps_lock_noop(){
@@ -499,10 +591,6 @@ if [ "$color_prompt" = yes ]; then
     VIRTUAL_ENV_DISABLE_PROMPT=1
 
     configure_prompt
-
-
-
-
 
     # enable syntax-highlighting
     # ARCH LINUX: Path for zsh-syntax-highlighting is typically different.
@@ -587,8 +675,6 @@ xterm*|rxvt*|Eterm|aterm|kterm|gnome*|alacritty|kitty) # Added kitty
     ;;
 esac
 
-
-
 # precmd() {
 #     # Print the previously configured title
 #     print -Pnr -- "$TERM_TITLE"
@@ -618,97 +704,11 @@ _zsh_precmd_actions() {
 }
 add-zsh-hook precmd _zsh_precmd_actions
 
-
 # enable color support of ls, less and man, and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     #alias dir='dir --color=auto' # Usually covered by ls
     #alias vdir='vdir --color=auto' # Usually covered by ls -l
-
-	# ---- Time  ----
-
-    # 2. Create the alias you want, which simply calls the function above.
-    alias ]timer='_my_timer_func'
-    alias mpvg='mpv --player-operation-mode=pseudo-gui'
-    alias streamlink='streamlink --player mpv'
-    alias T='thunar .'
-    alias tt='thunar .'
-    alias qq='exit'
-    alias ee='exit'
-    alias aa='nohup alacritty --working-directory . >/dev/null 2>&1 & disown ; exit'
-
-    # alias ]timer='date "+%T %d-%m"; echo " " ;start=$(date +%s); while true; do current=$(date +%s); elapsed=$((current - start)); printf "\r%02d:%02d" $((elapsed/60)) $((elapsed%60)); sleep 1; done' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-
-
-    # ---- Time  END----
-
-
-
-
-
-    
-    alias py='python' # The space at the end tells the shell to perfom alias expansion on the word following sudo
-    alias msgbox='zenity' # The space at the end tells the shell to perfom alias expansion on the word following sudo
-    alias sudo='sudo ' # The space at the end tells the shell to perfom alias expansion on the word following sudo
-    alias ob='obsidian-cli' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obo='ob o t -v' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsearch='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsh='obsidian-cli search --vault' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obshc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obse='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsec='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsearchc='obsidian-cli search-content' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obset='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias obsd='obsidian-cli set-default' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias o='less' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias c='cd' # https://github.com/Yakitrak/obsidian-cli make sure you have this. really useful
-    alias cdfp='cd $(dirname "$(fp)")' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-    alias vim='nvim' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-    alias hx='helix'
-    alias ]exe='chmod +x'
-    alias ]cpuinfo='cpupower frequency-info'
-    alias ]cp=' col -b | xclip -selection clipboard'
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-    alias diff='diff --color=auto'
-    alias ip='ip --color=auto'
-    # Add this to your ~/.bashrc or ~/.zshrc on Arch Linux
-    alias sc='scrcpy -b 20M -m 1920'
-    # ARCH LINUX: Changed ']]c' to 'cls' for clear, more common, and ']]r' to 'src', ']]ev' to 'virc'
-    alias ]c='clear'
-    alias c.d='cd ~/Desktop' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
-    alias c.dd='cd ~/Downloads' # Keep if you use it, otherwise 'cd ~/Desktop' works fine
-    alias src='source ~/.zshrc'
-    alias md='mkdir -p' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-
-    # very useful to quickly open .zshrc
-    alias ]rc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-    alias nvrc='nvim ~/.zshrc' # Use nano if you prefer: alias nanc='nano ~/.zshrc'
-	alias ]nv='nvim ~/.config/nvim/'
-	alias nvnv='nvim ~/.config/nvim/'
-    alias ]xnv='xset r rate 178 63;xset q | grep delay'
-    alias ]xnv2='xset r rate 173 66;xset q | grep delay'
-    alias ]xset='xset r rate 176 59;xset q | grep delay'
-    alias ]pc='fastfetch'
-
-	alias ]]r='source ~/.zshrc'
-	alias ]p='pwd'
-	alias ]h='tldr'
-	alias ]w='whoami'
-	alias ]i='ifconfig'
-	alias ]o='pacman -Qo'
-	alias kdex='dex@192.168.11.102'
-	alias ]st='systemctl status'
-	alias ]ss='systemctl start'
-	alias ]sp='systemctl stop'
-	alias ]se='systemctl enable'
-	alias ]show='pacman -Si'
-	alias ]pac='pacman -Qi'
     export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
     export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
     export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
@@ -721,11 +721,6 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
     zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 fi
-
-# some more ls aliases
-alias ll='ls -alhF' # Added -h for human-readable, -F for type indicators
-alias la='ls -AlhF' # Added -h
-alias l='ls -CF'
 
 # enable auto-suggestions based on the history
 # ARCH LINUX: Path for zsh-autosuggestions is typically different.
@@ -755,7 +750,6 @@ elif [ -f /usr/share/pkgfile/command-not-found.zsh ]; then # Alternative path fo
 fi
 
 # You can add any of your personal aliases or functions below this line
-# source <(fzf --zsh)
 
 # 1. Free up Ctrl+R completely by unbinding it from both modes.
 bindkey -r -M viins '^R' # Unbind from INSERT mode
@@ -776,6 +770,10 @@ bindkey -M vicmd '^R' redo
 #  SMART "FZF OPEN" AND "FZF PREVIEW" FUNCTIONS
 #------------------------------------------------------------------
 
+# wgetpaste, xclip, curl
+# Pbin Gbin Vbin Rbin Cbin Obin
+# look for file and open it 
+source $HOME/.config/zsh/functions/wgetpaste.zsh
 
 # fo
 # look for file and open it 
@@ -786,7 +784,6 @@ source $HOME/.config/zsh/functions/fo.zsh
 source $HOME/.config/zsh/functions/pw.zsh
 
 # ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
-
 
 # fp.scuffed.video.preview.zsh
 # some unfinished fzf file preview for vids
@@ -829,7 +826,6 @@ if [[ "$TERM" == "alacritty" ]]; then
   add-zsh-hook preexec alacritty_preexec
   add-zsh-hook precmd alacritty_precmd
 fi
-
 
 # 1. Define the readable function with a safe, valid name.
 #    The leading underscore is a common convention for "helper" functions.
@@ -911,40 +907,110 @@ bindkey '\ek' clear-kill-ring      # For Vi INSERT mode
 
 # xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0
 
-
 if command -v keychain > /dev/null; then
 
     eval $(keychain --eval --quiet id_ed25519)
     eval $(keychain --eval --quiet ssh)
 fi
 
-
+# Lazy-load zoxide for faster startup
 if command -v zoxide > /dev/null; then
-    # 
-    # eval "$(zoxide init zsh --cmd cd)"
-    eval "$(zoxide init zsh)"
+  eval "$(zoxide init zsh --no-aliases)"
+  # If you use zoxide's aliases like 'zi', create a function to load it on first use
+  zi() {
+    eval "$(zoxide init zsh)" # Re-run init to get the full setup
+    zi "$@"                 # Re-run the command the user intended
+  }
 fi
 
+# Intuitive clipboard functions: cpX <file>
+# cpA -> Absolute Path
+# cpR -> Relative Path
+# cpH -> Home-relative Path
+# cpF -> Filename
+# cpB -> Bare/Basename (no extension)
+# cpE -> Extension
+# cpC -> Content
 
-cdcp() {
-  if [ -z "$1" ]; then
-    echo "Usage: cdcp <filename>"
+# --- Internal Helper for checking input ---
+_cp_preflight() {
+  if [ -z "$2" ]; then
+    echo "Usage: $1 <path>"
     return 1
   fi
-
-  ABS_FILE_PATH="$(pwd)/$1"
-
-  REL_FILE_PATH="${ABS_FILE_PATH/#$HOME/~}"
-
-  echo "Full Path:\n\n$(pwd)\n"
-
-  echo "Relative to user home if file within /home/user (!Not smart!:\n\n$REL_FILE_PATH\n"
-
-  echo -n "$ABS_FILE_PATH" | xclip -selection clipboard
+  if [ ! -e "$2" ]; then
+    echo "Error: '$2' does not exist."
+    return 1
+  fi
 }
 
+# 1. cpA: Copy Absolute path
+cpA() {
+  _cp_preflight "cpA" "$1" || return 1
+  local abs_path=$(realpath "$1")
+  echo -n "$abs_path" | xclip -selection clipboard
+  echo "Copied Absolute path: $abs_path"
+}
 
+# 2. cpR: Copy path Relative to CWD
+cpR() {
+  _cp_preflight "cpR" "$1" || return 1
+  local rel_path=$(realpath --relative-to=. "$1")
+  echo -n "$rel_path" | xclip -selection clipboard
+  echo "Copied Relative path: $rel_path"
+}
 
+# 3. cpH: Copy path relative to HOME
+cpH() {
+  _cp_preflight "cpH" "$1" || return 1
+  local abs_path=$(realpath "$1")
+  local home_rel_path="${abs_path/#$HOME/\~}"
+  echo -n "$home_rel_path" | xclip -selection clipboard
+  echo "Copied Home-relative path: $home_rel_path"
+}
+
+# 4. cpF: Copy Filename (full name)
+cpF() {
+  _cp_preflight "cpF" "$1" || return 1
+  local filename=$(basename "$1")
+  echo -n "$filename" | xclip -selection clipboard
+  echo "Copied Filename: $filename"
+}
+
+# 5. cpB: Copy Bare/Basename of filename (no extension)
+cpB() {
+  _cp_preflight "cpB" "$1" || return 1
+  local filename=$(basename "$1")
+  local bare_name="${filename%.*}"
+  echo -n "$bare_name" | xclip -selection clipboard
+  echo "Copied Bare name (no extension): $bare_name"
+}
+
+# 6. cpE: Copy Extension of filename
+cpE() {
+  _cp_preflight "cpE" "$1" || return 1
+  local filename=$(basename "$1")
+  if [[ "$filename" == *.* ]]; then
+    local extension="${filename##*.}"
+    echo -n "$extension" | xclip -selection clipboard
+    echo "Copied Extension: $extension"
+  else
+    echo "File has no extension."
+    return 1
+  fi
+}
+
+# And the one for CONTENT
+# 7. cpC: Copy file Content
+cpC() {
+  _cp_preflight "cpC" "$1" || return 1
+  if [ ! -f "$1" ]; then
+    echo "Error: '$1' is not a regular file. Cannot copy content."
+    return 1
+  fi
+  cat "$1" | xclip -selection clipboard
+  echo "Copied Content of: $1"
+}
 
 # A better ls | grep, handles no arguments and adds color
 lag() {
@@ -957,7 +1023,6 @@ lag() {
     ls -la | grep -i --color=auto "$1"
   fi
 }
-
 
 # A better ls | grep, handles no arguments and adds color
 lg() {
@@ -1001,4 +1066,3 @@ oo() {
 }
 
 # ---[FUNCTIONS]-- [ myfuncs ] [ my functions] ---------
-

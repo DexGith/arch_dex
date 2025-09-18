@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# The full path to your project's venv activate script
+source /home/dex/projects/practice/python/scroll-image/venv/bin/activate
+
+# The full path to your python script
+/home/dex/projects/practice/python/scroll-image/venv/bin/python /home/dex/projects/practice/python/scroll-image/capture_and_stitch.py
+
+# Deactivate the virtual environment when the script is done
+deactivate

@@ -76,3 +76,5 @@ PS1='[\[\e[96m\]\u\[\e[0m\]]~[\[\e[96m\]$(path_str=$(printf %s "\w"); IFS=/ read
 # ------- PS1 Playing around -----
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

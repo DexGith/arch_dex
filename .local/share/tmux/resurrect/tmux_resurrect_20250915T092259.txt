@@ -1,0 +1,99 @@
+pane	2Timer	1	1	:*	1	archlinux1	:/home/dex	1	sleep	:sleep 1
+pane	35	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	35	1	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	36	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	37	1	1	:*	1	archlinux1	:/home/dex	1	nvim	:nvim somethign
+pane	38	1	1	:*	1	archlinux1	:/home/dex	1	nvim	:nvim something
+pane	39	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	39	2	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	Music	1	1	:*	1	archlinux1	:/home/dex/Music/my-fav-atm	1	zsh	:
+pane	Timer	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	_scratchpad	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	btop	1	1	:*	1	archlinux1	:/home/dex	1	btop	:btop
+pane	configs	1	0	:	1	archlinux1	:/home/dex/.config/nvim	1	nvim	:nvim /home/dex/.config/nvim/
+pane	configs	2	1	:*	1	archlinux1	:/home/dex	1	nvim	:nvim .xbindkeysrc
+pane	configs	3	0	:-	1	archlinux1	:/home/dex	1	nvim	:nvim .tmux.conf
+pane	configs	4	0	:	1	archlinux1	:/home/dex/.config/nvim	1	nvim	:su -
+pane	configs	5	0	:	1	archlinux1	:/home/dex	1	nvim	:nvim /home/dex/.zshrc
+pane	date&time	1	1	:*	1	archlinux1	:/home/dex	0	watch	:watch -n 1 /home/dex/scripts/my_clock.sh
+pane	date&time	1	1	:*	2	archlinux1	:/home/dex	1	sleep	:sleep 300
+pane	fleeting_notes	1	1	:*	1	archlinux1	:/home/dex/fleet	1	zsh	:
+pane	git	1	1	:*	1	archlinux1	:/home/dex/git/arch_dex	1	zsh	:
+pane	irssi	1	0	:-	1	archlinux1	:/home/dex	1	irssi	:irssi
+pane	irssi	2	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	jobs	0	1	:*	1	archlinux1	:/home/dex	1	zsh	:skippy-xd --start-daemon
+picom
+pane	obsidian_notes	1	0	:-	1	archlinux1	:/home/dex/power	1	zsh	:
+pane	obsidian_notes	2	0	:	1	archlinux1	:/home/dex/fleet	1	zsh	:
+pane	obsidian_notes	3	0	:	1	archlinux1	:/home/dex/power/pg	1	zsh	:
+pane	obsidian_notes	4	0	:	1	archlinux1	:/home/dex/power/general	1	zsh	:
+pane	obsidian_notes	5	0	:	1	archlinux1	:/home/dex/power/linux	1	zsh	:
+pane	obsidian_notes	6	0	:	1	archlinux1	:/home/dex/power/hacker	1	zsh	:
+pane	obsidian_notes	7	0	:	1	archlinux1	:/home/dex/power/discord	1	zsh	:
+pane	obsidian_notes	8	0	:	1	archlinux1	:/home/dex/power/tv	1	zsh	:
+pane	obsidian_notes	9	0	:	1	archlinux1	:/home/dex/power/story	1	zsh	:
+pane	obsidian_notes	10	1	:*	1	archlinux1	:/home/dex/power	1	zsh	:
+pane	phone_ssh	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	phone_ssh	2	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	phone_ssh	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+pane	primenvim	1	0	:-	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	primenvim	71	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	nvim	:nvim .
+pane	scrcpy	1	1	:*	1	archlinux1	:/home/dex	1	zsh	:
+pane	scripts	1	0	:-	1	archlinux1	:/home/dex/scripts	1	zsh	:
+pane	scripts	2	0	:	1	archlinux1	:/home/dex/scripts/esentials	1	zsh	:
+pane	scripts	3	1	:*	1	:/home/dex/scripts/ddesk	:/home/dex	1	zsh	:
+pane	scripts	4	0	:	1	archlinux1	:/home/dex/scripts/python	1	zsh	:
+pane	scripts	5	0	:	1	archlinux1	:/home/dex/scripts/ahk	1	zsh	:
+pane	scripts	6	0	:	1	archlinux1	:/home/dex/scripts/practice	1	zsh	:
+pane	testing W3	1	1	:*	1	archlinux1	:/home/dex/scripts/python/practice	1	zsh	:
+pane	testing W3	1	1	:*	2	archlinux1	:/home/dex	0	zsh	:
+pane	testing W3	2	0	:-	1	archlinux1	:/home/dex	1	zsh	:
+pane	testing W3	3	0	:	1	archlinux1	:/home/dex	1	zsh	:
+window	2Timer	1	:since I woke up it has been	1	:*	ac7e,108x30,0,0,1	off
+window	35	1	:zsh	1	:*	83d8,97x31,0,0{48x31,0,0,93,48x31,49,0,94}	:
+window	36	1	:zsh	1	:*	564a,97x31,0,0,97	:
+window	37	1	:nvim	1	:*	564c,97x31,0,0,99	:
+window	38	1	:nvim	1	:*	b307,124x38,0,0,100	:
+window	39	1	:zsh	1	:*	ab57,97x31,0,0,108	:
+window	39	2	:zsh	0	:-	ab58,97x31,0,0,109	:
+window	Music	1	:zsh	1	:*	b843,136x33,0,0,6	:
+window	Timer	1	:idk man	1	:*	c944,138x18,0,0,7	off
+window	_scratchpad	1	:zsh	1	:*	61f9,121x27,0,0,77	:
+window	btop	1	:btop	1	:*	b846,136x33,0,0,9	:
+window	configs	1	:nvim	0	:	2c08,124x31,0,0,110	:
+window	configs	2	:xbindkeys	1	:*	57b3,124x31,0,0,14	off
+window	configs	3	:tmux	0	:-	57bb,124x31,0,0,98	off
+window	configs	4	:keyd	0	:	d7ba,124x31,0,0,88	off
+window	configs	5	:zshrc	0	:	ac08,124x31,0,0,101	off
+window	date&time	1	:date&time	1	:*	40dd,102x30,0,0{62x30,0,0,16,39x30,63,0,17}	off
+window	fleeting_notes	1	:fleet	1	:*	5c57,136x33,0,0,18	off
+window	git	1	:arch_dex	1	:*	5c58,136x33,0,0,19	off
+window	irssi	1	:irssi	0	:-	dc4f,136x33,0,0,20	:
+window	irssi	2	:zsh	1	:*	dc50,136x33,0,0,21	:
+window	jobs	0	:zsh	1	:*	d871,100x32,0,0,22	:
+window	obsidian_notes	1	:Power	0	:-	d772,146x40,0,0,23	off
+window	obsidian_notes	2	:fleet	0	:	dc53,136x33,0,0,24	off
+window	obsidian_notes	3	:Programing	0	:	dc54,136x33,0,0,25	off
+window	obsidian_notes	4	:general	0	:	dc55,136x33,0,0,26	off
+window	obsidian_notes	5	:Linux	0	:	dc56,136x33,0,0,27	off
+window	obsidian_notes	6	:hacker	0	:	dc57,136x33,0,0,28	off
+window	obsidian_notes	7	:discord	0	:	dc58,136x33,0,0,29	off
+window	obsidian_notes	8	:tv	0	:	5c50,136x33,0,0,30	off
+window	obsidian_notes	9	:story	0	:	5c51,136x33,0,0,31	off
+window	obsidian_notes	10	:zsh	1	:*	d777,146x40,0,0,85	:
+window	phone_ssh	1	:zsh	1	:*	5c52,136x33,0,0,32	:
+window	phone_ssh	2	:termux	0	:-	5c53,136x33,0,0,33	off
+window	phone_ssh	3	:nethunter	0	:	5c54,136x33,0,0,34	off
+window	primenvim	1	:zsh	0	:-	5c55,136x33,0,0,35	:
+window	primenvim	71	:nvim	1	:*	5c56,136x33,0,0,36	:
+window	scrcpy	1	:zsh	1	:*	5877,100x32,0,0,37	:
+window	scripts	1	:scripts	0	:-	5c58,136x33,0,0,38	off
+window	scripts	2	:esentials	0	:	5c59,136x33,0,0,39	off
+window	scripts	3	:ddesk	1	:*	dc50,136x33,0,0,40	off
+window	scripts	4	:python	0	:	dc51,136x33,0,0,41	off
+window	scripts	5	:ahk_x11	0	:	dc52,136x33,0,0,42	off
+window	scripts	6	:practice	0	:	dc53,136x33,0,0,43	off
+window	testing W3	1	:zsh	1	:*	d957,136x33,0,0{68x33,0,0,44,67x33,69,0,45}	:
+window	testing W3	2	:REPL	0	:-	dc56,136x33,0,0,46	off
+window	testing W3	3	:Live Log Monitor	0	:	dc57,136x33,0,0,47	off
+state	btop	

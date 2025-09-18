@@ -143,17 +143,18 @@ Mod5 + 2
 
 # ---- zen browser related ----
 
+
+# sadly it doesn't work in nvim... maybe I should do something to make it check if it's in nvim or not I'm not sure I'm too lazy
+# and to be honest most of the time i'm not using this thing to be honest with you 
+# it's limited to mouse but it seems to work in Sublime and obsidian and browser 
+# Most of the time you want to be highlighting with mouse when you are in like copyq like edit and highlihgt then yeah... tbh I should make it copy maybe? like based on clipboard that would be better I think. 
 "/home/dex/scripts/ddesk/nothing/open_highlighedText_inNewTab_inZenBrowser.sh"
-Mod4 + g
+Mod4 + z
 
+#-- this one opens in browser from clipboard... 
 
-
-
-
-
-
-
-
+"/home/dex/scripts/ddesk/nothing/open_fromClipboard_inNewTab_inZenBrowser.sh"
+Mod4 + alt + z  
 
 # ---- zen browser related END----
 
@@ -214,8 +215,9 @@ m:0x0 + c:97
 
 # --[]-- [ hints ] ----
 
+# scuffed hints for now and also needs picom lol 
 "scripts/ddesk/nothing/hint-focus.py"
-Mod4 + Alt + f
+Mod4 + shift + w
 
 
 # END--[]-- [ hints ] END----
@@ -394,27 +396,52 @@ Mod4 + KP_Delete
 
 
 
+
+"~/.local/bin/screenshot-menu"
+Mod4 + Print
+
+"flameshot gui"
+Print
+
 "zsh -i -c 'dolphin'"
 Mod4 + e
 
 
-# "/home/dex/scripts/ddesk/]/]mouse_focus_toggle"
-# 	Mod4 + Alt + f
+"/home/dex/scripts/ddesk/]/]mouse_focus_toggle"
+Mod4 + control + shift + f
+
+
+"scrot -s '/home/dex/Pictures/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png'" 
+control + shift + KP_Subtract
+
+"bash -c "flameshot gui --path '/home/dex/fleet/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png'""
+control + Shift + Print
+
+#"# I can't do Mod4+shift+f it's for switching windows for the _c_"
+# Mod4 + shift + f
 
 "scrot --multidisp --silent '/home/dex/Pictures/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png'"
 control + Print
 
-# "pkill picom && scrot -s '/home/dex/Pictures/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png' && picom &"
-"scrot -s '/home/dex/Pictures/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png'" 
+"scrot -s -o - | xclip -selection clipboard -t image/png"
 Shift + Print
 
-"bash -c "flameshot gui --path '/home/dex/Pictures/Screenshots/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png'""
-control + Shift + Print
-
-# "~/bin/fix_scort_picom_trash.sh"
-# "pkill picom && scrot -s -o - | xclip -selection clipboard -t image/png && picom &"
 "scrot -s -o - | xclip -selection clipboard -t image/png"
-control + shift + KP_Subtract
+Mod4 + f
+
+"flameshot gui --pin"
+control + alt + f
+
+"~/.local/bin/screenshot-menu"
+control + shift + alt + f
+
+
+"flameshot gui -c"
+Mod4 + alt + f
+
+"xclip -o -selection clipboard > /tmp/mypaste.txt && wgetpaste -r -C /tmp/mypaste.txt && rm /tmp/mypaste.txt"
+Mod4 + p
+
 
 # "scrot -s -o - | xclip -selection clipboard -t image/png"
 # Mod3+ x
@@ -445,8 +472,8 @@ alt+shift+grave
 # "scripts/ddesk/tmux/newTerm.sh"
 # control+ alt + Tab
 
-"scripts/ddesk/tmux/newTerm.sh"
-Mod4 + semicolon
+# "scripts/ddesk/tmux/newTerm.sh"
+# Mod4 + semicolon
 
 # "sleep 0.4 ; xdotool key down down down down"
 # Mod4 + j
@@ -455,10 +482,16 @@ Mod4 + semicolon
 # Mod4 + h
 
 "scripts/ddesk/tmux/newTerm.sh"
+control + alt + shift + t
+
+# "sleep 0.1 ; xdotool key Enter"
+# Mod4 + m
+
+#-- this is just a thing for easy reach when i'm doing like 
+"sleep 0.1 ; xdotool  key --clearmodifiers Enter"
 Mod4 + a
 
-"sleep 0.1 ; xdotool key Enter"
-Mod4 + m
+
 
 "alacritty"
 control+ alt + grave
@@ -486,8 +519,8 @@ control + F3
 
 
 # ------ Frequently Used --------
-# btop
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a btop && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+# btop yeah I get it _a_ is not btop but you know I like _a_ because it's close. you can think of it as in like aprocess
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _a_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + a
 
 # Sublime
@@ -498,26 +531,48 @@ Mod4 + shift + s
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a copyq && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + d 
 
-#gnome-clocks
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Clocks && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + f
+# [TMUX] conf
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _f_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + f 
 
 # goldendict
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a GoldenDict-ng && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + g
+Mod4 + shift + W
 
-# [TMUX] conf
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _c_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + c 
+#gnome-clocks
+"/home/dex/scriwts/esentials/SaveCurrentDesktop.sh && wmctrl -a _c_ && /home/dex/Wcripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + c
+
+#Timer date&time
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _
+
+
+-- A helper function to get the selected text or the word under the cursor
+local function get_visual_selection_or_cword()
+    -- Check if we are in visual mode
+    if vim.fn.mode() == 'v' or vim.fn.mode() == 'V' then
+        -- Use `getreg('"`')` to get the contents of the last visual selection
+        -- This is more reliable than other methods.
+        return vim.fn.getreg('"')
+    else
+        -- Otherwise, just return the word under the cursor
+        return vim.fn.expand('<cword>')
+    end
+end
+
+
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _-- Map for both Normal ('n') and Visual ('v') modes
+vim.keymap.set({'n', 'v'}, '<leader>f/', function()
+    builtin.current_buffer_fuzzy_find({
+        default_text = get_visual_selection_or_cword()
+    })
+end, { desc = 'Fuzzy find selection/cword in buffer' })
+t_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + t 
 
 # END---
 
-# btop
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a btop && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + b
-
-# Yazi
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+y_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + y
 
 "$HOME/scripts/ddesk/nothing/move_to_last_desktop.sh"
@@ -525,7 +580,11 @@ Mod4 + shift + z
 
 # Thunderbird for mail
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Thunderbird && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + m 
+Mod4 + shift + e
+
+# musc.... just something I give title _m_ to it which stands for music
+"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _m_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+Mod4 + shift + m
 
 # GIMP
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a GIMP && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -533,15 +592,16 @@ Mod4 + shift + g
 
 # KeePassXC
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a KeePassXC && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + k 
+Mod4 + shift + k
 
 #nvim
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _n_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + n 
 
 #tmux
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _tm_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + x
+#this is stupid lol
+# "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _tm_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+# Mod4 + shift + x
 
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a VLC && wmctrl -x -a Thunar && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + backslash
@@ -554,8 +614,9 @@ Mod4 + shift + apostrophe
 "~/test.sh"
 Mod4 + shift + r 
 
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _f_ fleet && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + e 
+# what even is this lol
+# "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _f_ fleet && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
+# Mod4 + shift + e 
 
 # Activating scrcpy The Phone. I should probably do one for VNC you know tigervnc through adb port forwarding or ssh port forwarding... ssh is more secure
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'Redmi Note 8' && sleep 0.1 && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -567,7 +628,7 @@ Mod4 + shift + q
 
 # Activate the window QEMU/KVM The VM runing
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'QEMU/KVM' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + w 
+Mod4 + shift + x
 
 # Virtual Machine Manager
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a 'Virtual Machine Manager' && sleep 0.1 && xdotool mousemove --window $(xdotool getactivewindow) --polar 0 0 && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -589,9 +650,6 @@ Mod4 + shift + u
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a '_dt_' && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
 Mod4 + shift + semicolon 
 
-#Timer
-"/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -a _t_ && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
-Mod4 + shift + t 
 
 #gnome-clocks
 "/home/dex/scripts/esentials/SaveCurrentDesktop.sh && wmctrl -x -a Clocks && /home/dex/scripts/esentials/CheckIf-SaveCurrentDesktop.sh-ChangedIfYesMakeItPrevious.sh"
@@ -658,8 +716,6 @@ Mod4 + shift + alt + control + 0
 "/home/dex/scripts/ddesk/nothing/rename_window.sh > /tmp/rename_window.log 2>&1"
 Mod4 + t
 
-"flameshot gui"
-Print
 
 
 
@@ -799,8 +855,9 @@ XF86Calculator
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
 XF86HomePage
 
-"skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
-Mod4 + i
+# No need for such a thing
+# "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
+# Mod4 + i
 
 "skippy-xd --expose --wm-class $(xdotool getwindowclassname $(xdotool getactivewindow)) --config ~/.config/skippy-xd/skippy-xd.rc"
 Alt + Mod4 + Tab

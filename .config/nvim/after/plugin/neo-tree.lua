@@ -60,14 +60,14 @@ require("neo-tree").setup({
   },
 
 
-
-
-
-
+  -- ... other neo-tree settings
   window = {
-      -- position = "left",
-      width = 27,
+    position = "float",
+    close_if_last_window = true,
+    width = 30,
     mappings = {
+      -- ... your other mappings ...
+
       --    This is useful for jumping and highlighting really good. should be there by default in 
       --    neo tree
       ["/"] = "",
@@ -90,8 +90,76 @@ require("neo-tree").setup({
       -- it's meh man... btw you clear it with ctrl+x... it's whatever dude
 
       -- All your other custom mappings can go here as well.
+
+
+      ['Y'] = function(state)
+        local node = state.tree:get_node()
+        if not node or not node.id then
+          vim.notify("No node selected.", vim.log.levels.WARN)
+          return
+        end
+
+        if vim.fn.has('clipboard') == 0 then
+          vim.notify("System clipboard is not available.", vim.log.levels.ERROR)
+          return
+        end
+
+        local filepath = node:get_id()
+        local filename = node.name
+        local modify = vim.fn.fnamemodify
+
+        local choices = {
+          { label = "Absolute path",              value = filepath },
+          { label = "Path relative to CWD",       value = modify(filepath, ':.') },
+          { label = "Path relative to HOME",      value = modify(filepath, ':~') },
+          { label = "Filename",                   value = filename },
+          { label = "Filename without extension", value = modify(filename, ':r') },
+          { label = "Extension of the filename",  value = modify(filename, ':e') },
+        }
+
+        -- THE CHANGE IS ON THIS LINE:
+        -- Instead of vim.ui.select, we call the snacks picker directly.
+        require("snacks").picker.select(choices, {
+          prompt = 'Choose to copy to clipboard:',
+          format_item = function(item)
+            return string.format("%-30s %s", item.label, item.value)
+          end
+        }, function(choice)
+          if not choice then
+            vim.notify("Copy cancelled.", vim.log.levels.INFO)
+            return
+          end
+
+          local value_to_copy = choice.value
+
+          vim.fn.setreg('+', value_to_copy)
+          vim.notify('Copied to clipboard: ' .. value_to_copy)
+        end)
+      end,
+
+      -- ... other mappings ...
     }
   },
+  -- ... other neo-tree settings
+
+
+  -- default_component_configs = {
+  --   modified = {
+  --     enabled = true,
+  --     padding = 1,
+  --     format = "%d-%m-%Y %H:%M",
+  --   },
+  --   file_size = {
+  --     enabled = true,
+  --     padding = 1,
+  --     format = "%.2f",
+  --   },
+  --   type = {
+  --     enabled = true,
+  --     padding = 1,
+  --   },
+  --   -- You can configure other built-in components here too, like git_status or indent
+  -- },
 
 
   filesystem = {
@@ -119,6 +187,25 @@ require("neo-tree").setup({
       visible = false,
       hide_dotfiles = true,
       hide_gitignored = true,
+    },
+     renderers = {
+      -- directory = {
+      --   { "indent" },
+      --   { "icon" },
+      --   { "name" },
+      --   { "diagnostics", optional = true },
+      --   { "git_status", optional = true },
+      -- },
+      file = {
+        -- { "indent" },
+        { "icon" },
+        { "name" },
+        { "modified", optional = true },
+        { "git_status", optional = true },
+        { "file_size", optional = true },
+        { "diagnostics", optional = true },
+        -- { "type", optional = true },
+      },
     },
   },
 

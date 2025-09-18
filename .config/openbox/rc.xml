@@ -117,19 +117,19 @@
        these are default values to use when other ones are not already set
        by other applications, or saved in your session
 
-       use obconf if you want to change these without having to log out
-       and back in -->
+  use obconf if you want to change these without having to log out
+  and back in -->
     <number>10</number>
     <firstdesk>1</firstdesk>
     <names/>
     <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+  <name>desktop 1</name>
+  <name>desktop 2</name>
+  -->
     <popupTime>0</popupTime>
   </desktops>
   <!-- The number of milliseconds to show the popup for when switching
-       desktops.  Set this to 0 to disable the popup. -->
+  desktops.  Set this to 0 to disable the popup. -->
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>NonPixel</popupShow>
@@ -140,14 +140,14 @@
       <!-- these are used if popupPosition is set to 'Fixed' -->
       <x>10</x>
       <!-- positive number for distance from left edge, negative number for
-         distance from right edge, or 'Center' -->
+  distance from right edge, or 'Center' -->
       <y>10</y>
     </popupFixedPosition>
   </resize>
   <!-- You can reserve a portion of your screen where windows will not cover when
-     they are maximized, or when they are initially placed.
-     Many programs reserve space automatically, but you can use this in other
-     cases. -->
+  they are maximized, or when they are initially placed.
+  Many programs reserve space automatically, but you can use this in other
+  cases. -->
   <margins>
     <top>0</top>
     <bottom>0</bottom>
@@ -238,10 +238,10 @@
     <!-- </keybind> -->
     <!-- Cycle to next window (simulating 'right on taskbar') -->
     <!-- Cycle focus to the next monitor/screen -->
-    <keybind key="W-A-z">
-        <action name="MoveResizeTo">
-          <monitor>next</monitor>
-        </action>
+    <keybind key="W-S-C-A-z">
+      <action name="MoveResizeTo">
+        <monitor>next</monitor>
+      </action>
     </keybind>
     <keybind key="W-A-Up">
       <action name="UnmaximizeFull"/>
@@ -313,6 +313,9 @@
       <action name="MoveResizeTo">
         <monitor>next</monitor>
       </action>
+    </keybind>
+    <keybind key="W-S-C-d">
+      <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-Left">
       <!-- Example key: Win + Menu key -->
@@ -494,10 +497,11 @@
     <keybind key="W-KP_Subtract">
       <action name="RemoveDesktop"/>
     </keybind>
-    <keybind key="W-f">
+    <!--## This is M-S-A-C-F in keyd.. this helps with always on top and dicoration I can make it manual -->
+    <keybind key="W-S-A-C-f">
       <action name="ToggleAlwaysOnTop"/>
       <!-- <action name="ToggleOmnipresent"/> -->
-      <action name="ToggleDecorations"/>
+      <!-- <action name="ToggleDecorations"/> -->
     </keybind>
     <!-- <keybind key='C-S-KP_Subtract'> -->
     <!--     <action name='Execute'> -->
@@ -515,11 +519,11 @@
     <!-- in milliseconds (1000 = 1 second) -->
     <screenEdgeWarpTime>0</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
-       screen while moving a window, in milliseconds (1000 = 1 second).
-       Set this to 0 to disable warping -->
+  screen while moving a window, in milliseconds (1000 = 1 second).
+  Set this to 0 to disable warping -->
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
-       switching due to hitting the edge of the screen -->
+  switching due to hitting the edge of the screen -->
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
         <action name="Focus"/>
@@ -608,12 +612,12 @@
       <!-- alwaysontop toggle and always on the bottom -->
       <mousebind button="A-Middle" action="Click">
         <action name="ToggleAlwaysOnTop"/>
-        <action name="ToggleDecorations"/>
+        <!-- <action name="ToggleDecorations"/> -->
       </mousebind>
-      <mousebind button="C-W-A-S-Middle" action="Click">
-        <action name="ToggleAlwaysOnBottom"/>
-        <action name="ToggleDecorations"/>
-      </mousebind>
+      <!-- <mousebind button="C-W-A-S-Middle" action="Click"> -->
+      <!--   <action name="ToggleAlwaysOnBottom"/> -->
+      <!-- <action name="ToggleDecorations"/> -->
+      <!-- </mousebind> -->
       <mousebind button="W-A-Middle" action="Click">
         <action name="Execute">
           <command>/home/dex/scripts/ddesk/nothing/restore_windows_to_normal</command>
@@ -1258,19 +1262,19 @@
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
-       menu is hidden again -->
+  menu is hidden again -->
     <middle>no</middle>
     <!-- center submenus vertically about the parent entry -->
     <submenuShowDelay>100</submenuShowDelay>
     <!-- time to delay before showing a submenu after hovering over the parent
-       entry.
-       if this is a negative value, then the delay is infinite and the
-       submenu will not be shown until it is clicked on -->
+  entry.
+  if this is a negative value, then the delay is infinite and the
+  submenu will not be shown until it is clicked on -->
     <submenuHideDelay>400</submenuHideDelay>
     <!-- time to delay before hiding a submenu when selecting another
-       entry in parent menu
-       if this is a negative value, then the delay is infinite and the
-       submenu will not be hidden until a different submenu is opened -->
+  entry in parent menu
+  if this is a negative value, then the delay is infinite and the
+  submenu will not be hidden until a different submenu is opened -->
     <showIcons>yes</showIcons>
     <!-- controls if icons appear in the client-list-(combined-)menu -->
     <manageDesktops>yes</manageDesktops>

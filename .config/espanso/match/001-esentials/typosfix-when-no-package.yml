@@ -1,0 +1,41 @@
+matches:
+
+
+  ##------------------- example -------------------
+  ## Do not take examples for now(W38 Wed, 17 at 07:19). why? 
+  ## because, I have a package and... I don't want doublicates idk if that
+  ## makes the inject bad or not.... btw I'm using inject 
+  
+  # ---- dictionary help typo def ----
+  
+  # this way of typing trigger with idk word or maybe everything in 1 line or maybe
+  # the word true or propagate true helps in terminal so it doesn't enter new line
+
+  # - trigger: "serach"
+  #   replace: "search"
+  #   propagate_case: true
+  #   word: true
+  # - trigger: "shfit"
+  #   replace: "shift"
+  #   propagate_case: true
+  #   word: true
+  # - trigger: "genreal"
+  #   replace: "general"
+  #   propagate_case: true
+  #   word: true
+  # - trigger: "scirpts"
+  #   replace: "scripts"
+  #   propagate_case: true
+  #   word: true
+  # - trigger: "thansk"
+  #   replace: "thanks"
+  #   propagate_case: true
+  #   word: true
+  # ---- dictionary help typo def END----
+  ##------------------- example END-------------------
+
+
+  - trigger: "etc"
+    replace: "ect"
+    propagate_case: true
+    word: true

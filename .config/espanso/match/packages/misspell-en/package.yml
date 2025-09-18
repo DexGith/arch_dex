@@ -110467,10 +110467,10 @@ matches:
     replace: "roughly"
     propagate_case: true
     word: true
-  # - trigger: "runing"
-  #   replace: "running"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "runing"
+    replace: "running"
+    propagate_case: true
+    word: true
   - trigger: "rythem"
     replace: "rhythm"
     propagate_case: true
@@ -110971,10 +110971,10 @@ matches:
     replace: "deity"
     propagate_case: true
     word: true
-  # - trigger: "doens"
-  #   replace: "does"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "doens"
+    replace: "does"
+    propagate_case: true
+    word: true
   - trigger: "doign"
     replace: "doing"
     propagate_case: true
@@ -111203,10 +111203,10 @@ matches:
     replace: "liked"
     propagate_case: true
     word: true
-  # - trigger: "liuke"
-  #   replace: "like"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "liuke"
+    replace: "like"
+    propagate_case: true
+    word: true
   - trigger: "lmits"
     replace: "limits"
     propagate_case: true
@@ -111855,10 +111855,10 @@ matches:
     replace: "know"
     propagate_case: true
     word: true
-  # - trigger: "liek"
-  #   replace: "like"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "liek"
+    replace: "like"
+    propagate_case: true
+    word: true
   - trigger: "loev"
     replace: "love"
     propagate_case: true
@@ -111935,10 +111935,10 @@ matches:
     replace: "says"
     propagate_case: true
     word: true
-  # - trigger: "smae"
-  #   replace: "same"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "smae"
+    replace: "same"
+    propagate_case: true
+    word: true
   - trigger: "smoe"
     replace: "some"
     propagate_case: true
@@ -111987,10 +111987,10 @@ matches:
     replace: "the"
     propagate_case: true
     word: true
-  # - trigger: "ther"
-  #   replace: "there"
-  #   propagate_case: true
-  #   word: true
+  - trigger: "ther"
+    replace: "there"
+    propagate_case: true
+    word: true
   - trigger: "thge"
     replace: "the"
     propagate_case: true

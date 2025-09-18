@@ -1,0 +1,9 @@
+
+matches:
+      # this is for Obsidian Markdown youtube links or stuff like that 
+  - trigger: ";;obyt;"
+    replace: "![]({{my_link}})"
+    vars:
+      - name: "my_link"
+        type: "clipboard"
+

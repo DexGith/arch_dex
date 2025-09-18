@@ -1,0 +1,42 @@
+I have these plugins 
+
+
+tree                                                                                                ┌──(dex)-[~]
+└─$ tree .config/nvim/
+.config/nvim/
+├── after
+│   └── plugin
+│       ├── bqf.lua
+│       ├── colors.lua
+│       ├── fugitive.lua
+│       ├── harpoon.lua
+│       ├── lsp_setup.lua
+│       ├── lualine.lua
+│       ├── navbuddy.lua
+│       ├── neo-tree.lua
+│       ├── netrw.lua
+│       ├── telescope.lua
+│       ├── toggleterm.lua
+│       ├── treesitter.lua
+│       ├── undotree.lua
+│       └── window-picker.lua
+├── init.lua
+├── lua
+│   └── dex
+│       ├── init.lua
+│       ├── me.lua
+│       ├── packer.lua
+│       ├── remap.lua
+│       └── set.lua
+└── plugin
+    └── packer_compiled.lua
+
+6 directories, 21 files
+
+┌──(dex)-[~]
+└─$
+
+
+
+
+do you have any suggesitons ? 

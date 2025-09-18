@@ -1,0 +1,1381 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div data-turbo-body="" class="logged-in env-production page-responsive" style="word-wrap: break-word;">
+        <div id="__primerPortalRoot__" role="region" style="z-index: 1000; position: absolute; width: 100%;" data-turbo-permanent=""></div>
+      
+
+
+
+    <div class="position-relative header-wrapper js-header-wrapper ">
+      <a href="https://github.com/akinsho/toggleterm.nvim#start-of-content" data-skip-target-assigned="false" class="p-3 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+
+      <span data-view-component="true" class="progress-pjax-loader Progress position-fixed width-full">
+    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
+</span>      
+      
+      
+
+<react-partial partial-name="keyboard-shortcuts-dialog" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+
+
+
+      
+
+          
+
+                  <header class="AppHeader" role="banner">
+      <h2 class="sr-only">Navigation Menu</h2>
+
+
+        
+
+        <div class="AppHeader-globalBar pb-2 js-global-bar">
+          <div class="AppHeader-globalBar-start responsive-context-region">
+            <div class="">
+                  <deferred-side-panel data-url="/_side-panels/global" data-catalyst="">
+  <include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:05d5de66-49b8-37b5-bddc-5b6eec17f1ad" data-view-component="true">
+  
+          </include-fragment></deferred-side-panel></div></div></div></header></div></div><div class=""><deferred-side-panel data-url="/_side-panels/global" data-catalyst=""><include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:05d5de66-49b8-37b5-bddc-5b6eec17f1ad" data-view-component="true">
+
+<dialog-helper>
+  </dialog-helper>
+
+
+  
+</include-fragment></deferred-side-panel>
+            </div>
+
+            <a class="AppHeader-logo ml-1 " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
+              <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+    </svg></a><a class="AppHeader-logo ml-1 " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+</svg>
+            </a>
+
+              <context-region-controller class="AppHeader-context responsive-context-region" data-max-items="5" data-catalyst="">
+  <div class="AppHeader-context-full">
+    <nav role="navigation" aria-label="GitHub Breadcrumb">
+      
+<context-region data-target="context-region-controller.contextRegion" role="list" data-action="context-region-changed:context-region-controller#crumbsChanged" data-catalyst="">
+    <context-region-crumb data-crumb-id="contextregion-usercrumb-akinsho" data-targets="context-region.crumbs" data-label="akinsho" data-href="/akinsho" data-pre-rendered="" role="listitem" data-catalyst="">
+      <a data-target="context-region-crumb.linkElement" data-analytics-event="{&quot;category&quot;:&quot;SiteHeaderComponent&quot;,&quot;action&quot;:&quot;context_region_crumb&quot;,&quot;label&quot;:&quot;akinsho&quot;,&quot;screen_size&quot;:&quot;full&quot;}" data-hovercard-type="user" data-hovercard-url="/users/akinsho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/akinsho" id="contextregion-usercrumb-akinsho-link" data-view-component="true" class="AppHeader-context-item" aria-keyshortcuts="Alt+ArrowUp">
+        <span data-target="context-region-crumb.labelElement" class="AppHeader-context-item-label ">akinsho</span>
+
+</a>
+      <context-region-divider data-target="context-region-crumb.dividerElement" data-pre-rendered="" data-catalyst="">
+  </context-region-divider></context-region-crumb></context-region></nav></div></context-region-controller><div class="AppHeader-globalBar-start responsive-context-region"><context-region-controller class="AppHeader-context responsive-context-region" data-max-items="5" data-catalyst=""><div class="AppHeader-context-full"><nav role="navigation" aria-label="GitHub Breadcrumb"><context-region data-target="context-region-controller.contextRegion" role="list" data-action="context-region-changed:context-region-controller#crumbsChanged" data-catalyst="">
+    <context-region-crumb data-crumb-id="contextregion-repositorycrumb-toggleterm-nvim" data-targets="context-region.crumbs" data-label="toggleterm.nvim" data-href="/akinsho/toggleterm.nvim" data-pre-rendered="" role="listitem" data-catalyst="">
+      <a data-target="context-region-crumb.linkElement" data-analytics-event="{&quot;category&quot;:&quot;SiteHeaderComponent&quot;,&quot;action&quot;:&quot;context_region_crumb&quot;,&quot;label&quot;:&quot;toggleterm.nvim&quot;,&quot;screen_size&quot;:&quot;full&quot;}" href="https://github.com/akinsho/toggleterm.nvim" aria-current="page" id="contextregion-repositorycrumb-toggleterm-nvim-link" data-view-component="true" class="AppHeader-context-item">
+        <span data-target="context-region-crumb.labelElement" class="AppHeader-context-item-label ">toggleterm.nvim</span>
+
+</a>
+      
+
+    
+        
+      </context-region-crumb>
+
+</context-region>
+
+    </nav>
+  </div>
+</context-region-controller>
+
+          </div>
+          <div class="AppHeader-globalBar-end">
+              <div class="AppHeader-search">
+                  
+
+
+<qbsearch-input class="search-input" data-scope="repo:akinsho/toggleterm.nvim" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="PwFb8npFi3UUJepKxvnj6j0WpDSAixiYloZXY8UaB4fYaIvx8vujl--SuPKrIdiLS6uCKXJU5oSyfyy3ev1Utg" data-max-custom-scopes="10" data-header-redesign-enabled="true" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="akinsho/toggleterm.nvim" data-current-org="" data-current-owner="akinsho" data-logged-in="true" data-copilot-chat-enabled="true" data-nl-search-enabled="false" data-catalyst="">
+  <div class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center height-auto color-bg-transparent border-0 color-fg-subtle mx-0" data-action="click:qbsearch-input#searchInputContainerClicked">
+      
+            
+
+
+<div class="AppHeader-search-whenRegular">
+  <div class="AppHeader-search-wrap AppHeader-search-wrap--hasTrailing">
+    <div class="AppHeader-search-control AppHeader-search-control-overflow">
+      <label for="AppHeader-searchInput" aria-label="Search or jump to…" class="AppHeader-search-visual--leading">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
+    </svg></label></div></div></div></div></qbsearch-input></div></div><label for="AppHeader-searchInput" aria-label="Search or jump to…" class="AppHeader-search-visual--leading"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
+</svg>
+      </label>
+
+                <div class="AppHeader-search"><qbsearch-input class="search-input" data-scope="repo:akinsho/toggleterm.nvim" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="PwFb8npFi3UUJepKxvnj6j0WpDSAixiYloZXY8UaB4fYaIvx8vujl--SuPKrIdiLS6uCKXJU5oSyfyy3ev1Utg" data-max-custom-scopes="10" data-header-redesign-enabled="true" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="akinsho/toggleterm.nvim" data-current-org="" data-current-owner="akinsho" data-logged-in="true" data-copilot-chat-enabled="true" data-nl-search-enabled="false" data-catalyst=""><div class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center height-auto color-bg-transparent border-0 color-fg-subtle mx-0" data-action="click:qbsearch-input#searchInputContainerClicked">
+
+    
+
+  </div>
+  
+  <div class="color-fg-default">
+    
+<dialog-helper>
+  </dialog-helper>
+
+    <custom-scopes data-target="qbsearch-input.customScopesManager" data-catalyst="">
+    
+<dialog-helper>
+  </dialog-helper>
+    </custom-scopes>
+  </div>
+</qbsearch-input>  
+
+
+              </div>
+
+            
+              <div class="AppHeader-CopilotChat hide-sm hide-md">
+  <div class="d-flex">
+    <react-partial-anchor data-catalyst="">
+        </react-partial-anchor></div></div><react-partial-anchor data-catalyst="">
+
+      
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+<react-partial partial-name="copilot-chat" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"><div class="CopilotChat-module__CopilotChatContainer--fWXmM"></div><div class="PortalContainerUtils-module__chatPortalContainer--Otmle"></div></div>
+</react-partial>
+
+
+
+      </react-partial-anchor>
+    <div class="position-relative">
+      
+        <react-partial-anchor data-catalyst="">
+          </react-partial-anchor></div><div class="AppHeader-CopilotChat hide-sm hide-md"><div class="d-flex"><div class="position-relative"><react-partial-anchor data-catalyst="">
+
+          
+        
+            
+
+<react-partial partial-name="global-copilot-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+          </react-partial-anchor>
+    </div>
+  </div>
+</div>
+
+
+            <div class="AppHeader-actions position-relative">
+                 <react-partial-anchor data-catalyst="">
+      </react-partial-anchor></div><react-partial-anchor data-catalyst="">
+
+      
+    
+        
+
+<react-partial partial-name="global-create-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+      </react-partial-anchor>
+
+        
+                
+
+                <div class="AppHeader-actions position-relative">
+
+            </div>
+            
+              <notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE4ODU0MH0=--f8f5407c5718f0944bc3963c0ba2db7bde2b010d040597d2fb17f1eddb67a0ef" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-header-redesign-enabled="true" data-fetch-indicator-src="/notifications/indicator" data-fetch-indicator-enabled="true" data-view-component="true" class="js-socket-channel" data-fetch-retry-delay-time="500" data-catalyst="">
+    </notification-indicator><notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE4ODU0MH0=--f8f5407c5718f0944bc3963c0ba2db7bde2b010d040597d2fb17f1eddb67a0ef" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-header-redesign-enabled="true" data-fetch-indicator-src="/notifications/indicator" data-fetch-indicator-enabled="true" data-view-component="true" class="js-socket-channel" data-fetch-retry-delay-time="500" data-catalyst="">
+
+    
+</notification-indicator>
+
+            <div class="AppHeader-user">
+              <deferred-side-panel data-url="/_side-panels/user?repository_id=288244572" data-catalyst="">
+  <include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:05d5de66-49b8-37b5-bddc-5b6eec17f1ad" data-view-component="true">
+  
+    <react-partial-anchor data-catalyst="">
+  </react-partial-anchor></include-fragment></deferred-side-panel></div><div class="AppHeader-globalBar pb-2 js-global-bar"><div class="AppHeader-globalBar-end"><div class="AppHeader-user"><deferred-side-panel data-url="/_side-panels/user?repository_id=288244572" data-catalyst=""><include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:05d5de66-49b8-37b5-bddc-5b6eec17f1ad" data-view-component="true"><react-partial-anchor data-catalyst="">
+  
+
+    
+
+<react-partial partial-name="global-user-nav-drawer" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+  </react-partial-anchor>
+
+
+  
+</include-fragment></deferred-side-panel>
+            </div>
+
+            <div class="position-absolute mt-2">
+                
+<site-header-logged-in-user-menu data-catalyst="">
+
+</site-header-logged-in-user-menu>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+            <div class="AppHeader-localBar">
+              <nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav">
+
+  <ul data-view-component="true" class="UnderlineNav-body list-style-none">
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="code-tab" href="https://github.com/akinsho/toggleterm.nvim" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /akinsho/toggleterm.nvim" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g c" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li></ul></nav></div><li data-view-component="true" class="d-inline-flex"><a id="code-tab" href="https://github.com/akinsho/toggleterm.nvim" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /akinsho/toggleterm.nvim" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g c" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Code">Code</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="issues-tab" href="https://github.com/akinsho/toggleterm.nvim/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /akinsho/toggleterm.nvim/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="issues-tab" href="https://github.com/akinsho/toggleterm.nvim/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /akinsho/toggleterm.nvim/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Issues">Issues</span>
+          <span id="issues-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="63" data-view-component="true" class="Counter">63</span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="pull-requests-tab" href="https://github.com/akinsho/toggleterm.nvim/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /akinsho/toggleterm.nvim/pulls" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g p" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="pull-requests-tab" href="https://github.com/akinsho/toggleterm.nvim/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /akinsho/toggleterm.nvim/pulls" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g p" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Pull requests">Pull requests</span>
+          <span id="pull-requests-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="14" data-view-component="true" class="Counter">14</span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="actions-tab" href="https://github.com/akinsho/toggleterm.nvim/actions" data-tab-item="i3actions-tab" data-selected-links="repo_actions /akinsho/toggleterm.nvim/actions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g a" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="actions-tab" href="https://github.com/akinsho/toggleterm.nvim/actions" data-tab-item="i3actions-tab" data-selected-links="repo_actions /akinsho/toggleterm.nvim/actions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g a" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Actions">Actions</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="projects-tab" href="https://github.com/akinsho/toggleterm.nvim/projects" data-tab-item="i4projects-tab" data-selected-links="repo_projects new_repo_project repo_project /akinsho/toggleterm.nvim/projects" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g b" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Projects&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-table UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="projects-tab" href="https://github.com/akinsho/toggleterm.nvim/projects" data-tab-item="i4projects-tab" data-selected-links="repo_projects new_repo_project repo_project /akinsho/toggleterm.nvim/projects" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g b" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Projects&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-table UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Projects">Projects</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="wiki-tab" href="https://github.com/akinsho/toggleterm.nvim/wiki" data-tab-item="i5wiki-tab" data-selected-links="repo_wiki /akinsho/toggleterm.nvim/wiki" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g w" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Wiki&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="wiki-tab" href="https://github.com/akinsho/toggleterm.nvim/wiki" data-tab-item="i5wiki-tab" data-selected-links="repo_wiki /akinsho/toggleterm.nvim/wiki" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g w" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Wiki&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Wiki">Wiki</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="security-tab" href="https://github.com/akinsho/toggleterm.nvim/security" data-tab-item="i6security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /akinsho/toggleterm.nvim/security" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g s" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="security-tab" href="https://github.com/akinsho/toggleterm.nvim/security" data-tab-item="i6security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /akinsho/toggleterm.nvim/security" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g s" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Security">Security</span>
+          </a>
+
+
+    
+</li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="insights-tab" href="https://github.com/akinsho/toggleterm.nvim/pulse" data-tab-item="i7insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /akinsho/toggleterm.nvim/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><ul data-view-component="true" class="UnderlineNav-body list-style-none"><li data-view-component="true" class="d-inline-flex"><a id="insights-tab" href="https://github.com/akinsho/toggleterm.nvim/pulse" data-tab-item="i7insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /akinsho/toggleterm.nvim/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Insights">Insights</span>
+          
+
+
+    
+</a></li>
+</ul>
+    <div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0">      <action-menu data-select-variant="none" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain=""></focus-group></action-menu></div><div class="position-relative header-wrapper js-header-wrapper "><header class="AppHeader" role="banner"><div class="AppHeader-localBar"><nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav"><div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0"><action-menu data-select-variant="none" data-view-component="true" data-catalyst="" data-ready="true"><focus-group direction="vertical" mnemonics="" retain=""></focus-group>
+</action-menu></div>
+</nav>
+              
+            </div>
+    </header>
+
+
+      
+        
+          
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+
+
+
+    <div id="js-flash-container" class="flash-container" data-turbo-replace="">
+
+
+
+
+  
+</div>
+
+
+    
+  <notification-shelf-watcher data-base-url="https://github.com/notifications/beta/shelf" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE4ODU0MX0=--c484da187bc9e83a0b7a646a733809e0573fa725b2529f9724bbed98cdd4d93d" data-view-component="true" class="js-socket-channel" data-refresh-delay="500" data-catalyst="" data-throttle-delay="5000"></notification-shelf-watcher>
+  
+
+
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="" data-project-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container">
+      
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+      
+
+  <div id="repository-container-header" class="pt-3 hide-full-screen" data-turbo-replace="">
+
+      <div class="d-flex flex-nowrap flex-justify-end mb-3  container-xl  px-3 px-lg-5" style="gap: 1rem;">
+
+        <div class="flex-auto min-width-0 width-fit">
+              <div id="repo-title-component" class=" d-flex flex-nowrap flex-items-center wb-break-word f3 text-normal">
+    <img class="avatar mr-2 d-none d-md-block avatar-user" alt="Owner avatar" src="https://avatars.githubusercontent.com/u/22454918?s=48&amp;v=4" width="24" height="24">
+  
+
+  <strong itemprop="name" class="mr-2 flex-self-stretch d-none d-md-block no-wrap overflow-x-hidden">
+    <a data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" class="d-block overflow-x-hidden color-fg-default" style="text-overflow: ellipsis;" href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a>
+  </strong>
+
+  <span></span><span class="Label Label--secondary v-align-middle mr-1 d-none d-md-block">Public</span>
+</div>
+
+<div class="d-none d-md-block">
+</div>
+
+
+        </div>
+
+        <div id="repository-details-container" class="flex-shrink-0" data-turbo-replace="" style="max-width: 70%;">
+            <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
+    
+        <li>
+          </li></ul></div></div></div></main></div></div><li>
+
+        </li>
+
+      
+
+  <li>
+              
+
+
+<react-partial partial-name="notifications-subscriptions-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="true" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"><div class="d-none d-md-block"></div></div></react-partial></li><li><react-partial partial-name="notifications-subscriptions-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="true" data-catalyst="" class="loaded"><div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+
+
+  </li>
+
+  <li>
+        <div data-view-component="true" class="BtnGroup d-flex">
+        </div></li><li><div data-view-component="true" class="BtnGroup d-flex"><details group_item="true" id="my-forks-menu-288244572" data-view-component="true" class="details-reset details-overlay BtnGroup-parent d-inline-block position-relative"></details></div>
+  </li>
+
+  <li>
+        
+
+  <div data-view-component="true" class="js-toggler-container js-social-container starring-container d-flex">
+    
+    <div data-view-component="true" class="unstarred BtnGroup ml-0 flex-1">
+      <form class="js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/akinsho/toggleterm.nvim/star" accept-charset="UTF-8" method="post">
+        
+          </form></div></div></li><div id="repository-container-header" class="pt-3 hide-full-screen" data-turbo-replace=""><div class="d-flex flex-nowrap flex-justify-end mb-3  container-xl  px-3 px-lg-5" style="gap: 1rem;"><div id="repository-details-container" class="flex-shrink-0" data-turbo-replace="" style="max-width: 70%;"><ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;"><li><div data-view-component="true" class="js-toggler-container js-social-container starring-container d-flex"><div data-view-component="true" class="unstarred BtnGroup ml-0 flex-1"><details id="details-user-list-288244572-unstarred" data-view-component="true" class="details-reset details-overlay BtnGroup-parent js-user-list-menu d-inline-block position-relative"></details>
+</div></div>
+  </li>
+
+</ul>
+
+        </div>
+      </div>
+
+        <div class=" container-xl ">
+          <div id="responsive-meta-container" data-turbo-replace="">
+      
+
+</div>
+
+          <div class="border-bottom  mx-xl-5 "></div>
+        </div>
+
+  </div>
+
+
+
+
+<turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class="">
+    <div id="repo-content-pjax-container" class="repository-content ">
+      
+  
+    
+
+
+
+
+    
+      
+  <h1 class="sr-only">akinsho/toggleterm.nvim</h1>
+  <div class="clearfix container-xl px-md-4 px-lg-5 px-3">
+    <div>
+
+  <div style="max-width: 100%" data-view-component="true" class="Layout Layout--flowRow-until-md react-repos-overview-margin Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+  <div data-view-component="true" class="Layout-main">      
+
+<react-partial partial-name="repos-overview" data-ssr="true" data-attempted-ssr="true" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot">   <div class="OverviewContent-module__Box--uNd1J"><div class="OverviewHeader-module__Box--fFKf5"></div><div class="OverviewContent-module__Box_1--RhaEy"><div class="OverviewContent-module__Box_2--uHewD"><div class="OverviewContent-module__Box_3--NEYWl"></div></div></div></div></div></react-partial></div></div></div></div></div></turbo-frame><div class="OverviewContent-module__Box_3--NEYWl"></div><div class="OverviewContent-module__Box_4--rOz8J"></div><div class="OverviewContent-module__Box_2--uHewD"></div><div class="OverviewContent-module__Box_6--wV7Tw"><div class="OverviewContent-module__Box_7--SbxdI"><div class="OverviewContent-module__Box_8--oumpR"><div class="Box-sc-g0xbh4-0 OverviewContent-module__FileResultsList--irMg6"><span class="d-flex FileResultsList-module__FilesSearchBox--fSAh3 TextInput-wrapper prc-components-TextInputWrapper-i1ofR prc-components-TextInputBaseWrapper-ueK9q" data-leading-visual="true" data-trailing-visual="true" aria-busy="false"><span class="TextInput-icon" id=":r9:" aria-hidden="true"><svg aria-hidden="true" focusable="false" class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></span></div></div></div></div><div class="OverviewContent-module__Box_8--oumpR"><div class="Box-sc-g0xbh4-0 OverviewContent-module__FileResultsList--irMg6"><span class="d-flex FileResultsList-module__FilesSearchBox--fSAh3 TextInput-wrapper prc-components-TextInputWrapper-i1ofR prc-components-TextInputBaseWrapper-ueK9q" data-leading-visual="true" data-trailing-visual="true" aria-busy="false"><input type="text" aria-label="Go to file" role="combobox" aria-controls="file-results-list" aria-expanded="false" aria-haspopup="dialog" autocorrect="off" spellcheck="false" placeholder="Go to file" aria-describedby=":r9: :ra:" data-component="input" class="prc-components-Input-Ic-y8" value=""><span class="TextInput-icon" id=":ra:" aria-hidden="true"><kbd>t</kbd></span></span></div></div><div></div><div class="OverviewContent-module__Box_1--RhaEy"><div class="OverviewContent-module__Box_6--wV7Tw"></div></div><div class="OverviewContent-module__Box_11--Tqhu2"><div data-hpc="true"></div></div><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><thead class="DirectoryContent-module__OverviewHeaderRow--FlrUZ Table-module__Box_1--DkRqs"><tr class="Table-module__Box_2--l1wjV"><th colspan="1" class="DirectoryContent-module__Box_1--xeAhp"><span class="text-bold">Name</span></th><th class="hide-sm"><div class="width-fit prc-Truncate-Truncate-A9Wn6" data-inline="true" title="Last commit message" style="--truncate-max-width:125px"><span class="text-bold">Last commit message</span></div></th><th colspan="1" class="DirectoryContent-module__Box_2--h912w"><div class="width-fit prc-Truncate-Truncate-A9Wn6" data-inline="true" title="Last commit date" style="--truncate-max-width:125px"><span class="text-bold">Last commit date</span></div></th></tr></thead><tbody><tr class="DirectoryContent-module__Box_3--zI0N1"><td colspan="3" class="bgColor-muted p-1 rounded-top-2"><div class="LatestCommit-module__Box--Fimpo"></div></td></tr></tbody></table><div data-testid="latest-commit" class="LatestCommit-module__Box_1--aQ5OG"><div class="CommitAttribution-module__CommitAttributionContainer--Si80C"><div data-testid="author-avatar" class="Box-sc-g0xbh4-0 AuthorAvatar-module__AuthorAvatarContainer--Z1TF8"><a class="prc-Link-Link-85e08" href="https://github.com/apps/github-actions" data-testid="avatar-icon-link" data-hovercard-url="/users/github-actions%5Bbot%5D/hovercard" aria-keyshortcuts="Alt+ArrowUp"><img data-component="Avatar" class="AuthorAvatar-module__authorAvatarImage--bQzij prc-Avatar-Avatar-ZRS-m" alt="github-actions[bot]" data-square="" width="20" height="20" style="--avatarSize-regular: 20px;" src="https://avatars.githubusercontent.com/in/15368?v=4&amp;size=40" data-testid="github-avatar" aria-label="github-actions[bot]"></a><a class="Box-sc-g0xbh4-0 kVizpJ AuthorAvatar-module__authorHoverableLink--vw9qe prc-Link-Link-85e08" data-muted="true" href="https://github.com/akinsho/toggleterm.nvim/commits?author=github-actions%5Bbot%5D" aria-label="commits by github-actions[bot]" data-hovercard-url="/users/github-actions%5Bbot%5D/hovercard" aria-keyshortcuts="Alt+ArrowUp">github-actions[bot]</a></div><span class=""></span></div><div class="d-none d-sm-flex LatestCommit-module__Box_2--JDY37"><div class="Truncate flex-items-center f5"><span class="Truncate-text prc-Text-Text-0ima0" data-testid="latest-commit-html"><a href="https://github.com/akinsho/toggleterm.nvim/commit/9a88eae817ef395952e08650b3283726786fb5fb" class="Link--secondary" data-pjax="true" data-hovercard-url="/akinsho/toggleterm.nvim/commit/9a88eae817ef395952e08650b3283726786fb5fb/hovercard" aria-keyshortcuts="Alt+ArrowUp">chore(build): auto-generate vimdoc</a></span></div></div></div><div class="d-flex flex-shrink-0 gap-2"><div data-testid="latest-commit-details" class="d-none d-sm-flex flex-items-center"><span class="d-flex flex-nowrap fgColor-muted f6"><a class="Link--secondary prc-Link-Link-85e08" aria-label="Commit 9a88eae" data-hovercard-url="/akinsho/toggleterm.nvim/commit/9a88eae817ef395952e08650b3283726786fb5fb/hovercard" href="https://github.com/akinsho/toggleterm.nvim/commit/9a88eae817ef395952e08650b3283726786fb5fb" data-discover="true" aria-keyshortcuts="Alt+ArrowUp">9a88eae</a> · <relative-time class="sc-aXZVg" tense="past" datetime="2025-03-09T09:20:39.000Z" title="Mar 9, 2025, 9:20 AM GMT">Mar 9, 2025</relative-time></span></div><div class="d-flex gap-2"></div></div><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="DirectoryContent-module__Box_3--zI0N1"><td colspan="3" class="bgColor-muted p-1 rounded-top-2"><div class="LatestCommit-module__Box--Fimpo"><div class="d-flex flex-shrink-0 gap-2"><div class="d-flex gap-2"></div></div></div></td></tr><tr class="react-directory-row undefined" id="folder-row-0"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-0"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".github" aria-label=".github, (Directory)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/tree/main/.github" data-discover="true">.github</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(github): update issue template" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/5653859b27a17dc62ec4ec3ba627a3468c3d6522">chore(github): update issue template</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2023-09-07T07:12:23.000Z" title="Sep 7, 2023, 8:12 AM GMT+1">Sep 7, 2023</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-1"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-1"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="doc" aria-label="doc, (Directory)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/tree/main/doc" data-discover="true">doc</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(build): auto-generate vimdoc" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/9a88eae817ef395952e08650b3283726786fb5fb">chore(build): auto-generate vimdoc</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-03-09T09:20:39.000Z" title="Mar 9, 2025, 9:20 AM GMT">Mar 9, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-2"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-2"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="lua" aria-label="lua, (Directory)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/tree/main/lua" data-discover="true">lua</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="feat: Add TermNew command (#623)
+
+* feat: Add TermNew command
+
+Humans are bad at remembering numbers, so this command allows you to
+open a new terminal at the next available count. It's helpful in
+combination with `:TermSelect` to work with terminals without needing to
+remember numbers. It supports the regular arguments as `:ToggleTerm`.
+
+* Fix failing tests" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/b4b0dfcab480d3449fbd28535b7a717411e9412f">feat: Add TermNew command (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2757278172" data-permission-text="Title is private" data-url="https://github.com/akinsho/toggleterm.nvim/issues/623" data-hovercard-type="pull_request" data-hovercard-url="/akinsho/toggleterm.nvim/pull/623/hovercard" href="https://github.com/akinsho/toggleterm.nvim/pull/623" aria-keyshortcuts="Alt+ArrowUp">#623</a><a data-pjax="true" title="feat: Add TermNew command (#623)
+
+* feat: Add TermNew command
+
+Humans are bad at remembering numbers, so this command allows you to
+open a new terminal at the next available count. It's helpful in
+combination with `:TermSelect` to work with terminals without needing to
+remember numbers. It supports the regular arguments as `:ToggleTerm`.
+
+* Fix failing tests" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/b4b0dfcab480d3449fbd28535b7a717411e9412f">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-03-09T09:20:20.000Z" title="Mar 9, 2025, 9:20 AM GMT">Mar 9, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-3"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-3"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="tests" aria-label="tests, (Directory)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/tree/main/tests" data-discover="true">tests</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="feat: add name param to ToggleTerm and TermExec (#479)" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/81ea9f71a3fd7621fd02b2c74861595378a3c938">feat: add name param to ToggleTerm and TermExec (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1858251525" data-permission-text="Title is private" data-url="https://github.com/akinsho/toggleterm.nvim/issues/479" data-hovercard-type="pull_request" data-hovercard-url="/akinsho/toggleterm.nvim/pull/479/hovercard" href="https://github.com/akinsho/toggleterm.nvim/pull/479" aria-keyshortcuts="Alt+ArrowUp">#479</a><a data-pjax="true" title="feat: add name param to ToggleTerm and TermExec (#479)" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/81ea9f71a3fd7621fd02b2c74861595378a3c938">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2023-09-11T06:46:23.000Z" title="Sep 11, 2023, 7:46 AM GMT+1">Sep 11, 2023</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-4"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-4"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".gitignore" aria-label=".gitignore, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/.gitignore" data-discover="true">.gitignore</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci(tests): use minimal init.lua for tests" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/50f58a0624c92d55201398ae50c85857bf53e744">ci(tests): use minimal init.lua for tests</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2023-03-25T22:21:44.000Z" title="Mar 25, 2023, 10:21 PM GMT">Mar 25, 2023</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-5"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-5"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".luarc.json" aria-label=".luarc.json, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/.luarc.json" data-discover="true">.luarc.json</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(lsp): ignore more lsp diagnostics (for now)" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/bff403fca1446f8372edc8fa96985249b019123e">chore(lsp): ignore more lsp diagnostics (for now)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2022-08-28T19:46:28.000Z" title="Aug 28, 2022, 8:46 PM GMT+1">Aug 28, 2022</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-6"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-6"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="CHANGELOG.md" aria-label="CHANGELOG.md, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/CHANGELOG.md" data-discover="true">CHANGELOG.md</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(main): release 2.13.1 (#625)
+
+Co-authored-by: github-actions[bot] &lt;41898282+github-actions[bot]@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/50ea089fc548917cc3cc16b46a8211833b9e3c7c">chore(main): release 2.13.1 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2761330395" data-permission-text="Title is private" data-url="https://github.com/akinsho/toggleterm.nvim/issues/625" data-hovercard-type="pull_request" data-hovercard-url="/akinsho/toggleterm.nvim/pull/625/hovercard" href="https://github.com/akinsho/toggleterm.nvim/pull/625" aria-keyshortcuts="Alt+ArrowUp">#625</a><a data-pjax="true" title="chore(main): release 2.13.1 (#625)
+
+Co-authored-by: github-actions[bot] &lt;41898282+github-actions[bot]@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/50ea089fc548917cc3cc16b46a8211833b9e3c7c">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-12-30T18:13:57.000Z" title="Dec 30, 2024, 7:13 PM GMT+1">Dec 30, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-7"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-7"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="LICENSE" aria-label="LICENSE, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/LICENSE" data-discover="true">LICENSE</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="docs(LICENSE): add a licence
+
+So I'm not expert but I did do some reading around the issue of which
+licence to use and decided based on the fact that I don't want FOSS
+code I write to be re-packaged and SOLD like it wasn't derived from me or
+that the intent wasn't for it to be open. That bothers me.
+
+I don't know if any users will be negatively impacted by this since
+unless you intended to sell my code you shouldn't be as far as I know.
+
+Either way if this blocks you somehow open an issue, but as far as I can
+see from this: https://www.gnu.org/licenses/gpl-faq.html#InternalDistribution
+you can even fork and modify it for internal company usage... you just
+can't sell it, which you shouldn't." class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/14031a87281f72df61d2a15bf303847c14021c1a">docs(LICENSE): add a licence</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2022-07-16T19:32:40.000Z" title="Jul 16, 2022, 8:32 PM GMT+1">Jul 16, 2022</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-8"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-8"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="README.md" aria-label="README.md, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/README.md" data-discover="true">README.md</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="feat: Add TermNew command (#623)
+
+* feat: Add TermNew command
+
+Humans are bad at remembering numbers, so this command allows you to
+open a new terminal at the next available count. It's helpful in
+combination with `:TermSelect` to work with terminals without needing to
+remember numbers. It supports the regular arguments as `:ToggleTerm`.
+
+* Fix failing tests" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/b4b0dfcab480d3449fbd28535b7a717411e9412f">feat: Add TermNew command (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2757278172" data-permission-text="Title is private" data-url="https://github.com/akinsho/toggleterm.nvim/issues/623" data-hovercard-type="pull_request" data-hovercard-url="/akinsho/toggleterm.nvim/pull/623/hovercard" href="https://github.com/akinsho/toggleterm.nvim/pull/623" aria-keyshortcuts="Alt+ArrowUp">#623</a><a data-pjax="true" title="feat: Add TermNew command (#623)
+
+* feat: Add TermNew command
+
+Humans are bad at remembering numbers, so this command allows you to
+open a new terminal at the next available count. It's helpful in
+combination with `:TermSelect` to work with terminals without needing to
+remember numbers. It supports the regular arguments as `:ToggleTerm`.
+
+* Fix failing tests" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/b4b0dfcab480d3449fbd28535b7a717411e9412f">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-03-09T09:20:20.000Z" title="Mar 9, 2025, 9:20 AM GMT">Mar 9, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-9"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><div data-hpc="true"><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-9"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="stylua.toml" aria-label="stylua.toml, (File)" class="Link--primary" href="https://github.com/akinsho/toggleterm.nvim/blob/main/stylua.toml" data-discover="true">stylua.toml</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="feat: add responsive capabilities for horizontal direction (#618)
+
+* add responsiveness options
+
+* update readme
+
+* fix code style
+
+* address PR comments
+
+* address PR comments" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/db7607c436589b395d8a1850e0ae22c8e51a5315">feat: add responsive capabilities for horizontal direction (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2625003123" data-permission-text="Title is private" data-url="https://github.com/akinsho/toggleterm.nvim/issues/618" data-hovercard-type="pull_request" data-hovercard-url="/akinsho/toggleterm.nvim/pull/618/hovercard" href="https://github.com/akinsho/toggleterm.nvim/pull/618" aria-keyshortcuts="Alt+ArrowUp">#618</a><a data-pjax="true" title="feat: add responsive capabilities for horizontal direction (#618)
+
+* add responsiveness options
+
+* update readme
+
+* fix code style
+
+* address PR comments
+
+* address PR comments" class="Link--secondary" href="https://github.com/akinsho/toggleterm.nvim/commit/db7607c436589b395d8a1850e0ae22c8e51a5315">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-11-01T10:49:08.000Z" title="Nov 1, 2024, 11:49 AM GMT+1">Nov 1, 2024</relative-time></div></td></tr></tbody></table></div><div class="OverviewRepoFiles-module__Box_1--xSt0T"><div class="OverviewRepoFiles-module__Box_2--yIjMp"><div itemscope="" itemtype="https://schema.org/abstract" class="OverviewRepoFiles-module__Box_3--Bi2jM"><h2 class="prc-src-InternalVisuallyHidden-nlR9R">Repository files navigation</h2><nav class="prc-components-UnderlineWrapper-oOh5J OverviewRepoFiles-module__UnderlineNav--BHfFi" aria-label="Repository files" data-variant="inset"><ul class="prc-components-UnderlineItemList-b23Hf" role="list"><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/akinsho/toggleterm.nvim#" aria-current="page"><span data-component="icon"><svg aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></a></li></ul></nav></div></div></div><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/akinsho/toggleterm.nvim#" aria-current="page"><span data-component="text" data-content="README">README</span></a></li><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/akinsho/toggleterm.nvim#"><span data-component="icon"><svg aria-hidden="true" focusable="false" class="octicon octicon-law" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></a></li><nav class="prc-components-UnderlineWrapper-oOh5J OverviewRepoFiles-module__UnderlineNav--BHfFi" aria-label="Repository files" data-variant="inset"><ul class="prc-components-UnderlineItemList-b23Hf" role="list"><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/akinsho/toggleterm.nvim#"><span data-component="text" data-content="GPL-3.0 license">GPL-3.0 license</span></a></li></ul></nav><article class="markdown-body entry-content container-lg" itemprop="text">
+<div class="markdown-heading" dir="auto"><h1 align="center" tabindex="-1" class="heading-element" dir="auto">
+  toggleterm.nvim
+</h1><a id="user-content---toggletermnvim" class="anchor" aria-label="Permalink: 
+  toggleterm.nvim
+" href="https://github.com/akinsho/toggleterm.nvim#--toggletermnvim"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div></article><p align="center" dir="auto">A <i>neovim</i> plugin to persist and toggle multiple terminals during an editing session</p>
+
+
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/22454918/224485816-8b0cb1b8-b0e6-4da6-9d71-a7299d39f1a0.gif" alt="toggleterm in action" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      </animated-image></p>
+
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Multiple orientations</h3><a id="user-content-multiple-orientations" class="anchor" aria-label="Permalink: Multiple orientations" href="https://github.com/akinsho/toggleterm.nvim#multiple-orientations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li><strong>Float</strong></li>
+</ul>
+
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/115306123-42d2ac00-a15f-11eb-84fc-c4246ee82a09.png"><img src="https://user-images.githubusercontent.com/22454918/115306123-42d2ac00-a15f-11eb-84fc-c4246ee82a09.png" alt="floating window" style="max-width: 100%;"></a></p>
+
+<ul dir="auto">
+<li><strong>Vertical</strong></li>
+</ul>
+
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/224485828-cd509271-8288-46e2-afb4-4e520fa049cb.png"><img src="https://user-images.githubusercontent.com/22454918/224485828-cd509271-8288-46e2-afb4-4e520fa049cb.png" alt="vertical-terms" style="max-width: 100%;"></a></p>
+
+<ul dir="auto">
+<li><strong>Tab</strong></li>
+</ul>
+
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/133490969-6a59e623-79db-4ca7-a73b-ef4b24a73b91.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/22454918/133490969-6a59e623-79db-4ca7-a73b-ef4b24a73b91.gif" alt="tab orientation" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      </animated-image></p>
+
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Send commands to different terminals</h3><a id="user-content-send-commands-to-different-terminals" class="anchor" aria-label="Permalink: Send commands to different terminals" href="https://github.com/akinsho/toggleterm.nvim#send-commands-to-different-terminals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/112119367-36d1e980-8bb5-11eb-9787-5936391127a3.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/22454918/112119367-36d1e980-8bb5-11eb-9787-5936391127a3.gif" alt="exec" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      </animated-image></p>
+
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Winbar (Experimental/Nightly ONLY)</h3><a id="user-content-winbar-experimentalnightly-only" class="anchor" aria-label="Permalink: Winbar (Experimental/Nightly ONLY)" href="https://github.com/akinsho/toggleterm.nvim#winbar-experimentalnightly-only"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/179199998-75ec16cb-8271-490e-925f-6c82c50ffc5d.png"><img width="1728" alt="image" src="https://user-images.githubusercontent.com/22454918/179199998-75ec16cb-8271-490e-925f-6c82c50ffc5d.png" style="max-width: 100%;"></a></p>
+
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Requirements</h2><a id="user-content-requirements" class="anchor" aria-label="Permalink: Requirements" href="https://github.com/akinsho/toggleterm.nvim#requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This plugin only works in <em>Neovim 0.7</em> or newer.</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Installation</h2><a id="user-content-installation" class="anchor" aria-label="Permalink: Installation" href="https://github.com/akinsho/toggleterm.nvim#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">Using <a href="https://github.com/wbthomason/packer.nvim">packer</a> in lua</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">use</span> {<span class="pl-s"><span class="pl-pds">"</span>akinsho/toggleterm.nvim<span class="pl-pds">"</span></span>, <span class="pl-smi">tag</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>*<span class="pl-pds">'</span></span>, <span class="pl-en">config</span> <span class="pl-k">=</span> <span class="pl-k">function</span>()
+  <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">setup</span>()
+<span class="pl-k">end</span>}</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">Using <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a> in lua</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre>{
+  <span class="pl-c"><span class="pl-c">--</span> amongst your other plugins</span>
+  {<span class="pl-s"><span class="pl-pds">'</span>akinsho/toggleterm.nvim<span class="pl-pds">'</span></span>, <span class="pl-smi">version</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>*<span class="pl-pds">"</span></span>, <span class="pl-smi">config</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>}
+  <span class="pl-c"><span class="pl-c">--</span> or</span>
+  {<span class="pl-s"><span class="pl-pds">'</span>akinsho/toggleterm.nvim<span class="pl-pds">'</span></span>, <span class="pl-smi">version</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>*<span class="pl-pds">"</span></span>, <span class="pl-smi">opts</span> <span class="pl-k">=</span> {<span class="pl-c"><span class="pl-c">--[[</span> things you want to change go here<span class="pl-c">]]</span></span>}}
+}</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">Using <a href="https://github.com/junegunn/vim-plug">vim-plug</a> in vimscript</p>
+<div class="highlight highlight-source-viml notranslate position-relative overflow-auto" dir="auto"><pre>Plug <span class="pl-s"><span class="pl-pds">'</span>akinsho/toggleterm.nvim<span class="pl-pds">'</span></span>, {<span class="pl-s"><span class="pl-pds">'</span>tag<span class="pl-pds">'</span></span> : <span class="pl-s"><span class="pl-pds">'</span>*<span class="pl-pds">'</span></span>}
+
+<span class="pl-c1">lua</span> <span class="pl-en">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-en">setup</span>()</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">You can/should specify a tag for the current major version of the plugin, to avoid breaking changes as this plugin evolves.
+To use a version of this plugin compatible with nvim versions less than 0.7 please use the tag <code>v1.*</code>.</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Notices</h2><a id="user-content-notices" class="anchor" aria-label="Permalink: Notices" href="https://github.com/akinsho/toggleterm.nvim#notices"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li><strong>28/07/1990</strong> — If using <code>persist_mode</code> terminal mappings should be changed to use <code>wincmd</code> instead otherwise persist mode will not work correctly. See <a href="https://github.com/akinsho/toggleterm.nvim#terminal-window-mappings">here</a> for details.</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Why?</h2><a id="user-content-why" class="anchor" aria-label="Permalink: Why?" href="https://github.com/akinsho/toggleterm.nvim#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">Neovim's terminal is a very cool, but not super ergonomic tool to use. I find that I often want to
+set a process going and leave it to continue to run in the background. I don't need to see it all the time.
+I just need to be able to refer back to it at intervals. I also sometimes want to create a new terminal and run a few commands.</p>
+<p dir="auto">Sometimes I want these side by side, and I <em>really</em> want these terminals to be easy to access.
+I also want my terminal to look different from non-terminal buffers, so I use <code>winhighlight</code> to darken them based on the <code>Normal</code>
+background colour.</p>
+<p dir="auto">This is the exact use case this was designed for. If that's your use case this might work for you.</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Roadmap</h2><a id="user-content-roadmap" class="anchor" aria-label="Permalink: Roadmap" href="https://github.com/akinsho/toggleterm.nvim#roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">All I really want this plugin to be is what I described above. A wrapper around the terminal functionality.</p>
+<p dir="auto">It basically (almost) does all that I need it to.</p>
+<p dir="auto">I won't be turning this into a REPL plugin or doing a bunch of complex stuff.
+If you find any issues, <em>please</em> consider a <em>pull request</em> not an issue.
+I'm also going to be pretty conservative about what I add.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Setup</h3><a id="user-content-setup" class="anchor" aria-label="Permalink: Setup" href="https://github.com/akinsho/toggleterm.nvim#setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This plugin must be explicitly enabled by using <code>require("toggleterm").setup{}</code></p>
+<p dir="auto">Setting the <code>open_mapping</code> key to use for toggling the terminal(s) will set up mappings for <em>normal</em> mode. The <code>open_mapping</code>
+ can be a key string or an array of key strings.
+If you prefix the mapping with a number that particular terminal will be
+ opened. Otherwise if a prefix is not set, then the last toggled 
+terminal will be opened. In case there are multiple terminals opened 
+they'll all be closed, and on the next mapping key they'll be restored.</p>
+<p dir="auto">If you set the <code>insert_mappings</code> key to <code>true</code>, the mapping will also take effect in insert mode; similarly setting <code>terminal_mappings</code> to <code>true</code> will have the mappings take effect in the opened terminal.</p>
+<p dir="auto">However you will not be able to use a count with the open 
+mapping in terminal and insert modes. You can create buffer specific 
+mappings to exit terminal mode and then use a count with the open 
+mapping. Check <em>Terminal window mappings</em> for an example of how to do this.</p>
+<p dir="auto">alternatively you can do this manually (not recommended but, your prerogative)</p>
+<div class="highlight highlight-source-viml notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">"</span> set</span>
+<span class="pl-k">autocmd</span> TermEnter <span class="pl-s">term://*toggleterm#*</span>
+      <span class="pl-cce">\ </span><span class="pl-k">tnoremap</span> <span class="pl-k">&lt;silent&gt;</span><span class="pl-s"><span class="pl-e">&lt;c-t&gt;</span> <span class="pl-e">&lt;Cmd&gt;</span>exe v:count1 . "ToggleTerm"<span class="pl-e">&lt;CR&gt;</span></span>
+<span class="pl-s"></span>
+<span class="pl-c"><span class="pl-c">"</span> By applying the mappings this way you can pass a count to your</span>
+<span class="pl-c"><span class="pl-c">"</span> mapping to open a specific window.</span>
+<span class="pl-c"><span class="pl-c">"</span> For example: 2&lt;C-t&gt; will open terminal 2</span>
+<span class="pl-k">nnoremap</span> <span class="pl-k">&lt;silent&gt;</span><span class="pl-s"><span class="pl-e">&lt;c-t&gt;</span> <span class="pl-e">&lt;Cmd&gt;</span>exe v:count1 . "ToggleTerm"<span class="pl-e">&lt;CR&gt;</span></span>
+<span class="pl-s"></span><span class="pl-k">inoremap</span> <span class="pl-k">&lt;silent&gt;</span><span class="pl-s"><span class="pl-e">&lt;c-t&gt;</span> <span class="pl-e">&lt;Esc&gt;&lt;Cmd&gt;</span>exe v:count1 . "ToggleTerm"<span class="pl-e">&lt;CR&gt;</span></span></pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto"><strong>NOTE</strong>: Please ensure you have set <code>hidden</code> in your neovim config, otherwise the terminals will be discarded when closed.</p>
+<p dir="auto"><strong>WARNING</strong>: Please do not copy and paste 
+this configuration! It is here to show what options are available. It is
+ not written to be used as is.</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">setup</span>{
+  <span class="pl-c"><span class="pl-c">--</span> size can be a number or function which is passed the current terminal</span>
+  <span class="pl-smi">size</span> <span class="pl-k">=</span> <span class="pl-c1">20</span> | <span class="pl-k">function</span>(<span class="pl-smi">term</span>)
+    <span class="pl-k">if</span> <span class="pl-smi">term</span>.<span class="pl-e">direction</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>horizontal<span class="pl-pds">" </span></span><span class="pl-k">then</span>
+      <span class="pl-k">return</span> <span class="pl-c1">15</span>
+    <span class="pl-k">elseif</span> <span class="pl-smi">term</span>.<span class="pl-e">direction</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>vertical<span class="pl-pds">" </span></span><span class="pl-k">then</span>
+      <span class="pl-k">return</span> <span class="pl-smi">vim</span>.<span class="pl-e">o</span>.<span class="pl-e">columns</span> <span class="pl-k">*</span> <span class="pl-c1">0.4</span>
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span>,
+  <span class="pl-smi">open_mapping</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">[[</span>&lt;c-\&gt;<span class="pl-pds">]]</span></span>, <span class="pl-c"><span class="pl-c">--</span> or { [[&lt;c-\&gt;]], [[&lt;c-¥&gt;]] } if you also use a Japanese keyboard.</span>
+  <span class="pl-smi">on_create</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>), <span class="pl-c"><span class="pl-c">--</span> function to run when the terminal is first created</span>
+  <span class="pl-smi">on_open</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>), <span class="pl-c"><span class="pl-c">--</span> function to run when the terminal opens</span>
+  <span class="pl-smi">on_close</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>), <span class="pl-c"><span class="pl-c">--</span> function to run when the terminal closes</span>
+  <span class="pl-smi">on_stdout</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">data</span>: <span class="pl-smi">string</span>[], <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> callback for processing output on stdout</span>
+  <span class="pl-smi">on_stderr</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">data</span>: <span class="pl-smi">string</span>[], <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> callback for processing output on stderr</span>
+  <span class="pl-smi">on_exit</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">exit_code</span>: <span class="pl-smi">number</span>, <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> function to run when terminal process exits</span>
+  <span class="pl-smi">hide_numbers</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> hide the number column in toggleterm buffers</span>
+  <span class="pl-smi">shade_filetypes</span> <span class="pl-k">=</span> {},
+  <span class="pl-smi">autochdir</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>, <span class="pl-c"><span class="pl-c">--</span> when neovim changes it current directory the terminal will change it's own when next it's opened</span>
+  <span class="pl-smi">highlights</span> <span class="pl-k">=</span> {
+    <span class="pl-c"><span class="pl-c">--</span> highlights which map to a highlight group name and a table of it's values</span>
+    <span class="pl-c"><span class="pl-c">--</span> NOTE: this is only a subset of values, any group placed here will be set for the terminal window split</span>
+    <span class="pl-smi">Normal</span> <span class="pl-k">=</span> {
+      <span class="pl-smi">guibg</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>&lt;VALUE-HERE&gt;<span class="pl-pds">"</span></span>,
+    },
+    <span class="pl-smi">NormalFloat</span> <span class="pl-k">=</span> {
+      <span class="pl-smi">link</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Normal<span class="pl-pds">'</span></span>
+    },
+    <span class="pl-smi">FloatBorder</span> <span class="pl-k">=</span> {
+      <span class="pl-smi">guifg</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>&lt;VALUE-HERE&gt;<span class="pl-pds">"</span></span>,
+      <span class="pl-smi">guibg</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>&lt;VALUE-HERE&gt;<span class="pl-pds">"</span></span>,
+    },
+  },
+  <span class="pl-smi">shade_terminals</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> NOTE: this option takes priority over highlights specified so if you specify Normal highlights you should set this to false</span>
+  <span class="pl-smi">shading_factor</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;number&gt;<span class="pl-pds">'</span></span>, <span class="pl-c"><span class="pl-c">--</span> the percentage by which to lighten dark terminal background, default: -30</span>
+  <span class="pl-smi">shading_ratio</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;number&gt;<span class="pl-pds">'</span></span>, <span class="pl-c"><span class="pl-c">--</span> the ratio of shading factor for light/dark terminal background, default: -3</span>
+  <span class="pl-smi">start_in_insert</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>,
+  <span class="pl-smi">insert_mappings</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> whether or not the open mapping applies in insert mode</span>
+  <span class="pl-smi">terminal_mappings</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> whether or not the open mapping applies in the opened terminals</span>
+  <span class="pl-smi">persist_size</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>,
+  <span class="pl-smi">persist_mode</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> if set to true (default) the previous terminal mode will be remembered</span>
+  <span class="pl-smi">direction</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>vertical<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>horizontal<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>tab<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>float<span class="pl-pds">'</span></span>,
+  <span class="pl-smi">close_on_exit</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> close the terminal window when the process exits</span>
+  <span class="pl-smi">clear_env</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>, <span class="pl-c"><span class="pl-c">--</span> use only environmental variables from `env`, passed to jobstart()</span>
+   <span class="pl-c"><span class="pl-c">--</span> Change the default shell. Can be a string or a function returning a string</span>
+  <span class="pl-smi">shell</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">o</span>.<span class="pl-e">shell</span>,
+  <span class="pl-smi">auto_scroll</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-c"><span class="pl-c">--</span> automatically scroll to the bottom on terminal output</span>
+  <span class="pl-c"><span class="pl-c">--</span> This field is only relevant if direction is set to 'float'</span>
+  <span class="pl-smi">float_opts</span> <span class="pl-k">=</span> {
+    <span class="pl-c"><span class="pl-c">--</span> The border key is *almost* the same as 'nvim_open_win'</span>
+    <span class="pl-c"><span class="pl-c">--</span> see :h nvim_open_win for details on borders however</span>
+    <span class="pl-c"><span class="pl-c">--</span> the 'curved' border is a custom border type</span>
+    <span class="pl-c"><span class="pl-c">--</span> not natively supported but implemented in this plugin.</span>
+    <span class="pl-smi">border</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>single<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>double<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>shadow<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>curved<span class="pl-pds">' </span></span>| <span class="pl-c1">...</span> <span class="pl-smi">other</span> <span class="pl-smi">options</span> <span class="pl-smi">supported</span> <span class="pl-smi">by</span> <span class="pl-smi">win</span> <span class="pl-smi">open</span>
+    <span class="pl-c"><span class="pl-c">--</span> like `size`, width, height, row, and col can be a number or function which is passed the current terminal</span>
+    <span class="pl-smi">width</span> <span class="pl-k">=</span> <span class="pl-k">&lt;value&gt;</span>,
+    <span class="pl-smi">height</span> <span class="pl-k">=</span> <span class="pl-k">&lt;value&gt;</span>,
+    <span class="pl-smi">row</span> <span class="pl-k">=</span> <span class="pl-k">&lt;value&gt;</span>,
+    <span class="pl-smi">col</span> <span class="pl-k">=</span> <span class="pl-k">&lt;value&gt;</span>,
+    <span class="pl-smi">winblend</span> <span class="pl-k">=</span> <span class="pl-c1">3</span>,
+    <span class="pl-smi">zindex</span> <span class="pl-k">=</span> <span class="pl-k">&lt;value&gt;</span>,
+    <span class="pl-smi">title_pos</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>left<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>center<span class="pl-pds">' </span></span>| <span class="pl-s"><span class="pl-pds">'</span>right<span class="pl-pds">'</span></span>, <span class="pl-smi">position</span> <span class="pl-smi">of</span> <span class="pl-smi">the</span> <span class="pl-smi">title</span> <span class="pl-smi">of</span> <span class="pl-smi">the</span> <span class="pl-smi">floating</span> <span class="pl-smi">window</span>
+  },
+  <span class="pl-smi">winbar</span> <span class="pl-k">=</span> {
+    <span class="pl-smi">enabled</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>,
+    <span class="pl-en">name_formatter</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">term</span>) <span class="pl-c"><span class="pl-c">--</span>  term: Terminal</span>
+      <span class="pl-k">return</span> <span class="pl-smi">term</span>.<span class="pl-e">name</span>
+    <span class="pl-k">end</span>
+  },
+  <span class="pl-smi">responsiveness</span> <span class="pl-k">=</span> {
+    <span class="pl-c"><span class="pl-c">--</span> breakpoint in terms of `vim.o.columns` at which terminals will start to stack on top of each other</span>
+    <span class="pl-c"><span class="pl-c">--</span> instead of next to each other</span>
+    <span class="pl-c"><span class="pl-c">--</span> default = 0 which means the feature is turned off</span>
+    <span class="pl-smi">horizontal_breakpoint</span> <span class="pl-k">=</span> <span class="pl-c1">135</span>,
+  }
+}</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Usage</h3><a id="user-content-usage" class="anchor" aria-label="Permalink: Usage" href="https://github.com/akinsho/toggleterm.nvim#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>ToggleTerm</code></h3><a id="user-content-toggleterm" class="anchor" aria-label="Permalink: ToggleTerm" href="https://github.com/akinsho/toggleterm.nvim#toggleterm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This is the command the mappings call under the hood. You can use it directly
+and prefix it with a count to target a specific terminal. This function also takes
+arguments <code>size</code>, <code>dir</code>, <code>direction</code> and <code>name</code>. e.g.</p>
+<div class="highlight highlight-source-viml notranslate position-relative overflow-auto" dir="auto"><pre>:ToggleTerm size<span class="pl-k">=</span><span class="pl-c1">40</span> <span class="pl-c1">dir</span><span class="pl-k">=</span><span class="pl-c1">~/Desktop</span> direction<span class="pl-k">=</span><span class="pl-c1">horizontal</span> name<span class="pl-k">=</span>desktop</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">If <code>dir</code> is specified on creation toggle term will open at the specified directory.
+If the terminal has already been opened at a particular directory it will remain in that directory.</p>
+<p dir="auto">The directory can also be specified as <code>git_dir</code> which toggleterm will then
+use to try and derive the git repo directory.
+<em>NOTE</em>: This will not work for <code>git-worktrees</code> or other more complex setups.</p>
+<p dir="auto">If <code>size</code> is specified, and the command opens a split (horizontal/vertical) terminal,
+the height/width of all terminals in the same direction will be changed to <code>size</code>.</p>
+<p dir="auto">If <code>direction</code> is specified, and the command opens a terminal,
+the terminal will be changed to the specified direction.</p>
+<p dir="auto">If <code>name</code> is specified, the display name is set for the toggled terminal. This name will be visible
+when using <code>TermSelect</code> command to indicate the specific terminal.</p>
+<p dir="auto"><code>size</code> and <code>direction</code> are ignored if the command closes a terminal.</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto">Caveats</h4><a id="user-content-caveats" class="anchor" aria-label="Permalink: Caveats" href="https://github.com/akinsho/toggleterm.nvim#caveats"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li>Having multiple terminals with different directions open at the same time is unsupported.</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>ToggleTermToggleAll</code></h3><a id="user-content-toggletermtoggleall" class="anchor" aria-label="Permalink: ToggleTermToggleAll" href="https://github.com/akinsho/toggleterm.nvim#toggletermtoggleall"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This command allows you to open all the previously toggled terminal in one go
+or close all the open terminals at once.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>TermExec</code></h3><a id="user-content-termexec" class="anchor" aria-label="Permalink: TermExec" href="https://github.com/akinsho/toggleterm.nvim#termexec"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This command allows you to open a terminal with a specific action.
+e.g. <code>2TermExec cmd="git status" dir=~/&lt;my-repo-path&gt;</code> will run git status in terminal 2.
+note that the <code>cmd</code> argument <strong>must be quoted</strong>.</p>
+<p dir="auto"><em>NOTE:</em> the <code>dir</code> argument can also be <em>optionally</em> quoted if it contains spaces.</p>
+<p dir="auto">The <code>cmd</code> and <code>dir</code> arguments can also expand the same special keywords as <code>:h expand</code> e.g.
+<code>TermExec cmd="echo %"</code> will be expanded to <code>TermExec cmd="echo /file/example"</code></p>
+<p dir="auto">These special keywords can be escaped using the <code>\</code> character, if you want to print character as is.</p>
+<p dir="auto">The <code>size</code>, <code>direction</code> and <code>name</code> arguments are like the <code>size</code>, <code>direction</code> and <code>name</code> arguments of <code>ToggleTerm</code>.</p>
+<p dir="auto">By default, focus is returned to the original window after executing the command
+(except for floating terminals). Use argument <code>go_back=0</code> to disable this behaviour.</p>
+<p dir="auto">You can send commands to a terminal without opening its window by using the <code>open=0</code> argument.</p>
+<p dir="auto">see <code>:h expand()</code> for more details</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">TermNew</h3><a id="user-content-termnew" class="anchor" aria-label="Permalink: TermNew" href="https://github.com/akinsho/toggleterm.nvim#termnew"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This command allows you to open a new terminal at the next available count.
+It's helpful in combination with <code>TermSelect</code> (see below) to work with
+terminals without needing to remember numbers. The <code>size</code>, <code>dir</code>, <code>direction</code>
+and <code>name</code> arguments work the same as in <code>ToggleTerm</code>.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">TermSelect</h3><a id="user-content-termselect" class="anchor" aria-label="Permalink: TermSelect" href="https://github.com/akinsho/toggleterm.nvim#termselect"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This command uses <code>vim.ui.select</code> to allow a user to select a terminal to open
+or to focus it if it's already open. This can be useful if you have a lot of
+terminals and want to open a specific one.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Sending lines to the terminal</h3><a id="user-content-sending-lines-to-the-terminal" class="anchor" aria-label="Permalink: Sending lines to the terminal" href="https://github.com/akinsho/toggleterm.nvim#sending-lines-to-the-terminal"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">You can "send lines" to the toggled terminals with the following commands:</p>
+<ul dir="auto">
+<li><code>:ToggleTermSendCurrentLine &lt;T_ID&gt;</code>: sends the whole line where you are standing with your cursor</li>
+<li><code>:ToggleTermSendVisualLines &lt;T_ID&gt;</code>: sends all the (whole) lines in your visual selection</li>
+<li><code>:ToggleTermSendVisualSelection &lt;T_ID&gt;</code>: sends only the visually selected text (this can be a block of text or a selection in a single line)</li>
+</ul>
+<p dir="auto">(<code>&lt;T_ID</code> is an optional terminal ID parameter, which defines where should we send the lines.
+If the parameter is not provided, then the default is the <code>first terminal</code>)</p>
+<p dir="auto">Alternatively, for more fine-grained control and use in mappings, in lua:</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">local</span> <span class="pl-smi">trim_spaces</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>
+<span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">"</span>v<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;space&gt;s<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>()
+    <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">send_lines_to_terminal</span>(<span class="pl-s"><span class="pl-pds">"</span>single_line<span class="pl-pds">"</span></span>, <span class="pl-smi">trim_spaces</span>, { <span class="pl-smi">args</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">v</span>.<span class="pl-e">count</span> })
+<span class="pl-k">end</span>)
+    <span class="pl-c"><span class="pl-c">--</span> Replace with these for the other two options</span>
+    <span class="pl-c"><span class="pl-c">--</span> require("toggleterm").send_lines_to_terminal("visual_lines", trim_spaces, { args = vim.v.count })</span>
+    <span class="pl-c"><span class="pl-c">--</span> require("toggleterm").send_lines_to_terminal("visual_selection", trim_spaces, { args = vim.v.count })</span>
+
+<span class="pl-c"><span class="pl-c">--</span> For use as an operator map:</span>
+<span class="pl-c"><span class="pl-c">--</span> Send motion to terminal</span>
+<span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;leader&gt;&lt;c-\&gt;<span class="pl-pds">]]</span></span>, <span class="pl-k">function</span>()
+  <span class="pl-c1">set_opfunc</span>(<span class="pl-k">function</span>(<span class="pl-smi">motion_type</span>)
+    <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">send_lines_to_terminal</span>(<span class="pl-smi">motion_type</span>, <span class="pl-c1">false</span>, { <span class="pl-smi">args</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">v</span>.<span class="pl-e">count</span> })
+  <span class="pl-k">end</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_feedkeys</span>(<span class="pl-s"><span class="pl-pds">"</span>g@<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-c1">false</span>)
+<span class="pl-k">end</span>)
+<span class="pl-c"><span class="pl-c">--</span> Double the command to send line to terminal</span>
+<span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;leader&gt;&lt;c-\&gt;&lt;c-\&gt;<span class="pl-pds">]]</span></span>, <span class="pl-k">function</span>()
+  <span class="pl-c1">set_opfunc</span>(<span class="pl-k">function</span>(<span class="pl-smi">motion_type</span>)
+    <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">send_lines_to_terminal</span>(<span class="pl-smi">motion_type</span>, <span class="pl-c1">false</span>, { <span class="pl-smi">args</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">v</span>.<span class="pl-e">count</span> })
+  <span class="pl-k">end</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_feedkeys</span>(<span class="pl-s"><span class="pl-pds">"</span>g@_<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-c1">false</span>)
+<span class="pl-k">end</span>)
+<span class="pl-c"><span class="pl-c">--</span> Send whole file</span>
+<span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;leader&gt;&lt;leader&gt;&lt;c-\&gt;<span class="pl-pds">]]</span></span>, <span class="pl-k">function</span>()
+  <span class="pl-c1">set_opfunc</span>(<span class="pl-k">function</span>(<span class="pl-smi">motion_type</span>)
+    <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>toggleterm<span class="pl-pds">"</span></span>).<span class="pl-c1">send_lines_to_terminal</span>(<span class="pl-smi">motion_type</span>, <span class="pl-c1">false</span>, { <span class="pl-smi">args</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">v</span>.<span class="pl-e">count</span> })
+  <span class="pl-k">end</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_feedkeys</span>(<span class="pl-s"><span class="pl-pds">"</span>ggg@G''<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-c1">false</span>)
+<span class="pl-k">end</span>)</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">Set <code>trim_spaces=false</code> for sending to REPLs for whitespace-sensitive languages like python.
+(For python, you probably want to start ipython with <code>ipython --no-autoindent</code>.)</p>
+
+<p dir="auto">Example:</p>
+
+
+<p dir="auto"><gh:secured-asset-reference resource_type="UserAsset" resource_id="159889865"></gh:secured-asset-reference></p><details open="" class="details-reset border rounded-2">
+  <summary class="px-3 py-2">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
+    </svg></summary></details><details open="" class="details-reset border rounded-2"><summary class="px-3 py-2"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
+</svg>
+    <span class="m-1">send_lines_example.mov</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+
+  <video src="https://github.com/gaborvecsei/toggleterm.nvim/assets/18753533/724becab-877b-45a2-898e-820afd6a4ee1" data-canonical-src="https://user-images.githubusercontent.com/18753533/159889865-724becab-877b-45a2-898e-820afd6a4ee1.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+
+  </video>
+</details>
+<p></p>
+
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">ToggleTermSetName</h3><a id="user-content-toggletermsetname" class="anchor" aria-label="Permalink: ToggleTermSetName" href="https://github.com/akinsho/toggleterm.nvim#toggletermsetname"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This
+ function allows setting a display name for a terminal. This name is 
+primarily used inside the winbar, and can be a more descriptive way
+to remember, which terminal is for what.</p>
+<p dir="auto">You can map this to a key and call it with a count, which will then prompt you a name for the terminal with the matching ID.
+Alternatively you can call it with just the name e.g. <code>:ToggleTermSetName work&lt;CR&gt;</code>
+ this will the prompt you for which terminal it should apply to.
+Lastly you can call it without any arguments, and it will prompt you for
+ which terminal it should apply to then prompt you for the name to use.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Set terminal shading</h3><a id="user-content-set-terminal-shading" class="anchor" aria-label="Permalink: Set terminal shading" href="https://github.com/akinsho/toggleterm.nvim#set-terminal-shading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">This plugin automatically shades terminal filetypes to be darker than other window
+you can disable this by setting <code>shade_terminals = false</code> in the setup object</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">require</span><span class="pl-s"><span class="pl-pds">'</span>toggleterm<span class="pl-pds">'</span></span>.<span class="pl-c1">setup</span> {
+  <span class="pl-smi">shade_terminals</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>
+}</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">alternatively you can set, <em>which</em> filetypes should be shaded by setting</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">--</span> fzf is just an example</span>
+<span class="pl-c1">require</span><span class="pl-s"><span class="pl-pds">'</span>toggleterm<span class="pl-pds">'</span></span>.<span class="pl-c1">setup</span> {
+  <span class="pl-smi">shade_filetypes</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>fzf<span class="pl-pds">" </span></span>}
+}
+</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">setting <code>"none"</code> will allow normal terminal buffers to be highlighted.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Set persistent size</h3><a id="user-content-set-persistent-size" class="anchor" aria-label="Permalink: Set persistent size" href="https://github.com/akinsho/toggleterm.nvim#set-persistent-size"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">By default, this plugin will persist the size of horizontal and vertical terminals.
+Split terminals in the same direction always have the same size.
+You can disable this behaviour by setting <code>persist_size = false</code> in the setup object.
+Disabling this behaviour forces the opening terminal size to the <code>size</code> defined in the setup object.</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">require</span><span class="pl-s"><span class="pl-pds">'</span>toggleterm<span class="pl-pds">'</span></span>.<span class="pl-c1">setup</span>{
+  <span class="pl-smi">persist_size</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>
+}</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Terminal window mappings</h3><a id="user-content-terminal-window-mappings" class="anchor" aria-label="Permalink: Terminal window mappings" href="https://github.com/akinsho/toggleterm.nvim#terminal-window-mappings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">It can be helpful to add mappings to make moving in and out of a terminal easier
+once toggled, whilst still keeping it open.</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">function</span> <span class="pl-en">_G</span>.<span class="pl-en">set_terminal_keymaps</span>()
+  <span class="pl-k">local</span> <span class="pl-smi">opts</span> <span class="pl-k">=</span> {<span class="pl-smi">buffer</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>}
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;esc&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;C-\&gt;&lt;C-n&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>jk<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;C-\&gt;&lt;C-n&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;C-h&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;Cmd&gt;wincmd h&lt;CR&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;C-j&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;Cmd&gt;wincmd j&lt;CR&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;C-k&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;Cmd&gt;wincmd k&lt;CR&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;C-l&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;Cmd&gt;wincmd l&lt;CR&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+  <span class="pl-smi">vim</span>.<span class="pl-e">keymap</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>t<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>&lt;C-w&gt;<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">[[</span>&lt;C-\&gt;&lt;C-n&gt;&lt;C-w&gt;<span class="pl-pds">]]</span></span>, <span class="pl-smi">opts</span>)
+<span class="pl-k">end</span>
+
+<span class="pl-c"><span class="pl-c">--</span> if you only want these mappings for toggle term use term://*toggleterm#* instead</span>
+<span class="pl-smi">vim</span>.<span class="pl-c1">cmd</span>(<span class="pl-s"><span class="pl-pds">'</span>autocmd! TermOpen term://* lua set_terminal_keymaps()<span class="pl-pds">'</span></span>)</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Custom Terminals</h3><a id="user-content-custom-terminals" class="anchor" aria-label="Permalink: Custom Terminals" href="https://github.com/akinsho/toggleterm.nvim#custom-terminals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/22454918/116447435-e69f1480-a84f-11eb-86dd-19fa29646aa1.png"><img src="https://user-images.githubusercontent.com/22454918/116447435-e69f1480-a84f-11eb-86dd-19fa29646aa1.png" alt="lazy git" style="max-width: 100%;"></a>
+<em>using <a href="https://github.com/jesseduffield/lazygit">lazygit</a></em></p>
+<p dir="auto">Toggleterm also exposes the <code>Terminal</code> class so that this can be used to create custom terminals
+for showing terminal UIs like <code>lazygit</code>, <code>htop</code> etc.</p>
+<p dir="auto">Each terminal can take the following arguments:</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">Terminal</span>:<span class="pl-c1">new</span> {
+  <span class="pl-smi">cmd</span> <span class="pl-k">=</span> <span class="pl-smi">string</span> <span class="pl-c"><span class="pl-c">--</span> command to execute when creating the terminal e.g. 'top'</span>
+  <span class="pl-smi">display_name</span> <span class="pl-k">=</span> <span class="pl-smi">string</span> <span class="pl-c"><span class="pl-c">--</span> the name of the terminal</span>
+  <span class="pl-smi">direction</span> <span class="pl-k">=</span> <span class="pl-smi">string</span> <span class="pl-c"><span class="pl-c">--</span> the layout for the terminal, same as the main config options</span>
+  <span class="pl-smi">dir</span> <span class="pl-k">=</span> <span class="pl-smi">string</span> <span class="pl-c"><span class="pl-c">--</span> the directory for the terminal</span>
+  <span class="pl-smi">close_on_exit</span> <span class="pl-k">=</span> <span class="pl-smi">bool</span> <span class="pl-c"><span class="pl-c">--</span> close the terminal window when the process exits</span>
+  <span class="pl-smi">highlights</span> <span class="pl-k">=</span> <span class="pl-smi">table</span> <span class="pl-c"><span class="pl-c">--</span> a table with highlights</span>
+  <span class="pl-smi">env</span> <span class="pl-k">=</span> <span class="pl-smi">table</span> <span class="pl-c"><span class="pl-c">--</span> key:value table with environmental variables passed to jobstart()</span>
+  <span class="pl-smi">clear_env</span> <span class="pl-k">=</span> <span class="pl-smi">bool</span> <span class="pl-c"><span class="pl-c">--</span> use only environmental variables from `env`, passed to jobstart()</span>
+  <span class="pl-smi">on_open</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>) <span class="pl-c"><span class="pl-c">--</span> function to run when the terminal opens</span>
+  <span class="pl-smi">on_close</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>) <span class="pl-c"><span class="pl-c">--</span> function to run when the terminal closes</span>
+  <span class="pl-smi">auto_scroll</span> <span class="pl-k">=</span> <span class="pl-smi">boolean</span> <span class="pl-c"><span class="pl-c">--</span> automatically scroll to the bottom on terminal output</span>
+  <span class="pl-c"><span class="pl-c">--</span> callbacks for processing the output</span>
+  <span class="pl-smi">on_stdout</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">data</span>: <span class="pl-smi">string</span>[], <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> callback for processing output on stdout</span>
+  <span class="pl-smi">on_stderr</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">data</span>: <span class="pl-smi">string</span>[], <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> callback for processing output on stderr</span>
+  <span class="pl-smi">on_exit</span> <span class="pl-k">=</span> <span class="pl-c1">fun</span>(<span class="pl-en">t</span>: <span class="pl-smi">Terminal</span>, <span class="pl-en">job</span>: <span class="pl-smi">number</span>, <span class="pl-en">exit_code</span>: <span class="pl-smi">number</span>, <span class="pl-en">name</span>: <span class="pl-smi">string</span>) <span class="pl-c"><span class="pl-c">--</span> function to run when terminal process exits</span>
+}</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">If you want to spawn a custom terminal without running any command, you can omit the <code>cmd</code> option.</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto">Custom terminal usage</h4><a id="user-content-custom-terminal-usage" class="anchor" aria-label="Permalink: Custom terminal usage" href="https://github.com/akinsho/toggleterm.nvim#custom-terminal-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><pre><span class="pl-k">local</span> <span class="pl-smi">Terminal</span>  <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>toggleterm.terminal<span class="pl-pds">'</span></span>).<span class="pl-e">Terminal</span>
+<span class="pl-k">local</span> <span class="pl-smi">lazygit</span> <span class="pl-k">=</span> <span class="pl-en">Terminal</span>:<span class="pl-c1">new</span>({ <span class="pl-smi">cmd</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lazygit<span class="pl-pds">"</span></span>, <span class="pl-smi">hidden</span> <span class="pl-k">=</span> <span class="pl-c1">true</span> })
+
+<span class="pl-k">function</span> <span class="pl-en">_lazygit_toggle</span>()
+  <span class="pl-en">lazygit</span>:<span class="pl-c1">toggle</span>()
+<span class="pl-k">end</span>
+
+<span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_set_keymap</span>(<span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;leader&gt;g<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;cmd&gt;lua _lazygit_toggle()&lt;CR&gt;<span class="pl-pds">"</span></span>, {<span class="pl-smi">noremap</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-smi">silent</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>})</pre><div class="zeroclipboard-container">
+    </div><p dir="auto">This will create a new terminal, but the specified command is not being run immediately.
+The command will run once the terminal is opened. Alternatively <code>term:spawn()</code> can be used
+to start the command in a background buffer without opening a terminal window yet. If the
+<code>hidden</code> key is set to true, this terminal will not be toggled by normal toggleterm commands
+such as <code>:ToggleTerm</code> or the open mapping. It will only open and close by using the returned
+terminal object. A mapping for toggling the terminal can be set as in the example above.</p>
+<p dir="auto">Alternatively the terminal can be specified with a count, which is the number that can be used
+to trigger this specific terminal. This can then be triggered using the current count e.g.
+<code>:5ToggleTerm&lt;CR&gt;</code></p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">local</span> <span class="pl-smi">lazygit</span> <span class="pl-k">=</span> <span class="pl-en">Terminal</span>:<span class="pl-c1">new</span>({ <span class="pl-smi">cmd</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lazygit<span class="pl-pds">"</span></span>, <span class="pl-smi">count</span> <span class="pl-k">=</span> <span class="pl-c1">5</span> })</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">You can also set a custom layout for a terminal.</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">local</span> <span class="pl-smi">lazygit</span> <span class="pl-k">=</span> <span class="pl-en">Terminal</span>:<span class="pl-c1">new</span>({
+  <span class="pl-smi">cmd</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lazygit<span class="pl-pds">"</span></span>,
+  <span class="pl-smi">dir</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>git_dir<span class="pl-pds">"</span></span>,
+  <span class="pl-smi">direction</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>float<span class="pl-pds">"</span></span>,
+  <span class="pl-smi">float_opts</span> <span class="pl-k">=</span> {
+    <span class="pl-smi">border</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>double<span class="pl-pds">"</span></span>,
+  },
+  <span class="pl-c"><span class="pl-c">--</span> function to run on opening the terminal</span>
+  <span class="pl-en">on_open</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">term</span>)
+    <span class="pl-smi">vim</span>.<span class="pl-c1">cmd</span>(<span class="pl-s"><span class="pl-pds">"</span>startinsert!<span class="pl-pds">"</span></span>)
+    <span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_buf_set_keymap</span>(<span class="pl-smi">term</span>.<span class="pl-e">bufnr</span>, <span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>q<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;cmd&gt;close&lt;CR&gt;<span class="pl-pds">"</span></span>, {<span class="pl-smi">noremap</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-smi">silent</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>})
+  <span class="pl-k">end</span>,
+  <span class="pl-c"><span class="pl-c">--</span> function to run on closing the terminal</span>
+  <span class="pl-en">on_close</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">term</span>)
+    <span class="pl-smi">vim</span>.<span class="pl-c1">cmd</span>(<span class="pl-s"><span class="pl-pds">"</span>startinsert!<span class="pl-pds">"</span></span>)
+  <span class="pl-k">end</span>,
+})
+
+<span class="pl-k">function</span> <span class="pl-en">_lazygit_toggle</span>()
+  <span class="pl-en">lazygit</span>:<span class="pl-c1">toggle</span>()
+<span class="pl-k">end</span>
+
+<span class="pl-smi">vim</span>.<span class="pl-e">api</span>.<span class="pl-c1">nvim_set_keymap</span>(<span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;leader&gt;g<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>&lt;cmd&gt;lua _lazygit_toggle()&lt;CR&gt;<span class="pl-pds">"</span></span>, {<span class="pl-smi">noremap</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>, <span class="pl-smi">silent</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>})</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto"><strong>WARNING</strong>: do not use any of the private functionality of the terminal or other non-public parts of the API as these
+can change in the future.</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Statusline</h3><a id="user-content-statusline" class="anchor" aria-label="Permalink: Statusline" href="https://github.com/akinsho/toggleterm.nvim#statusline"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">To tell each terminal apart you can use the terminal buffer variable <code>b:toggle_number</code>
+in your statusline</p>
+<div class="highlight highlight-source-viml notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">"</span> this is pseudo code</span>
+<span class="pl-k">let</span> <span class="pl-c1">statusline</span> <span class="pl-k">.=</span> <span class="pl-s"><span class="pl-pds">'</span>%{&amp;ft == "toggleterm" ? "terminal (".b:toggle_number.")" : ""}<span class="pl-pds">'</span></span></pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Custom commands</h3><a id="user-content-custom-commands" class="anchor" aria-label="Permalink: Custom commands" href="https://github.com/akinsho/toggleterm.nvim#custom-commands"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">You can create your own commands by using the lua functions this plugin provides directly</p>
+<div class="highlight highlight-source-viml notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">command</span><span class="pl-k">!</span> -<span class="pl-en">count</span>=<span class="pl-c1">1</span> TermGitPush  <span class="pl-c1">lua</span> require<span class="pl-s"><span class="pl-pds">'</span>toggleterm<span class="pl-pds">'</span></span>.<span class="pl-en">exec</span>(<span class="pl-s"><span class="pl-pds">"</span>git push<span class="pl-pds">"</span></span>,    <span class="pl-e">&lt;count&gt;</span>, <span class="pl-c1">12</span>)
+<span class="pl-c1">command</span><span class="pl-k">!</span> -<span class="pl-en">count</span>=<span class="pl-c1">1</span> TermGitPushF <span class="pl-c1">lua</span> require<span class="pl-s"><span class="pl-pds">'</span>toggleterm<span class="pl-pds">'</span></span>.<span class="pl-en">exec</span>(<span class="pl-s"><span class="pl-pds">"</span>git push -f<span class="pl-pds">"</span></span>, <span class="pl-e">&lt;count&gt;</span>, <span class="pl-c1">12</span>)</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">Open multiple terminals side-by-side</h3><a id="user-content-open-multiple-terminals-side-by-side" class="anchor" aria-label="Permalink: Open multiple terminals side-by-side" href="https://github.com/akinsho/toggleterm.nvim#open-multiple-terminals-side-by-side"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th>Direction</th>
+<th>Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vertical</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>horizontal</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>✖️</td>
+</tr>
+<tr>
+<td>float</td>
+<td>✖️</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">In your first terminal, you need to leave the <code>TERMINAL</code> mode using <kbd>C-\</kbd><kbd>C-N</kbd> which can be remapped to <kbd>Esc</kbd> for ease of use.
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/31947091/133395516-22fef1e6-633d-4964-9175-f76fabf66794.png"><img src="https://user-images.githubusercontent.com/31947091/133395516-22fef1e6-633d-4964-9175-f76fabf66794.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">Then you type on: <code>2&lt;C-\&gt;</code>, and the result:
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/31947091/133396789-fdf68b30-3a8c-440b-822f-6549f282c4fc.png"><img src="https://user-images.githubusercontent.com/31947091/133396789-fdf68b30-3a8c-440b-822f-6549f282c4fc.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">Explain:</p>
+<ul dir="auto">
+<li><code>2</code>: this is the terminal's number (or ID), your first terminal is <code>1</code> (e.g. your 3rd terminal will be <code>3&lt;C-\&gt;</code>, so on).</li>
+<li><kbd>C-\</kbd>: this is the combined key mapping to the command <code>:ToggleTerm</code>.</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto">FAQ</h3><a id="user-content-faq" class="anchor" aria-label="Permalink: FAQ" href="https://github.com/akinsho/toggleterm.nvim#faq"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto">How do I get this plugin to work with Powershell?</h4><a id="user-content-how-do-i-get-this-plugin-to-work-with-powershell" class="anchor" aria-label="Permalink: How do I get this plugin to work with Powershell?" href="https://github.com/akinsho/toggleterm.nvim#how-do-i-get-this-plugin-to-work-with-powershell"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><div data-view-component="true" class="Layout-main"><react-partial partial-name="repos-overview" data-ssr="true" data-attempted-ssr="true" data-react-profiling="false" data-catalyst="" class="loaded"><div data-target="react-partial.reactRoot"><div class="OverviewContent-module__Box--uNd1J"><div class="OverviewContent-module__Box_11--Tqhu2"><div class="OverviewRepoFiles-module__Box_1--xSt0T"><div class="OverviewRepoFiles-module__Box_2--yIjMp"><div class="Box-sc-g0xbh4-0 js-snippet-clipboard-copy-unpositioned DirectoryRichtextContent-module__SharedMarkdownContent--BTKsc" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto">Please check out the <a href="https://github.com/akinsho/toggleterm.nvim/wiki/Tips-and-Tricks#using-toggleterm-with-powershell">Wiki section on this topic</a>.</p>
+</article></div></div></div></div></div>   </div>
+</react-partial>
+
+
+      
+</div>
+  <div data-view-component="true" class="Layout-sidebar">      
+
+      <div class="BorderGrid about-margin" data-pjax="">
+        <div class="BorderGrid-row">
+          <div class="BorderGrid-cell">
+            <div class="hide-sm hide-md">
+  <h2 class="mb-3 h4">About</h2>
+
+      <p class="f4 my-3">
+        A neovim lua plugin to help easily manage multiple terminal windows
+      </p>
+
+    <h3 class="sr-only">Topics</h3>
+    <div class="my-3">
+        <div class="f6">
+      <a href="https://github.com/topics/plugin" title="Topic: plugin" data-view-component="true" class="topic-tag topic-tag-link">
+  plugin
+</a>
+      <a href="https://github.com/topics/terminal" title="Topic: terminal" data-view-component="true" class="topic-tag topic-tag-link">
+  terminal
+</a>
+      <a href="https://github.com/topics/lua" title="Topic: lua" data-view-component="true" class="topic-tag topic-tag-link">
+  lua
+</a>
+      <a href="https://github.com/topics/neovim" title="Topic: neovim" data-view-component="true" class="topic-tag topic-tag-link">
+  neovim
+</a>
+  </div>
+
+    </div>
+
+    <h3 class="sr-only">Resources</h3>
+    <div class="mt-2">
+      <a class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:readme&quot;}" href="https://github.com/akinsho/toggleterm.nvim#readme-ov-file">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2">
+    </svg></a></div></div></div></div></div></div><div class="mt-2"><a class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:readme&quot;}" href="https://github.com/akinsho/toggleterm.nvim#readme-ov-file"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2">
+</svg>
+        Readme
+</a>    </div>
+
+  
+    <h3 class="sr-only">License</h3>
+  <div class="mt-2">
+    <a href="https://github.com/akinsho/toggleterm.nvim#GPL-3.0-1-ov-file" class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:license&quot;}">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-law mr-1 mr-sm-1 mr-md-2 mr-lg-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/akinsho/toggleterm.nvim#GPL-3.0-1-ov-file" class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:license&quot;}"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-law mr-1 mr-sm-1 mr-md-2 mr-lg-2">
+</svg>
+     GPL-3.0 license
+    </a>
+  </div>
+
+
+
+
+
+
+  <include-fragment src="https://github.com/akinsho/toggleterm.nvim/hovercards/citation/sidebar_partial?tree_name=main" data-nonce="v2:05d5de66-49b8-37b5-bddc-5b6eec17f1ad" data-view-component="true" class="is-error">
+  
+
+  
+</include-fragment>
+  <div class="mt-2">
+    <a href="https://github.com/akinsho/toggleterm.nvim/activity" data-view-component="true" class="Link Link--muted"><svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/akinsho/toggleterm.nvim/activity" data-view-component="true" class="Link Link--muted"><svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+</svg>
+      <span class="color-fg-muted">Activity</span></a>  </div>
+
+
+  <h3 class="sr-only">Stars</h3>
+  <div class="mt-2">
+    <a href="https://github.com/akinsho/toggleterm.nvim/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/akinsho/toggleterm.nvim/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+</svg>
+      <strong>5.1k</strong>
+      stars</a>  </div>
+
+  <h3 class="sr-only">Watchers</h3>
+  <div class="mt-2">
+    <a href="https://github.com/akinsho/toggleterm.nvim/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/akinsho/toggleterm.nvim/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+</svg>
+      <strong>22</strong>
+      watching</a>  </div>
+
+  <h3 class="sr-only">Forks</h3>
+  <div class="mt-2">
+    <a href="https://github.com/akinsho/toggleterm.nvim/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+    </svg></a></div><div class="BorderGrid-row"><div class="BorderGrid-cell"><div class="hide-sm hide-md"><div class="mt-2"><a href="https://github.com/akinsho/toggleterm.nvim/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+</svg>
+      <strong>195</strong>
+      forks</a>  </div>
+
+
+    <div class="mt-2">
+      <a class="Link--muted" href="https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fakinsho%2Ftoggleterm.nvim&amp;report=akinsho+%28user%29">
+          Report repository
+</a>    </div>
+</div>
+
+          </div>
+        </div>
+
+        
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                
+<h2 class="h4 mb-3">Sponsor this project</h2>
+    <div class="d-flex mb-3">
+      <a data-hovercard-type="user" data-hovercard-url="/users/akinsho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/akinsho" aria-keyshortcuts="Alt+ArrowUp">
+        <img class="avatar d-block mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/22454918?s=64&amp;v=4" width="32" height="32" alt="@akinsho">
+</a>      <span class="mr-2 flex-self-center flex-auto min-width-0 css-truncate css-truncate-target width-fit">
+        <a class="Link--primary no-underline" href="https://github.com/akinsho">
+          <strong>akinsho</strong>
+          <span class="color-fg-muted">Akin</span>
+</a>      </span>
+    </div>
+      </div></div><div class="BorderGrid-row"><div class="BorderGrid-cell">
+
+  <div class="text-small mt-3">
+    <a href="https://github.com/sponsors">Learn more about GitHub Sponsors</a>
+  </div>
+
+              </div>
+            </div>
+
+        
+        
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                <h2 class="h4 mb-3">
+  <a href="https://github.com/akinsho/toggleterm.nvim/graphs/contributors" data-view-component="true" class="Link--primary no-underline Link d-flex flex-items-center">Contributors
+      <span title="90" data-view-component="true" class="Counter ml-1">90</span></a></h2>
+
+
+    
+  <ul class="list-style-none d-flex flex-wrap mb-n2">
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/akinsho" class="" data-hovercard-type="user" data-hovercard-url="/users/akinsho/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/22454918?s=64&amp;v=4" alt="@akinsho" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/apps/github-actions" class="">
+        <img src="https://avatars.githubusercontent.com/in/15368?s=64&amp;v=4" alt="@github-actions[bot]" size="32" height="32" width="32" data-view-component="true" class="avatar">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/l-kershaw" class="" data-hovercard-type="user" data-hovercard-url="/users/l-kershaw/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/35707277?s=64&amp;v=4" alt="@l-kershaw" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/zeertzjq" class="" data-hovercard-type="user" data-hovercard-url="/users/zeertzjq/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/35768171?s=64&amp;v=4" alt="@zeertzjq" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/genesistms" class="" data-hovercard-type="user" data-hovercard-url="/users/genesistms/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/19390954?s=64&amp;v=4" alt="@genesistms" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/hat0uma" class="" data-hovercard-type="user" data-hovercard-url="/users/hat0uma/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/55551571?s=64&amp;v=4" alt="@hat0uma" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/Daxtorim" class="" data-hovercard-type="user" data-hovercard-url="/users/Daxtorim/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/72616153?s=64&amp;v=4" alt="@Daxtorim" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/searleser97" class="" data-hovercard-type="user" data-hovercard-url="/users/searleser97/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/5056411?s=64&amp;v=4" alt="@searleser97" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/jedrzejboczar" class="" data-hovercard-type="user" data-hovercard-url="/users/jedrzejboczar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/16623787?s=64&amp;v=4" alt="@jedrzejboczar" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/willothy" class="" data-hovercard-type="user" data-hovercard-url="/users/willothy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/38540736?s=64&amp;v=4" alt="@willothy" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/raffaem" class="" data-hovercard-type="user" data-hovercard-url="/users/raffaem/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/54762742?s=64&amp;v=4" alt="@raffaem" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/andersevenrud" class="" data-hovercard-type="user" data-hovercard-url="/users/andersevenrud/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/161548?s=64&amp;v=4" alt="@andersevenrud" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/celediel" class="" data-hovercard-type="user" data-hovercard-url="/users/celediel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/438786?s=64&amp;v=4" alt="@celediel" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/romgrk" class="" data-hovercard-type="user" data-hovercard-url="/users/romgrk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/1423607?s=64&amp;v=4" alt="@romgrk" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+</ul>
+
+
+
+
+  <div data-view-component="true" class="mt-3">
+    <a text="small" href="https://github.com/akinsho/toggleterm.nvim/graphs/contributors" data-view-component="true" class="Link--inTextBlock Link">+ 76 contributors</a></div>
+              </div>
+            </div>
+
+        
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                <h2 class="h4 mb-3">Languages</h2>
+<div class="mb-2">
+  <span data-view-component="true" class="Progress">
+    <span style="background-color: rgb(0, 0, 128) !important; width: 100%; --darkreader-inline-bgcolor: var(--darkreader-background-000080, #000066);" itemprop="keywords" data-view-component="true" class="Progress-item color-bg-success-emphasis" data-darkreader-inline-bgcolor=""></span>
+</span></div>
+<ul class="list-style-none">
+    <li class="d-inline">
+        <a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small mr-3" href="https://github.com/akinsho/toggleterm.nvim/search?l=lua" data-ga-click="Repository, language stats search click, location:repo overview">
+          <svg style="color: rgb(0, 0, 128); --darkreader-inline-color: var(--darkreader-text-000080, #7faeff);" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2" data-darkreader-inline-color="">
+    </svg></a></li></ul></div></div><div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="" data-project-hovercards-enabled=""><div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class=""><main id="js-repo-pjax-container"><turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class=""><div id="repo-content-pjax-container" class="repository-content "><div class="clearfix container-xl px-md-4 px-lg-5 px-3"><div><div style="max-width: 100%" data-view-component="true" class="Layout Layout--flowRow-until-md react-repos-overview-margin Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end"><div data-view-component="true" class="Layout-sidebar"><div class="BorderGrid about-margin" data-pjax=""><div class="BorderGrid-row"><div class="BorderGrid-cell"><ul class="list-style-none"><li class="d-inline"><a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small mr-3" href="https://github.com/akinsho/toggleterm.nvim/search?l=lua" data-ga-click="Repository, language stats search click, location:repo overview"><svg style="color: rgb(0, 0, 128); --darkreader-inline-color: var(--darkreader-text-000080, #7faeff);" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2" data-darkreader-inline-color="">
+</svg>
+          <span class="color-fg-default text-bold mr-1">Lua</span>
+          <span>100.0%</span>
+        </a>
+    </li>
+</ul>
+
+              </div>
+            </div>
+
+              </div>
+</div>
+  
+</div></div>
+
+  </div>
+
+
+  </div>
+
+</turbo-frame>
+
+
+    </main>
+  </div>
+
+  </div>
+
+          <footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive" role="contentinfo">
+  <h2 class="sr-only">Footer</h2>
+
+  
+
+
+  <div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap">
+    <div class="d-flex flex-items-center flex-shrink-0 mx-2">
+      <a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com">
+        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+    </svg></a></div></div></footer><div class="d-flex flex-items-center flex-shrink-0 mx-2"><a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com"><svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+</svg>
+</a>
+      <span>
+        © 2025 GitHub, Inc.
+      </span>
+    </div>
+
+    <nav aria-label="Footer">
+      <h3 class="sr-only" id="sr-footer-heading">Footer navigation</h3>
+
+      <ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading">
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security" data-view-component="true" class="Link--secondary Link">Security</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/" data-view-component="true" class="Link--secondary Link">Status</a>
+          </li>
+
+            <li class="mx-2">
+              <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.community/" data-view-component="true" class="Link--secondary Link">Community</a>
+            </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com/" data-view-component="true" class="Link--secondary Link">Docs</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com?tags=dotcom-footer" data-view-component="true" class="Link--secondary Link">Contact</a>
+          </li>
+
+          <li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    </cookie-consent-link></li></ul></nav><li class="mx-2">
+</li>
+
+<li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    </cookie-consent-link></li><div data-turbo-body="" class="logged-in env-production page-responsive" style="word-wrap: break-word;"><footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive" role="contentinfo"><div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap"><nav aria-label="Footer"><ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading"><li class="mx-2">
+</li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+    <ghcc-consent id="ghcc" class="position-fixed bottom-0 left-0" style="z-index: 999999" data-locale="en" data-initial-cookie-consent-allowed="" data-cookie-consent-required="false" data-catalyst=""></ghcc-consent>
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+    </div>
+    <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true"></div>
+    <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true"></div>
+  
+
+

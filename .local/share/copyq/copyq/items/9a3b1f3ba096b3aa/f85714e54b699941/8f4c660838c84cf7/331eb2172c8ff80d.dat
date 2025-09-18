@@ -1,0 +1,1196 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div data-turbo-body="" class="logged-in env-production page-responsive" style="word-wrap: break-word;">
+        <div id="__primerPortalRoot__" role="region" style="z-index: 1000; position: absolute; width: 100%;" data-turbo-permanent=""></div>
+      
+
+
+
+    <div class="position-relative header-wrapper js-header-wrapper ">
+      <a href="https://github.com/folke/lazydev.nvim#start-of-content" data-skip-target-assigned="false" class="p-3 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+
+      <span data-view-component="true" class="progress-pjax-loader Progress position-fixed width-full">
+    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
+</span>      
+      
+      
+
+<react-partial partial-name="keyboard-shortcuts-dialog" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+
+
+
+      
+
+          
+
+                  <header class="AppHeader" role="banner">
+      <h2 class="sr-only">Navigation Menu</h2>
+
+
+        
+
+        <div class="AppHeader-globalBar pb-2 js-global-bar">
+          <div class="AppHeader-globalBar-start responsive-context-region">
+            <div class="">
+                  <deferred-side-panel data-url="/_side-panels/global" data-catalyst="">
+  <include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:4299309f-2ef0-51ac-9dc9-1bd1c3580c30" data-view-component="true">
+  
+          </include-fragment></deferred-side-panel></div></div></div></header></div></div><div class=""><deferred-side-panel data-url="/_side-panels/global" data-catalyst=""><include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:4299309f-2ef0-51ac-9dc9-1bd1c3580c30" data-view-component="true">
+
+<dialog-helper>
+  </dialog-helper>
+
+
+  
+</include-fragment></deferred-side-panel>
+            </div>
+
+            <a class="AppHeader-logo ml-1 " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
+              <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+    </svg></a><a class="AppHeader-logo ml-1 " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+</svg>
+            </a>
+
+              <context-region-controller class="AppHeader-context responsive-context-region" data-max-items="5" data-catalyst="">
+  <div class="AppHeader-context-full">
+    <nav role="navigation" aria-label="GitHub Breadcrumb">
+      
+<context-region data-target="context-region-controller.contextRegion" role="list" data-action="context-region-changed:context-region-controller#crumbsChanged" data-catalyst="">
+    <context-region-crumb data-crumb-id="contextregion-usercrumb-folke" data-targets="context-region.crumbs" data-label="folke" data-href="/folke" data-pre-rendered="" role="listitem" data-catalyst="">
+      <a data-target="context-region-crumb.linkElement" data-analytics-event="{&quot;category&quot;:&quot;SiteHeaderComponent&quot;,&quot;action&quot;:&quot;context_region_crumb&quot;,&quot;label&quot;:&quot;folke&quot;,&quot;screen_size&quot;:&quot;full&quot;}" data-hovercard-type="user" data-hovercard-url="/users/folke/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/folke" id="contextregion-usercrumb-folke-link" data-view-component="true" class="AppHeader-context-item" aria-keyshortcuts="Alt+ArrowUp">
+        <span data-target="context-region-crumb.labelElement" class="AppHeader-context-item-label ">folke</span>
+
+</a>
+      <context-region-divider data-target="context-region-crumb.dividerElement" data-pre-rendered="" data-catalyst="">
+  </context-region-divider></context-region-crumb></context-region></nav></div></context-region-controller><div class="AppHeader-globalBar-start responsive-context-region"><context-region-controller class="AppHeader-context responsive-context-region" data-max-items="5" data-catalyst=""><div class="AppHeader-context-full"><nav role="navigation" aria-label="GitHub Breadcrumb"><context-region data-target="context-region-controller.contextRegion" role="list" data-action="context-region-changed:context-region-controller#crumbsChanged" data-catalyst="">
+    <context-region-crumb data-crumb-id="contextregion-repositorycrumb-lazydev-nvim" data-targets="context-region.crumbs" data-label="lazydev.nvim" data-href="/folke/lazydev.nvim" data-pre-rendered="" role="listitem" data-catalyst="">
+      <a data-target="context-region-crumb.linkElement" data-analytics-event="{&quot;category&quot;:&quot;SiteHeaderComponent&quot;,&quot;action&quot;:&quot;context_region_crumb&quot;,&quot;label&quot;:&quot;lazydev.nvim&quot;,&quot;screen_size&quot;:&quot;full&quot;}" href="https://github.com/folke/lazydev.nvim" aria-current="page" id="contextregion-repositorycrumb-lazydev-nvim-link" data-view-component="true" class="AppHeader-context-item">
+        <span data-target="context-region-crumb.labelElement" class="AppHeader-context-item-label ">lazydev.nvim</span>
+
+</a>
+      
+
+    
+        
+      </context-region-crumb>
+
+</context-region>
+
+    </nav>
+  </div>
+</context-region-controller>
+
+          </div>
+          <div class="AppHeader-globalBar-end">
+              <div class="AppHeader-search">
+                  
+
+
+<qbsearch-input class="search-input" data-scope="repo:folke/lazydev.nvim" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="_FXKJN2UoMporVn9uLGiRyIe11h2GYZn6zGr4MMEaMYbPBonVSqIKJMaC0XVaZkmVKPxRYTGeHvPyNA0fOM79w" data-max-custom-scopes="10" data-header-redesign-enabled="true" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="folke/lazydev.nvim" data-current-org="" data-current-owner="folke" data-logged-in="true" data-copilot-chat-enabled="true" data-nl-search-enabled="false" data-catalyst="">
+  <div class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center height-auto color-bg-transparent border-0 color-fg-subtle mx-0" data-action="click:qbsearch-input#searchInputContainerClicked">
+      
+            
+
+
+<div class="AppHeader-search-whenRegular">
+  <div class="AppHeader-search-wrap AppHeader-search-wrap--hasTrailing">
+    <div class="AppHeader-search-control AppHeader-search-control-overflow">
+      <label for="AppHeader-searchInput" aria-label="Search or jump to…" class="AppHeader-search-visual--leading">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
+    </svg></label></div></div></div></div></qbsearch-input></div></div><label for="AppHeader-searchInput" aria-label="Search or jump to…" class="AppHeader-search-visual--leading"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
+</svg>
+      </label>
+
+                <div class="AppHeader-search"><qbsearch-input class="search-input" data-scope="repo:folke/lazydev.nvim" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="_FXKJN2UoMporVn9uLGiRyIe11h2GYZn6zGr4MMEaMYbPBonVSqIKJMaC0XVaZkmVKPxRYTGeHvPyNA0fOM79w" data-max-custom-scopes="10" data-header-redesign-enabled="true" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="folke/lazydev.nvim" data-current-org="" data-current-owner="folke" data-logged-in="true" data-copilot-chat-enabled="true" data-nl-search-enabled="false" data-catalyst=""><div class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center height-auto color-bg-transparent border-0 color-fg-subtle mx-0" data-action="click:qbsearch-input#searchInputContainerClicked">
+
+    
+
+  </div>
+  
+  <div class="color-fg-default">
+    
+<dialog-helper>
+  </dialog-helper>
+
+    <custom-scopes data-target="qbsearch-input.customScopesManager" data-catalyst="">
+    
+<dialog-helper>
+  </dialog-helper>
+    </custom-scopes>
+  </div>
+</qbsearch-input>  
+
+
+              </div>
+
+            
+              <div class="AppHeader-CopilotChat hide-sm hide-md">
+  <div class="d-flex">
+    <react-partial-anchor data-catalyst="">
+        </react-partial-anchor></div></div><react-partial-anchor data-catalyst="">
+
+      
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+<react-partial partial-name="copilot-chat" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"><div class="CopilotChat-module__CopilotChatContainer--fWXmM"></div><div class="PortalContainerUtils-module__chatPortalContainer--Otmle"></div></div>
+</react-partial>
+
+
+
+      </react-partial-anchor>
+    <div class="position-relative">
+      
+        <react-partial-anchor data-catalyst="">
+          </react-partial-anchor></div><div class="AppHeader-CopilotChat hide-sm hide-md"><div class="d-flex"><div class="position-relative"><react-partial-anchor data-catalyst="">
+
+          
+        
+            
+
+<react-partial partial-name="global-copilot-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+          </react-partial-anchor>
+    </div>
+  </div>
+</div>
+
+
+            <div class="AppHeader-actions position-relative">
+                 <react-partial-anchor data-catalyst="">
+      </react-partial-anchor></div><react-partial-anchor data-catalyst="">
+
+      
+    
+        
+
+<react-partial partial-name="global-create-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+      </react-partial-anchor>
+
+        
+                
+
+                <div class="AppHeader-actions position-relative">
+
+            </div>
+            
+              <notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE5MjAxMX0=--829f306a4fb0eb13103037e7860fae5806ecae88167f937b9dfbfdb3a88ff3f6" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-header-redesign-enabled="true" data-fetch-indicator-src="/notifications/indicator" data-fetch-indicator-enabled="true" data-view-component="true" class="js-socket-channel" data-fetch-retry-delay-time="500" data-catalyst="">
+    </notification-indicator><notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE5MjAxMX0=--829f306a4fb0eb13103037e7860fae5806ecae88167f937b9dfbfdb3a88ff3f6" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-header-redesign-enabled="true" data-fetch-indicator-src="/notifications/indicator" data-fetch-indicator-enabled="true" data-view-component="true" class="js-socket-channel" data-fetch-retry-delay-time="500" data-catalyst="">
+
+    
+</notification-indicator>
+
+            <div class="AppHeader-user">
+              <deferred-side-panel data-url="/_side-panels/user?repository_id=809089971" data-catalyst="">
+  <include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:4299309f-2ef0-51ac-9dc9-1bd1c3580c30" data-view-component="true">
+  
+    <react-partial-anchor data-catalyst="">
+  </react-partial-anchor></include-fragment></deferred-side-panel></div><div class="AppHeader-globalBar pb-2 js-global-bar"><div class="AppHeader-globalBar-end"><div class="AppHeader-user"><deferred-side-panel data-url="/_side-panels/user?repository_id=809089971" data-catalyst=""><include-fragment data-target="deferred-side-panel.fragment" data-nonce="v2:4299309f-2ef0-51ac-9dc9-1bd1c3580c30" data-view-component="true"><react-partial-anchor data-catalyst="">
+  
+
+    
+
+<react-partial partial-name="global-user-nav-drawer" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+  </react-partial-anchor>
+
+
+  
+</include-fragment></deferred-side-panel>
+            </div>
+
+            <div class="position-absolute mt-2">
+                
+<site-header-logged-in-user-menu data-catalyst="">
+
+</site-header-logged-in-user-menu>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+            <div class="AppHeader-localBar">
+              <nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav">
+
+  <ul data-view-component="true" class="UnderlineNav-body list-style-none">
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="code-tab" href="https://github.com/folke/lazydev.nvim" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /folke/lazydev.nvim" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g c" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li></ul></nav></div><li data-view-component="true" class="d-inline-flex"><a id="code-tab" href="https://github.com/folke/lazydev.nvim" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /folke/lazydev.nvim" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g c" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Code">Code</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="issues-tab" href="https://github.com/folke/lazydev.nvim/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /folke/lazydev.nvim/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="issues-tab" href="https://github.com/folke/lazydev.nvim/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /folke/lazydev.nvim/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Issues">Issues</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="pull-requests-tab" href="https://github.com/folke/lazydev.nvim/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /folke/lazydev.nvim/pulls" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g p" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="pull-requests-tab" href="https://github.com/folke/lazydev.nvim/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /folke/lazydev.nvim/pulls" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g p" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Pull requests">Pull requests</span>
+          <span id="pull-requests-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="4" data-view-component="true" class="Counter">4</span>
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="discussions-tab" href="https://github.com/folke/lazydev.nvim/discussions" data-tab-item="i3discussions-tab" data-selected-links="repo_discussions /folke/lazydev.nvim/discussions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g g" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Discussions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="discussions-tab" href="https://github.com/folke/lazydev.nvim/discussions" data-tab-item="i3discussions-tab" data-selected-links="repo_discussions /folke/lazydev.nvim/discussions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g g" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Discussions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Discussions">Discussions</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="actions-tab" href="https://github.com/folke/lazydev.nvim/actions" data-tab-item="i4actions-tab" data-selected-links="repo_actions /folke/lazydev.nvim/actions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g a" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="actions-tab" href="https://github.com/folke/lazydev.nvim/actions" data-tab-item="i4actions-tab" data-selected-links="repo_actions /folke/lazydev.nvim/actions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g a" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Actions">Actions</span>
+          
+
+
+    
+</a></li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="security-tab" href="https://github.com/folke/lazydev.nvim/security" data-tab-item="i5security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /folke/lazydev.nvim/security" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g s" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><li data-view-component="true" class="d-inline-flex"><a id="security-tab" href="https://github.com/folke/lazydev.nvim/security" data-tab-item="i5security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /folke/lazydev.nvim/security" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g s" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Security">Security</span>
+          </a>
+
+
+    
+</li>
+      <li data-view-component="true" class="d-inline-flex">
+  <a id="insights-tab" href="https://github.com/folke/lazydev.nvim/pulse" data-tab-item="i6insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /folke/lazydev.nvim/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
+    
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
+    </svg></a></li><ul data-view-component="true" class="UnderlineNav-body list-style-none"><li data-view-component="true" class="d-inline-flex"><a id="insights-tab" href="https://github.com/folke/lazydev.nvim/pulse" data-tab-item="i6insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /folke/lazydev.nvim/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
+</svg>
+        <span data-content="Insights">Insights</span>
+          
+
+
+    
+</a></li>
+</ul>
+    <div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0"><action-menu data-select-variant="none" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain=""></focus-group></action-menu></div><div class="position-relative header-wrapper js-header-wrapper "><header class="AppHeader" role="banner"><div class="AppHeader-localBar"><nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav"><div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0"><action-menu data-select-variant="none" data-view-component="true" data-catalyst="" data-ready="true"><focus-group direction="vertical" mnemonics="" retain=""></focus-group>
+</action-menu></div>
+</nav>
+              
+            </div>
+    </header>
+
+
+      
+        
+          
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+
+
+
+    <div id="js-flash-container" class="flash-container" data-turbo-replace="">
+
+
+
+
+  
+</div>
+
+
+    
+  <notification-shelf-watcher data-base-url="https://github.com/notifications/beta/shelf" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MTg2NTA3NzAzIiwidCI6MTc1ODE5MjAxMX0=--829f306a4fb0eb13103037e7860fae5806ecae88167f937b9dfbfdb3a88ff3f6" data-view-component="true" class="js-socket-channel" data-refresh-delay="500" data-catalyst="" data-throttle-delay="5000"></notification-shelf-watcher>
+  
+
+
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="" data-project-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container">
+      
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+      
+
+  <div id="repository-container-header" class="pt-3 hide-full-screen" data-turbo-replace="">
+
+      <div class="d-flex flex-nowrap flex-justify-end mb-3  container-xl  px-3 px-lg-5" style="gap: 1rem;">
+
+        <div class="flex-auto min-width-0 width-fit">
+              <div id="repo-title-component" class=" d-flex flex-nowrap flex-items-center wb-break-word f3 text-normal">
+    <img class="avatar mr-2 d-none d-md-block avatar-user" alt="Owner avatar" src="https://avatars.githubusercontent.com/u/292349?s=48&amp;v=4" width="24" height="24">
+  
+
+  <strong itemprop="name" class="mr-2 flex-self-stretch d-none d-md-block no-wrap overflow-x-hidden">
+    <a data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" class="d-block overflow-x-hidden color-fg-default" style="text-overflow: ellipsis;" href="https://github.com/folke/lazydev.nvim">lazydev.nvim</a>
+  </strong>
+
+  <span></span><span class="Label Label--secondary v-align-middle mr-1 d-none d-md-block">Public</span>
+</div>
+
+<div class="d-none d-md-block">
+</div>
+
+
+        </div>
+
+        <div id="repository-details-container" class="flex-shrink-0" data-turbo-replace="" style="max-width: 70%;">
+            <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
+    
+      
+
+  <li>
+              
+
+
+<react-partial partial-name="notifications-subscriptions-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot"><div class="d-none d-md-block"></div></div></react-partial></li></ul></div></div></div></main></div></div><li><react-partial partial-name="notifications-subscriptions-menu" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded"><div data-target="react-partial.reactRoot"></div>
+</react-partial>
+
+
+
+
+  </li>
+
+  <li>
+        <div data-view-component="true" class="BtnGroup d-flex">
+        </div></li><li><div data-view-component="true" class="BtnGroup d-flex"><details group_item="true" id="my-forks-menu-809089971" data-view-component="true" class="details-reset details-overlay BtnGroup-parent d-inline-block position-relative"></details></div>
+  </li>
+
+  <li>
+        
+
+  <div data-view-component="true" class="js-toggler-container js-social-container starring-container d-flex on">
+    <div data-view-component="true" class="starred BtnGroup flex-1 ml-0">
+      <form class="js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/folke/lazydev.nvim/unstar" accept-charset="UTF-8" method="post">
+          
+        
+          </form></div></div></li><div id="repository-container-header" class="pt-3 hide-full-screen" data-turbo-replace=""><div class="d-flex flex-nowrap flex-justify-end mb-3  container-xl  px-3 px-lg-5" style="gap: 1rem;"><div id="repository-details-container" class="flex-shrink-0" data-turbo-replace="" style="max-width: 70%;"><ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;"><li><div data-view-component="true" class="js-toggler-container js-social-container starring-container d-flex on"><div data-view-component="true" class="starred BtnGroup flex-1 ml-0"><details id="details-user-list-809089971-starred" data-view-component="true" class="details-reset details-overlay BtnGroup-parent js-user-list-menu d-inline-block position-relative"></details>
+</div>
+    </div>
+  </li>
+
+</ul>
+
+        </div>
+      </div>
+
+        <div class=" container-xl ">
+          <div id="responsive-meta-container" data-turbo-replace="">
+      
+
+</div>
+
+          <div class="border-bottom  mx-xl-5 "></div>
+        </div>
+
+  </div>
+
+
+
+
+<turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class="">
+    <div id="repo-content-pjax-container" class="repository-content ">
+      
+  
+    
+
+
+
+
+    
+      
+  <h1 class="sr-only">folke/lazydev.nvim</h1>
+  <div class="clearfix container-xl px-md-4 px-lg-5 px-3">
+    <div>
+
+  <div style="max-width: 100%" data-view-component="true" class="Layout Layout--flowRow-until-md react-repos-overview-margin Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end">
+  <div data-view-component="true" class="Layout-main">      
+
+<react-partial partial-name="repos-overview" data-ssr="true" data-attempted-ssr="true" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  
+  <div data-target="react-partial.reactRoot">   <div class="OverviewContent-module__Box--uNd1J"><div class="OverviewHeader-module__Box--fFKf5"></div><div class="OverviewContent-module__Box_1--RhaEy"><div class="OverviewContent-module__Box_2--uHewD"><div class="OverviewContent-module__Box_3--NEYWl"></div></div></div></div></div></react-partial></div></div></div></div></div></turbo-frame><div class="OverviewContent-module__Box_3--NEYWl"></div><div class="OverviewContent-module__Box_4--rOz8J"></div><div class="OverviewContent-module__Box_2--uHewD"></div><div class="OverviewContent-module__Box_6--wV7Tw"><div class="OverviewContent-module__Box_7--SbxdI"><div class="OverviewContent-module__Box_8--oumpR"><div class="Box-sc-g0xbh4-0 OverviewContent-module__FileResultsList--irMg6"><span class="d-flex FileResultsList-module__FilesSearchBox--fSAh3 TextInput-wrapper prc-components-TextInputWrapper-i1ofR prc-components-TextInputBaseWrapper-ueK9q" data-leading-visual="true" data-trailing-visual="true" aria-busy="false"><span class="TextInput-icon" id=":r18:" aria-hidden="true"><svg aria-hidden="true" focusable="false" class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></span></div></div></div></div><div class="OverviewContent-module__Box_8--oumpR"><div class="Box-sc-g0xbh4-0 OverviewContent-module__FileResultsList--irMg6"><span class="d-flex FileResultsList-module__FilesSearchBox--fSAh3 TextInput-wrapper prc-components-TextInputWrapper-i1ofR prc-components-TextInputBaseWrapper-ueK9q" data-leading-visual="true" data-trailing-visual="true" aria-busy="false"><input type="text" aria-label="Go to file" role="combobox" aria-controls="file-results-list" aria-expanded="false" aria-haspopup="dialog" autocorrect="off" spellcheck="false" placeholder="Go to file" aria-describedby=":r18: :r19:" data-component="input" class="prc-components-Input-Ic-y8" value=""><span class="TextInput-icon" id=":r19:" aria-hidden="true"><kbd>t</kbd></span></span></div></div><div></div><div class="OverviewContent-module__Box_1--RhaEy"><div class="OverviewContent-module__Box_6--wV7Tw"></div></div><div class="OverviewContent-module__Box_11--Tqhu2"><div data-hpc="true"></div></div><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><thead class="DirectoryContent-module__OverviewHeaderRow--FlrUZ Table-module__Box_1--DkRqs"><tr class="Table-module__Box_2--l1wjV"><th colspan="1" class="DirectoryContent-module__Box_1--xeAhp"><span class="text-bold">Name</span></th><th class="hide-sm"><div class="width-fit prc-Truncate-Truncate-A9Wn6" data-inline="true" title="Last commit message" style="--truncate-max-width:125px"><span class="text-bold">Last commit message</span></div></th><th colspan="1" class="DirectoryContent-module__Box_2--h912w"><div class="width-fit prc-Truncate-Truncate-A9Wn6" data-inline="true" title="Last commit date" style="--truncate-max-width:125px"><span class="text-bold">Last commit date</span></div></th></tr></thead><tbody><tr class="DirectoryContent-module__Box_3--zI0N1"><td colspan="3" class="bgColor-muted p-1 rounded-top-2"><div class="LatestCommit-module__Box--Fimpo"></div></td></tr></tbody></table><div class="CommitAttribution-module__CommitAttributionContainer--Si80C"><div data-testid="author-avatar" class="Box-sc-g0xbh4-0 AuthorAvatar-module__AuthorAvatarContainer--Z1TF8"><a class="prc-Link-Link-85e08" href="https://github.com/ItsJPrentice" data-testid="avatar-icon-link" data-hovercard-url="/users/ItsJPrentice/hovercard" aria-keyshortcuts="Alt+ArrowUp"><img data-component="Avatar" class="AuthorAvatar-module__authorAvatarImage--bQzij prc-Avatar-Avatar-ZRS-m" alt="ItsJPrentice" width="20" height="20" style="--avatarSize-regular: 20px;" src="https://avatars.githubusercontent.com/u/622332?v=4&amp;size=40" data-testid="github-avatar" aria-label="ItsJPrentice"></a><a class="Box-sc-g0xbh4-0 kVizpJ AuthorAvatar-module__authorHoverableLink--vw9qe prc-Link-Link-85e08" data-muted="true" href="https://github.com/folke/lazydev.nvim/commits?author=ItsJPrentice" aria-label="commits by ItsJPrentice" data-hovercard-url="/users/ItsJPrentice/hovercard" aria-keyshortcuts="Alt+ArrowUp">ItsJPrentice</a></div><span class=""></span></div><div class="d-none d-sm-flex LatestCommit-module__Box_2--JDY37"><div class="Truncate flex-items-center f5"><span class="Truncate-text prc-Text-Text-0ima0" data-testid="latest-commit-html"><a href="https://github.com/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd" class="Link--secondary" data-pjax="true" data-hovercard-url="/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd/hovercard" aria-keyshortcuts="Alt+ArrowUp">fix(lspconfig): add check for lsp.is_enabled (</a><a href="https://github.com/folke/lazydev.nvim/pull/123" data-hovercard-url="/folke/lazydev.nvim/pull/123/hovercard" data-hovercard-type="pull_request" data-url="https://github.com/folke/lazydev.nvim/issues/123" data-permission-text="Title is private" data-id="3427086134" data-error-text="Failed to load title" class="issue-link js-issue-link" aria-keyshortcuts="Alt+ArrowUp">#123</a><a href="https://github.com/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd" class="Link--secondary" data-pjax="true" data-hovercard-url="/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd/hovercard" aria-keyshortcuts="Alt+ArrowUp">)</a></span></div></div><div data-testid="latest-commit" class="LatestCommit-module__Box_1--aQ5OG"><div class="d-none d-sm-flex LatestCommit-module__Box_2--JDY37"></div></div><div class="d-flex flex-shrink-0 gap-2"><div data-testid="latest-commit-details" class="d-none d-sm-flex flex-items-center"><span class="d-flex flex-nowrap fgColor-muted f6"><a class="Link--secondary prc-Link-Link-85e08" aria-label="Commit 258d2a5" data-hovercard-url="/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd/hovercard" href="https://github.com/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd" data-discover="true" aria-keyshortcuts="Alt+ArrowUp">258d2a5</a> · <relative-time class="sc-aXZVg" tense="past" datetime="2025-09-17T18:42:04.000Z" title="Sep 17, 2025, 7:42 PM GMT+1">Sep 17, 2025</relative-time></span></div><div class="d-flex gap-2"></div></div><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="DirectoryContent-module__Box_3--zI0N1"><td colspan="3" class="bgColor-muted p-1 rounded-top-2"><div class="LatestCommit-module__Box--Fimpo"><div class="d-flex flex-shrink-0 gap-2"><div class="d-flex gap-2"></div></div></div></td></tr><tr class="react-directory-row undefined" id="folder-row-0"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-0"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".github" aria-label=".github, (Directory)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/tree/main/.github" data-discover="true">.github</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci: update" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/399299ca570aa82c13ee4fb1bd1304ce6baf7f05">ci: update</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-22T12:24:38.000Z" title="Jul 22, 2024, 1:24 PM GMT+1">Jul 22, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-1"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-1"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="doc" aria-label="doc, (Directory)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/tree/main/doc" data-discover="true">doc</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(build): auto-generate docs" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/0c5e67881ddb9c64e04ca5a4cc57b3e4b76c8feb">chore(build): auto-generate docs</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-09-17T05:03:30.000Z" title="Sep 17, 2025, 6:03 AM GMT+1">Sep 17, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-2"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file-directory-fill icon-directory" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-2"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="This path skips through empty directories" aria-label="lua/lazydev, (Directory)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/tree/main/lua/lazydev" data-discover="true"><span class="react-directory-default-color" data-testid="path-name-segment">lua/</span><span class="" data-testid="path-name-segment">lazydev</span></a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="fix(lspconfig): add check for lsp.is_enabled (#123)
+
+## Description
+
+Some users are on nightlies from sources that aren't consistently
+updated, such as Ubuntu's [Neovim
+PPA](https://launchpad.net/~neovim-ppa).
+
+The current check for &gt;=`0.11.2` prevents them from using lazydev.nvim
+unless they change where they source their build from.
+
+Adding a check for the `vim.lsp.is_enabled` method causing the failure
+prevents this and ensures continuity of use for these users.
+
+## Related Issue(s)
+- Fixes #121 #122 
+
+## Screenshots
+
+&lt;img width=&quot;604&quot; height=&quot;497&quot; alt=&quot;image&quot;
+src=&quot;https://github.com/user-attachments/assets/275c145b-7bcd-4659-a9ce-f11068a3b54c&quot;
+/&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd">fix(lspconfig): add check for lsp.is_enabled (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3427086134" data-permission-text="Title is private" data-url="https://github.com/folke/lazydev.nvim/issues/123" data-hovercard-type="pull_request" data-hovercard-url="/folke/lazydev.nvim/pull/123/hovercard" href="https://github.com/folke/lazydev.nvim/pull/123" aria-keyshortcuts="Alt+ArrowUp">#123</a><a data-pjax="true" title="fix(lspconfig): add check for lsp.is_enabled (#123)
+
+## Description
+
+Some users are on nightlies from sources that aren't consistently
+updated, such as Ubuntu's [Neovim
+PPA](https://launchpad.net/~neovim-ppa).
+
+The current check for &gt;=`0.11.2` prevents them from using lazydev.nvim
+unless they change where they source their build from.
+
+Adding a check for the `vim.lsp.is_enabled` method causing the failure
+prevents this and ensures continuity of use for these users.
+
+## Related Issue(s)
+- Fixes #121 #122 
+
+## Screenshots
+
+&lt;img width=&quot;604&quot; height=&quot;497&quot; alt=&quot;image&quot;
+src=&quot;https://github.com/user-attachments/assets/275c145b-7bcd-4659-a9ce-f11068a3b54c&quot;
+/&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-09-17T18:42:04.000Z" title="Sep 17, 2025, 7:42 PM GMT+1">Sep 17, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-3"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-3"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".editorconfig" aria-label=".editorconfig, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/.editorconfig" data-discover="true">.editorconfig</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(update): update repository (#55)
+
+Automated changes by
+[create-pull-request](https://github.com/peter-evans/create-pull-request)
+GitHub action
+
+Co-authored-by: folke &lt;292349+folke@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/02f1055a777264d4b65896051ec28d0f322f7932">chore(update): update repository (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2408963228" data-permission-text="Title is private" data-url="https://github.com/folke/lazydev.nvim/issues/55" data-hovercard-type="pull_request" data-hovercard-url="/folke/lazydev.nvim/pull/55/hovercard" href="https://github.com/folke/lazydev.nvim/pull/55" aria-keyshortcuts="Alt+ArrowUp">#55</a><a data-pjax="true" title="chore(update): update repository (#55)
+
+Automated changes by
+[create-pull-request](https://github.com/peter-evans/create-pull-request)
+GitHub action
+
+Co-authored-by: folke &lt;292349+folke@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/02f1055a777264d4b65896051ec28d0f322f7932">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-15T15:10:03.000Z" title="Jul 15, 2024, 4:10 PM GMT+1">Jul 15, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-4"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-4"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title=".gitignore" aria-label=".gitignore, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/.gitignore" data-discover="true">.gitignore</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci: update" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/cea5d0fb556cdc35122d9cae772e7e0ed65b4505">ci: update</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-06T21:45:28.000Z" title="Jul 6, 2024, 10:45 PM GMT+1">Jul 6, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-5"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-5"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="CHANGELOG.md" aria-label="CHANGELOG.md, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/CHANGELOG.md" data-discover="true">CHANGELOG.md</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="chore(main): release 1.9.0 (#75)
+
+:robot: I have created a release *beep* *boop*
+---
+
+
+##
+[1.9.0](https://github.com/folke/lazydev.nvim/compare/v1.8.0...v1.9.0)
+(2024-11-24)
+
+
+### Features
+
+* **integrations:** added blink integration. Closes
+[#71](https://github.com/folke/lazydev.nvim/issues/71)
+([c4cd076](https://github.com/folke/lazydev.nvim/commit/c4cd076ad8f04bbe9749f136848cb9a2c16270b8))
+
+
+### Bug Fixes
+
+* **blink:** complete the extra mod names only
+([d580089](https://github.com/folke/lazydev.nvim/commit/d5800897d9180cea800023f2429bce0a94ed6064))
+* **completion:** show top mods when no module typed yet
+([7008928](https://github.com/folke/lazydev.nvim/commit/7008928168c63bc3ddc1e1aa2ec27b3591670ae8))
+* **integrations:** correct mapping for loaded plugins
+([2c09c87](https://github.com/folke/lazydev.nvim/commit/2c09c8782f4bd83cfc98b272eb9ab687c3e746f8))
+* **pkg:** lsmod should not return the module itself
+([74443e2](https://github.com/folke/lazydev.nvim/commit/74443e2f0c40f77ec3ffb5ea7cd7b613c05da755))
+
+---
+This PR was generated with [Release
+Please](https://github.com/googleapis/release-please). See
+[documentation](https://github.com/googleapis/release-please#release-please).
+
+Co-authored-by: github-actions[bot] &lt;41898282+github-actions[bot]@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/f59bd14a852ca43db38e3662395354cb2a9b13e0">chore(main): release 1.9.0 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2629280143" data-permission-text="Title is private" data-url="https://github.com/folke/lazydev.nvim/issues/75" data-hovercard-type="pull_request" data-hovercard-url="/folke/lazydev.nvim/pull/75/hovercard" href="https://github.com/folke/lazydev.nvim/pull/75" aria-keyshortcuts="Alt+ArrowUp">#75</a><a data-pjax="true" title="chore(main): release 1.9.0 (#75)
+
+:robot: I have created a release *beep* *boop*
+---
+
+
+##
+[1.9.0](https://github.com/folke/lazydev.nvim/compare/v1.8.0...v1.9.0)
+(2024-11-24)
+
+
+### Features
+
+* **integrations:** added blink integration. Closes
+[#71](https://github.com/folke/lazydev.nvim/issues/71)
+([c4cd076](https://github.com/folke/lazydev.nvim/commit/c4cd076ad8f04bbe9749f136848cb9a2c16270b8))
+
+
+### Bug Fixes
+
+* **blink:** complete the extra mod names only
+([d580089](https://github.com/folke/lazydev.nvim/commit/d5800897d9180cea800023f2429bce0a94ed6064))
+* **completion:** show top mods when no module typed yet
+([7008928](https://github.com/folke/lazydev.nvim/commit/7008928168c63bc3ddc1e1aa2ec27b3591670ae8))
+* **integrations:** correct mapping for loaded plugins
+([2c09c87](https://github.com/folke/lazydev.nvim/commit/2c09c8782f4bd83cfc98b272eb9ab687c3e746f8))
+* **pkg:** lsmod should not return the module itself
+([74443e2](https://github.com/folke/lazydev.nvim/commit/74443e2f0c40f77ec3ffb5ea7cd7b613c05da755))
+
+---
+This PR was generated with [Release
+Please](https://github.com/googleapis/release-please). See
+[documentation](https://github.com/googleapis/release-please#release-please).
+
+Co-authored-by: github-actions[bot] &lt;41898282+github-actions[bot]@users.noreply.github.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/f59bd14a852ca43db38e3662395354cb2a9b13e0">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-11-24T23:07:03.000Z" title="Nov 25, 2024, 12:07 AM GMT+1">Nov 25, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-6"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-6"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="LICENSE" aria-label="LICENSE, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/LICENSE" data-discover="true">LICENSE</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci: update" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/0d859f86b020fbe05990c963b4a45c1ce7dcb43d">ci: update</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-05T17:00:13.000Z" title="Jul 5, 2024, 6:00 PM GMT+1">Jul 5, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-7"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-7"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="README.md" aria-label="README.md, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/README.md" data-discover="true">README.md</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="docs: updated to `DrKJeff16/wezterm-types` (#119)
+
+## Description
+
+@justinsgithub has transferred the ownership of the repository to me
+(https://github.com/DrKJeff16/wezterm-types/discussions/46)
+
+In addition, on the repo we have included instructions for
+`lazydev.nvim` too.
+
+## Related Issue(s)
+_None that exists_
+
+## Screenshots
+
+&lt;img width=&quot;1238&quot; height=&quot;787&quot; alt=&quot;Changes&quot;
+src=&quot;https://github.com/user-attachments/assets/8d7badc0-527a-4a95-a2db-0becd6ad487c&quot;
+/&gt;
+
+Signed-off-by: Guennadi Maximov C &lt;g.maxc.fox@protonmail.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/abedaf7fb970c3a56ecd511e27bded5086aef4cd">docs: updated to</a> <code><a data-pjax="true" title="docs: updated to `DrKJeff16/wezterm-types` (#119)
+
+## Description
+
+@justinsgithub has transferred the ownership of the repository to me
+(https://github.com/DrKJeff16/wezterm-types/discussions/46)
+
+In addition, on the repo we have included instructions for
+`lazydev.nvim` too.
+
+## Related Issue(s)
+_None that exists_
+
+## Screenshots
+
+&lt;img width=&quot;1238&quot; height=&quot;787&quot; alt=&quot;Changes&quot;
+src=&quot;https://github.com/user-attachments/assets/8d7badc0-527a-4a95-a2db-0becd6ad487c&quot;
+/&gt;
+
+Signed-off-by: Guennadi Maximov C &lt;g.maxc.fox@protonmail.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/abedaf7fb970c3a56ecd511e27bded5086aef4cd">DrKJeff16/wezterm-types</a></code> <a data-pjax="true" title="docs: updated to `DrKJeff16/wezterm-types` (#119)
+
+## Description
+
+@justinsgithub has transferred the ownership of the repository to me
+(https://github.com/DrKJeff16/wezterm-types/discussions/46)
+
+In addition, on the repo we have included instructions for
+`lazydev.nvim` too.
+
+## Related Issue(s)
+_None that exists_
+
+## Screenshots
+
+&lt;img width=&quot;1238&quot; height=&quot;787&quot; alt=&quot;Changes&quot;
+src=&quot;https://github.com/user-attachments/assets/8d7badc0-527a-4a95-a2db-0becd6ad487c&quot;
+/&gt;
+
+Signed-off-by: Guennadi Maximov C &lt;g.maxc.fox@protonmail.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/abedaf7fb970c3a56ecd511e27bded5086aef4cd">(</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3326801181" data-permission-text="Title is private" data-url="https://github.com/folke/lazydev.nvim/issues/119" data-hovercard-type="pull_request" data-hovercard-url="/folke/lazydev.nvim/pull/119/hovercard" href="https://github.com/folke/lazydev.nvim/pull/119" aria-keyshortcuts="Alt+ArrowUp">#119</a><a data-pjax="true" title="docs: updated to `DrKJeff16/wezterm-types` (#119)
+
+## Description
+
+@justinsgithub has transferred the ownership of the repository to me
+(https://github.com/DrKJeff16/wezterm-types/discussions/46)
+
+In addition, on the repo we have included instructions for
+`lazydev.nvim` too.
+
+## Related Issue(s)
+_None that exists_
+
+## Screenshots
+
+&lt;img width=&quot;1238&quot; height=&quot;787&quot; alt=&quot;Changes&quot;
+src=&quot;https://github.com/user-attachments/assets/8d7badc0-527a-4a95-a2db-0becd6ad487c&quot;
+/&gt;
+
+Signed-off-by: Guennadi Maximov C &lt;g.maxc.fox@protonmail.com&gt;" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/abedaf7fb970c3a56ecd511e27bded5086aef4cd">)</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2025-09-15T10:53:28.000Z" title="Sep 15, 2025, 11:53 AM GMT+1">Sep 15, 2025</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-8"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-8"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="selene.toml" aria-label="selene.toml, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/selene.toml" data-discover="true">selene.toml</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci: update" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/fe4bbe6526db4a383d4ee8987519aa4a4b010638">ci: update</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-05T13:40:47.000Z" title="Jul 5, 2024, 2:40 PM GMT+1">Jul 5, 2024</relative-time></div></td></tr><tr class="react-directory-row undefined" id="folder-row-9"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row undefined" id="folder-row-9"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="stylua.toml" aria-label="stylua.toml, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/stylua.toml" data-discover="true">stylua.toml</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="feat: initial commit" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/77c5029d68941dfdbb3eaee4910bdc97d5c9a93b">feat: initial commit</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-06-01T16:50:56.000Z" title="Jun 1, 2024, 5:50 PM GMT+1">Jun 1, 2024</relative-time></div></td></tr><tr class="react-directory-row truncate-for-mobile" id="folder-row-10"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></div></td></tr></tbody></table><div data-hpc="true"><table class="Table-module__Box--KyMHK" aria-labelledby="folders-and-files"><tbody><tr class="react-directory-row truncate-for-mobile" id="folder-row-10"><td class="react-directory-row-name-cell-large-screen" colspan="1"><div class="react-directory-filename-column"><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="vim.toml" aria-label="vim.toml, (File)" class="Link--primary" href="https://github.com/folke/lazydev.nvim/blob/main/vim.toml" data-discover="true">vim.toml</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div><div class="react-directory-commit-message"><a data-pjax="true" title="ci: update" class="Link--secondary" href="https://github.com/folke/lazydev.nvim/commit/fe4bbe6526db4a383d4ee8987519aa4a4b010638">ci: update</a></div></div></td><td><div class="react-directory-commit-age"><relative-time class="sc-aXZVg" tense="past" datetime="2024-07-05T13:40:47.000Z" title="Jul 5, 2024, 2:40 PM GMT+1">Jul 5, 2024</relative-time></div></td></tr></tbody></table></div><div class="OverviewRepoFiles-module__Box_1--xSt0T"><div class="OverviewRepoFiles-module__Box_2--yIjMp"><div itemscope="" itemtype="https://schema.org/abstract" class="OverviewRepoFiles-module__Box_3--Bi2jM"><h2 class="prc-src-InternalVisuallyHidden-nlR9R">Repository files navigation</h2><nav class="prc-components-UnderlineWrapper-oOh5J OverviewRepoFiles-module__UnderlineNav--BHfFi" aria-label="Repository files" data-variant="inset"><ul class="prc-components-UnderlineItemList-b23Hf" role="list"><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/folke/lazydev.nvim#" aria-current="page"><span data-component="icon"><svg aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></a></li></ul></nav></div></div></div><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/folke/lazydev.nvim#" aria-current="page"><span data-component="text" data-content="README">README</span></a></li><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/folke/lazydev.nvim#"><span data-component="icon"><svg aria-hidden="true" focusable="false" class="octicon octicon-law" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom; --darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></svg></span></a></li><nav class="prc-components-UnderlineWrapper-oOh5J OverviewRepoFiles-module__UnderlineNav--BHfFi" aria-label="Repository files" data-variant="inset"><ul class="prc-components-UnderlineItemList-b23Hf" role="list"><li class="Box-sc-g0xbh4-0 hUCRAk"><a class="prc-components-UnderlineItem-lJsg-" href="https://github.com/folke/lazydev.nvim#"><span data-component="text" data-content="Apache-2.0 license">Apache-2.0 license</span></a></li></ul></nav><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto">💻 <code>lazydev.nvim</code></h1><a id="user-content--lazydevnvim" class="anchor" aria-label="Permalink: 💻 lazydev.nvim" href="https://github.com/folke/lazydev.nvim#-lazydevnvim"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div></article><p dir="auto"><strong>lazydev.nvim</strong> is a plugin that properly configures <a href="https://luals.github.io/" rel="nofollow">LuaLS</a>
+for editing your <strong>Neovim</strong> config by lazily updating your
+workspace libraries.</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">✨ Features</h2><a id="user-content--features" class="anchor" aria-label="Permalink: ✨ Features" href="https://github.com/folke/lazydev.nvim#-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li>much faster auto-completion, since only the modules you <code>require</code>
+in open Neovim files will be loaded.</li>
+<li>no longer needed to configure what plugin sources you want
+to have enabled for a certain project</li>
+<li>load third-party addons from <a href="https://github.com/LuaLS/LLS-Addons">LLS-Addons</a></li>
+<li>will update your workspace libraries for:
+<ul dir="auto">
+<li><strong>require</strong> statements: <code>require("nvim-treesitter")</code></li>
+<li><strong>module annotations</strong>: <code>---@module "nvim-treesitter"</code></li>
+</ul>
+</li>
+<li><a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp</a>, <a href="https://github.com/Saghen/blink.cmp">blink.cmp</a> and <a href="https://github.com/ms-jpq/coq_nvim">nvim_coq</a> completion source for the above</li>
+</ul>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/292349/335822680-c5f23225-88eb-454d-9b4e-1bf9183f7ff8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxOTIzMTIsIm5iZiI6MTc1ODE5MjAxMiwicGF0aCI6Ii8yOTIzNDkvMzM1ODIyNjgwLWM1ZjIzMjI1LTg4ZWItNDU0ZC05YjRlLTFiZjkxODNmN2ZmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxOFQxMDQwMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MzQ2ZjY0ZGNlMjVjY2RlODZlZDc1MmUzNDFhYTQzMDY5YmU0NzYxYzczNTQzNjRiNjkxNmE2ODYwOGNlNWIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zKNi_rGQGnEqCK_ZeBWsUKoSb6VOyd4oUUoROmS3IRM"><img src="https://private-user-images.githubusercontent.com/292349/335822680-c5f23225-88eb-454d-9b4e-1bf9183f7ff8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxOTIzMTIsIm5iZiI6MTc1ODE5MjAxMiwicGF0aCI6Ii8yOTIzNDkvMzM1ODIyNjgwLWM1ZjIzMjI1LTg4ZWItNDU0ZC05YjRlLTFiZjkxODNmN2ZmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxOFQxMDQwMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MzQ2ZjY0ZGNlMjVjY2RlODZlZDc1MmUzNDFhYTQzMDY5YmU0NzYxYzczNTQzNjRiNjkxNmE2ODYwOGNlNWIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zKNi_rGQGnEqCK_ZeBWsUKoSb6VOyd4oUUoROmS3IRM" alt="2024-06-01_21-02-40" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><g-emoji class="g-emoji" alias="warning">⚠️</g-emoji> Limitations</h2><a id="user-content-️-limitations" class="anchor" aria-label="Permalink: ⚠️ Limitations" href="https://github.com/folke/lazydev.nvim#️-limitations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li>If you have files that only use types from a plugin,
+then those types won't be available in your workspace.</li>
+<li>completion for module names when typing <code>require(...)</code>
+will only return loaded modules in your workspace.</li>
+<li>To get around the above, you can:
+<ul dir="auto">
+<li>pre-load those plugins with the <code>library</code> option.</li>
+<li>use the <strong>nvim-cmp</strong>, <strong>blink.cmp</strong> or <strong>coq_nvim</strong> completion source to get all available modules.</li>
+</ul>
+</li>
+<li>Neovim types are <strong>NOT</strong> included and also no longer needed
+on <strong>Neovim &gt;= 0.10</strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">⚡️ Requirements</h2><a id="user-content-️-requirements" class="anchor" aria-label="Permalink: ⚡️ Requirements" href="https://github.com/folke/lazydev.nvim#️-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><ul dir="auto">
+<li>Neovim &gt;= 0.10.0</li>
+<li><a href="https://github.com/folke/lazy.nvim">lazy.nvim</a> plugin manager
+<ul dir="auto">
+<li><strong>OR</strong> a plugin manager that uses <strong>Neovim</strong>'s native package system</li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">📦 Installation</h2><a id="user-content--installation" class="anchor" aria-label="Permalink: 📦 Installation" href="https://github.com/folke/lazydev.nvim#-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p dir="auto">With <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a>:</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">return</span> {
+  {
+    <span class="pl-s"><span class="pl-pds">"</span>folke/lazydev.nvim<span class="pl-pds">"</span></span>,
+    <span class="pl-smi">ft</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lua<span class="pl-pds">"</span></span>, <span class="pl-c"><span class="pl-c">--</span> only load on lua files</span>
+    <span class="pl-smi">opts</span> <span class="pl-k">=</span> {
+      <span class="pl-smi">library</span> <span class="pl-k">=</span> {
+        <span class="pl-c"><span class="pl-c">--</span> See the configuration section for more details</span>
+        <span class="pl-c"><span class="pl-c">--</span> Load luvit types when the `vim.uv` word is found</span>
+        { <span class="pl-smi">path</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>${3rd}/luv/library<span class="pl-pds">"</span></span>, <span class="pl-smi">words</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>vim%.uv<span class="pl-pds">" </span></span>} },
+      },
+    },
+  },
+  { <span class="pl-c"><span class="pl-c">--</span> optional cmp completion source for require statements and module annotations</span>
+    <span class="pl-s"><span class="pl-pds">"</span>hrsh7th/nvim-cmp<span class="pl-pds">"</span></span>,
+    <span class="pl-en">opts</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">_</span>, <span class="pl-smi">opts</span>)
+      <span class="pl-smi">opts</span>.<span class="pl-e">sources</span> <span class="pl-k">=</span> <span class="pl-smi">opts</span>.<span class="pl-e">sources</span> <span class="pl-k">or</span> {}
+      <span class="pl-c1">table.insert</span>(<span class="pl-smi">opts</span>.<span class="pl-e">sources</span>, {
+        <span class="pl-smi">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lazydev<span class="pl-pds">"</span></span>,
+        <span class="pl-smi">group_index</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-c"><span class="pl-c">--</span> set group index to 0 to skip loading LuaLS completions</span>
+      })
+    <span class="pl-k">end</span>,
+  },
+  { <span class="pl-c"><span class="pl-c">--</span> optional blink completion source for require statements and module annotations</span>
+    <span class="pl-s"><span class="pl-pds">"</span>saghen/blink.cmp<span class="pl-pds">"</span></span>,
+    <span class="pl-smi">opts</span> <span class="pl-k">=</span> {
+      <span class="pl-smi">sources</span> <span class="pl-k">=</span> {
+        <span class="pl-c"><span class="pl-c">--</span> add lazydev to your completion providers</span>
+        <span class="pl-smi">default</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>lazydev<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>lsp<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>path<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>snippets<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>buffer<span class="pl-pds">" </span></span>},
+        <span class="pl-smi">providers</span> <span class="pl-k">=</span> {
+          <span class="pl-smi">lazydev</span> <span class="pl-k">=</span> {
+            <span class="pl-smi">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>LazyDev<span class="pl-pds">"</span></span>,
+            <span class="pl-smi">module</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lazydev.integrations.blink<span class="pl-pds">"</span></span>,
+            <span class="pl-c"><span class="pl-c">--</span> make lazydev completions top priority (see `:h blink.cmp`)</span>
+            <span class="pl-smi">score_offset</span> <span class="pl-k">=</span> <span class="pl-c1">100</span>,
+          },
+        },
+      },
+    },
+  }
+  <span class="pl-c"><span class="pl-c">--</span> { "folke/neodev.nvim", enabled = false }, -- make sure to uninstall or disable neodev.nvim</span>
+}</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">⚙️ Configuration</h2><a id="user-content-️-configuration" class="anchor" aria-label="Permalink: ⚙️ Configuration" href="https://github.com/folke/lazydev.nvim#️-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></p><div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto">Tip</p><p dir="auto">You can force enable/disable <strong>lazydev</strong> in certain project folders using <a href="https://neovim.io/doc/user/options.html#'exrc'" rel="nofollow">:h 'exrc'</a>
+with <code>vim.g.lazydev_enabled = true</code> or <code>vim.g.lazydev_enabled = false</code></p>
+</div>
+<p dir="auto">Examples:</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>folke/lazydev.nvim<span class="pl-pds">"</span></span>,
+  <span class="pl-smi">ft</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lua<span class="pl-pds">"</span></span>, <span class="pl-c"><span class="pl-c">--</span> only load on lua files</span>
+  <span class="pl-smi">opts</span> <span class="pl-k">=</span> {
+    <span class="pl-smi">library</span> <span class="pl-k">=</span> {
+      <span class="pl-c"><span class="pl-c">--</span> Library paths can be absolute</span>
+      <span class="pl-s"><span class="pl-pds">"</span>~/projects/my-awesome-lib<span class="pl-pds">"</span></span>,
+      <span class="pl-c"><span class="pl-c">--</span> Or relative, which means they will be resolved from the plugin dir.</span>
+      <span class="pl-s"><span class="pl-pds">"</span>lazy.nvim<span class="pl-pds">"</span></span>,
+      <span class="pl-c"><span class="pl-c">--</span> It can also be a table with trigger words / mods</span>
+      <span class="pl-c"><span class="pl-c">--</span> Only load luvit types when the `vim.uv` word is found</span>
+      { <span class="pl-smi">path</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>${3rd}/luv/library<span class="pl-pds">"</span></span>, <span class="pl-smi">words</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>vim%.uv<span class="pl-pds">" </span></span>} },
+      <span class="pl-c"><span class="pl-c">--</span> always load the LazyVim library</span>
+      <span class="pl-s"><span class="pl-pds">"</span>LazyVim<span class="pl-pds">"</span></span>,
+      <span class="pl-c"><span class="pl-c">--</span> Only load the lazyvim library when the `LazyVim` global is found</span>
+      { <span class="pl-smi">path</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>LazyVim<span class="pl-pds">"</span></span>, <span class="pl-smi">words</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>LazyVim<span class="pl-pds">" </span></span>} },
+      <span class="pl-c"><span class="pl-c">--</span> Load the wezterm types when the `wezterm` module is required</span>
+      <span class="pl-c"><span class="pl-c">--</span> Needs `DrKJeff16/wezterm-types` to be installed</span>
+      { <span class="pl-smi">path</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>wezterm-types<span class="pl-pds">"</span></span>, <span class="pl-smi">mods</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>wezterm<span class="pl-pds">" </span></span>} },
+      <span class="pl-c"><span class="pl-c">--</span> Load the xmake types when opening file named `xmake.lua`</span>
+      <span class="pl-c"><span class="pl-c">--</span> Needs `LelouchHe/xmake-luals-addon` to be installed</span>
+      { <span class="pl-smi">path</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>xmake-luals-addon/library<span class="pl-pds">"</span></span>, <span class="pl-smi">files</span> <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">"</span>xmake.lua<span class="pl-pds">" </span></span>} },
+    },
+    <span class="pl-c"><span class="pl-c">--</span> always enable unless `vim.g.lazydev_enabled = false`</span>
+    <span class="pl-c"><span class="pl-c">--</span> This is the default</span>
+    <span class="pl-en">enabled</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">root_dir</span>)
+      <span class="pl-k">return</span> <span class="pl-smi">vim</span>.<span class="pl-e">g</span>.<span class="pl-e">lazydev_enabled</span> <span class="pl-k">==</span> <span class="pl-c1">nil</span> <span class="pl-k">and</span> <span class="pl-c1">true</span> <span class="pl-k">or</span> <span class="pl-smi">vim</span>.<span class="pl-e">g</span>.<span class="pl-e">lazydev_enabled</span>
+    <span class="pl-k">end</span>,
+    <span class="pl-c"><span class="pl-c">--</span> disable when a .luarc.json file is found</span>
+    <span class="pl-en">enabled</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">root_dir</span>)
+      <span class="pl-k">return</span> <span class="pl-k">not</span> <span class="pl-smi">vim</span>.<span class="pl-e">uv</span>.<span class="pl-c1">fs_stat</span>(<span class="pl-smi">root_dir</span> <span class="pl-k">..</span> <span class="pl-s"><span class="pl-pds">"</span>/.luarc.json<span class="pl-pds">"</span></span>)
+    <span class="pl-k">end</span>,
+  },
+},</pre><div class="zeroclipboard-container">
+    </div></div><p dir="auto">Default settings:</p>
+<div class="highlight highlight-source-lua notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">---</span><span class="pl-k">@alias</span> <span class="pl-v">lazydev.Library</span> <span class="pl-k">{</span><span class="pl-c1">path</span><span class="pl-k">:</span><span class="pl-c1">string</span><span class="pl-k">, </span><span class="pl-c1">words</span><span class="pl-k">:</span><span class="pl-c1">string[]</span><span class="pl-k">, </span><span class="pl-c1">mods</span><span class="pl-k">:</span><span class="pl-c1">string[]</span><span class="pl-k">}</span></span>
+<span class="pl-c"><span class="pl-c">---</span><span class="pl-k">@alias</span> <span class="pl-v">lazydev.Library.spec</span> <span class="pl-c1">string</span><span class="pl-k">|{</span><span class="pl-c1">path</span><span class="pl-k">:</span><span class="pl-c1">string</span><span class="pl-k">, </span><span class="pl-c1">words</span><span class="pl-k">?:</span><span class="pl-c1">string[]</span><span class="pl-k">, </span><span class="pl-c1">mods</span><span class="pl-k">?:</span><span class="pl-c1">string[]</span><span class="pl-k">}</span></span>
+<span class="pl-c"><span class="pl-c">---</span><span class="pl-k">@class</span> <span class="pl-c1">lazydev.Config</span></span>
+<span class="pl-k">local</span> <span class="pl-smi">defaults</span> <span class="pl-k">=</span> {
+  <span class="pl-smi">runtime</span> <span class="pl-k">=</span> <span class="pl-smi">vim</span>.<span class="pl-e">env</span>.<span class="pl-e">VIMRUNTIME</span> <span class="pl-c"><span class="pl-c">--[[</span>@as string<span class="pl-c">]]</span></span>,
+  <span class="pl-smi">library</span> <span class="pl-k">=</span> {}, <span class="pl-c"><span class="pl-c">---</span><span class="pl-k">@type</span> <span class="pl-c1">lazydev.Library.spec[]</span></span>
+  <span class="pl-smi">integrations</span> <span class="pl-k">=</span> {
+    <span class="pl-c"><span class="pl-c">--</span> Fixes lspconfig's workspace management for LuaLS</span>
+    <span class="pl-c"><span class="pl-c">--</span> Only create a new workspace if the buffer is not part</span>
+    <span class="pl-c"><span class="pl-c">--</span> of an existing workspace or one of its libraries</span>
+    <span class="pl-smi">lspconfig</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>,
+    <span class="pl-c"><span class="pl-c">--</span> add the cmp source for completion of:</span>
+    <span class="pl-c"><span class="pl-c">--</span> `require "modname"`</span>
+    <span class="pl-c"><span class="pl-c">--</span> `---@module "modname"`</span>
+    <span class="pl-smi">cmp</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>,
+    <span class="pl-c"><span class="pl-c">--</span> same, but for Coq</span>
+    <span class="pl-smi">coq</span> <span class="pl-k">=</span> <span class="pl-c1">false</span>,
+  },
+  <span class="pl-c"><span class="pl-c">---</span><span class="pl-k">@type</span> <span class="pl-c1">boolean</span><span class="pl-k">|</span>(<span class="pl-k">fun</span><span class="pl-k">(</span><span class="pl-en">root</span><span class="pl-k">:</span><span class="pl-c1">string</span><span class="pl-k">):</span><span class="pl-c1">boolean</span><span class="pl-k">?)</span></span>
+  <span class="pl-en">enabled</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">root_dir</span>)
+      <span class="pl-k">return</span> <span class="pl-smi">vim</span>.<span class="pl-e">g</span>.<span class="pl-e">lazydev_enabled</span> <span class="pl-k">==</span> <span class="pl-c1">nil</span> <span class="pl-k">and</span> <span class="pl-c1">true</span> <span class="pl-k">or</span> <span class="pl-smi">vim</span>.<span class="pl-e">g</span>.<span class="pl-e">lazydev_enabled</span>
+  <span class="pl-k">end</span>,
+}</pre><div class="zeroclipboard-container">
+    </div></div><div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">🚀 Usage</h2><a id="user-content--usage" class="anchor" aria-label="Permalink: 🚀 Usage" href="https://github.com/folke/lazydev.nvim#-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a></div><div data-view-component="true" class="Layout-main"><react-partial partial-name="repos-overview" data-ssr="true" data-attempted-ssr="true" data-react-profiling="false" data-catalyst="" class="loaded"><div data-target="react-partial.reactRoot"><div class="OverviewContent-module__Box--uNd1J"><div class="OverviewContent-module__Box_11--Tqhu2"><div class="OverviewRepoFiles-module__Box_1--xSt0T"><div class="OverviewRepoFiles-module__Box_2--yIjMp"><div class="Box-sc-g0xbh4-0 js-snippet-clipboard-copy-unpositioned DirectoryRichtextContent-module__SharedMarkdownContent--BTKsc" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto">Just install the plugin and start editing your Lua files.</p>
+<p dir="auto">If you don't use <a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a>,
+then you can use <code>require('lazydev').find_workspace(buf?)</code> to check if the buffer
+is part of an existing workspace or its libraries.</p>
+<p dir="auto">The <code>:LazyDev</code> command:</p>
+<ul dir="auto">
+<li><code>:LazyDev</code> or <code>:LazyDev debug</code> will show a notification with the <strong>lazydev</strong>
+settings for the current buffer.</li>
+<li><code>:LazyDev lsp</code>: will show a notification with the settings for
+<strong>any</strong> attached LSP servers. Not limited to <strong>LuaLS</strong>.</li>
+</ul>
+</article></div></div></div></div></div>   </div>
+</react-partial>
+
+
+      
+</div>
+  <div data-view-component="true" class="Layout-sidebar">      
+
+      <div class="BorderGrid about-margin" data-pjax="">
+        <div class="BorderGrid-row">
+          <div class="BorderGrid-cell">
+            <div class="hide-sm hide-md">
+  <h2 class="mb-3 h4">About</h2>
+
+      <p class="f4 my-3">
+        Faster LuaLS setup for Neovim
+      </p>
+
+
+    <h3 class="sr-only">Resources</h3>
+    <div class="mt-2">
+      <a class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:readme&quot;}" href="https://github.com/folke/lazydev.nvim#readme-ov-file">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2">
+    </svg></a></div></div></div></div></div></div><div class="mt-2"><a class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:readme&quot;}" href="https://github.com/folke/lazydev.nvim#readme-ov-file"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2">
+</svg>
+        Readme
+</a>    </div>
+
+  
+    <h3 class="sr-only">License</h3>
+  <div class="mt-2">
+    <a href="https://github.com/folke/lazydev.nvim#Apache-2.0-1-ov-file" class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:license&quot;}">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-law mr-1 mr-sm-1 mr-md-2 mr-lg-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/folke/lazydev.nvim#Apache-2.0-1-ov-file" class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:license&quot;}"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-law mr-1 mr-sm-1 mr-md-2 mr-lg-2">
+</svg>
+     Apache-2.0 license
+    </a>
+  </div>
+
+
+
+
+
+
+  <include-fragment src="https://github.com/folke/lazydev.nvim/hovercards/citation/sidebar_partial?tree_name=main" data-nonce="v2:4299309f-2ef0-51ac-9dc9-1bd1c3580c30" data-view-component="true" class="is-error">
+  
+
+  
+</include-fragment>
+  <div class="mt-2">
+    <a href="https://github.com/folke/lazydev.nvim/activity" data-view-component="true" class="Link Link--muted"><svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/folke/lazydev.nvim/activity" data-view-component="true" class="Link Link--muted"><svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+</svg>
+      <span class="color-fg-muted">Activity</span></a>  </div>
+
+
+  <h3 class="sr-only">Stars</h3>
+  <div class="mt-2">
+    <a href="https://github.com/folke/lazydev.nvim/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/folke/lazydev.nvim/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+</svg>
+      <strong>1.3k</strong>
+      stars</a>  </div>
+
+  <h3 class="sr-only">Watchers</h3>
+  <div class="mt-2">
+    <a href="https://github.com/folke/lazydev.nvim/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+    </svg></a></div><div class="mt-2"><a href="https://github.com/folke/lazydev.nvim/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+</svg>
+      <strong>5</strong>
+      watching</a>  </div>
+
+  <h3 class="sr-only">Forks</h3>
+  <div class="mt-2">
+    <a href="https://github.com/folke/lazydev.nvim/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+    </svg></a></div><div class="BorderGrid-row"><div class="BorderGrid-cell"><div class="hide-sm hide-md"><div class="mt-2"><a href="https://github.com/folke/lazydev.nvim/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+</svg>
+      <strong>37</strong>
+      forks</a>  </div>
+
+
+    <div class="mt-2">
+      <a class="Link--muted" href="https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Ffolke%2Flazydev.nvim&amp;report=folke+%28user%29">
+          Report repository
+</a>    </div>
+</div>
+
+          </div>
+        </div>
+
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                <h2 class="h4 mb-3" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
+  <a href="https://github.com/folke/lazydev.nvim/releases" data-view-component="true" class="Link--primary no-underline Link" data-turbo-frame="repo-content-turbo-frame">Releases
+      <span title="13" data-view-component="true" class="Counter">13</span></a></h2>
+
+  <a class="Link--primary d-flex no-underline" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" href="https://github.com/folke/lazydev.nvim/releases/tag/v1.9.0">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-tag flex-shrink-0 mt-1 color-fg-success">
+    </svg></a></div></div><div class="BorderGrid-row"><div class="BorderGrid-cell"><a class="Link--primary d-flex no-underline" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" href="https://github.com/folke/lazydev.nvim/releases/tag/v1.9.0"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-tag flex-shrink-0 mt-1 color-fg-success">
+</svg>
+    <div class="ml-2 min-width-0">
+      <div class="d-flex">
+        <span class="css-truncate css-truncate-target text-bold mr-2" style="max-width: none;">v1.9.0</span>
+        <span title="Label: Latest" data-view-component="true" class="Label Label--success flex-shrink-0">
+          Latest
+</span>      </div>
+      <div class="text-small color-fg-muted"><relative-time datetime="2024-11-24T23:07:27Z" class="no-wrap" title="Nov 25, 2024, 12:07 AM GMT+1">Nov 25, 2024</relative-time></div>
+    </div>
+</a>    <div data-view-component="true" class="mt-3">
+      <a text="small" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" href="https://github.com/folke/lazydev.nvim/releases" data-view-component="true" class="Link">+ 12 releases</a></div>
+              </div>
+            </div>
+
+        
+        
+        
+            
+
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                <h2 class="h4 mb-3">
+  <a href="https://github.com/folke/lazydev.nvim/graphs/contributors" data-view-component="true" class="Link--primary no-underline Link d-flex flex-items-center">Contributors
+      <span title="12" data-view-component="true" class="Counter ml-1">12</span></a></h2>
+
+
+    
+  <ul class="list-style-none d-flex flex-wrap mb-n2">
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/folke" class="" data-hovercard-type="user" data-hovercard-url="/users/folke/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/292349?s=64&amp;v=4" alt="@folke" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/apps/github-actions" class="">
+        <img src="https://avatars.githubusercontent.com/in/15368?s=64&amp;v=4" alt="@github-actions[bot]" size="32" height="32" width="32" data-view-component="true" class="avatar">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/ItsJPrentice" class="" data-hovercard-type="user" data-hovercard-url="/users/ItsJPrentice/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/622332?s=64&amp;v=4" alt="@ItsJPrentice" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/FelipeLema" class="" data-hovercard-type="user" data-hovercard-url="/users/FelipeLema/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/1232306?s=64&amp;v=4" alt="@FelipeLema" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/tris203" class="" data-hovercard-type="user" data-hovercard-url="/users/tris203/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/18444302?s=64&amp;v=4" alt="@tris203" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/andrewbraxton" class="" data-hovercard-type="user" data-hovercard-url="/users/andrewbraxton/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/42975660?s=64&amp;v=4" alt="@andrewbraxton" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/TheLeoP" class="" data-hovercard-type="user" data-hovercard-url="/users/TheLeoP/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/53507599?s=64&amp;v=4" alt="@TheLeoP" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/abeldekat" class="" data-hovercard-type="user" data-hovercard-url="/users/abeldekat/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/58370433?s=64&amp;v=4" alt="@abeldekat" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/s014c3" class="" data-hovercard-type="user" data-hovercard-url="/users/s014c3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/60989682?s=64&amp;v=4" alt="@s014c3" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/barrett-ruth" class="" data-hovercard-type="user" data-hovercard-url="/users/barrett-ruth/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/62671086?s=64&amp;v=4" alt="@barrett-ruth" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/Curs3W4ll" class="" data-hovercard-type="user" data-hovercard-url="/users/Curs3W4ll/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/72013831?s=64&amp;v=4" alt="@Curs3W4ll" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+    <li class="mb-2 mr-2">
+      <a href="https://github.com/DrKJeff16" class="" data-hovercard-type="user" data-hovercard-url="/users/DrKJeff16/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp">
+        <img src="https://avatars.githubusercontent.com/u/72052712?s=64&amp;v=4" alt="@DrKJeff16" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+      </a>
+    </li>
+</ul>
+
+
+
+
+
+              </div>
+            </div>
+
+        
+        
+            <div class="BorderGrid-row">
+              <div class="BorderGrid-cell">
+                <h2 class="h4 mb-3">Languages</h2>
+<div class="mb-2">
+  <span data-view-component="true" class="Progress">
+    <span style="background-color: rgb(0, 0, 128) !important; width: 100%; --darkreader-inline-bgcolor: var(--darkreader-background-000080, #000066);" itemprop="keywords" data-view-component="true" class="Progress-item color-bg-success-emphasis" data-darkreader-inline-bgcolor=""></span>
+</span></div>
+<ul class="list-style-none">
+    <li class="d-inline">
+        <a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small mr-3" href="https://github.com/folke/lazydev.nvim/search?l=lua" data-ga-click="Repository, language stats search click, location:repo overview">
+          <svg style="color: rgb(0, 0, 128); --darkreader-inline-color: var(--darkreader-text-000080, #7faeff);" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2" data-darkreader-inline-color="">
+    </svg></a></li></ul></div></div><div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="" data-project-hovercards-enabled=""><div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class=""><main id="js-repo-pjax-container"><turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class=""><div id="repo-content-pjax-container" class="repository-content "><div class="clearfix container-xl px-md-4 px-lg-5 px-3"><div><div style="max-width: 100%" data-view-component="true" class="Layout Layout--flowRow-until-md react-repos-overview-margin Layout--sidebarPosition-end Layout--sidebarPosition-flowRow-end"><div data-view-component="true" class="Layout-sidebar"><div class="BorderGrid about-margin" data-pjax=""><div class="BorderGrid-row"><div class="BorderGrid-cell"><ul class="list-style-none"><li class="d-inline"><a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small mr-3" href="https://github.com/folke/lazydev.nvim/search?l=lua" data-ga-click="Repository, language stats search click, location:repo overview"><svg style="color: rgb(0, 0, 128); --darkreader-inline-color: var(--darkreader-text-000080, #7faeff);" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2" data-darkreader-inline-color="">
+</svg>
+          <span class="color-fg-default text-bold mr-1">Lua</span>
+          <span>100.0%</span>
+        </a>
+    </li>
+</ul>
+
+              </div>
+            </div>
+
+              </div>
+</div>
+  
+</div></div>
+
+  </div>
+
+
+  </div>
+
+</turbo-frame>
+
+
+    </main>
+  </div>
+
+  </div>
+
+          <footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive" role="contentinfo">
+  <h2 class="sr-only">Footer</h2>
+
+  
+
+
+  <div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap">
+    <div class="d-flex flex-items-center flex-shrink-0 mx-2">
+      <a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com">
+        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+    </svg></a></div></div></footer><div class="d-flex flex-items-center flex-shrink-0 mx-2"><a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com"><svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+</svg>
+</a>
+      <span>
+        © 2025 GitHub, Inc.
+      </span>
+    </div>
+
+    <nav aria-label="Footer">
+      <h3 class="sr-only" id="sr-footer-heading">Footer navigation</h3>
+
+      <ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading">
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security" data-view-component="true" class="Link--secondary Link">Security</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/" data-view-component="true" class="Link--secondary Link">Status</a>
+          </li>
+
+            <li class="mx-2">
+              <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.community/" data-view-component="true" class="Link--secondary Link">Community</a>
+            </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com/" data-view-component="true" class="Link--secondary Link">Docs</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com?tags=dotcom-footer" data-view-component="true" class="Link--secondary Link">Contact</a>
+          </li>
+
+          <li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    </cookie-consent-link></li></ul></nav><li class="mx-2">
+</li>
+
+<li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    </cookie-consent-link></li><div data-turbo-body="" class="logged-in env-production page-responsive" style="word-wrap: break-word;"><footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive" role="contentinfo"><div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap"><nav aria-label="Footer"><ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading"><li class="mx-2">
+</li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+    <ghcc-consent id="ghcc" class="position-fixed bottom-0 left-0" style="z-index: 999999" data-locale="en" data-initial-cookie-consent-allowed="" data-cookie-consent-required="false" data-catalyst=""></ghcc-consent>
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+    </div>
+    <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true">folke/lazydev.nvim: Faster LuaLS setup for Neovim</div>
+    <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true"></div>
+  
+
+

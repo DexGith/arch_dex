@@ -10,3 +10,4 @@ local function pick_and_jump()
 end
 
 vim.keymap.set('n', '<leader>pa', pick_and_jump, { desc = "Pick a window to focus" })
+

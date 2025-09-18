@@ -33,6 +33,7 @@ cliphist
 cmatrix
 code
 code-marketplace
+composer
 conky
 copyq
 cowsay
@@ -52,6 +53,7 @@ dictd
 dmidecode
 dnsmasq
 docker
+docker-compose
 dolphin
 dosfstools
 ed
@@ -82,6 +84,7 @@ fuse2
 fzf
 gdb
 gdu
+geeqie
 ghostty
 gimp
 git
@@ -121,9 +124,11 @@ input-remapper-bin
 intel-ucode
 inxi
 iperf3
+iptables-nft
 irssi
 jdownloader2
 jgmenu
+julia
 jumpapp-git
 kazam
 kdegraphics-thumbnailers
@@ -132,15 +137,18 @@ keepassxc
 keychain
 kio-admin
 kitty
+kolourpaint
 komorebi
 konsole
 krita
+ksnip
 ktimer
 lazygit
 leafpad
 legcord-bin
 libkeybinder3
 libpulse
+libqalculate
 libreoffice-fresh
 lightdm
 lightdm-gtk-greeter
@@ -148,6 +156,9 @@ linux
 linux-firmware
 linux-headers
 lolcat
+lsd
+lua51
+luarocks
 lutris
 lxappearance
 lxappearance-obconf
@@ -207,6 +218,7 @@ nnn
 noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g
+nyx
 obconf-qt
 obs-studio
 obsidian
@@ -244,15 +256,20 @@ plocate
 polychromatic
 powerline-fonts
 powershell
+prettier
 protontricks
 protonup-qt
 pup-bin
 pyenv
+python-black
 python-cairo
 python-dbus
 python-distro
 python-ewmh
+python-isort
 python-levenshtein
+python-matplotlib
+python-opencv
 python-pip
 python-pipx
 python-pyinotify
@@ -270,10 +287,12 @@ qt6ct
 qterminal
 qutebrowser
 radeontop
+ranger
 razercfg-git
 razergenie
 rclone
 reflector
+reptyr
 ristretto
 rofi
 samba
@@ -293,6 +312,7 @@ spice
 stardict-oed
 steam
 streamlink
+stylua
 sublime-text-4
 sushi
 swappy
@@ -318,6 +338,8 @@ time
 timg
 tk
 tmux
+tor
+torbrowser-launcher
 tree
 triliumnext-bin
 ttf-firacode-nerd
@@ -340,6 +362,7 @@ warpd
 waybar
 webkit2gtk
 wev
+wgetpaste
 whois
 wikiman
 wine
@@ -347,6 +370,7 @@ winetricks
 wireplumber
 wl-clipboard
 wmctrl
+wtype
 xbindkeys
 xcape
 xclip
@@ -440,6 +464,7 @@ yad
 yazi
 ydotool
 yt-dlp
+zathura
 zen-browser-bin
 zoxide
 zsh

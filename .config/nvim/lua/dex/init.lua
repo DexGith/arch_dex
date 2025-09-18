@@ -1,3 +1,5 @@
-require("dex.remap")
+-- require("dex.remap")
+-- require("dex.remapScuffed")
 require("dex.set")
-require("dex.me")
+-- require("dex.me")
+require("dex.snippets")

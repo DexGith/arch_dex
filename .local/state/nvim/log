@@ -1229,3 +1229,125 @@ ERR 2025-09-13T02:39:33.381 nvim.3383654.0 os_set_cloexec:500: Failed to get fla
 ERR 2025-09-13T02:40:24.915 nvim.3386848.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
 ERR 2025-09-13T02:42:22.439 nvim.3392615.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
 ERR 2025-09-13T02:55:01.486 nvim.3434262.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T06:57:05.457 nvim.18486.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter.lua:195: Index out of bounds
+stack traceback:
+	[C]: in function 'nvim_buf_get_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:195: in function 'get_node_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:553: in function 'handler'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:884: in function '_match_predicates'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:1013: in function 'iter'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:343: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-13T07:07:16.008 nvim.55484.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T07:13:20.321 nvim.72894.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T07:29:12.837 nvim.123555.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T07:30:03.187 nvim.127543.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T07:36:43.111 nvim.158394.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-13T07:55:44.236 nvim.5079.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-09-13T08:29:51.534 ui.3816599 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-13T08:29:51.534 ui.3873164 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-13T08:29:51.537 ui.3098420 tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-13T08:29:51.538 ui.336562  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-13T08:29:51.611 ui.18072   tui_stop:615: TUI already stopped (race?)
+ERR 2025-09-13T22:31:57.069 ui.878875  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-14T01:31:39.433 nvim.1240490.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-14T03:12:03.482 nvim.1456910.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-14T03:24:44.949 nvim.1466243.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter.lua:195: Index out of bounds
+stack traceback:
+	[C]: in function 'nvim_buf_get_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:195: in function 'get_node_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:553: in function 'handler'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:884: in function '_match_predicates'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:1013: in function 'iter'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:385: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:239: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:358: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:457: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:451>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-14T03:44:27.867 nvim.1466243.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter.lua:195: Index out of bounds
+stack traceback:
+	[C]: in function 'nvim_buf_get_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:195: in function 'get_node_text'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:553: in function 'handler'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:884: in function '_match_predicates'
+	/usr/share/nvim/runtime/lua/vim/treesitter/query.lua:1013: in function 'iter'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:385: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:239: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:358: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:457: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:451>
+	[C]: in function 'nvim_command'
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+ERR 2025-09-14T07:25:39.455 nvim.2029018.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-14T23:58:29.254 nvim.3155787.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T04:59:46.619 nvim.3872554.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T05:05:28.205 nvim.3885351.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T06:00:19.259 ui.4023232 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T06:00:53.664 ui.3822929 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T07:04:21.913 nvim.4193071.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T08:34:24.615 nvim.235843.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T10:37:14.132 ui.4040430 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.139 ui.4045772 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.161 ui.540534  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.166 ui.541274  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.178 ui.545207  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.182 ui.538925  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.183 ui.546213  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:37:14.360 ui.392087  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.675 ui.569669  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.678 ui.574702  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.696 ui.570483  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.699 ui.576262  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.705 ui.574614  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.716 ui.591785  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T10:43:34.807 ui.589466  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T11:14:12.992 nvim.686630.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:15:40.451 nvim.688595.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:23:10.962 nvim.700516.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:38:06.915 nvim.742047.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:46:06.722 nvim.761810.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:54:04.989 nvim.775658.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T11:57:26.900 nvim.781951.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T12:26:10.978 nvim.846266.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T12:28:31.701 nvim.853989.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T12:30:02.807 nvim.858340.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T16:56:00.288 ui.1341151 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T23:02:47.696 ui.1418708 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-15T23:17:01.728 nvim.1450395.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T23:22:51.902 nvim.1461709.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T23:23:38.589 nvim.1462972.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-15T23:33:52.475 nvim.1481208.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:21:11.695 nvim.3745618.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:23:23.952 nvim.3752125.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:23:28.509 nvim.3752344.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:26:06.478 nvim.3758604.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:27:03.662 nvim.3760809.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:27:09.908 nvim.3760989.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:27:41.684 nvim.3762415.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T03:32:03.064 nvim.3770298.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T06:21:13.236 nvim.4111114.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T06:33:18.341 nvim.4134089.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T07:35:37.312 nvim.93480.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T07:37:26.003 ui.98151   tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-17T07:43:02.790 nvim.111463.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T07:43:17.272 nvim.112164.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-17T08:27:52.198 ui.617774  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-17T11:03:02.466 nvim.529744.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor
+ERR 2025-09-18T01:24:36.567 ui.1460620 tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-18T02:15:42.058 ui.474065  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-18T02:15:43.970 ui.455531  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-18T02:15:45.641 ui.482052  tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-18T02:15:50.342 ui.24655   tui_stop:641: TUI already stopped (race?)
+ERR 2025-09-18T03:28:30.798 nvim.1732843.0 os_set_cloexec:500: Failed to get flags on descriptor 3: Bad file descriptor

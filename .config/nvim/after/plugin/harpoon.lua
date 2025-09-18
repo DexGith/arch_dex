@@ -9,6 +9,18 @@ require("harpoon").setup({})
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
+--# This attempts to prevent the harpoon cursur outside buffer erorr with neo-tree buffer when first
+-- opening a dir with vim . or vim .config/ forst the first time 
+
+
+local function toggle_harpoon_menu()
+    if vim.bo.filetype == 'neo-tree' then
+        vim.cmd('Neotree close')
+    end
+    ui.toggle_quick_menu()
+end
+
+
 vim.keymap.set("n", "<leader>a", mark.add_file)
 vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
 
@@ -22,18 +34,18 @@ vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
 -- vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu)
 
 -- vim.keymap.set("n", "<C-s>", function() ui.nav_file(1) end)
-vim.keymap.set("n", "<M-q>", function() ui.nav_file(1) end)
+vim.keymap.set("n", "<A-q>", function() ui.nav_file(1) end)
 vim.keymap.set("n", "<C-1>", function() ui.nav_file(1) end)
 -- vim.keymap.set("n", "<C-f>", function() ui.nav_file(2) end)
-vim.keymap.set("n", "<M-w>", function() ui.nav_file(2) end)
+vim.keymap.set("n", "<A-w>", function() ui.nav_file(2) end)
 vim.keymap.set("n", "<C-2>", function() ui.nav_file(2) end)
 -- vim.keymap.set("n", "<C-g>", function() ui.nav_file(3) end)
-vim.keymap.set("n", "<M-e>", function() ui.nav_file(3) end)
+vim.keymap.set("n", "<A-e>", function() ui.nav_file(3) end)
 vim.keymap.set("n", "<C-3>", function() ui.nav_file(3) end)
 -- vim.keymap.set("n", "<C-t>", function() ui.nav_file(4) end)
-vim.keymap.set("n", "<M-r>", function() ui.nav_file(4) end)
+vim.keymap.set("n", "<A-r>", function() ui.nav_file(4) end)
 vim.keymap.set("n", "<C-4>", function() ui.nav_file(4) end)
-vim.keymap.set("n", "<M-t>", function() ui.nav_file(5) end)
+vim.keymap.set("n", "<A-t>", function() ui.nav_file(5) end)
 vim.keymap.set("n", "<C-5>", function() ui.nav_file(5) end)
 -- I would love to add C-6 but ctrl+6 returns you to the previous buffer it's alright
 -- There is also C-5 that doens't have a corresponding like letter but like... do you really
@@ -46,7 +58,7 @@ vim.keymap.set("n", "<C-5>", function() ui.nav_file(5) end)
 
 -- These are nice like kidna like alt+tab and alt+shift+tab... idk if I'm gonna use them tbh 
 -- but whatever right... should be fine to just cycle between my like harpoon saved shit I guess 
-vim.keymap.set("n", "<C-b>", ui.nav_prev) -- 'p' for previous
+vim.keymap.set("n", "<C-N>", ui.nav_prev) -- 'p' for previous
 vim.keymap.set("n", "<C-n>", ui.nav_next) -- 'n' for next
 
 

@@ -1,0 +1,16 @@
+-- Normal mode keybindings for custom terminals
+vim.keymap.set("n", "<leader>ttl", function() lazygit_toggle() end, { noremap = true, silent = true, desc = "Toggle lazygit" })
+--# just wanna screw around with ranger I prefer yazi but yeah
+vim.keymap.set("n", "<leader>ttr", function() ranger_toggle() end, { noremap = true, silent = true, desc = "Toggle ranger" })
+vim.keymap.set("n", "<leader>tty", function() yazi_toggle() end, { noremap = true, silent = true, desc = "Toggle yazi - scuffed" })
+vim.keymap.set("n", "<leader>ttp", function() python_toggle() end, { noremap = true, silent = true, desc = "Toggle python" })
+vim.keymap.set("n", "<leader>ttn", function() node_toggle() end, { noremap = true, silent = true, desc = "Toggle node" })
+vim.keymap.set("n", "<leader>ttt", function() htop_toggle() end, { noremap = true, silent = true, desc = "Toggle htop" })
+
+-- Keybindings for different terminal layouts
+vim.keymap.set("n", "<leader>ttf", "<cmd>ToggleTerm direction=float<CR>", { noremap = true, silent = true, desc = "Toggle float terminal" })
+vim.keymap.set("n", "<leader>ttv", "<cmd>ToggleTerm direction=vertical<CR>", { noremap = true, silent = true, desc = "Toggle vertical terminal" })
+vim.keymap.set("n", "<leader>tth", "<cmd>ToggleTerm direction=horizontal<CR>", { noremap = true, silent = true, desc = "Toggle horizontal terminal" })
+
+-- Keybinding for selecting a terminal
+vim.keymap.set("n", "<leader>T", "<cmd>TermSelect<CR>", { noremap = true, silent = true, desc = "Select terminal" })
